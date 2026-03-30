@@ -81,6 +81,38 @@
   .article .meta { font-family: 'Noto Sans SC', sans-serif; font-size: 14px; color: #896262; margin-top: 16px; text-align: left; padding: 8px 12px; background: linear-gradient(90deg, rgba(196,30,58,0.05), transparent); border-left: 2px solid rgba(196,30,58,0.2); border-radius: 0 2px 2px 0; }
   .article .meta .comment { font-style: italic; }
 
+  /* === 🔊 语音按钮 === */
+  .speak-btn {
+    cursor: pointer;
+    font-size: 14px;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    user-select: none;
+  }
+  .speak-btn:hover { opacity: 1; }
+
+  /* === 📤 分享按钮 === */
+  .article-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .share-btn {
+    background: none;
+    border: none;
+    padding: 4px 0 4px 12px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 13px;
+    color: var(--muted);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+  .share-btn:hover {
+    color: var(--accent);
+  }
+
   /* === 引用块 === */
   .pull-quote { border-left: 3px solid var(--accent); padding: 12px 18px; margin: 14px 0; font-style: italic; font-size: 19px; line-height: 1.7; color: #555; }
 
@@ -241,7 +273,10 @@
           <div class="lead-visual">
             <div class="overlay-text">{{ data.headline.visual.tag }}</div>
           </div>
-          <div class="category">{{ data.headline.category }}</div>
+          <div class="article-top">
+            <div class="category">{{ data.headline.category }}</div>
+            <button class="share-btn" @click="shareArticle($event, data.headline.category, data.headline.title, data.headline.content, data.headline.comment)">分享👉</button>
+          </div>
           <h2 v-if="data.headline.url">
             <a class="news-link" :href="data.headline.url" target="_blank" rel="noopener">{{ data.headline.title }}</a>
           </h2>
@@ -251,7 +286,7 @@
             <div class="number">{{ data.headline.dataHighlight.number }}</div>
             <div class="label">{{ data.headline.dataHighlight.label }}</div>
           </div>
-          <div class="meta"><span>🌸 <span class="comment">{{ data.headline.comment }}</span></span></div>
+          <div class="meta"><span>🌸 <span class="comment">{{ data.headline.comment }}</span></span> <span class="speak-btn" @click="speak(data.headline.comment)">📢 ))</span></div>
         </article>
 
         <!-- 天气 -->
@@ -295,7 +330,10 @@
           <!-- 普通文章板块 -->
           <template v-else>
             <article class="article" :id="a.id" v-for="(a, ai) in section.articles" :key="ai">
-              <div class="category">{{ a.category }}</div>
+              <div class="article-top">
+                <div class="category">{{ a.category }}</div>
+                <button class="share-btn" @click="shareArticle($event, a.category, a.title, a.content, a.comment)">分享👉</button>
+              </div>
               <h3 v-if="a.url">
                 <a class="news-link" :href="a.url" target="_blank" rel="noopener">{{ a.title }}</a>
               </h3>
@@ -309,7 +347,7 @@
               <ul v-if="a.list && a.list.length">
                 <li v-for="(li, lidx) in a.list" :key="lidx">{{ li }}</li>
               </ul>
-              <div class="meta"><span>🌸 <span class="comment">{{ a.comment }}</span></span></div>
+              <div class="meta"><span>🌸 <span class="comment">{{ a.comment }}</span></span> <span class="speak-btn" @click="speak(a.comment)">📢 ))</span></div>
             </article>
           </template>
         </template>
@@ -337,7 +375,39 @@
   </template>
 </div>
 
+<!-- 📤 分享卡片（隐藏，截图用） -->
+<div id="shareCard" style="position:fixed;left:-9999px;top:0;width:360px;z-index:-1;">
+  <div class="sc-card" style="width:360px;height:560px;background:#f5f0e8;font-family:'Noto Serif SC',serif;overflow:hidden;display:flex;flex-direction:column;">
+    <!-- 上部：报头 -->
+    <div style="background:linear-gradient(135deg,#1a1a2e,#16213e);padding:20px 24px 16px;color:white;flex-shrink:0;display:flex;justify-content:space-between;align-items:flex-start;">
+      <div>
+        <div style="font-size:11px;letter-spacing:3px;opacity:0.5;margin-bottom:4px;">中国大陆版 · 数字原生</div>
+        <div style="font-size:28px;font-weight:900;letter-spacing:4px;">茉<em style="color:#ff3366;font-style:italic;">霓</em>日报</div>
+        <div style="font-size:12px;opacity:0.5;margin-top:6px;" id="scDate"></div>
+      </div>
+      <div id="scQR" style="width:80px;height:80px;background:white;border-radius:4px;padding:4px;flex-shrink:0;"></div>
+    </div>
+    <!-- 中部：内容 -->
+    <div style="padding:20px 24px;flex:1;display:flex;flex-direction:column;">
+      <div id="scCategory" style="font-family:'Noto Sans SC',sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;color:#c41e3a;margin-bottom:8px;display:inline-block;padding:3px 10px;background:rgba(196,30,58,0.06);border-radius:2px;"></div>
+      <h2 id="scTitle" style="font-size:22px;font-weight:900;line-height:1.4;margin-bottom:12px;color:#1a1a1a;"></h2>
+      <p id="scContent" style="font-size:14px;line-height:1.8;color:#555;text-align:justify;flex:1;"></p>
+    </div>
+    <!-- 下部：辣评+底部 -->
+    <div style="flex-shrink:0;">
+      <div id="scComment" style="margin:0 24px 16px;font-family:'Noto Sans SC',sans-serif;font-size:13px;color:#896262;padding:10px 12px;background:linear-gradient(90deg,rgba(196,30,58,0.06),transparent);border-left:3px solid rgba(196,30,58,0.25);border-radius:0 2px 2px 0;">
+        🌸 <em id="scCommentText"></em>
+      </div>
+      <div style="background:#2a2a2a;color:#999;padding:12px 24px;font-family:'Noto Sans SC',sans-serif;font-size:11px;letter-spacing:2px;text-align:center;">
+        🌸 茉霓日报 · MONI DAILY
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
 const { createApp, ref, computed, onMounted } = Vue;
 
@@ -375,6 +445,85 @@ createApp({
       if (!target) return;
       const el = document.getElementById(target);
       if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    // 🔊 语音播报辣评
+    if (typeof speechSynthesis !== 'undefined') {
+      speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
+      speechSynthesis.getVoices();
+    }
+    function speak(text) {
+      if (!text) return;
+      speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = 'zh-CN';
+      u.rate = 1.1;
+      u.pitch = 1.15;
+      // 选最好的中文女声
+      const voices = speechSynthesis.getVoices();
+      const zhVoices = voices.filter(v => v.lang.startsWith('zh'));
+      const female = zhVoices.find(v => /yaoyao|婷婷|xiaoxiao|xiaoyi|female|女/i.test(v.name))
+        || zhVoices.find(v => /google.*chinese/i.test(v.name))
+        || zhVoices[0];
+      if (female) u.voice = female;
+      speechSynthesis.speak(u);
+    }
+
+    // 📤 分享卡片
+    async function shareArticle(evt, category, title, content, comment) {
+      const btn = evt.target;
+      btn.textContent = '生成中...';
+      btn.disabled = true;
+      try {
+        // 填充卡片数据
+        document.getElementById('scDate').textContent = formatDate(data.value.date) + ' · ' + data.value.weekday + ' · ' + data.value.issue;
+        document.getElementById('scCategory').textContent = category;
+        document.getElementById('scTitle').textContent = title;
+        // 截取前4句话
+        const sentences = content ? content.split(/[。！？；]/).filter(s => s.trim()).slice(0, 4).join('。') + '。' : '';
+        document.getElementById('scContent').textContent = sentences;
+        document.getElementById('scCommentText').textContent = comment || '';
+
+        // 生成二维码（qrcodejs）— 指向当期日报
+        const qrContainer = document.getElementById('scQR');
+        qrContainer.innerHTML = '';
+        const pageUrl = `https://zjbco2.github.io/moni-daily/daily-news.html?date=${date}`;
+        new QRCode(qrContainer, { text: pageUrl, width: 72, height: 72, colorDark: '#1a1a2e', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.M });
+
+        // 移到可视区域
+        const card = document.getElementById('shareCard');
+        card.style.left = '0';
+        card.style.position = 'absolute';
+        card.style.zIndex = '-1';
+
+        await document.fonts.ready;
+        await new Promise(r => setTimeout(r, 300));
+
+        // 截图
+        const canvas = await html2canvas(card.querySelector('.sc-card'), {
+          scale: 2,
+          useCORS: true,
+          backgroundColor: '#f5f0e8',
+          logging: false
+        });
+
+        // 恢复隐藏
+        card.style.left = '-9999px';
+        card.style.position = 'fixed';
+
+        // 下载
+        const link = document.createElement('a');
+        link.download = `茉霓日报-${data.value.date}.png`;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+
+        btn.textContent = '✅ 已保存';
+        setTimeout(() => { btn.textContent = '分享👉'; btn.disabled = false; }, 2000);
+      } catch (e) {
+        console.error('分享卡片生成失败:', e);
+        btn.textContent = '❌ 失败';
+        setTimeout(() => { btn.textContent = '分享👉'; btn.disabled = false; }, 2000);
+      }
     }
 
     // 日期格式化：20260330 → 2026年3月30日
@@ -426,7 +575,7 @@ createApp({
       }
     });
 
-    return { data, loading, error, tickerDuplicated, formatDate, formatWeatherTag, weatherEmoji, weatherLabel, weatherEmojiClass, weatherLabelClass, scrollTo };
+    return { data, loading, error, tickerDuplicated, formatDate, formatWeatherTag, weatherEmoji, weatherLabel, weatherEmojiClass, weatherLabelClass, scrollTo, speak, shareArticle };
   }
 }).mount('#app');
 </script>
