@@ -132,6 +132,9 @@
     html { font-size: 19px; }
   }
   @media (max-width: 700px) {
+    .news-grid { grid-template-columns: 1fr; }
+    .article, .article.lead { grid-column: 1 / -1; }
+    .weather-box { height: auto; }
     html { font-size: 16px; }
     .container { padding: 0 16px; }
     .masthead { padding: 24px 16px 12px; }
