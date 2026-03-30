@@ -127,6 +127,7 @@
   .footer .colophon { font-style: italic; margin-top: 8px; font-size: 15px; color: #999; }
 
   /* === 加载/错误状态 === */
+  [v-cloak] { display: none !important; }
   .loading { text-align: center; padding: 80px 24px; font-family: 'Noto Sans SC', sans-serif; color: var(--muted); }
   .loading .spinner { font-size: 48px; margin-bottom: 16px; animation: pulse 1.5s ease-in-out infinite; }
   @keyframes pulse { 0%,100% { opacity: 0.3; } 50% { opacity: 1; } }
@@ -196,7 +197,7 @@
 </head>
 <body>
 
-<div id="app">
+<div id="app" v-cloak>
   <!-- 加载状态 -->
   <div v-if="loading" class="loading">
     <div class="spinner">📰</div>
@@ -336,7 +337,7 @@
   </template>
 </div>
 
-<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
 <script>
 const { createApp, ref, computed, onMounted } = Vue;
 
