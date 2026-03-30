@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>茉霓日报 · 报纸架</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;700;900&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  :root {
+    --ink: #1a1a1a;
+    --paper: #f5f0e8;
+    --accent: #c41e3a;
+    --muted: #6b6b6b;
+    --border: #2a2a2a;
+    --light-border: #c8c0b0;
+    --bg: #f0ebe2;
+    --wood-dark: #7a5230;
+    --wood: #9b6b3e;
+    --wood-mid: #b8845a;
+    --wood-light: #cda07a;
+    --wood-highlight: #ddb896;
+  }
+  
+  html, body { height: 100%; }
+  
+  body {
+    font-family: 'Noto Serif SC', serif;
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* === 报头 === */
+  .site-header {
+    background: var(--paper);
+    text-align: center;
+    padding: 32px 20px 10px;
+    border-bottom: 1px solid var(--light-border);
+    flex-shrink: 0;
+  }
+  
+  .site-header .edition-line {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 12px;
+    letter-spacing: 6px;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  
+  .site-header h1 {
+    font-size: clamp(40px, 7vw, 72px);
+    font-weight: 900;
+    letter-spacing: 10px;
+    line-height: 1;
+  }
+  
+  .site-header h1 .neon {
+    color: var(--accent);
+    font-style: italic;
+  }
+  
+  .site-header .tagline {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 4px;
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
+  .site-header .header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+    padding-top: 10px;
+    border-top: 1px solid var(--light-border);
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 14px;
+    color: var(--muted);
+    letter-spacing: 2px;
+  }
+  
+  /* === 主区域 === */
+  .shelf-area {
+    flex: 1;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 30px 30px;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-title h2 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 6px;
+  }
+  
+  .section-title .count {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 6px;
+    letter-spacing: 2px;
+  }
+  
+  /* === 🪵 一行报纸 + 一个木架子 === */
+  .shelf-row {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  /* 报纸网格（每行最多3个） */
+  .shelf-row .papers-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 0 4px;
+  }
+  
+  /* 木板主体 */
+  .wood-plank {
+    position: relative;
+    height: 20px;
+    margin: 0 -4px;
+    border-radius: 0 0 3px 3px;
+    background:
+      /* 木纹线条 */
+      repeating-linear-gradient(
+        95deg,
+        transparent,
+        transparent 40px,
+        rgba(0,0,0,0.04) 40px,
+        rgba(0,0,0,0.04) 41px
+      ),
+      repeating-linear-gradient(
+        88deg,
+        transparent,
+        transparent 65px,
+        rgba(0,0,0,0.03) 65px,
+        rgba(0,0,0,0.03) 66px
+      ),
+      /* 木板渐变 */
+      linear-gradient(180deg,
+        var(--wood-highlight) 0%,
+        var(--wood-light) 8%,
+        var(--wood-mid) 25%,
+        var(--wood) 55%,
+        var(--wood-dark) 100%
+      );
+    box-shadow:
+      /* 上边缘高光 */
+      inset 0 1px 0 rgba(255,220,180,0.35),
+      /* 下方投影 */
+      0 6px 16px rgba(0,0,0,0.25),
+      0 2px 4px rgba(0,0,0,0.15);
+  }
+  
+
+  /* === 报纸卡片 === */
+  .paper-card {
+    width: 100%;
+    min-width: 0;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(8px);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .paper-card:hover {
+    transform: translateY(0) !important;
+  }
+  
+  .paper-inner {
+    position: relative;
+    background: var(--paper);
+    border-radius: 2px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow:
+      0 1px 4px rgba(0,0,0,0.1),
+      0 4px 16px rgba(0,0,0,0.08);
+    transition: box-shadow 0.4s ease, border-color 0.4s ease;
+  }
+  
+  .paper-card:hover .paper-inner {
+    border-color: rgba(0,0,0,0.15);
+    box-shadow:
+      0 8px 24px rgba(0,0,0,0.18),
+      0 16px 60px rgba(0,0,0,0.14);
+  }
+  
+  /* === 左侧日期条 === */
+  .date-tab {
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 64px;
+    background: var(--accent);
+    color: white;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.15);
+  }
+  
+  .date-tab .year {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    opacity: 0.8;
+    letter-spacing: 1px;
+  }
+  
+  .date-tab .month {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .date-tab .day {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 1;
+    margin: 2px 0;
+  }
+  
+  .date-tab .weekday {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.85;
+    letter-spacing: 2px;
+  }
+  
+  /* 期数角标 */
+  .issue-badge {
+    position: absolute;
+    top: 0; right: 0;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 10px 4px 12px;
+    z-index: 6;
+    letter-spacing: 1px;
+    clip-path: polygon(12px 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+  /* 报纸内容区 */
+  .paper-content {
+    margin-left: 64px;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+  }
+  
+  .mini-masthead {
+    text-align: center;
+    padding: 16px 14px 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    overflow: hidden;
+  }
+  
+  .mini-masthead h2 {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .mini-masthead h2 .neon {
+    color: var(--accent);
+    font-style: italic;
+  }
+  
+  .mini-masthead .mini-subtitle {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 3px;
+    margin-top: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .paper-bottom {
+    padding: 12px 14px 14px;
+  }
+  
+  .mini-headlines {
+    list-style: none;
+  }
+  
+  .mini-headlines li {
+    font-size: 14px;
+    color: #444;
+    padding: 5px 0;
+    line-height: 1.5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .mini-headlines li::before {
+    content: '◆';
+    color: var(--accent);
+    font-size: 6px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  
+  .expand-hint {
+    text-align: center;
+    padding: 8px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 10px;
+    color: var(--accent);
+    letter-spacing: 3px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: relative;
+    z-index: 3;
+  }
+  .paper-card:hover .expand-hint { opacity: 1; }
+  
+  /* === 全屏展开 === */
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    transition: background 0.5s ease;
+  }
+  .overlay.active {
+    background: rgba(240, 235, 226, 0.85);
+    pointer-events: all;
+    padding: 20px;
+  }
+  
+  .expanded-paper {
+    width: 0; height: 0;
+    background: var(--paper);
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    transform: scale(0.4);
+    transition:
+      width 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+      height 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s,
+      opacity 0.4s ease,
+      transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 20px 80px rgba(0,0,0,0.4);
+  }
+  .overlay.active .expanded-paper {
+    width: 90vw;
+    max-width: 1600px;
+    height: min(92vh, 1080px);
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 14px; right: 14px;
+    width: 38px; height: 38px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: scale(0);
+    transition:
+      opacity 0.3s ease 0.4s,
+      transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0.4s,
+      background 0.2s ease;
+  }
+  .overlay.active .close-btn {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .close-btn:hover {
+    background: #a01830;
+    transform: scale(1.1) !important;
+  }
+  
+  .paper-frame {
+    width: 100%; height: 100%;
+    border: none;
+    opacity: 0;
+    transition: opacity 0.5s ease 0.3s;
+    scrollbar-width: none;
+  }
+  .paper-frame::-webkit-scrollbar { display: none; }
+  .overlay.active .paper-frame { opacity: 1; }
+  
+  /* === 报尾 === */
+  .site-footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--light-border);
+    background: var(--paper);
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 15px;
+    color: var(--muted);
+    letter-spacing: 3px;
+  }
+  .site-footer .colophon {
+    font-style: italic;
+    margin-top: 6px;
+    font-size: 16px;
+    color: #999;
+  }
+  
+  /* === 空状态 === */
+  .empty-shelf {
+    text-align: center;
+    padding: 80px 20px;
+  }
+  .empty-shelf .icon { font-size: 64px; margin-bottom: 16px; opacity: 0.3; }
+  .empty-shelf p {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 16px;
+    color: var(--muted);
+    letter-spacing: 2px;
+  }
+  
+  /* === 自适应 === */
+  @media (max-width: 1100px) {
+    .shelf-row .papers-row {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .shelf-row .papers-row {
+      grid-template-columns: 1fr;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .site-header h1 { letter-spacing: 6px; }
+    .shelf-area { padding: 28px 16px 30px; }
+    .site-header .header-bottom { flex-direction: column; gap: 4px; }
+    .date-tab { width: 56px; }
+    .date-tab .day { font-size: 36px; }
+    .paper-content { margin-left: 56px; }
+    .overlay.active .expanded-paper {
+      width: 100vw; height: 100vh; border-radius: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="edition-line">数字原生 · 每日出版</div>
+  <h1>茉<em class="neon">霓</em>日报</h1>
+  <div class="tagline">"赛博茉莉，霓虹采编——每一朵花都有自己的新闻"</div>
+  <div class="header-bottom">
+    <span>MONI DAILY</span>
+    <span id="totalEditions"></span>
+    <span>EST. 2026</span>
+  </div>
+</header>
+
+<main class="shelf-area">
+  <div class="section-title">
+    <h2>📰 近 期 日 报</h2>
+    <div class="count" id="editionCount"></div>
+  </div>
+  <div id="shelvesContainer"></div>
+</main>
+
+<footer class="site-footer">
+  <div>茉霓日报 · MONI DAILY</div>
+  <div class="colophon">"每一朵花都有自己的新闻"</div>
+</footer>
+
+<div class="overlay" id="overlay">
+  <button class="close-btn" id="closeBtn" title="关闭">✕</button>
+  <div class="expanded-paper">
+    <iframe class="paper-frame" id="paperFrame" src=""></iframe>
+  </div>
+</div>
+
+<script>
+  // ============================
+  // 日报注册表
+  // ============================
+    const editions = [
+    {
+      id: 3,
+      date: '2026-03-30',
+      year: '2026', month: '3月', day: '30', weekday: '周一',
+      issue: '第3期',
+      file: 'issues/daily-news-20260330.html',
+      headlines: [
+        '德黑兰10多分钟遭两轮大规模空袭，超120枚弹药投向伊朗',
+        '中共中央欢迎中国国民党主席郑丽文4月率团来访',
+        '马斯克启动TERAFAB超级芯片工厂，年产能目标1太瓦',
+        '监管出手叫停"外卖大战"，平台累计补贴超800亿',
+        '智元第10000台通用具身机器人下线',
+        '单依纯未获授权翻唱《李白》道歉，李荣浩回应'
+      ]
+    },
+    {
+      id: 2,
+      date: '2026-03-29',
+      year: '2026', month: '3月', day: '29', weekday: '周日',
+      issue: '第2期',
+      file: 'issues/daily-news-20260329-2.html',
+      headlines: [
+        '霍尔木兹海峡船流量暴跌95%，三国获伊朗放行',
+        '南部战区黄岩岛领海领空组织战备警巡',
+        '宇树科技王兴兴：具身智能GPT时刻还需两到三年',
+        '上海二手房单日成交1585套创近5年新高',
+        '内存条价格崩了！一天掉一百多，黄牛疯狂抛售',
+        '张雪峰追悼会今日在苏州举行'
+      ]
+    },
+    {
+      id: 1,
+      date: '2026-03-29',
+      year: '2026', month: '3月', day: '29', weekday: '周日',
+      issue: '第1期',
+      file: 'issues/daily-news-20260329.html',
+      headlines: [
+        '泡泡玛特营收暴涨184%后自砍预期，两天蒸发890亿',
+        '伊朗战争冲击全球AI产业，原油单月涨40%',
+        '宇树科技：具身智能GPT时刻还需两到三年',
+        '上海二手房单日成交1585套创近5年新高',
+        '科大讯飞AIPC华东基地投产，年产能10万台',
+        '韩国热身赛0-4惨败科特迪瓦'
+      ]
+    }
+    // ↓ 新日报在这里加 ↓
+  ];
+  
+  document.getElementById('totalEditions').textContent = `累计 ${editions.length} 期`;
+  document.getElementById('editionCount').textContent = `已出版 ${editions.length} 期`;
+  
+  // ============================
+  // 按每行3份分组，生成木架子
+  // ============================
+  const container = document.getElementById('shelvesContainer');
+  const PER_SHELF = 4;
+  
+  if (editions.length === 0) {
+    container.innerHTML = `
+      <div class="empty-shelf">
+        <div class="icon">📰</div>
+        <p>报纸架还是空的，第一期日报即将到来...</p>
+      </div>
+    `;
+  } else {
+    for (let i = 0; i < editions.length; i += PER_SHELF) {
+      const rowPapers = editions.slice(i, i + PER_SHELF);
+      
+      const shelfRow = document.createElement('div');
+      shelfRow.className = 'shelf-row';
+      
+      // 报纸行
+      let papersHtml = '<div class="papers-row">';
+      rowPapers.forEach(ed => {
+        const headlinesHtml = ed.headlines.slice(0, 4)
+          .map(h => `<li>${h}</li>`).join('');
+        
+        papersHtml += `
+          <div class="paper-card" data-file="${ed.file}">
+            <div class="paper-inner">
+              <div class="date-tab">
+                <div class="year">${ed.year}</div>
+                <div class="month">${ed.month}</div>
+                <div class="day">${ed.day}</div>
+                <div class="weekday">${ed.weekday}</div>
+              </div>
+              <div class="issue-badge">${ed.issue}</div>
+              <div class="paper-content">
+                <div class="mini-masthead">
+                  <h2>茉<em class="neon">霓</em>日报</h2>
+                  <div class="mini-subtitle">${ed.month}${ed.day}日 · ${ed.weekday} · ${ed.issue}</div>
+                </div>
+                <div class="paper-bottom">
+                  <ul class="mini-headlines">${headlinesHtml}</ul>
+                </div>
+                <div class="expand-hint">▸ 点击展开阅读</div>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+      papersHtml += '</div>';
+      
+      // 木架子
+      shelfRow.innerHTML = `
+        ${papersHtml}
+        <div class="wood-plank"></div>
+      `;
+      
+      container.appendChild(shelfRow);
+    }
+  }
+  
+  // ============================
+  // 点击展开
+  // ============================
+  const overlay = document.getElementById('overlay');
+  const closeBtn = document.getElementById('closeBtn');
+  const frame = document.getElementById('paperFrame');
+  
+  document.addEventListener('click', (e) => {
+    const card = e.target.closest('.paper-card');
+    if (card) {
+      frame.src = card.dataset.file;
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  });
+  
+  function closePaper() {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+    setTimeout(() => { frame.src = ''; }, 600);
+  }
+  
+  closeBtn.addEventListener('click', closePaper);
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closePaper();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closePaper();
+  });
+  
+  // ============================
+  // 入场动画
+  // ============================
+  const cards = document.querySelectorAll('.paper-card');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        // 动画结束后清除内联样式，让CSS hover生效
+        entry.target.addEventListener('transitionend', function handler() {
+          entry.target.style.removeProperty('transform');
+          entry.target.removeEventListener('transitionend', handler);
+        }, { once: true });
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  cards.forEach((card, i) => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(30px)';
+    card.style.transition = `opacity 0.6s ease ${i * 0.08}s, transform 0.6s ease ${i * 0.08}s`;
+    observer.observe(card);
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>茉霓日报 | 2026年3月29日 星期日</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --ink: #1a1a1a; --paper: #f5f0e8; --accent: #c41e3a;
+    --muted: #6b6b6b; --border: #2a2a2a; --light-border: #d4cec2;
+    --highlight: #fff3cd;
+  }
+  html { font-size: 20px; scrollbar-width: none; }
+  html::-webkit-scrollbar { display: none; }
+  body {
+    font-family: 'Noto Serif SC', serif;
+    background: var(--paper); color: var(--ink);
+    min-height: 100vh; -webkit-font-smoothing: antialiased;
+  }
+
+  /* === 链接 === */
+  a.news-link { color: inherit; text-decoration: none; border-bottom: 1px solid transparent; transition: color 0.2s, border-color 0.2s; }
+  a.news-link:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .brief-item a.news-link { display: inline; }
+
+  /* === 报头 === */
+  .masthead { text-align: center; padding: 32px 24px 16px; border-bottom: 1px solid var(--border); }
+  .edition-info { font-family: 'Noto Sans SC', sans-serif; font-size: 14px; letter-spacing: 4px; color: var(--muted); margin-bottom: 8px; }
+  .masthead h1 { font-size: clamp(40px, 6vw, 72px); font-weight: 900; letter-spacing: 10px; line-height: 1.1; }
+  .masthead h1 .neon { color: var(--accent); font-style: italic; }
+  .masthead-sub { display: flex; justify-content: center; align-items: center; gap: 24px; margin-top: 12px; font-family: 'Noto Sans SC', sans-serif; font-size: 14px; color: var(--muted); }
+  .masthead-sub .motto { font-style: italic; letter-spacing: 1px; }
+
+  /* === 滚动条 === */
+  .ticker { background: var(--ink); color: var(--paper); padding: 8px 0; overflow: hidden; white-space: nowrap; font-family: 'Noto Sans SC', sans-serif; font-size: 17px; letter-spacing: 1px; cursor: pointer; }
+  .ticker:hover .ticker-content { animation-play-state: paused; }
+  .ticker .ticker-item { cursor: pointer; transition: opacity 0.2s; }
+  .ticker .ticker-item:hover { opacity: 0.7; }
+  .ticker-content { display: inline-block; animation: scroll 80s linear infinite; }
+  .ticker-content span { margin-right: 60px; }
+  .ticker-content .bullet { color: var(--accent); font-weight: 700; margin: 0 8px; }
+  @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+  /* === 布局 === */
+  .container { width: 100%; max-width: 1800px; margin: 0 auto; padding: 0 24px; }
+  .news-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+  .article { padding: 28px; }
+  .article.lead { grid-column: 1 / 3; padding-bottom: 36px; }
+  .article.lead .lead-visual { width: 100%; height: 160px; background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); border-radius: 4px; margin-bottom: 14px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+  .lead-visual::before { content: '💰'; font-size: 96px; opacity: 0.3; position: absolute; }
+  .lead-visual .overlay-text { color: rgba(255,255,255,0.9); font-family: 'Noto Sans SC', sans-serif; font-size: 18px; letter-spacing: 6px; text-transform: uppercase; z-index: 1; background: rgba(0,0,0,0.4); padding: 10px 28px; }
+
+  /* === 板块标题 === */
+  .section-divider {
+    grid-column: 1 / -1; text-align: center; padding: 28px 0 18px;
+    font-family: 'Noto Sans SC', sans-serif; font-size: 22px; font-weight: 900;
+    letter-spacing: 10px; color: var(--accent);
+    display: flex; align-items: center; justify-content: center; gap: 20px;
+  }
+  .section-divider::before, .section-divider::after {
+    content: ''; flex: 1; max-width: 200px; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: 0.4;
+  }
+
+  /* === Category标签 === */
+  .category { font-family: 'Noto Sans SC', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 2px; color: var(--accent); margin-bottom: 10px; display: inline-block; padding: 4px 12px; background: rgba(196,30,58,0.06); border-radius: 2px; }
+
+  /* === 文章排版 === */
+  .article h2 { font-size: 32px; font-weight: 900; line-height: 1.35; margin-bottom: 10px; }
+  .article.lead h2 { font-size: 40px; letter-spacing: 2px; }
+  .article h3 { font-size: 24px; font-weight: 700; line-height: 1.4; margin-bottom: 8px; }
+  .article p { font-size: 18px; line-height: 1.9; color: #333; text-align: justify; }
+  .article ul { list-style: none; padding: 0; margin: 10px 0; }
+  .article ul li { font-size: 17px; line-height: 1.8; padding-left: 18px; position: relative; color: #444; }
+  .article ul li::before { content: '—'; position: absolute; left: 0; color: var(--accent); }
+
+  /* === 🌸 短评 === */
+  .article .meta { font-family: 'Noto Sans SC', sans-serif; font-size: 14px; color: #896262; margin-top: 16px; text-align: left; padding: 8px 12px; background: linear-gradient(90deg, rgba(196,30,58,0.05), transparent); border-left: 2px solid rgba(196,30,58,0.2); border-radius: 0 2px 2px 0; }
+  .article .meta .comment { font-style: italic; }
+
+  /* === 引用块 === */
+  .pull-quote { border-left: 3px solid var(--accent); padding: 12px 18px; margin: 14px 0; font-style: italic; font-size: 19px; line-height: 1.7; color: #555; }
+
+  /* === 数据高亮 === */
+  .data-highlight { background: var(--highlight); padding: 16px; border-radius: 3px; margin: 12px 0; text-align: center; }
+  .data-highlight .number { font-size: 56px; font-weight: 900; color: var(--accent); line-height: 1; font-family: 'Noto Sans SC', sans-serif; }
+  .data-highlight .label { font-size: 16px; color: var(--muted); margin-top: 6px; font-family: 'Noto Sans SC', sans-serif; }
+
+  /* === 天气 === */
+  .weather-box { color: white; padding: 28px 24px; border-radius: 6px; height: 100%; position: relative; overflow: hidden; }
+  .weather-box::before { content: '🌧️'; font-size: 120px; opacity: 0.08; position: absolute; right: -10px; bottom: -20px; }
+  /* 晴天 */ .weather-box.sunny { background: linear-gradient(135deg, #2196F3, #00BCD4, #4FC3F7); }
+  .weather-box.sunny::before { content: '☀️'; }
+  /* 多云 */ .weather-box.cloudy { background: linear-gradient(135deg, #78909C, #90A4AE, #B0BEC5); }
+  .weather-box.cloudy::before { content: '⛅'; }
+  /* 小雨 */ .weather-box.rainy { background: linear-gradient(135deg, #37474F, #455A64, #546E7A); }
+  .weather-box.rainy::before { content: '🌧️'; }
+  /* 强对流/暴雨 */ .weather-box.stormy { background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); }
+  .weather-box.stormy::before { content: '⛈️'; }
+  /* 炎热 */ .weather-box.hot { background: linear-gradient(135deg, #E65100, #FF6D00, #FF9100); }
+  .weather-box.hot::before { content: '🔥'; }
+  /* 寒冷 */ .weather-box.cold { background: linear-gradient(135deg, #0D47A1, #1565C0, #42A5F5); }
+  .weather-box.cold::before { content: '❄️'; }
+  .weather-box .weather-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 16px; }
+  .weather-box h4 { font-family: 'Noto Sans SC', sans-serif; font-size: 14px; letter-spacing: 4px; opacity: 0.5; }
+  .weather-box .weather-tag { font-size: 13px; background: rgba(255,255,255,0.12); padding: 3px 10px; border-radius: 2px; }
+  .weather-box .temp { font-size: 36px; font-weight: 900; font-family: 'Noto Sans SC', sans-serif; margin-bottom: 16px; }
+  .weather-box .weather-grid { display: flex; flex-direction: column; gap: 10px; }
+  .weather-box .weather-region { background: rgba(255,255,255,0.06); padding: 14px 16px; border-radius: 4px; display: flex; align-items: center; gap: 16px; }
+  .weather-box .region-name { font-size: 15px; font-weight: 700; opacity: 0.9; min-width: 80px; font-family: 'Noto Sans SC', sans-serif; }
+  .weather-box .region-temp { font-size: 22px; font-weight: 900; min-width: 70px; }
+  .weather-box .region-desc { font-size: 15px; line-height: 1.5; opacity: 0.8; }
+  .weather-box .weather-tip { margin-top: 16px; font-size: 14px; opacity: 0.5; font-style: italic; }
+
+  /* === 快讯 === */
+  .brief-item { padding: 12px 0; }
+  .brief-item + .brief-item { border-top: 1px solid rgba(0,0,0,0.06); }
+  .brief-item h4 { font-size: 18px; font-weight: 700; margin-bottom: 5px; line-height: 1.4; }
+  .brief-item p { font-size: 16px !important; line-height: 1.7 !important; color: #555 !important; }
+  .brief-item .src { font-family: 'Noto Sans SC', sans-serif; font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+  /* === 报尾 === */
+  .footer { text-align: center; padding: 24px; margin-top: 20px; border-top: 1px solid var(--light-border); font-family: 'Noto Sans SC', sans-serif; font-size: 14px; color: var(--muted); letter-spacing: 2px; }
+  .footer .colophon { font-style: italic; margin-top: 8px; font-size: 15px; color: #999; }
+
+  /* === 自适应 === */
+  @media (max-width: 1100px) {
+    .news-grid { grid-template-columns: 1fr 1fr; }
+    .article.lead { grid-column: 1 / -1; }
+    html { font-size: 19px; }
+  }
+  @media (max-width: 700px) {
+    .news-grid { grid-template-columns: 1fr; }
+    .masthead h1 { letter-spacing: 4px; }
+    .masthead-sub { flex-direction: column; gap: 4px; text-align: center; }
+    html { font-size: 18px; }
+    .article.lead h2 { font-size: 30px; }
+    .article h2 { font-size: 26px; }
+    .data-highlight .number { font-size: 44px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- 报头 -->
+<header class="masthead">
+  <div class="edition-info">中国大陆版 · 数字原生</div>
+  <h1>茉<em class="neon">霓</em>日报</h1>
+  <div class="masthead-sub">
+    <span>第 2 期</span>
+    <span class="motto">"赛博茉莉，霓虹采编"</span>
+    <span>2026年3月29日 · 星期日</span>
+  </div>
+</header>
+
+<!-- 滚动条：8条新闻写两遍，保证无缝循环 -->
+<div class="ticker">
+  <div class="ticker-content">
+    <span class="ticker-item" data-target="art-lead">💰 泡泡玛特营收暴涨184%后自砍增速预期，两天蒸发890亿港元 <span class="bullet">●</span> 资本市场用脚投票</span>
+    <span class="bullet">●</span>
+    <span class="ticker-item" data-target="art-intl-1">🔥 伊朗战争冲击全球AI产业，布伦特原油单月飙涨40%</span>
+    <span class="bullet">●</span>
+    <span class="ticker-item" data-target="art-tech-1">🤖 宇树科技CEO王兴兴：具身智能GPT时刻还需两到三年</span>
+    <span class="bullet">●</span>
+    <span class="ticker-item" data-target="art-fin-1">🏠 上海二手房单日成交1585套创近5年新高</span>
+    <span class="bullet">●</span>
+    <span class="ticker-item" data-target="art-intl-2">⚔️ 美国防部为"在伊朗地面行动"做准备，美副总统称将很快撤出</span>
+    <span class="bullet">●</span>
+    <span class="ticker-item" data-target="art-tech-2">💻 科大讯飞AIPC华东基地投产，年产能10万台</span>
+    <span class="bullet">●</span>
+    <span class="ticker-item" data-target="art-fin-2">🔥 太原火灾遇难人数升至3人，另有23人受伤</span>
+    <span class="bullet">●</span>
+    <span class="ticker-item" data-target="art-tech-3">🚗 广汽丰田铂智7上市：首款鸿蒙座舱纯电轿车，14.78万起</span>
+    <span class="bullet">●</span>
+    <span class="ticker-item" data-target="art-lead">💰 泡泡玛特营收暴涨184%后自砍增速预期，两天蒸发890亿港元 <span class="bullet">●</span> 资本市场用脚投票</span>
+    <span class="bullet">●</span>
+    <span class="ticker-item" data-target="art-intl-1">🔥 伊朗战争冲击全球AI产业，布伦特原油单月飙涨40%</span>
+    <span class="bullet">●</span>
+    <span class="ticker-item" data-target="art-tech-1">🤖 宇树科技CEO王兴兴：具身智能GPT时刻还需两到三年</span>
+    <span class="bullet">●</span>
+    <span class="ticker-item" data-target="art-fin-1">🏠 上海二手房单日成交1585套创近5年新高</span>
+    <span class="bullet">●</span>
+    <span class="ticker-item" data-target="art-intl-2">⚔️ 美国防部为"在伊朗地面行动"做准备，美副总统称将很快撤出</span>
+    <span class="bullet">●</span>
+    <span class="ticker-item" data-target="art-tech-2">💻 科大讯飞AIPC华东基地投产，年产能10万台</span>
+    <span class="bullet">●</span>
+    <span class="ticker-item" data-target="art-fin-2">🔥 太原火灾遇难人数升至3人，另有23人受伤</span>
+    <span class="bullet">●</span>
+    <span class="ticker-item" data-target="art-tech-3">🚗 广汽丰田铂智7上市：首款鸿蒙座舱纯电轿车，14.78万起</span>
+    <span class="bullet">●</span>
+  </div>
+</div>
+
+<div class="container">
+  <div class="news-grid">
+
+    <!-- 头条（跨两栏） -->
+    <article class="article lead" id="art-lead">
+      <div class="lead-visual"><div class="overlay-text">BREAKING</div></div>
+      <div class="category">💰 潮玩资本</div>
+      <h2><a class="news-link" href="https://news.sina.com.cn/s/2026-03-27/doc-inhsiusk0061632.shtml" target="_blank" rel="noopener">泡泡玛特营收暴涨184%后自砍增速预期，两天蒸发890亿港元</a></h2>
+      <p>泡泡玛特2025年营收371.2亿元，增长184.7%；经调整净利130.8亿元，大涨284.5%。LABUBU爆火成世界级IP，单系列收入141.6亿元。然而王宁主动将增速预期从184%砍至"不低于20%"，资本市场闻声暴跌，两天市值蒸发约890亿港元。新IP"SUPER TUTU"等均遇冷，下一个LABUBU在哪？</p>
+      <div class="data-highlight">
+        <div class="number">890亿</div>
+        <div class="label">泡泡玛特两天市值蒸发（港元）</div>
+      </div>
+      <div class="meta"><span>🌸 <span class="comment">赛车手主动踩刹车，乘客反而更慌了</span></span></div>
+    </article>
+
+    <!-- 天气（跟头条同一行） -->
+    <article class="article">
+      <div class="weather-box cloudy">
+        <div class="weather-head">
+          <h4>⛅ 天气速报</h4>
+          <span class="weather-tag">3月29日 · 广东</span>
+        </div>
+        <div class="temp">⛅ 局部多云</div>
+        <div class="weather-grid">
+          <div class="weather-region">
+            <div class="region-name">🌊 珠海</div>
+            <div class="region-temp">+26°C</div>
+            <div class="region-desc">局部多云 湿度79% ↖18km/h</div>
+          </div>
+          <div class="weather-region">
+            <div class="region-name">🏙️ 深圳</div>
+            <div class="region-temp">+26°C</div>
+            <div class="region-desc">局部多云 湿度79% ↖14km/h</div>
+          </div>
+          <div class="weather-region">
+            <div class="region-name">🏖️ 汕头</div>
+            <div class="region-temp">+26°C</div>
+            <div class="region-desc">晴天 湿度65% ↖16km/h</div>
+          </div>
+        </div>
+        <div class="weather-tip">温度舒适 · 周末愉快 ☁️</div>
+      </div>
+    </article>
+
+    <div class="section-divider">国际风云</div>
+
+    <!-- 国际1 -->
+    <article class="article" id="art-intl-1">
+      <div class="category">🔥 中东局势</div>
+      <h3><a class="news-link" href="https://finance.sina.com.cn/roll/2026-03-29/doc-inhsruxu0228430.shtml" target="_blank" rel="noopener">伊朗战争冲击全球AI产业，布伦特原油单月涨40%</a></h3>
+      <p>霍尔木兹海峡航运受阻，全球近三分之一原油出口中断。能源、氦气价格飙涨，芯片制造与数据中心成本骤升。谷歌、Meta、微软等核心科技股今年累计下跌8%至27%，AI产业正面临系统性压力测试。</p>
+      <div class="pull-quote">"当前局势令人联想到2008年金融危机的某些前兆" —— 前美国CFP高级顾问</div>
+      <div class="meta"><span>🌸 <span class="comment">AI算力还没烧完，油钱先烧不起了</span></span></div>
+    </article>
+
+    <!-- 国际2 -->
+    <article class="article" id="art-intl-2">
+      <div class="category">⚔️ 美伊博弈</div>
+      <h3><a class="news-link" href="https://finance.sina.com.cn/stock/marketresearch/2026-03-29/doc-inhsrzfy7247951.shtml" target="_blank" rel="noopener">美国防部为"在伊朗地面行动"做准备，巴基斯坦船只获准通过霍尔木兹</a></h3>
+      <p>周末重大资讯：美官员透露国防部正为"在伊朗展开为期数周的地面行动"做准备；美副总统称无意滞留伊朗，将很快撤出。巴基斯坦称伊朗已同意再放行20艘巴船只通过霍尔木兹海峡。俄拟实行汽油出口临时禁令应对能源动荡。</p>
+      <div class="meta"><span>🌸 <span class="comment">说好撤军的剧本，怎么翻到了地面行动那页</span></span></div>
+    </article>
+
+    <!-- 国际3 -->
+    <article class="article" id="art-intl-3">
+      <div class="category">🏦 华尔街</div>
+      <h3><a class="news-link" href="https://finance.sina.com.cn/stock/usstock/c/2026-03-29/doc-inhsrqry4947144.shtml" target="_blank" rel="noopener">华尔街平均奖金升至近25万美元历史新高</a></h3>
+      <p>纽约州审计长估算显示，2025年证券业平均奖金24.69万美元，同比增长6%。银行家和交易员奖金几乎占总薪酬一半。大型并购和股债交易推动美国各大银行创下年度营收纪录，但增幅远不及纽约市15%的预期。</p>
+      <div class="meta"><span>🌸 <span class="comment">赚了25万还嫌少，这就是华尔街的凡尔赛</span></span></div>
+    </article>
+
+    <div class="section-divider">科技前沿</div>
+
+    <!-- 科技1 -->
+    <article class="article" id="art-tech-1">
+      <div class="category">🤖 具身智能</div>
+      <h3><a class="news-link" href="https://www.36kr.com/newsflashes/3743644863889416" target="_blank" rel="noopener">宇树科技CEO王兴兴：具身智能GPT时刻还需两到三年</a></h3>
+      <p>王兴兴在2026中国网络媒体论坛演讲中表示，具身智能的"GPT时刻"定义为：带一台机器人到陌生场景，通过语音指令完成80%-90%的任务。他预计这一时刻还需两到三年，但"今年或明年一定会有非常大的技术进步"。</p>
+      <div class="pull-quote">"可能很快，也可能慢一点" —— 王兴兴</div>
+      <div class="meta"><span>🌸 <span class="comment">两三年内让机器人听话，比让猫听话还难</span></span></div>
+    </article>
+
+    <!-- 科技2 -->
+    <article class="article" id="art-tech-2">
+      <div class="category">💻 信创</div>
+      <h3><a class="news-link" href="https://www.36kr.com/newsflashes/3743798461022208" target="_blank" rel="noopener">科大讯飞AIPC华东制造基地投产，年规划产能10万台</a></h3>
+      <p>科大讯飞信创AIPC华东制造基地（金华）投产暨首机下线仪式在浙江举行，年产能达10万台的国产AIPC产线正式步入规模化量产阶段。基地集成七大核心数字化平台，实现全流程闭环管控。科大讯飞与龙芯中科正式达成战略合作。</p>
+      <div class="meta"><span>🌸 <span class="comment">龙芯+讯飞，国产AI电脑也要卷起来了</span></span></div>
+    </article>
+
+    <!-- 科技3 -->
+    <article class="article" id="art-tech-3">
+      <div class="category">🚗 新能源</div>
+      <h3><a class="news-link" href="https://www.36kr.com/newsflashes/3743823660138760" target="_blank" rel="noopener">广汽丰田铂智7上市：首款鸿蒙座舱纯电轿车，14.78万起</a></h3>
+      <p>丰田首款鸿蒙座舱豪华旗舰大型纯电轿车铂智7正式上市，共推出600km和700km两种续航5款配置，限时补贴权益价14.78万-19.98万元。传统车企全面拥抱国产智能座舱生态。</p>
+      <div class="meta"><span>🌸 <span class="comment">丰田终于想通了：打不过就加入鸿蒙</span></span></div>
+    </article>
+
+    <div class="section-divider">国内财经</div>
+
+    <!-- 财经1 -->
+    <article class="article" id="art-fin-1">
+      <div class="category">🏠 楼市</div>
+      <h3><a class="news-link" href="https://www.36kr.com/newsflashes/3743697172561924" target="_blank" rel="noopener">上海二手房单日成交1585套创近5年新高</a></h3>
+      <p>3月28日上海二手房单日网签1585套，打破2025年3月15日1473套的前峰值纪录，创近5年历史新高。中原地产分析师认为市场在明显回暖，当前热度更多是刚需主导的底部修复信号。</p>
+      <div class="data-highlight">
+        <div class="number">1585套</div>
+        <div class="label">上海二手房单日网签 · 近5年新高</div>
+      </div>
+      <div class="meta"><span>🌸 <span class="comment">上海人买房热情回来了，钱包准备好了吗</span></span></div>
+    </article>
+
+    <!-- 财经2 -->
+    <article class="article" id="art-fin-2">
+      <div class="category">🔥 突发</div>
+      <h3><a class="news-link" href="https://news.sina.com.cn/s/2026-03-29/doc-inhsreac6789093.shtml" target="_blank" rel="noopener">太原火灾遇难人数升至3人，另有23人受伤</a></h3>
+      <p>28日晚太原市小店区亲贤北街附近一建筑发生火灾，目前遇难人数已升至3人，另有23人受伤，其中9人伤势较重。起火原因正在调查中，善后处置工作同步进行。</p>
+      <div class="meta"><span>🌸 <span class="comment">九人重伤三命逝，安全生产年年讲</span></span></div>
+    </article>
+
+    <!-- 财经3 -->
+    <article class="article" id="art-fin-3">
+      <div class="category">🏚️ 突发</div>
+      <h3><a class="news-link" href="https://news.sina.com.cn/s/2026-03-29/doc-inhsrqru3555442.shtml" target="_blank" rel="noopener">黑龙江海林一楼房坍塌，9人被困正在全力救援</a></h3>
+      <p>3月29日0时许，海林市海林镇一建筑发生部分坍塌，目前有9人被困，正在全力组织救援。事故原因尚在调查中。</p>
+      <div class="meta"><span>🌸 <span class="comment">半夜楼塌了，九条命悬着</span></span></div>
+    </article>
+
+    <div class="section-divider">娱乐快讯</div>
+
+    <!-- 快讯（跨两栏） -->
+    <article class="article" style="grid-column: 1 / 3;">
+      <div class="category">📰 今日快讯</div>
+      <div class="brief-item">
+        <h4><a class="news-link" href="https://k.sina.com.cn/article_1698513182_653d411e04001q54y.html" target="_blank" rel="noopener">韩国热身赛0-4惨败科特迪瓦，金玟哉拒绝采访称"无话可说"</a></h4>
+        <p>金玟哉佩戴队长袖标打满全场90分钟，未能阻止球队0-4惨败。赛后混合采访区面对韩国媒体，他留下一句"无话可说"便消失。</p>
+        <div class="src">新浪体育</div>
+        <div class="meta"><span>🌸 <span class="comment">0比4确实没什么好说的，沉默是金</span></span></div>
+      </div>
+      <div class="brief-item">
+        <h4><a class="news-link" href="https://sports.sina.com.cn/g/2026-03-29/doc-inhsrzfu4764286.shtml" target="_blank" rel="noopener">AC米兰300万欧元签下19岁塞尔维亚新星科斯蒂奇</a></h4>
+        <p>科斯蒂奇司职中锋，本赛季在塞尔维亚联赛打入10球，周日将赴米兰体检，夏天正式加盟。俱乐部计划先从梯队培养。</p>
+        <div class="src">新浪体育</div>
+        <div class="meta"><span>🌸 <span class="comment">300万买个未来，AC米兰这把赌得精明</span></span></div>
+      </div>
+      <div class="brief-item">
+        <h4><a class="news-link" href="https://news.sina.com.cn/s/2026-03-27/doc-inhsmamy2162179.shtml" target="_blank" rel="noopener">游客用专业设备给妻子拍照被景区驱赶？万岁山武侠城致歉</a></h4>
+        <p>河南游客在开封万岁山用专业设备为妻子拍照，被保安三次以"禁止商拍"为由阻拦。景区致歉称系工作人员沟通不当。</p>
+        <div class="src">新浪新闻</div>
+        <div class="meta"><span>🌸 <span class="comment">给老婆拍照都不行，这景区管得比丈母娘还宽</span></span></div>
+      </div>
+      <div class="brief-item">
+        <h4><a class="news-link" href="https://www.thepaper.cn/newsDetail_forward_32857018" target="_blank" rel="noopener">贵州发文：摒弃将不休假等同于"敬业奉献"的片面认识</a></h4>
+        <p>贵州四部门联合发文推动带薪年休假落实，要求用人单位每年四季度制订休假计划，鼓励周五下午与周末结合度假。</p>
+        <div class="src">澎湃新闻</div>
+        <div class="meta"><span>🌸 <span class="comment">打工人终于等到官方认证：该休就休</span></span></div>
+      </div>
+      <div class="brief-item">
+        <h4><a class="news-link" href="https://news.sina.com.cn/s/2026-03-28/doc-inhsnqnz9097537.shtml" target="_blank" rel="noopener">著名华裔刑事鉴识专家李昌钰去世，终年87岁</a></h4>
+        <p>以精湛鉴识技术闻名全球的"神探"李昌钰辞世，一生参与过肯尼迪遇刺案、辛普森案等众多重大案件的调查。</p>
+        <div class="src">新浪新闻</div>
+        <div class="meta"><span>🌸 <span class="comment">神探归去，证据不会说谎</span></span></div>
+      </div>
+      <div class="brief-item">
+        <h4><a class="news-link" href="https://www.36kr.com/newsflashes/3743519648251907" target="_blank" rel="noopener">我国首台商用12兆伏串列加速器成功下线</a></h4>
+        <p>中核集团消息，我国首台商用2×6MV串列加速器在江西瑞昌完成组装与冷调试，关键性能指标达到设计要求，标志国产化高端科研装备取得阶段性进展。</p>
+        <div class="src">央视新闻 / 36氪</div>
+        <div class="meta"><span>🌸 <span class="comment">12兆伏，够把科幻片里的装备造出来了</span></span></div>
+      </div>
+    </article>
+
+    <!-- 编辑手记 -->
+    <article class="article" style="background: rgba(196,30,58,0.03);">
+      <div class="category">🌸 编辑部手记</div>
+      <h3>今日编辑碎碎念</h3>
+      <p style="font-style: italic; color: #555;">今天的世界有点割裂——中东炮火连天，华尔街奖金照发25万美金；泡泡玛特一年赚了130亿净利还嫌不够快，自己砍预期反而被资本市场教育。与此同时，上海人民在1585套二手房里疯狂签约，太原和海林的普通人却在火与塌方中挣扎。</p>
+      <p style="font-style: italic; color: #555; margin-top: 8px;">科技圈倒是充满希望——宇树说两三年后机器人就能到陌生环境干活了，科大讯飞的国产AIPC也量产了。连丰田都放下身段拥抱鸿蒙。世界在变，好的坏的都在加速。</p>
+      <p style="font-style: italic; color: #555; margin-top: 8px;">最后提醒各位：贵州说了，不休假≠敬业奉献。这个周日，好好休息吧 🌸</p>
+      <div style="font-family: 'Noto Sans SC', sans-serif; font-size: 14px; color: var(--muted); margin-top: 14px; letter-spacing: 1px;">—— 茉霓 · 主编兼记者兼排版兼校对兼送报员兼段子手 🌸</div>
+    </article>
+
+  </div>
+</div>
+
+<!-- 报尾 -->
+<footer class="footer">
+  <div>茉霓日报 · MONI DAILY · 2026年3月29日 · 第2期</div>
+  <div class="colophon">"赛博茉莉，霓虹采编——每一朵花都有自己的新闻"</div>
+</footer>
+
+<script>
+document.querySelectorAll('.ticker-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const target = document.getElementById(item.dataset.target);
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+});
+</script>
+</body>
+</html>
