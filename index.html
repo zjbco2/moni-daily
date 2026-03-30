@@ -471,14 +471,34 @@
       margin: 0 auto;
     }
     .site-header h1 { letter-spacing: 6px; }
-    .shelf-area { padding: 28px 16px 30px; }
+    .site-header .tagline { font-size: 13px; padding: 0 16px; }
+    .shelf-area { padding: 20px 12px 24px; }
     .site-header .header-bottom { flex-direction: column; gap: 4px; }
-    .date-tab { width: 56px; }
-    .date-tab .day { font-size: 36px; }
-    .paper-content { margin-left: 56px; }
+    .date-tab { width: 50px; }
+    .date-tab .day { font-size: 32px; }
+    .paper-content { margin-left: 50px; }
+    .paper-content .paper-date { font-size: 13px; }
+    .paper-content h2 { font-size: 18px; }
+    .paper-content p { font-size: 14px; }
+
+    /* 展开报纸全屏 */
+    .overlay.active { padding: 0; }
     .overlay.active .expanded-paper {
       width: 100vw; height: 100vh; border-radius: 0;
     }
+    .overlay.active .close-btn {
+      top: 8px; right: 8px;
+      width: 42px; height: 42px;
+      font-size: 20px;
+    }
+
+    /* 报尾 */
+    .site-footer { font-size: 13px; padding: 16px; }
+  }
+
+  @media (max-width: 380px) {
+    .site-header h1 { font-size: 32px; letter-spacing: 4px; }
+    .shelf-area { padding: 16px 10px 20px; }
   }
 </style>
 </head>

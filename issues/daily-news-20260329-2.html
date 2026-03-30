@@ -118,13 +118,50 @@
     html { font-size: 19px; }
   }
   @media (max-width: 700px) {
-    .news-grid { grid-template-columns: 1fr; }
-    .masthead h1 { letter-spacing: 4px; }
-    .masthead-sub { flex-direction: column; gap: 4px; text-align: center; }
-    html { font-size: 18px; }
-    .article.lead h2 { font-size: 30px; }
-    .article h2 { font-size: 26px; }
-    .data-highlight .number { font-size: 44px; }
+    html { font-size: 16px; }
+    .container { padding: 0 16px; }
+    .masthead { padding: 24px 16px 12px; }
+    .edition-info { font-size: 12px; letter-spacing: 2px; }
+    .masthead-sub { flex-direction: column; gap: 2px; text-align: center; font-size: 13px; }
+    .ticker { font-size: 15px; padding: 10px 0; }
+    .ticker-content span { margin-right: 40px; }
+    .section-divider { font-size: 18px; letter-spacing: 6px; padding: 20px 0 12px; gap: 12px; }
+    .section-divider::before, .section-divider::after { max-width: 60px; }
+    .article { padding: 18px 12px; }
+    .article.lead h2 { font-size: 28px; }
+    .article h2 { font-size: 24px; }
+    .article h3 { font-size: 20px; }
+    .article p { font-size: 16px; line-height: 1.8; }
+    .article ul li { font-size: 15px; }
+    .article .meta { font-size: 13px; padding: 6px 10px; margin-top: 12px; }
+    .article.lead .lead-visual { height: 120px; }
+    .lead-visual::before { font-size: 64px; }
+    .lead-visual .overlay-text { font-size: 14px; letter-spacing: 4px; padding: 8px 16px; }
+    .category { font-size: 12px; padding: 3px 8px; margin-bottom: 8px; }
+    .pull-quote { font-size: 17px; padding: 10px 14px; margin: 10px 0; }
+    .data-highlight { padding: 12px; margin: 8px 0; }
+    .data-highlight .number { font-size: 40px; }
+    .data-highlight .label { font-size: 14px; }
+    .weather-box { padding: 20px 16px; }
+    .weather-box::before { font-size: 80px; }
+    .weather-box .temp { font-size: 28px; margin-bottom: 12px; }
+    .weather-box .weather-region { padding: 10px 12px; gap: 10px; }
+    .weather-box .region-name { font-size: 14px; min-width: 60px; }
+    .weather-box .region-temp { font-size: 18px; min-width: 55px; }
+    .weather-box .region-desc { font-size: 13px; }
+    .weather-box .weather-tip { font-size: 12px; }
+    .brief-item { padding: 10px 0; }
+    .brief-item h4 { font-size: 16px; }
+    .brief-item p { font-size: 14px !important; }
+    .footer { padding: 16px; font-size: 12px; }
+    .footer .colophon { font-size: 13px; }
+  }
+  @media (max-width: 380px) {
+    .masthead h1 { font-size: 36px; letter-spacing: 2px; }
+    .article.lead h2 { font-size: 24px; }
+    .article h2 { font-size: 21px; }
+    .data-highlight .number { font-size: 34px; }
+    .article { padding: 14px 10px; }
   }
 </style>
 </head>
