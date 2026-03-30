@@ -3,24 +3,88 @@
   "date": "20260330",
   "weekday": "周一",
   "weatherClass": "rainy",
-  "weatherTip": "出门带伞",
+  "weatherTip": "部分地区有雨，出门记得带伞，注意安全 🌂",
   "ticker": [
-    {"main": "💥 伊朗革命卫队海军司令坦格西里遇难确认", "sub": "以军空袭阿巴斯港致高层多人丧生", "target": "art-int-1"},
-    {"main": "💰 小米砸160亿All in AI", "sub": "雷军：基座大模型+具身智能+手机龙虾全面推进", "target": "art-tech-1"},
-    {"main": "🔥 DeepSeek崩了一夜", "sub": "用户集体涌入小红书催修，上午9点恢复", "target": "art-ent-2"},
-    {"main": "📈 A股逆势飘红！", "sub": "沪指涨0.24%，铝板块爆发，独立于全球大跌", "target": "art-fin-1"},
-    {"main": "⚔️ 美军被曝拟开展数周地面行动", "sub": "夺取石油？转移核材料？选项已摆上桌面", "target": "art-lead"},
-    {"main": "🍔 外卖大战被叫停", "sub": "累计补贴超800亿，近七成商户营业额下降", "target": "art-fin-2"},
-    {"main": "🏚️ 黑龙江海林建筑坍塌致7人遇难", "sub": "KTV营业中楼体坍塌，9人被困全部找到", "target": "art-ent-1"},
-    {"main": "📊 AI普及后工作量不减反增", "sub": "周末加班涨40%，邮件沟通时长翻倍", "target": "art-tech-3"},
-    {"main": "💥 伊朗革命卫队海军司令坦格西里遇难确认", "sub": "以军空袭阿巴斯港致高层多人丧生", "target": "art-int-1"},
-    {"main": "💰 小米砸160亿All in AI", "sub": "雷军：基座大模型+具身智能+手机龙虾全面推进", "target": "art-tech-1"},
-    {"main": "🔥 DeepSeek崩了一夜", "sub": "用户集体涌入小红书催修，上午9点恢复", "target": "art-ent-2"},
-    {"main": "📈 A股逆势飘红！", "sub": "沪指涨0.24%，铝板块爆发，独立于全球大跌", "target": "art-fin-1"},
-    {"main": "⚔️ 美军被曝拟开展数周地面行动", "sub": "夺取石油？转移核材料？选项已摆上桌面", "target": "art-lead"},
-    {"main": "🍔 外卖大战被叫停", "sub": "累计补贴超800亿，近七成商户营业额下降", "target": "art-fin-2"},
-    {"main": "🏚️ 黑龙江海林建筑坍塌致7人遇难", "sub": "KTV营业中楼体坍塌，9人被困全部找到", "target": "art-ent-1"},
-    {"main": "📊 AI普及后工作量不减反增", "sub": "周末加班涨40%，邮件沟通时长翻倍", "target": "art-tech-3"}
+    {
+      "main": "💥 伊朗革命卫队海军司令坦格西里遇难确认",
+      "sub": "以军空袭阿巴斯港致高层多人丧生",
+      "target": "art-int-1"
+    },
+    {
+      "main": "💰 小米砸160亿All in AI",
+      "sub": "雷军：基座大模型+具身智能+手机龙虾全面推进",
+      "target": "art-tech-1"
+    },
+    {
+      "main": "🔥 DeepSeek崩了一夜",
+      "sub": "用户集体涌入小红书催修，上午9点恢复",
+      "target": "art-ent-2"
+    },
+    {
+      "main": "📈 A股逆势飘红！",
+      "sub": "沪指涨0.24%，铝板块爆发，独立于全球大跌",
+      "target": "art-fin-1"
+    },
+    {
+      "main": "⚔️ 美军被曝拟开展数周地面行动",
+      "sub": "夺取石油？转移核材料？选项已摆上桌面",
+      "target": "art-lead"
+    },
+    {
+      "main": "🍔 外卖大战被叫停",
+      "sub": "累计补贴超800亿，近七成商户营业额下降",
+      "target": "art-fin-2"
+    },
+    {
+      "main": "🏚️ 黑龙江海林建筑坍塌致7人遇难",
+      "sub": "KTV营业中楼体坍塌，9人被困全部找到",
+      "target": "art-ent-1"
+    },
+    {
+      "main": "📊 AI普及后工作量不减反增",
+      "sub": "周末加班涨40%，邮件沟通时长翻倍",
+      "target": "art-tech-3"
+    },
+    {
+      "main": "💥 伊朗革命卫队海军司令坦格西里遇难确认",
+      "sub": "以军空袭阿巴斯港致高层多人丧生",
+      "target": "art-int-1"
+    },
+    {
+      "main": "💰 小米砸160亿All in AI",
+      "sub": "雷军：基座大模型+具身智能+手机龙虾全面推进",
+      "target": "art-tech-1"
+    },
+    {
+      "main": "🔥 DeepSeek崩了一夜",
+      "sub": "用户集体涌入小红书催修，上午9点恢复",
+      "target": "art-ent-2"
+    },
+    {
+      "main": "📈 A股逆势飘红！",
+      "sub": "沪指涨0.24%，铝板块爆发，独立于全球大跌",
+      "target": "art-fin-1"
+    },
+    {
+      "main": "⚔️ 美军被曝拟开展数周地面行动",
+      "sub": "夺取石油？转移核材料？选项已摆上桌面",
+      "target": "art-lead"
+    },
+    {
+      "main": "🍔 外卖大战被叫停",
+      "sub": "累计补贴超800亿，近七成商户营业额下降",
+      "target": "art-fin-2"
+    },
+    {
+      "main": "🏚️ 黑龙江海林建筑坍塌致7人遇难",
+      "sub": "KTV营业中楼体坍塌，9人被困全部找到",
+      "target": "art-ent-1"
+    },
+    {
+      "main": "📊 AI普及后工作量不减反增",
+      "sub": "周末加班涨40%，邮件沟通时长翻倍",
+      "target": "art-tech-3"
+    }
   ],
   "headline": {
     "id": "art-lead",
@@ -28,14 +92,29 @@
     "title": "美军被曝拟开展数周地面行动：夺取石油、转移核材料",
     "url": "https://www.thepaper.cn/newsDetail_forward_32860468",
     "content": "美以伊战争进入第五周，五角大楼正准备在伊朗开展为期数周的「有限地面行动」。特朗普公开表示希望「夺取伊朗的石油」，可能占领哈尔克岛——伊朗90%原油的出口基地。与此同时，美方还在权衡一项高风险任务：强行转移伊朗近1000磅浓缩铀。约3500名增援士兵已抵达中东，隶属第31海军陆战队远征部队。但60%的美国民众反对这场战争，特朗普面临谈判退场还是军事升级的严峻抉择。",
-    "dataHighlight": { "number": "1.3万", "label": "已被轰炸目标" },
+    "dataHighlight": {
+      "number": "1.3万",
+      "label": "已被轰炸目标"
+    },
     "comment": "打了五周还想登陆抢油，这仗越打越像拍卖会。",
-    "visual": { "emoji": "⚔️", "tag": "BREAKING" }
+    "visual": {
+      "emoji": "⚔️",
+      "tag": "BREAKING"
+    }
   },
   "weather": {
-    "zhuhai": { "temp": "27°C", "desc": "零星小雨，湿度70%，南风15km/h" },
-    "shenzhen": { "temp": "25°C", "desc": "晴天，湿度74%，南风17km/h" },
-    "shantou": { "temp": "26°C", "desc": "晴天，湿度61%，南风26km/h" }
+    "zhuhai": {
+      "temp": "27°C",
+      "desc": "零星小雨，湿度70%，南风15km/h"
+    },
+    "shenzhen": {
+      "temp": "25°C",
+      "desc": "晴天，湿度74%，南风17km/h"
+    },
+    "shantou": {
+      "temp": "26°C",
+      "desc": "晴天，湿度61%，南风26km/h"
+    }
   },
   "sections": [
     {
@@ -49,7 +128,10 @@
           "url": "https://www.thepaper.cn/newsDetail_forward_32861932",
           "content": "3月30日，伊朗伊斯兰革命卫队确认海军司令阿里礼萨·坦格西里在以军对阿巴斯港的空袭中遇难。以色列国防军26日曾发表声明称，以军在空袭中打死了坦格西里及多名海军高层。这是美以伊冲突以来伊朗军方最高级别的伤亡。",
           "comment": "司令没了，海军还在，伊朗这仗怎么打？",
-          "dataHighlight": { "number": "多名", "label": "海军高层阵亡" }
+          "dataHighlight": {
+            "number": "多名",
+            "label": "海军高层阵亡"
+          }
         },
         {
           "id": "art-int-2",
@@ -82,7 +164,10 @@
           "url": "https://www.36kr.com/newsflashes/3745161585197060",
           "content": "雷军发文表示，小米今年在AI领域研发及资本开支高达160亿元，已在基座大模型、具身智能机器人、手机龙虾等项目上取得重大进展。AI人才招聘专项正式启动。小米正全面押注AI生态，从底层模型到终端应用全方位布局。",
           "comment": "160亿砸AI，雷军这次是真的All in了。",
-          "dataHighlight": { "number": "160亿", "label": "AI研发投入" }
+          "dataHighlight": {
+            "number": "160亿",
+            "label": "AI研发投入"
+          }
         },
         {
           "id": "art-tech-2",
@@ -91,7 +176,10 @@
           "url": "https://finance.sina.com.cn/tech/digi/2026-03-30/doc-inhsthzn2991383.shtml",
           "content": "据The Information报道，微软已通知云计算部门、北美销售团队等核心事业部暂停新员工招聘。Meta计划裁员20%以上，亚马逊过去六个月已裁撤约3万办公岗。科技巨头集体勒紧裤腰带，AI烧钱的代价开始显现。",
           "comment": "科技巨头集体过冬，AI的账单该付了。",
-          "dataHighlight": { "number": "22.8万", "label": "微软全球员工" }
+          "dataHighlight": {
+            "number": "22.8万",
+            "label": "微软全球员工"
+          }
         },
         {
           "id": "art-tech-3",
@@ -100,7 +188,10 @@
           "url": "https://finance.sina.com.cn/tech/digi/2026-03-30/doc-inhsthzk6648803.shtml",
           "content": "ActivTrak分析超千家企业、4.43亿小时工作数据发现：80%员工已用AI工具，但周末加班时长涨超40%，邮件沟通涨104%，即时聊天涨145%。专注工作时长跌至三年最低，23%员工存在投入度不足问题。AI释放的产能没用来做高价值工作，全喂了碎片化沟通。",
           "comment": "AI帮你干活，顺便帮你加班。",
-          "dataHighlight": { "number": "145%", "label": "即时聊天时长涨幅" }
+          "dataHighlight": {
+            "number": "145%",
+            "label": "即时聊天时长涨幅"
+          }
         }
       ]
     },
@@ -124,7 +215,10 @@
           "url": "https://finance.sina.com.cn/jjxw/2026-03-30/doc-inhsthze4202423.shtml",
           "content": "监管部门密集约谈外卖平台、叫停恶性补贴大战。调研数据显示，近七成商户营业额较2024年下降，八成商户净利润下滑。累计补贴高达800亿至1000亿的「外卖大战」终被叫停，行业从「拼低价」转向「拼品质」。",
           "comment": "烧了一千亿打价格战，最后商户和消费者都没赢。",
-          "dataHighlight": { "number": "1000亿", "label": "累计补贴规模" }
+          "dataHighlight": {
+            "number": "1000亿",
+            "label": "累计补贴规模"
+          }
         },
         {
           "id": "art-fin-3",
@@ -133,7 +227,10 @@
           "url": "https://finance.sina.com.cn/stock/observe/2026-03-30/doc-inhsueey6442495.shtml",
           "content": "问界M7交付仅3个月便迎来大改款，老车主集体维权。赛力斯月销量从近3万台快速回落，向华为三年半累计采购750亿，每辆车13.6万流向华为。2025年分红从20.8亿骤降至5亿，「五界三境」内耗加剧。",
           "comment": "三个月改款，割韭菜比割麦子还快。",
-          "dataHighlight": { "number": "750亿", "label": "三年半华为采购额" }
+          "dataHighlight": {
+            "number": "750亿",
+            "label": "三年半华为采购额"
+          }
         }
       ]
     },
