@@ -224,10 +224,9 @@
     <!-- 滚动条 -->
     <div class="ticker">
       <div class="ticker-content">
-        <template v-for="(item, i) in tickerDuplicated" :key="i">
-          <span v-if="i > 0" class="bullet">●</span>
-          <span class="ticker-item">{{ item }}</span>
-        </template>
+        <span v-for="(item, i) in tickerDuplicated" :key="i" class="ticker-item" :data-target="item.target" @click="scrollTo(item.target)">
+          {{ item.main }} <span class="bullet">●</span> {{ item.sub }}
+        </span>
       </div>
     </div>
 
@@ -259,7 +258,7 @@
               <h4>⛅ 天气速报</h4>
               <span class="weather-tag">{{ formatWeatherTag(data.date) }} · 广东</span>
             </div>
-            <div class="temp">🌧️ 广东三城天气</div>
+            <div class="temp">{{ weatherEmojiClass }} {{ weatherLabelClass }}</div>
             <div class="weather-grid">
               <div class="weather-region" v-for="(w, key) in data.weather" :key="key">
                 <div class="region-name">{{ weatherEmoji(key) }} {{ weatherLabel(key) }}</div>
@@ -292,7 +291,7 @@
 
           <!-- 普通文章板块 -->
           <template v-else>
-            <article class="article" v-for="(a, ai) in section.articles" :key="ai">
+            <article class="article" :id="a.id" v-for="(a, ai) in section.articles" :key="ai">
               <div class="category">{{ a.category }}</div>
               <h3 v-if="a.url">
                 <a class="news-link" :href="a.url" target="_blank" rel="noopener">{{ a.title }}</a>
@@ -352,8 +351,28 @@ createApp({
     // 滚动条重复（无缝循环）
     const tickerDuplicated = computed(() => {
       if (!data.value || !data.value.ticker) return [];
-      return [...data.value.ticker, ...data.value.ticker];
+      const doubled = [...data.value.ticker, ...data.value.ticker];
+      return doubled;
     });
+
+    // 天气整体概况
+    const weatherEmojiClass = computed(() => {
+      if (!data.value) return '🌧️';
+      const map = { sunny: '☀️', cloudy: '⛅', rainy: '🌧️', stormy: '⛈️', hot: '🔥', cold: '❄️' };
+      return map[data.value.weatherClass] || '🌧️';
+    });
+    const weatherLabelClass = computed(() => {
+      if (!data.value) return '天气概况';
+      const map = { sunny: '晴空万里', cloudy: '多云转晴', rainy: '小雨淅沥', stormy: '暴雨来袭', hot: '高温预警', cold: '寒潮来袭' };
+      return map[data.value.weatherClass] || '天气概况';
+    });
+
+    // 滚动条点击跳转
+    function scrollTo(target) {
+      if (!target) return;
+      const el = document.getElementById(target);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
 
     // 日期格式化：20260330 → 2026年3月30日
     function formatDate(dateStr) {
@@ -409,7 +428,7 @@ createApp({
       });
     });
 
-    return { data, loading, error, tickerDuplicated, formatDate, formatWeatherTag, weatherEmoji, weatherLabel };
+    return { data, loading, error, tickerDuplicated, formatDate, formatWeatherTag, weatherEmoji, weatherLabel, weatherEmojiClass, weatherLabelClass, scrollTo };
   }
 }).mount('#app');
 </script>
