@@ -542,6 +542,21 @@
   // ============================
     const editions = [
     {
+      id: 4,
+      date: '2026-03-30',
+      year: '2026', month: '3月', day: '30', weekday: '周一',
+      issue: '第4期',
+      file: 'daily-news.html?date=20260330-2',
+      headlines: [
+        '美军被曝拟开展数周地面行动：夺取石油、转移核材料',
+        '小米砸160亿All in AI，雷军启动人才招聘专项',
+        'A股逆势飘红，沪指涨0.24%独立于全球大跌',
+        '外卖大战被叫停，平台累计补贴超1000亿',
+        'DeepSeek崩了一夜，用户集体涌入小红书催修',
+        'AI普及后周末加班涨超40%，工作量不减反增'
+      ]
+    },
+    {
       id: 3,
       date: '2026-03-30',
       year: '2026', month: '3月', day: '30', weekday: '周一',
@@ -664,15 +679,9 @@
   document.addEventListener('click', (e) => {
     const card = e.target.closest('.paper-card');
     if (card) {
-      // 完全重建 iframe，彻底清除旧 Vue 状态
-      const newFrame = document.createElement('iframe');
-      newFrame.className = 'paper-frame';
-      newFrame.id = 'paperFrame';
+      // 用时间戳防缓存，直接设置 src（保持同一个 iframe）
       const url = card.dataset.file;
-      newFrame.src = url.includes('?') ? url + '&t=' + Date.now() : url + '?t=' + Date.now();
-      frame.replaceWith(newFrame);
-      // 更新引用
-      const freshFrame = document.getElementById('paperFrame');
+      frame.src = url.includes('?') ? url + '&t=' + Date.now() : url + '?t=' + Date.now();
       overlay.classList.add('active');
       document.body.style.overflow = 'hidden';
     }
@@ -681,9 +690,8 @@
   function closePaper() {
     overlay.classList.remove('active');
     document.body.style.overflow = '';
-    // 立即清空 iframe
-    const cur = document.getElementById('paperFrame');
-    if (cur) cur.src = '';
+    // 清空 src，下次打开会重新加载
+    document.getElementById('paperFrame').src = 'about:blank';
   }
   
   closeBtn.addEventListener('click', closePaper);

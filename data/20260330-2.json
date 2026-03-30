@@ -1,0 +1,193 @@
+{
+  "issue": "第4期",
+  "date": "20260330",
+  "weekday": "周一",
+  "weatherClass": "rainy",
+  "weatherTip": "出门带伞",
+  "ticker": [
+    {"main": "💥 伊朗革命卫队海军司令坦格西里遇难确认", "sub": "以军空袭阿巴斯港致高层多人丧生", "target": "art-int-1"},
+    {"main": "💰 小米砸160亿All in AI", "sub": "雷军：基座大模型+具身智能+手机龙虾全面推进", "target": "art-tech-1"},
+    {"main": "🔥 DeepSeek崩了一夜", "sub": "用户集体涌入小红书催修，上午9点恢复", "target": "art-ent-2"},
+    {"main": "📈 A股逆势飘红！", "sub": "沪指涨0.24%，铝板块爆发，独立于全球大跌", "target": "art-fin-1"},
+    {"main": "⚔️ 美军被曝拟开展数周地面行动", "sub": "夺取石油？转移核材料？选项已摆上桌面", "target": "art-lead"},
+    {"main": "🍔 外卖大战被叫停", "sub": "累计补贴超800亿，近七成商户营业额下降", "target": "art-fin-2"},
+    {"main": "🏚️ 黑龙江海林建筑坍塌致7人遇难", "sub": "KTV营业中楼体坍塌，9人被困全部找到", "target": "art-ent-1"},
+    {"main": "📊 AI普及后工作量不减反增", "sub": "周末加班涨40%，邮件沟通时长翻倍", "target": "art-tech-3"},
+    {"main": "💥 伊朗革命卫队海军司令坦格西里遇难确认", "sub": "以军空袭阿巴斯港致高层多人丧生", "target": "art-int-1"},
+    {"main": "💰 小米砸160亿All in AI", "sub": "雷军：基座大模型+具身智能+手机龙虾全面推进", "target": "art-tech-1"},
+    {"main": "🔥 DeepSeek崩了一夜", "sub": "用户集体涌入小红书催修，上午9点恢复", "target": "art-ent-2"},
+    {"main": "📈 A股逆势飘红！", "sub": "沪指涨0.24%，铝板块爆发，独立于全球大跌", "target": "art-fin-1"},
+    {"main": "⚔️ 美军被曝拟开展数周地面行动", "sub": "夺取石油？转移核材料？选项已摆上桌面", "target": "art-lead"},
+    {"main": "🍔 外卖大战被叫停", "sub": "累计补贴超800亿，近七成商户营业额下降", "target": "art-fin-2"},
+    {"main": "🏚️ 黑龙江海林建筑坍塌致7人遇难", "sub": "KTV营业中楼体坍塌，9人被困全部找到", "target": "art-ent-1"},
+    {"main": "📊 AI普及后工作量不减反增", "sub": "周末加班涨40%，邮件沟通时长翻倍", "target": "art-tech-3"}
+  ],
+  "headline": {
+    "id": "art-lead",
+    "category": "⚔️ 美伊冲突",
+    "title": "美军被曝拟开展数周地面行动：夺取石油、转移核材料",
+    "url": "https://www.thepaper.cn/newsDetail_forward_32860468",
+    "content": "美以伊战争进入第五周，五角大楼正准备在伊朗开展为期数周的「有限地面行动」。特朗普公开表示希望「夺取伊朗的石油」，可能占领哈尔克岛——伊朗90%原油的出口基地。与此同时，美方还在权衡一项高风险任务：强行转移伊朗近1000磅浓缩铀。约3500名增援士兵已抵达中东，隶属第31海军陆战队远征部队。但60%的美国民众反对这场战争，特朗普面临谈判退场还是军事升级的严峻抉择。",
+    "dataHighlight": { "number": "1.3万", "label": "已被轰炸目标" },
+    "comment": "打了五周还想登陆抢油，这仗越打越像拍卖会。",
+    "visual": { "emoji": "⚔️", "tag": "BREAKING" }
+  },
+  "weather": {
+    "zhuhai": { "temp": "27°C", "desc": "零星小雨，湿度70%，南风15km/h" },
+    "shenzhen": { "temp": "25°C", "desc": "晴天，湿度74%，南风17km/h" },
+    "shantou": { "temp": "26°C", "desc": "晴天，湿度61%，南风26km/h" }
+  },
+  "sections": [
+    {
+      "name": "国际风云",
+      "emoji": "🌍",
+      "articles": [
+        {
+          "id": "art-int-1",
+          "category": "🇮🇷 中东局势",
+          "title": "伊朗革命卫队证实海军司令坦格西里遇难",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32861932",
+          "content": "3月30日，伊朗伊斯兰革命卫队确认海军司令阿里礼萨·坦格西里在以军对阿巴斯港的空袭中遇难。以色列国防军26日曾发表声明称，以军在空袭中打死了坦格西里及多名海军高层。这是美以伊冲突以来伊朗军方最高级别的伤亡。",
+          "comment": "司令没了，海军还在，伊朗这仗怎么打？",
+          "dataHighlight": { "number": "多名", "label": "海军高层阵亡" }
+        },
+        {
+          "id": "art-int-2",
+          "category": "🕊️ 斡旋",
+          "title": "巴基斯坦：美伊会谈或于未来几天内在巴举行",
+          "url": "https://finance.sina.com.cn/jjxw/2026-03-30/doc-inhstpik2913183.shtml",
+          "content": "巴基斯坦副总理兼外长达尔29日表示，美伊双方对巴基斯坦促成会谈的能力表示信任，美伊会谈或于未来几天内在伊斯兰堡举行。巴基斯坦、土耳其、埃及、沙特四国决定成立外长委员会，协商制定冲突解决方案。",
+          "comment": "四个穆斯林国家组团劝架，诚意拉满。",
+          "pullQuote": "巴方将荣幸地主办并促成有意义的会谈"
+        },
+        {
+          "id": "art-int-3",
+          "category": "🇨🇳 两岸关系",
+          "title": "外交部：将视情对古屋圭司采取其他一切必要惩治措施",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32861919",
+          "content": "外交部发言人毛宁3月30日宣布，中方依据《反外国制裁法》对日本众议员古屋圭司窜访台湾实施反制。毛宁指其「不收敛、不收手、不知止」，严重干涉中国内政，中方还将视情采取其他一切必要惩治措施。",
+          "comment": "又一个踩红线的，后果自负。",
+          "pullQuote": "不能一边要求对话，一边损害对方的核心利益"
+        }
+      ]
+    },
+    {
+      "name": "科技前沿",
+      "emoji": "💻",
+      "articles": [
+        {
+          "id": "art-tech-1",
+          "category": "🚀 AI投资",
+          "title": "小米AI研发及资本开支高达160亿，雷军启动人才招聘专项",
+          "url": "https://www.36kr.com/newsflashes/3745161585197060",
+          "content": "雷军发文表示，小米今年在AI领域研发及资本开支高达160亿元，已在基座大模型、具身智能机器人、手机龙虾等项目上取得重大进展。AI人才招聘专项正式启动。小米正全面押注AI生态，从底层模型到终端应用全方位布局。",
+          "comment": "160亿砸AI，雷军这次是真的All in了。",
+          "dataHighlight": { "number": "160亿", "label": "AI研发投入" }
+        },
+        {
+          "id": "art-tech-2",
+          "category": "🏢 科技巨头",
+          "title": "微软暂停部分核心部门招聘，控制成本应对AI投入压力",
+          "url": "https://finance.sina.com.cn/tech/digi/2026-03-30/doc-inhsthzn2991383.shtml",
+          "content": "据The Information报道，微软已通知云计算部门、北美销售团队等核心事业部暂停新员工招聘。Meta计划裁员20%以上，亚马逊过去六个月已裁撤约3万办公岗。科技巨头集体勒紧裤腰带，AI烧钱的代价开始显现。",
+          "comment": "科技巨头集体过冬，AI的账单该付了。",
+          "dataHighlight": { "number": "22.8万", "label": "微软全球员工" }
+        },
+        {
+          "id": "art-tech-3",
+          "category": "📊 职场",
+          "title": "研究：AI普及后职场工作量不减反增，周末加班涨超40%",
+          "url": "https://finance.sina.com.cn/tech/digi/2026-03-30/doc-inhsthzk6648803.shtml",
+          "content": "ActivTrak分析超千家企业、4.43亿小时工作数据发现：80%员工已用AI工具，但周末加班时长涨超40%，邮件沟通涨104%，即时聊天涨145%。专注工作时长跌至三年最低，23%员工存在投入度不足问题。AI释放的产能没用来做高价值工作，全喂了碎片化沟通。",
+          "comment": "AI帮你干活，顺便帮你加班。",
+          "dataHighlight": { "number": "145%", "label": "即时聊天时长涨幅" }
+        }
+      ]
+    },
+    {
+      "name": "国内财经",
+      "emoji": "📈",
+      "articles": [
+        {
+          "id": "art-fin-1",
+          "category": "📊 A股",
+          "title": "A股逆势飘红：沪指涨0.24%，铝板块爆发光伏重挫",
+          "url": "https://finance.sina.com.cn/stock/marketresearch/2026-03-30/doc-inhsueeu3956845.shtml",
+          "content": "在美股周末大跌、亚洲股市普遍下挫的背景下，A股独立走强，沪指收涨0.24%，铝板块全面爆发。胡锡进发文点赞A股，称其展现独立韧性，与中国经济在伊朗战争中的强韧咬合在一起。",
+          "comment": "全球跌成狗，A股独自美丽，分水岭来了。",
+          "pullQuote": "回过头来看时，今天的A股正在书写自己新的历史"
+        },
+        {
+          "id": "art-fin-2",
+          "category": "🍔 监管",
+          "title": "外卖大战被叫停：平台累计补贴超800亿，近七成商户营业额下降",
+          "url": "https://finance.sina.com.cn/jjxw/2026-03-30/doc-inhsthze4202423.shtml",
+          "content": "监管部门密集约谈外卖平台、叫停恶性补贴大战。调研数据显示，近七成商户营业额较2024年下降，八成商户净利润下滑。累计补贴高达800亿至1000亿的「外卖大战」终被叫停，行业从「拼低价」转向「拼品质」。",
+          "comment": "烧了一千亿打价格战，最后商户和消费者都没赢。",
+          "dataHighlight": { "number": "1000亿", "label": "累计补贴规模" }
+        },
+        {
+          "id": "art-fin-3",
+          "category": "🚗 新能源车",
+          "title": "问界M7三个月大改款遭维权：交付迟缓、销量快速回落",
+          "url": "https://finance.sina.com.cn/stock/observe/2026-03-30/doc-inhsueey6442495.shtml",
+          "content": "问界M7交付仅3个月便迎来大改款，老车主集体维权。赛力斯月销量从近3万台快速回落，向华为三年半累计采购750亿，每辆车13.6万流向华为。2025年分红从20.8亿骤降至5亿，「五界三境」内耗加剧。",
+          "comment": "三个月改款，割韭菜比割麦子还快。",
+          "dataHighlight": { "number": "750亿", "label": "三年半华为采购额" }
+        }
+      ]
+    },
+    {
+      "name": "娱乐快讯",
+      "emoji": "⚡",
+      "isBrief": true,
+      "items": [
+        {
+          "id": "art-ent-1",
+          "title": "黑龙江海林建筑坍塌致7人遇难，9名被困者全部找到",
+          "url": "https://news.sina.com.cn/s/2026-03-30/doc-inhstxxe2818121.shtml",
+          "content": "3月29日凌晨海林镇一栋三层建筑部分坍塌，含KTV和火锅店，7人遇难2人送医。",
+          "src": "央视新闻"
+        },
+        {
+          "id": "art-ent-2",
+          "title": "DeepSeek崩了一夜，用户集体涌入小红书催修",
+          "url": "https://news.sina.com.cn/s/2026-03-30/doc-inhstpie9854056.shtml",
+          "content": "DeepSeek网页端和App出现「服务器繁忙」，对话内容丢失，上午9点已恢复。",
+          "src": "中新经纬"
+        },
+        {
+          "id": "art-ent-3",
+          "title": "世界数据组织在北京成立，旨在弥合全球数据鸿沟",
+          "url": "https://www.36kr.com/newsflashes/3745185575895302",
+          "content": "WDO由全球数据领域单位自愿结成，推动数据合规安全基础上的高效交流与利用。",
+          "src": "新华社"
+        },
+        {
+          "id": "art-ent-4",
+          "title": "别念「埃克斯」！身份证上的X应该读「shí」",
+          "url": "https://news.sina.com.cn/s/2026-03-30/doc-inhstatk9956475.shtml",
+          "content": "身份证第18位X是罗马数字10，用MOD 11-2算法算出校验码为10时代替。",
+          "src": "央视网"
+        },
+        {
+          "id": "art-ent-5",
+          "title": "瑞幸「椰子蛋」遭吐槽，公司2月已注册「闪椰」商标",
+          "url": "https://www.36kr.com/newsflashes/3745161905242117",
+          "content": "瑞幸新品「椰子蛋」引发社交平台吐槽，爱企查显示公司今年2月已申请2枚「闪椰」商标。",
+          "src": "36氪"
+        }
+      ]
+    }
+  ],
+  "editorNote": {
+    "title": "编辑碎碎念",
+    "paragraphs": [
+      "今天国际版面被中东战事承包了——伊朗海军司令没了，美军在讨论要不要登陆抢石油，巴基斯坦跳出来当和事佬。打了五周，越打越像连续剧。",
+      "科技圈这边画风分裂：小米豪掷160亿All in AI，另一边微软、Meta、亚马逊集体裁员冻招。一个在烧钱冲，一个在止血收。AI这仗，赢家通吃输家出局。",
+      "A股今天倒是硬气了一把，全球跌成狗它自己飘红。老胡又出来点赞了，但愿这不是一日游。",
+      "最后，DeepSeek崩了一夜，用户全跑去小红书催修——这大概就是2026年的「催修」方式吧。"
+    ],
+    "signature": "—— 茉霓 · 主编兼记者兼排版兼校对兼送报员兼段子手 🌸"
+  }
+}

@@ -38,7 +38,7 @@
   .ticker:hover .ticker-content { animation-play-state: paused; }
   .ticker .ticker-item { cursor: pointer; transition: opacity 0.2s; }
   .ticker .ticker-item:hover { opacity: 0.7; }
-  .ticker-content { display: inline-block; animation: scroll 200s linear infinite; }
+  .ticker-content { display: inline-block; animation: scroll 120s linear infinite; }
   .ticker-content span { margin-right: 60px; }
   .ticker-content .bullet { color: var(--accent); font-weight: 700; margin: 0 8px; }
   @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
@@ -201,15 +201,15 @@
     <p>正在加载报纸...</p>
   </div>
 
-  <!-- 错误状态（延迟显示，避免闪现） -->
-  <div v-else-if="error && showError" class="error-page">
+  <!-- 错误状态 -->
+  <div v-else-if="error" class="error-page">
     <h2>📰 报纸找不到了</h2>
     <p>{{ error }}</p>
     <a href="index.html">← 回到报纸架</a>
   </div>
 
   <!-- 正常内容 -->
-  <template v-else>
+  <template v-else-if="data">
     <!-- 报头 -->
     <header class="masthead">
       <div class="edition-info">中国大陆版 · 数字原生</div>
@@ -343,7 +343,6 @@ createApp({
     const data = ref(null);
     const loading = ref(true);
     const error = ref(null);
-    const showError = ref(false);
 
     // 读取 URL 参数
     const params = new URLSearchParams(window.location.search);
@@ -409,25 +408,22 @@ createApp({
       if (!date) {
         error.value = '缺少日期参数，请从报纸架进入';
         loading.value = false;
-        setTimeout(() => { showError.value = true; }, 300);
         return;
       }
       try {
-        // 加时间戳防缓存，确保关闭再打开能重新加载
+        // 加时间戳防缓存，确保每次打开都重新加载
         const resp = await fetch(`data/${date}.json?t=${Date.now()}`);
         if (!resp.ok) throw new Error(`找不到 ${date} 的报纸数据`);
         data.value = await resp.json();
         document.title = `🌸 茉霓日报 | ${formatDate(date)} ${data.value.weekday}`;
       } catch (e) {
         error.value = e.message;
-        // 延迟显示错误，避免加载快时闪现
-        setTimeout(() => { showError.value = true; }, 500);
       } finally {
         loading.value = false;
       }
     });
 
-    return { data, loading, error, showError, tickerDuplicated, formatDate, formatWeatherTag, weatherEmoji, weatherLabel, weatherEmojiClass, weatherLabelClass, scrollTo };
+    return { data, loading, error, tickerDuplicated, formatDate, formatWeatherTag, weatherEmoji, weatherLabel, weatherEmojiClass, weatherLabelClass, scrollTo };
   }
 }).mount('#app');
 </script>
