@@ -483,21 +483,33 @@ createApp({
 
       // 诊断信息
       const info = [];
-      info.push('speechSynthesis: ' + (typeof speechSynthesis !== 'undefined' ? '✅存在' : '❌不存在'));
 
       if (typeof speechSynthesis === 'undefined') {
-        toast('❌ 浏览器不支持语音合成 API\n' + info.join('\n'));
+        toast('❌ 浏览器不支持语音合成');
         return;
       }
 
-      info.push('speaking: ' + speechSynthesis.speaking);
-      info.push('pending: ' + speechSynthesis.pending);
-      info.push('paused: ' + speechSynthesis.paused);
-
-      const voices = cachedVoices.length > 0 ? cachedVoices : speechSynthesis.getVoices();
-      info.push('voices数: ' + voices.length);
-
-      const zhVoices = voices.filter(v => v.lang && v.lang.startsWith('zh'));
+      // 获取最新 voices（用户点击触发时，Chrome 应该已加载）
+      let voices = speechSynthesis.getVoices();
+      
+      // 如果 voices 为空，触发一次空 speak 强制加载
+      if (voices.length === 0) {
+        speechSynthesis.cancel();
+        const dummy = new SpeechSynthesisUtterance('');
+        dummy.volume = 0;
+        speechSynthesis.speak(dummy);
+        speechSynthesis.cancel();
+        // 短暂延迟后重新获取
+        setTimeout(() => {
+          const retry = speechSynthesis.getVoices();
+          if (retry.length > 0) cachedVoices = retry;
+        }, 100);
+      }
+      
+      if (voices.length > 0) cachedVoices = voices;
+      
+      const allVoices = cachedVoices.length > 0 ? cachedVoices : voices;
+      const zhVoices = allVoices.filter(v => v.lang && v.lang.startsWith('zh'));
       info.push('中文voice: ' + zhVoices.length);
 
       speechSynthesis.cancel();
@@ -507,8 +519,8 @@ createApp({
       u.rate = 1.1;
       u.pitch = 1.15;
 
-      if (voices.length > 0) {
-        cachedVoices = voices;
+      if (allVoices.length > 0) {
+        cachedVoices = allVoices;
         const female = zhVoices.find(v => /yaoyao|婷婷|xiaoxiao|xiaoyi|female|女/i.test(v.name))
           || zhVoices.find(v => /google.*chinese/i.test(v.name))
           || zhVoices[0];
