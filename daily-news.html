@@ -376,7 +376,7 @@
 </div>
 
 <!-- 📤 分享卡片（隐藏，截图用） -->
-<div id="shareCard" style="position:fixed;left:-9999px;top:0;width:360px;z-index:-1;">
+<div id="shareCard" style="position:fixed;left:-99999px;top:0;width:360px;z-index:-1;">
   <div class="sc-card" style="width:360px;height:560px;background:#f5f0e8;font-family:'Noto Serif SC',serif;overflow:hidden;display:flex;flex-direction:column;">
     <!-- 上部：报头 -->
     <div style="background:linear-gradient(135deg,#1a1a2e,#16213e);padding:20px 24px 16px;color:white;flex-shrink:0;display:flex;justify-content:space-between;align-items:flex-start;">
@@ -560,10 +560,11 @@ createApp({
         const pageUrl = `https://zjbco2.github.io/moni-daily/daily-news.html?date=${date}`;
         new QRCode(qrContainer, { text: pageUrl, width: 72, height: 72, colorDark: '#1a1a2e', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.M });
 
-        // 移到可视区域
+        // 移到视口外（html2canvas 需要渲染后的 DOM，但不需要用户看到）
         const card = document.getElementById('shareCard');
         card.style.left = '0';
-        card.style.position = 'absolute';
+        card.style.top = '-10000px';
+        card.style.position = 'fixed';
         card.style.zIndex = '-1';
 
         await document.fonts.ready;
@@ -578,7 +579,8 @@ createApp({
         });
 
         // 恢复隐藏
-        card.style.left = '-9999px';
+        card.style.left = '-99999px';
+        card.style.top = '0';
         card.style.position = 'fixed';
 
         // 下载
