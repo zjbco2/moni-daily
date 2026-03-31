@@ -447,26 +447,96 @@ createApp({
       if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
 
-    // 🔊 语音播报辣评
-    if (typeof speechSynthesis !== 'undefined') {
-      speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
-      speechSynthesis.getVoices();
+    // 🔊 语音播报辣评（移动端兼容）
+    let cachedVoices = [];
+
+    function loadVoices() {
+      if (typeof speechSynthesis === 'undefined') return;
+      const v = speechSynthesis.getVoices();
+      if (v.length > 0) cachedVoices = v;
     }
+
+    if (typeof speechSynthesis !== 'undefined') {
+      speechSynthesis.onvoiceschanged = loadVoices;
+      loadVoices();
+      setTimeout(loadVoices, 500);
+      setTimeout(loadVoices, 1500);
+      setTimeout(loadVoices, 3000);
+    }
+
+    function toast(msg) {
+      let el = document.getElementById('speakToast');
+      if (!el) {
+        el = document.createElement('div');
+        el.id = 'speakToast';
+        el.style.cssText = 'position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#333;color:#fff;padding:12px 20px;border-radius:8px;font-size:14px;z-index:99999;max-width:90%;word-break:break-all;transition:opacity 0.3s;font-family:"Noto Sans SC",sans-serif;';
+        document.body.appendChild(el);
+      }
+      el.textContent = msg;
+      el.style.opacity = '1';
+      clearTimeout(el._timer);
+      el._timer = setTimeout(() => { el.style.opacity = '0'; }, 5000);
+    }
+
     function speak(text) {
-      if (!text) return;
+      if (!text) { toast('❌ 文本为空'); return; }
+
+      // 诊断信息
+      const info = [];
+      info.push('speechSynthesis: ' + (typeof speechSynthesis !== 'undefined' ? '✅存在' : '❌不存在'));
+
+      if (typeof speechSynthesis === 'undefined') {
+        toast('❌ 浏览器不支持语音合成 API\n' + info.join('\n'));
+        return;
+      }
+
+      info.push('speaking: ' + speechSynthesis.speaking);
+      info.push('pending: ' + speechSynthesis.pending);
+      info.push('paused: ' + speechSynthesis.paused);
+
+      const voices = cachedVoices.length > 0 ? cachedVoices : speechSynthesis.getVoices();
+      info.push('voices数: ' + voices.length);
+
+      const zhVoices = voices.filter(v => v.lang && v.lang.startsWith('zh'));
+      info.push('中文voice: ' + zhVoices.length);
+
       speechSynthesis.cancel();
+
       const u = new SpeechSynthesisUtterance(text);
       u.lang = 'zh-CN';
       u.rate = 1.1;
       u.pitch = 1.15;
-      // 选最好的中文女声
-      const voices = speechSynthesis.getVoices();
-      const zhVoices = voices.filter(v => v.lang.startsWith('zh'));
-      const female = zhVoices.find(v => /yaoyao|婷婷|xiaoxiao|xiaoyi|female|女/i.test(v.name))
-        || zhVoices.find(v => /google.*chinese/i.test(v.name))
-        || zhVoices[0];
-      if (female) u.voice = female;
+
+      if (voices.length > 0) {
+        cachedVoices = voices;
+        const female = zhVoices.find(v => /yaoyao|婷婷|xiaoxiao|xiaoyi|female|女/i.test(v.name))
+          || zhVoices.find(v => /google.*chinese/i.test(v.name))
+          || zhVoices[0];
+        if (female) {
+          u.voice = female;
+          info.push('选中voice: ' + female.name);
+        } else {
+          info.push('选中voice: 系统默认');
+        }
+      } else {
+        info.push('选中voice: 系统默认（无可用列表）');
+      }
+
+      // 事件监听
+      u.onstart = () => toast('🔊 播放中...');
+      u.onend = () => toast('✅ 播放完成');
+      u.onerror = (e) => toast('❌ 语音错误: ' + e.error + '\n' + info.join('\n'));
+      u.onpause = () => toast('⏸️ 暂停');
+      u.onresume = () => toast('▶️ 恢复');
+
       speechSynthesis.speak(u);
+
+      // 500ms 后检查是否真的开始播放了
+      setTimeout(() => {
+        if (!speechSynthesis.speaking && !speechSynthesis.pending) {
+          toast('⚠️ speak()已调用但未开始播放\n' + info.join('\n'));
+        }
+      }, 500);
     }
 
     // 📤 分享卡片
