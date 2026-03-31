@@ -73,8 +73,8 @@ def update_editions(daily_json_path, editions_path='editions.json'):
     day = date_str[6:8]
     weekday = data.get('weekday', WEEKDAYS.get(day, ''))
 
-    # 提取标题
-    headlines = extract_headlines(data)
+    # 提取标题（只取前6条：4条显示+2条备用）
+    headlines = extract_headlines(data)[:6]
 
     # 构建新edition
     new_edition = {
