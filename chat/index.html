@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>🌸 茉霓聊天室</title>
+<link rel="stylesheet" href="../css/chat.css">
+<style>[v-cloak] { display: none; }</style>
+</head>
+<body>
+
+<div class="chat-shell" id="app" v-cloak>
+
+  <div class="chat-topbar">🌸 茉霓聊天室</div>
+  <div class="mobile-tab-bar">🌸 茉霓聊天室</div>
+
+  <div class="chat-body">
+
+    <!-- 第1列：Tab -->
+    <div class="col-tabs">
+      <button class="tab-btn" :class="{ active: tab === 'group' }" @click="switchTab('group')">
+        <span class="tab-emoji">🎪</span>群聊
+      </button>
+      <button class="tab-btn" :class="{ active: tab === 'private' }" @click="switchTab('private')">
+        <span class="tab-emoji">🍉</span>私聊
+      </button>
+      <button class="tab-btn" @click="goPaper">
+        <span class="tab-emoji">📰</span>报纸
+      </button>
+    </div>
+
+    <!-- 第2列：列表 -->
+    <div class="col-list">
+      <!-- 群聊列表 -->
+      <template v-if="tab === 'group'">
+        <div class="chat-list-item" v-for="ed in editions" :key="ed.id"
+             :class="{ active: activeId === ed.id }"
+             @click="openGroup(ed)">
+          <div class="avatar-stack">
+            <div class="av">🌍</div>
+            <div class="av">🤖</div>
+            <div class="av">💰</div>
+            <div class="av">⚡</div>
+          </div>
+          <div class="list-info">
+            <div class="list-name">
+              茉霓日报 · {{ ed.issue }}
+              <span class="list-time">{{ formatDateShort(ed.date) }}</span>
+            </div>
+            <div class="list-preview">{{ ed.headline || '' }}</div>
+          </div>
+        </div>
+      </template>
+
+      <!-- 私聊列表 -->
+      <template v-if="tab === 'private'">
+        <div class="chat-list-item" v-for="sec in sections" :key="sec.name"
+             :class="{ active: activeId === sec.name }"
+             @click="openPrivate(sec)">
+          <div class="avatar-single" :style="{ background: sec.color }">{{ sec.emoji }}</div>
+          <div class="list-info">
+            <div class="list-name">
+              {{ sec.name }}
+              <span class="list-time">{{ sec.time }}</span>
+            </div>
+            <div class="list-preview">{{ sec.preview }}</div>
+          </div>
+        </div>
+      </template>
+    </div>
+
+    <!-- 第3列：详情 -->
+    <div class="col-detail" :class="{ 'mobile-active': mobileDetail }" id="colDetail">
+      <div class="detail-bar" :class="{ visible: detailTitle }">
+        <button class="back-btn" v-if="isMobile" @click="closeDetail" style="display:;">←</button>
+        <span class="detail-title">{{ detailTitle || '' }}</span>
+      </div>
+      <div class="detail-placeholder" v-show="!detailUrl">
+        <div class="ph-icon">💬</div>
+        <p>选择一条聊天记录开始阅读</p>
+      </div>
+      <iframe id="detailFrame" :src="detailUrl || 'about:blank'" :class="{ active: detailUrl }"></iframe>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+<script src="js/common.js"></script>
+<script src="js/chat.js"></script>
+
+</body>
+</html>

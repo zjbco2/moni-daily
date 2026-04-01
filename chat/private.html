@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>🌸 私聊</title>
+<link rel="stylesheet" href="../css/chat.css">
+<style>
+  [v-cloak] { display: none !important; }
+</style>
+</head>
+<body>
+
+<div id="app" v-cloak style="display:flex;flex-direction:column;height:100vh;background:#f0ebe2;position:relative;">
+
+  <div class="chat-detail" id="chatDetail">
+
+    <!-- 按期数倒序渲染 -->
+    <template v-for="edition in editions" :key="edition.date">
+      <div class="date-separator"><span>{{ formatDate(edition.date) }} · {{ edition.weekday }}</span></div>
+
+      <template v-for="(article, idx) in edition.articles" :key="idx">
+        <!-- 板块发言 -->
+        <div class="msg msg-left">
+          <div class="msg-avatar" :style="{ background: avatarColor }">{{ avatar }}</div>
+          <div class="msg-body">
+            <div class="msg-name">{{ sectionName }}</div>
+            <div class="msg-bubble">
+              <div class="news-title">{{ article.title }}</div>
+              <div class="news-content">{{ article.content }}</div>
+              <a class="news-link" v-if="article.url" @click="openPanel(article.url)">🔗 查看原文</a>
+            </div>
+          </div>
+        </div>
+        <!-- 茉霓辣评 -->
+        <div class="msg msg-right" v-if="article.comment">
+          <div class="msg-avatar" style="background:#ffe4e8;">🌸</div>
+          <div class="msg-body">
+            <div class="msg-name">小茉霓</div>
+            <div class="msg-bubble">
+              <div class="comment-text">{{ article.comment }}<span class="speak-icon" @click="speak($event.target)">📢 ))</span></div>
+            </div>
+          </div>
+        </div>
+      </template>
+
+      <!-- 娱乐快讯 brief -->
+      <template v-if="edition.items && edition.items.length">
+        <template v-for="(item, idx) in edition.items" :key="idx">
+          <div class="msg msg-left">
+            <div class="msg-avatar" :style="{ background: avatarColor }">{{ avatar }}</div>
+            <div class="msg-body">
+              <div class="msg-name">{{ sectionName }}</div>
+              <div class="msg-bubble">
+                <div class="news-title">{{ item.title }}</div>
+                <div class="news-content">{{ item.content }}</div>
+                <a class="news-link" v-if="item.url" @click="openPanel(item.url)">🔗 查看原文</a>
+              </div>
+            </div>
+          </div>
+        </template>
+        <div class="msg msg-right">
+          <div class="msg-avatar" style="background:#ffe4e8;">🌸</div>
+          <div class="msg-body">
+            <div class="msg-name">小茉霓</div>
+            <div class="msg-bubble">
+              <div class="comment-text">哦，知道了<span class="speak-icon" @click="speak($event.target)">📢 ))</span></div>
+            </div>
+          </div>
+        </div>
+      </template>
+    </template>
+
+    <div v-if="loading" class="chat-loading">
+      <div class="loading-emoji">💬</div>
+      <p>正在加载聊天记录...</p>
+    </div>
+    <div v-if="!loading && error" style="text-align:center;padding:60px;color:var(--accent);">{{ error }}</div>
+
+  </div>
+
+  <button class="back-to-top" id="backToTop" @click="scrollToTop">🔝</button>
+
+  <div class="news-overlay" id="panelOverlay" @click="closePanel"></div>
+  <div class="news-panel" id="sidePanel">
+    <iframe id="panelIframe" src="about:blank"></iframe>
+  </div>
+
+  <div class="speak-toast" id="speakToast"></div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+<script src="js/common.js"></script>
+<script src="js/private.js"></script>
+
+</body>
+</html>
