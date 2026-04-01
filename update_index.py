@@ -76,7 +76,7 @@ def extract_articles(daily_json_path):
 
     return articles
 
-def update_index(daily_json_path, index_path='search-index.json'):
+def update_index(daily_json_path, index_path='data/meta/search-index.json'):
     """更新search-index.json"""
     # 读取现有索引
     with open(index_path, 'r', encoding='utf-8') as f:
@@ -86,7 +86,7 @@ def update_index(daily_json_path, index_path='search-index.json'):
     edition_id = index['totalArticles']  # 用当前总数作为新editionId起点不准确
     # 实际上editionId应该是editions的最新id，但更简单的方法：从editions.json读
     try:
-        with open('editions.json', 'r', encoding='utf-8') as f:
+        with open('data/meta/editions.json', 'r', encoding='utf-8') as f:
             editions = json.load(f)
         edition_id = editions['editions'][0]['id']  # 最新一期的id
     except:

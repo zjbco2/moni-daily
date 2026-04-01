@@ -46,7 +46,7 @@ createApp({
 
     onMounted(async () => {
       try {
-        const resp = await fetch('../editions.json?t=' + Date.now());
+        const resp = await fetch('../data/meta/editions.json?t=' + Date.now());
         const data = await resp.json();
         const eds = data.editions || [];
 

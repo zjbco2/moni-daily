@@ -37,7 +37,7 @@ def extract_headlines(data):
 
     return headlines
 
-def update_editions(daily_json_path, editions_path='editions.json'):
+def update_editions(daily_json_path, editions_path='data/meta/editions.json'):
     """更新editions.json"""
     # 读取日报JSON
     with open(daily_json_path, 'r', encoding='utf-8') as f:

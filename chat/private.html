@@ -44,31 +44,16 @@
         </div>
       </template>
 
-      <!-- 娱乐快讯 brief -->
-      <template v-if="edition.items && edition.items.length">
-        <template v-for="(item, idx) in edition.items" :key="idx">
-          <div class="msg msg-left">
-            <div class="msg-avatar" :style="{ background: avatarColor }">{{ avatar }}</div>
-            <div class="msg-body">
-              <div class="msg-name">{{ sectionName }}</div>
-              <div class="msg-bubble">
-                <div class="news-title">{{ item.title }}</div>
-                <div class="news-content">{{ item.content }}</div>
-                <a class="news-link" v-if="item.url" @click="openPanel(item.url)">🔗 查看原文</a>
-              </div>
-            </div>
-          </div>
-        </template>
-        <div class="msg msg-right">
-          <div class="msg-avatar" style="background:#ffe4e8;">🌸</div>
-          <div class="msg-body">
-            <div class="msg-name">小茉霓</div>
-            <div class="msg-bubble">
-              <div class="comment-text">哦，知道了<span class="speak-icon" @click="speak($event.target)">📢 ))</span></div>
-            </div>
+      <!-- 娱乐快讯固定回复 -->
+      <div class="msg msg-right" v-if="sectionName === '娱乐快讯'">
+        <div class="msg-avatar" style="background:#ffe4e8;">🌸</div>
+        <div class="msg-body">
+          <div class="msg-name">小茉霓</div>
+          <div class="msg-bubble">
+            <div class="comment-text">哦，知道了<span class="speak-icon" @click="speak($event.target)">📢 ))</span></div>
           </div>
         </div>
-      </template>
+      </div>
     </template>
 
     <div v-if="loading" class="chat-loading">
@@ -91,8 +76,8 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
-<script src="js/common.js"></script>
-<script src="js/private.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/private.js"></script>
 
 </body>
 </html>

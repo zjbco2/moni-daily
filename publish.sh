@@ -28,7 +28,7 @@ echo "========================================="
 
 # Step 1: 校验+修复
 echo ""
-echo "📋 Step 1/4: 校验JSON格式..."
+echo "📋 Step 1/5: 校验JSON格式..."
 python3 validate_daily.py "$DATA_FILE" --fix-ticker
 if [ $? -ne 0 ]; then
     echo "❌ 校验失败！"
@@ -37,7 +37,7 @@ fi
 
 # Step 2: 更新editions.json
 echo ""
-echo "📋 Step 2/4: 更新 editions.json..."
+echo "📋 Step 2/5: 更新 data/meta/editions.json..."
 python3 update_editions.py "$DATA_FILE"
 if [ $? -ne 0 ]; then
     echo "❌ editions更新失败！"
@@ -46,16 +46,25 @@ fi
 
 # Step 3: 更新search-index.json
 echo ""
-echo "📋 Step 3/4: 更新 search-index.json..."
+echo "📋 Step 3/5: 更新 data/meta/search-index.json..."
 python3 update_index.py "$DATA_FILE"
 if [ $? -ne 0 ]; then
     echo "❌ search-index更新失败！"
     exit 1
 fi
 
-# Step 4: Git push
+# Step 4: 更新板块索引
 echo ""
-echo "📋 Step 4/4: Git push..."
+echo "📋 Step 4/5: 更新板块索引文件..."
+python3 update_sections.py
+if [ $? -ne 0 ]; then
+    echo "❌ 板块索引更新失败！"
+    exit 1
+fi
+
+# Step 5: Git push
+echo ""
+echo "📋 Step 5/5: Git push..."
 
 # 从文件名提取日期和期数
 BASENAME=$(basename "$DATA_FILE" .json)

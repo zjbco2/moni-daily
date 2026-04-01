@@ -11,8 +11,8 @@
   async function init() {
     try {
       const [edRes, siRes] = await Promise.all([
-        fetch('editions.json?t=' + Date.now()),
-        fetch('search-index.json?t=' + Date.now())
+        fetch('data/meta/editions.json?t=' + Date.now()),
+        fetch('data/meta/search-index.json?t=' + Date.now())
       ]);
       const edData = await edRes.json();
       const siData = await siRes.json();
