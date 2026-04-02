@@ -1,0 +1,1271 @@
+{
+  "total": 140,
+  "by_section": {
+    "头条": 14,
+    "国际风云": 42,
+    "科技前沿": 42,
+    "国内财经": 42
+  },
+  "comments": [
+    {
+      "comment": "特朗普说快打完了，然后又派了一艘航母——这叫「和平的最后一艘航母」？",
+      "title": "伊朗军方下令全面戒备，全球市场暴跌18万人爆仓",
+      "date": "20260403",
+      "section": "头条",
+      "url": "https://finance.sina.com.cn/wm/2026-04-02/doc-inhtcfxx4375367.shtml",
+      "weekday": "周五",
+      "issue": "第3期"
+    },
+    {
+      "comment": "指挥官阵亡不是示弱的信号，而是升级的前奏。",
+      "title": "伊朗革命卫队特种部队指挥官遇袭身亡",
+      "date": "20260403",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-04-02/doc-inhtcfxz9453224.shtml",
+      "weekday": "周五",
+      "issue": "第3期"
+    },
+    {
+      "comment": "从物理战场打到网络战场，防空系统被扒了底裤。",
+      "title": "伊朗称渗透以色列防空系统支持公司，获取绝密资料",
+      "date": "20260403",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-04-02/doc-inhtazrz4434641.shtml",
+      "weekday": "周五",
+      "issue": "第3期"
+    },
+    {
+      "comment": "「毁灭性」三个字说了一百遍了，但每次市场都还是会抖三抖。",
+      "title": "伊朗军方宣布将对美以发动「毁灭性」袭击",
+      "date": "20260403",
+      "section": "国际风云",
+      "url": "https://www.163.com/dy/article/KPI0UJTB0556AP19.html",
+      "weekday": "周五",
+      "issue": "第3期"
+    },
+    {
+      "comment": "120万亿Token什么概念？大概就是AI一天读完了人类一辈子写的东西。",
+      "title": "豆包大模型日均Token使用量突破120万亿，Seedance 2.0公测",
+      "date": "20260403",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/2026-04-02/doc-inhtaraa1115070.shtml",
+      "weekday": "周五",
+      "issue": "第3期"
+    },
+    {
+      "comment": "造车的不满足于造车了，芯片、机器人、Robotaxi——马斯克的饼越画越大。",
+      "title": "特斯拉Q1全球交付35.8万辆，上海工厂创年内新高",
+      "date": "20260403",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/it/2026-04-02/doc-inhtcnfv4317381.shtml",
+      "weekday": "周五",
+      "issue": "第3期"
+    },
+    {
+      "comment": "1.75万亿美元的IPO，OpenAI和Anthropic看了沉默，散户看了流泪。",
+      "title": "SpaceX秘密提交IPO文件，估值或超1.75万亿美元",
+      "date": "20260403",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/world/2026-04-02/doc-inhszpqt4749368.shtml",
+      "weekday": "周五",
+      "issue": "第3期"
+    },
+    {
+      "comment": "白牌变品牌的套路终于被拆穿了，平台审核形同虚设的老毛病又犯了。",
+      "title": "三部门约谈抖音、淘天、小红书，优思益事件持续发酵",
+      "date": "20260403",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/china/2026-04-02/doc-inhtcfxz9436313.shtml",
+      "weekday": "周五",
+      "issue": "第3期"
+    },
+    {
+      "comment": "MLF净投放500亿，逆回购净回笼近9000亿——左手收短期水，右手放长期水。",
+      "title": "央行3月MLF净投放500亿元，国债买卖同步净投放",
+      "date": "20260403",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/jjxw/2026-04-02/doc-inhtazsc9519851.shtml",
+      "weekday": "周五",
+      "issue": "第3期"
+    },
+    {
+      "comment": "电子烟从野蛮生长正式进入「计划经济」模式，小厂要慌了。",
+      "title": "国家烟草专卖局拟修改电子烟监管政策，推行总量管理",
+      "date": "20260403",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/c/2026-04-02/doc-inhtaeni8009766.shtml",
+      "weekday": "周五",
+      "issue": "第3期"
+    },
+    {
+      "comment": "马斯克：我不造车了（停顿）——我要造火箭上市。沙特阿美的IPO记录保持了6年，可能要让位了。",
+      "title": "SpaceX秘密提交IPO申请，1.75万亿美元估值冲击史上最大IPO",
+      "date": "20260402",
+      "section": "头条",
+      "url": "https://finance.sina.com.cn/world/2026-04-01/doc-inhszihk2506728.shtml",
+      "weekday": "周四",
+      "issue": "第11期"
+    },
+    {
+      "comment": "导弹雨下得比南方梅雨还猛，中东这天怕是一时半会儿晴不了",
+      "title": "伊朗动用超100枚重型导弹，打击范围覆盖以色列全境",
+      "date": "20260402",
+      "section": "头条",
+      "url": "https://finance.sina.com.cn/wm/2026-04-02/doc-inhsztwe2298586.shtml",
+      "weekday": "周四",
+      "issue": "第12期"
+    },
+    {
+      "comment": "打脸速度比导弹飞得还快，这就是所谓的「摧毁了导弹系统」？",
+      "title": "特朗普话音刚落，伊朗向以色列发射导弹",
+      "date": "20260402",
+      "section": "头条",
+      "url": "https://news.sina.com.cn/w/2026-04-02/doc-inhtakui4430227.shtml",
+      "weekday": "周四",
+      "issue": "第13期"
+    },
+    {
+      "comment": "停火还是不停火，全看霍尔木兹海峡这条石油命脉了。特朗普的社交平台治国又上线了。",
+      "title": "特朗普称伊朗总统请求停火，但美方要求先开放霍尔木兹海峡",
+      "date": "20260402",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-04-01/doc-inhszihv4832829.shtml",
+      "weekday": "周四",
+      "issue": "第11期"
+    },
+    {
+      "comment": "打了半个世纪的「反美博物馆」，最后被原主炸了，这剧情比好莱坞编剧还敢写。",
+      "title": "美以空袭原美国驻伊朗使馆区域",
+      "date": "20260402",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-04-01/doc-inhszayu1636032.shtml",
+      "weekday": "周四",
+      "issue": "第11期"
+    },
+    {
+      "comment": "原油出口直接砍半，这仗再打下去，加油站的数字怕是要跟电梯一样往上蹦了。",
+      "title": "霍尔木兹海峡航运受阻，沙特3月原油出口腰斩",
+      "date": "20260402",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-04-01/doc-inhszayu1616424.shtml",
+      "weekday": "周四",
+      "issue": "第11期"
+    },
+    {
+      "comment": "先威胁再谈判，特朗普老剧本又翻出来了",
+      "title": "特朗普称若无协议将袭伊所有发电厂",
+      "date": "20260402",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/world/2026-04-02/doc-inhtakuf7912969.shtml",
+      "weekday": "周四",
+      "issue": "第12期"
+    },
+    {
+      "comment": "海峡一卡，全球油价都得跟着抖三抖",
+      "title": "伊朗重申将封锁霍尔木兹海峡作为反制手段",
+      "date": "20260402",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-04-02/doc-inhtaemy2106966.shtml",
+      "weekday": "周四",
+      "issue": "第12期"
+    },
+    {
+      "comment": "7.4级又是个大地震，环太平洋今年不太平",
+      "title": "印尼马鲁古海峡发生7.4级地震，震源深度30千米",
+      "date": "20260402",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-04-02/doc-inhtaenm4456057.shtml",
+      "weekday": "周四",
+      "issue": "第12期"
+    },
+    {
+      "comment": "中方态度很明确：打打杀杀不是解决问题的路子",
+      "title": "外交部敦促当事方立即停止军事行动",
+      "date": "20260402",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/jjxw/2026-04-02/doc-inhtavkc4454936.shtml",
+      "weekday": "周四",
+      "issue": "第13期"
+    },
+    {
+      "comment": "你打你的，我打我的，中东这盘棋越来越复杂了",
+      "title": "伊朗称美以对其强大能力一无所知",
+      "date": "20260402",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-04-02/doc-inhtavkc4360224.shtml",
+      "weekday": "周四",
+      "issue": "第13期"
+    },
+    {
+      "comment": "35个国家开会讨论一条海峡，全球能源命脉名不虚传",
+      "title": "35国将开会讨论霍尔木兹海峡通航方案",
+      "date": "20260402",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/wm/2026-04-02/doc-inhtaviy1087731.shtml",
+      "weekday": "周四",
+      "issue": "第13期"
+    },
+    {
+      "comment": "一个通用大脑，机器人全家桶都能用。开源的，白嫖的快乐又来了。",
+      "title": "高德全量开源具身操作基座模型ABot-M0，一个大脑适配多形态机器人",
+      "date": "20260402",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/2026-04-01/doc-inhsysks2598292.shtml",
+      "weekday": "周四",
+      "issue": "第11期"
+    },
+    {
+      "comment": "AI终于不只会画「千人一面」了，可以捏脸了。设计师们：等等，我的配色终于能被尊重了？",
+      "title": "阿里发布Wan2.7-Image模型，支持超长文字渲染可捏出「活人感」",
+      "date": "20260402",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tob/2026-04-01/doc-inhsyskz8579138.shtml",
+      "weekday": "周四",
+      "issue": "第11期"
+    },
+    {
+      "comment": "小米挖人从不含蓄。特斯拉系高管+小米渠道，这组合拳打得够响。",
+      "title": "传原特斯拉中国区总经理孔艳双入职小米，将负责汽车销售",
+      "date": "20260402",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/2026-04-01/doc-inhsynca1857860.shtml",
+      "weekday": "周四",
+      "issue": "第11期"
+    },
+    {
+      "comment": "大疆影石互插腹地，无人机和运动相机彻底变红海了",
+      "title": "揭秘大疆、影石肉搏：人才、供应链、渠道的全面战争",
+      "date": "20260402",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/wm/2026-04-02/doc-inhtaemy2120105.shtml",
+      "weekday": "周四",
+      "issue": "第12期"
+    },
+    {
+      "comment": "能看图写代码，程序员以后真要变AI操作员了",
+      "title": "智谱发布原生多模态Coding基模GLM-5V-Turbo",
+      "date": "20260402",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/2026-04-02/doc-inhtakuf7944669.shtml",
+      "weekday": "周四",
+      "issue": "第12期"
+    },
+    {
+      "comment": "人形机器人赛道又一个200亿独角兽，资本疯了",
+      "title": "估值超200亿，星海图获近20亿元新融资",
+      "date": "20260402",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/2026-04-02/doc-inhtakuf7918643.shtml",
+      "weekday": "周四",
+      "issue": "第12期"
+    },
+    {
+      "comment": "马斯克又双叒叕要搞大新闻了，这次是人类史上最大IPO",
+      "title": "SpaceX秘密提交IPO文件，估值或超1.75万亿美元",
+      "date": "20260402",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/world/2026-04-02/doc-inhszpqt4749368.shtml",
+      "weekday": "周四",
+      "issue": "第13期"
+    },
+    {
+      "comment": "当年被嘲笑的赌注，如今成了所有对手跨不过去的护城河",
+      "title": "黄仁勋亲述10年豪赌CUDA：险些破产，现成英伟达最强护城河",
+      "date": "20260402",
+      "section": "科技前沿",
+      "url": "https://www.ithome.com/0/934/760.htm",
+      "weekday": "周四",
+      "issue": "第13期"
+    },
+    {
+      "comment": "老师们一边喊着AI毁学习，一边用AI备课批作业，人类本质是双标的",
+      "title": "调查显示：英国学生过于依赖AI，导致思维能力逐步下降",
+      "date": "20260402",
+      "section": "科技前沿",
+      "url": "https://www.ithome.com/0/935/394.htm",
+      "weekday": "周四",
+      "issue": "第13期"
+    },
+    {
+      "comment": "5100股上涨，这数字喜庆。不过内行看门道——油气煤炭在跌，科技在涨，分化得很。",
+      "title": "A股三大股指集体高开，超5100股开盘上涨，创业板指涨2.21%",
+      "date": "20260402",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/c/2026-04-01/doc-inhsxzny2759790.shtml",
+      "weekday": "周四",
+      "issue": "第11期"
+    },
+    {
+      "comment": "能化板块跌成这样，贵金属却在涨——聪明钱已经用脚投票了。",
+      "title": "国内商品期货大面积收跌，集运欧线、原油跌超12%",
+      "date": "20260402",
+      "section": "国内财经",
+      "url": "https://www.163.com/dy/article/KPEIFOFV0512B07B.html",
+      "weekday": "周四",
+      "issue": "第11期"
+    },
+    {
+      "comment": "豪宅卖得火热，刚需房在降价甩卖——同一个广州，两个平行世界。",
+      "title": "广州楼市3月小阳春：二手房突破1.2万套，涨41.9%",
+      "date": "20260402",
+      "section": "国内财经",
+      "url": "https://www.163.com/dy/article/KPE0TQB30535A6CE.html",
+      "weekday": "周四",
+      "issue": "第11期"
+    },
+    {
+      "comment": "燃油费涨5倍，坐飞机比坐火箭还贵的日子不远了",
+      "title": "多家航司公告燃油附加费4月5日起翻5倍",
+      "date": "20260402",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/jjxw/2026-04-01/doc-inhsysks2670269.shtml",
+      "weekday": "周四",
+      "issue": "第12期"
+    },
+    {
+      "comment": "宁可少卖车也要保住命，这格局国产摩托车圈独一份",
+      "title": "「安全底线比销量更重要」张雪回应「新手禁令」",
+      "date": "20260402",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/c/2026-04-02/doc-inhtaemy2132928.shtml",
+      "weekday": "周四",
+      "issue": "第12期"
+    },
+    {
+      "comment": "1460一克，戴条金项链出门走路都得小心点",
+      "title": "金饰克价涨到1460元，消费者直呼买不起",
+      "date": "20260402",
+      "section": "国内财经",
+      "url": "https://s.weibo.com/weibo?q=%23%E9%87%91%E9%A5%B0%E5%85%8B%E4%BB%B7%E6%B6%A8%E5%88%B01460%E5%85%83%23",
+      "weekday": "周四",
+      "issue": "第12期"
+    },
+    {
+      "comment": "别人慌着跑路，中国淡定喝茶，这就是「压舱石」的实力",
+      "title": "全球动荡不安，中国股债汇逆势坚挺",
+      "date": "20260402",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/c/2026-04-02/doc-inhtaemy2144372.shtml",
+      "weekday": "周四",
+      "issue": "第13期"
+    },
+    {
+      "comment": "打归打，生意还是要做的，务实主义永远不过时",
+      "title": "商务部：进一步发挥中美经贸磋商机制作用",
+      "date": "20260402",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/jjxw/2026-04-02/doc-inhtavkc4442471.shtml",
+      "weekday": "周四",
+      "issue": "第13期"
+    },
+    {
+      "comment": "电子烟终于也要戴上「紧箍咒」了，总量管控时代到来",
+      "title": "国家烟草专卖局拟修改电子烟监管政策",
+      "date": "20260402",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/c/2026-04-02/doc-inhtaeni8009766.shtml",
+      "weekday": "周四",
+      "issue": "第13期"
+    },
+    {
+      "comment": "乱世买黄金，这回真应验了",
+      "title": "黄金冲上4700美元创历史新高，韩国股市触发熔断",
+      "date": "20260401",
+      "section": "头条",
+      "url": "https://www.163.com/dy/article/KPDS7VFU0512B07B.html",
+      "weekday": "周三",
+      "issue": "第8期"
+    },
+    {
+      "comment": "77年的盟约说散就散？大哥带头跑路，小弟们慌不慌",
+      "title": "特朗普正「认真考虑」让美国退出北约",
+      "date": "20260401",
+      "section": "头条",
+      "url": "https://finance.sina.com.cn/roll/2026-04-01/doc-inhsywsz4943782.shtml",
+      "weekday": "周三",
+      "issue": "第9期"
+    },
+    {
+      "comment": "三方联手搞了一次「联合促销」，霍尔木兹海峡的火药味快溢出屏幕了。",
+      "title": "伊朗、真主党、胡塞武装今晨联合袭击以色列",
+      "date": "20260401",
+      "section": "头条",
+      "url": "https://news.sina.com.cn/w/2026-04-01/doc-inhsywsx8485042.shtml",
+      "weekday": "周三",
+      "issue": "第10期"
+    },
+    {
+      "comment": "海湾国家终于要亲自下场了",
+      "title": "阿联酋准备武力打通霍尔木兹海峡，成为首个参战海湾国家",
+      "date": "20260401",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/roll/2026-04-01/doc-inhsxzny2768218.shtml",
+      "weekday": "周三",
+      "issue": "第8期"
+    },
+    {
+      "comment": "盟友各打各的算盘，北约名存实亡",
+      "title": "欧洲盟友开始「说不」！伊朗战争撕裂北约，特朗普怒斥",
+      "date": "20260401",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/roll/2026-04-01/doc-inhsxzpi8689523.shtml",
+      "weekday": "周三",
+      "issue": "第8期"
+    },
+    {
+      "comment": "技术故障还是另有隐情，等调查吧",
+      "title": "俄罗斯一架安-26运输机在克里米亚坠毁，29人全部遇难",
+      "date": "20260401",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-04-01/doc-inhsxvfa2804693.shtml",
+      "weekday": "周三",
+      "issue": "第8期"
+    },
+    {
+      "comment": "四种结局没一种是好收场的，中东这烂摊子谁接谁头疼",
+      "title": "伊朗战事终局有四种可能",
+      "date": "20260401",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/wm/2026-04-01/doc-inhsywsz4962167.shtml",
+      "weekday": "周三",
+      "issue": "第9期"
+    },
+    {
+      "comment": "168比4，这票数差距大到有点尴尬",
+      "title": "联大以168票高票通过联合国改革决议",
+      "date": "20260401",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/c/2026-04-01/doc-inhsyfve1922276.shtml",
+      "weekday": "周三",
+      "issue": "第9期"
+    },
+    {
+      "comment": "海湾兄弟也下场了，这仗越打越像群殴",
+      "title": "阿联酋准备武力打通霍尔木兹海峡",
+      "date": "20260401",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/roll/2026-04-01/doc-inhsxzny2768218.shtml",
+      "weekday": "周三",
+      "issue": "第9期"
+    },
+    {
+      "comment": "北约70多年老店，特朗普说退就退，这波操作把欧洲盟友整不会了。",
+      "title": "特朗普「认真考虑」退出北约，称「已成定局」",
+      "date": "20260401",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/roll/2026-04-01/doc-inhsywsz4943782.shtml",
+      "weekday": "周三",
+      "issue": "第10期"
+    },
+    {
+      "comment": "四种结局没一种是真正赢的，战争这东西从来就没有Happy Ending。",
+      "title": "伊朗战事终局四种可能：从「宣布胜利」到「失控升级」",
+      "date": "20260401",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/wm/2026-04-01/doc-inhsywsz4962167.shtml",
+      "weekday": "周三",
+      "issue": "第10期"
+    },
+    {
+      "comment": "35国组团保航，霍尔木兹海峡快成国际组织团建基地了。",
+      "title": "英国牵头35国召开国际会议，确保霍尔木兹海峡安全",
+      "date": "20260401",
+      "section": "国际风云",
+      "url": "https://www.163.com/dy/article/KPF2GP9V05533T1G.html",
+      "weekday": "周三",
+      "issue": "第10期"
+    },
+    {
+      "comment": "机器人终于有了通用大脑",
+      "title": "高德正式全量开源ABot-M0：一个大脑适配多形态具身机器人",
+      "date": "20260401",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/discovery/2026-04-01/doc-inhsxvfa2814293.shtml",
+      "weekday": "周三",
+      "issue": "第8期"
+    },
+    {
+      "comment": "无人驾驶还得靠人类兜底",
+      "title": "特斯拉确认Robotaxi特定情况下将由人工远程接管",
+      "date": "20260401",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-04-01/doc-inhsxvfm8771000.shtml",
+      "weekday": "周三",
+      "issue": "第8期"
+    },
+    {
+      "comment": "成本降了但用量涨了，AI还是烧钱的",
+      "title": "Gartner：到2030年LLM推理费用将降低90%以上",
+      "date": "20260401",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-04-01/doc-inhsxkrq1804734.shtml",
+      "weekday": "周三",
+      "issue": "第8期"
+    },
+    {
+      "comment": "降价90%听着爽，但AI越聪明越费钱，这笔账不好算",
+      "title": "Gartner预测：到2030年LLM推理费将降90%以上",
+      "date": "20260401",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-04-01/doc-inhsxkrq1804734.shtml",
+      "weekday": "周三",
+      "issue": "第9期"
+    },
+    {
+      "comment": "一个大脑管所有机器人？这波开源格局大了",
+      "title": "高德正式全量开源具身机器人基座模型ABot-M0",
+      "date": "20260401",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/discovery/2026-04-01/doc-inhsxvfa2814293.shtml",
+      "weekday": "周三",
+      "issue": "第9期"
+    },
+    {
+      "comment": "说好的无人驾驶呢？原来还是有人在背后握着方向盘",
+      "title": "特斯拉承认Robotaxi特定情况下由人工远程接管",
+      "date": "20260401",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-04-01/doc-inhsxvfm8771000.shtml",
+      "weekday": "周三",
+      "issue": "第9期"
+    },
+    {
+      "comment": "推理便宜了100倍，但Agent吃token也猛了30倍——甲方的钱包表示很慌。",
+      "title": "Gartner：到2030年LLM推理费用将降低90%以上",
+      "date": "20260401",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-04-01/doc-inhsxkrq1804734.shtml",
+      "weekday": "周三",
+      "issue": "第10期"
+    },
+    {
+      "comment": "600万条操作轨迹，这个数据集够让机器人从笨手笨脚到如臂使指了。",
+      "title": "高德全量开源ABot-M0：一个大脑适配多形态具身机器人",
+      "date": "20260401",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/discovery/2026-04-01/doc-inhsxvfa2814293.shtml",
+      "weekday": "周三",
+      "issue": "第10期"
+    },
+    {
+      "comment": "完全自动驾驶？不，是「大部分时候自动、偶尔找人遥控」驾驶。",
+      "title": "特斯拉承认Robotaxi特定情况下由远程人工接管",
+      "date": "20260401",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-04-01/doc-inhsxvfm8771000.shtml",
+      "weekday": "周三",
+      "issue": "第10期"
+    },
+    {
+      "comment": "四月开门红，医药股扛大旗",
+      "title": "A股三大指数午间休盘集体上涨，医药股领涨",
+      "date": "20260401",
+      "section": "国内财经",
+      "url": "https://www.36kr.com/newsflashes/3747714326414080",
+      "weekday": "周三",
+      "issue": "第8期"
+    },
+    {
+      "comment": "买电动车的趁早下手吧",
+      "title": "雅迪4月1日起全品类涨价300元以上",
+      "date": "20260401",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/c/2026-03-31/doc-inhswxzv9123859.shtml",
+      "weekday": "周三",
+      "issue": "第8期"
+    },
+    {
+      "comment": "机票还没涨，附加费先翻倍了",
+      "title": "国内航线燃油附加费4月5日起上涨5倍",
+      "date": "20260401",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/c/2026-03-31/doc-inhswpmu8946917.shtml",
+      "weekday": "周三",
+      "issue": "第8期"
+    },
+    {
+      "comment": "5100股齐飞，今天韭菜们的心情比天气还好",
+      "title": "A股三大股指集体高开，超5100股开盘上涨",
+      "date": "20260401",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/c/2026-04-01/doc-inhsxzny2759790.shtml",
+      "weekday": "周三",
+      "issue": "第9期"
+    },
+    {
+      "comment": "继续放水稳经济，但「外部冲击」四个字说明压力不小",
+      "title": "央行：继续适度宽松，维护金融市场稳定运行",
+      "date": "20260401",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/jjxw/2026-04-01/doc-inhsxkrr8935629.shtml",
+      "weekday": "周三",
+      "issue": "第9期"
+    },
+    {
+      "comment": "机票还没买，附加费先涨了，打工人的钱包永远在缩水",
+      "title": "国航厦航等多家航司上调国内燃油附加费",
+      "date": "20260401",
+      "section": "国内财经",
+      "url": "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=8381558314945503263&channelId=1119",
+      "weekday": "周三",
+      "issue": "第9期"
+    },
+    {
+      "comment": "5100股齐涨，韭菜们今天终于不用含泪看盘了。",
+      "title": "A股三大指数集体高开超5100股上涨，半导体算力领涨",
+      "date": "20260401",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/c/2026-04-01/doc-inhsxzny2759790.shtml",
+      "weekday": "周三",
+      "issue": "第10期"
+    },
+    {
+      "comment": "三连升重返荣枯线上方，中国经济的「春暖花开」终于不是PPT了。",
+      "title": "3月PMI三大指数重返扩张区间，中国经济景气回升",
+      "date": "20260401",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/zx/gj/2026-04-01/doc-inhsyfuw2715458.shtml",
+      "weekday": "周三",
+      "issue": "第10期"
+    },
+    {
+      "comment": "燃油附加费一夜涨5倍，五一机票比春运还抢手。",
+      "title": "航空燃油附加费4月5日起翻5倍，旅客紧急囤机票",
+      "date": "20260401",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/jjxw/2026-04-01/doc-inhsysks2670269.shtml",
+      "weekday": "周三",
+      "issue": "第10期"
+    },
+    {
+      "comment": "全球航运的风向标，中国巨轮一过海峡，全世界都松了口气",
+      "title": "两艘中国巨轮顺利通过霍尔木兹海峡",
+      "date": "20260331",
+      "section": "头条",
+      "url": "https://news.sina.com.cn/c/2026-03-31/doc-inhswawa5790321.shtml",
+      "weekday": "周二",
+      "issue": "第5期"
+    },
+    {
+      "comment": "从「玩具」到「印钞机」，人形机器人终于会赚钱了",
+      "title": "优必选年报炸裂：人形机器人年入8.2亿，暴增2203%",
+      "date": "20260331",
+      "section": "头条",
+      "url": "https://www.36kr.com/newsflashes/3746814836458242",
+      "weekday": "周二",
+      "issue": "第6期"
+    },
+    {
+      "comment": "数据说在复苏，市场说在害怕，到底听谁的？",
+      "title": "A股跳水超4300家下跌，但3月PMI 50.4%超预期",
+      "date": "20260331",
+      "section": "头条",
+      "url": "https://www.163.com/dy/article/KPC7PO2F0519AFN9.html",
+      "weekday": "周二",
+      "issue": "第7期"
+    },
+    {
+      "comment": "一边喊打一边谈判，特朗普的经典「极限施压」老戏码",
+      "title": "特朗普威胁摧毁伊朗石油设施，国际油价应声大涨",
+      "date": "20260331",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-03-31/doc-inhsvmye3526676.shtml",
+      "weekday": "周二",
+      "issue": "第5期"
+    },
+    {
+      "comment": "全球五分之一石油的咽喉要道，伊朗要开始「收过路费」了",
+      "title": "伊朗议会批准对霍尔木兹海峡征收通行费",
+      "date": "20260331",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/roll/2026-03-31/doc-inhsvshk2225219.shtml",
+      "weekday": "周二",
+      "issue": "第5期"
+    },
+    {
+      "comment": "10天停火倒计时，是和谈窗口还是暴风雨前的宁静？",
+      "title": "白宫：特朗普希望4月6日前与伊朗达成协议",
+      "date": "20260331",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/roll/2026-03-31/doc-inhsvshk2220057.shtml",
+      "weekday": "周二",
+      "issue": "第5期"
+    },
+    {
+      "comment": "导弹打完了仗还没完，这仗怎么收场？",
+      "title": "伊朗导弹消耗海湾国家至少2400枚拦截弹，库存逼近极限",
+      "date": "20260331",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/world/2026-03-31/doc-inhsuvaq9489862.shtml",
+      "weekday": "周二",
+      "issue": "第6期"
+    },
+    {
+      "comment": "一边说谈妥了一边说没谈，信息战比导弹战还激烈",
+      "title": "白宫：特朗普希望4月6日前与伊朗达成协议",
+      "date": "20260331",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/roll/2026-03-31/doc-inhsvshk2220057.shtml",
+      "weekday": "周二",
+      "issue": "第6期"
+    },
+    {
+      "comment": "全球1/5石油命脉，谁都想攥在手里",
+      "title": "伊朗批准霍尔木兹海峡通行收费，鲁比奥强硬回绝：不允许",
+      "date": "20260331",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/roll/2026-03-31/doc-inhsvshk2225219.shtml",
+      "weekday": "周二",
+      "issue": "第6期"
+    },
+    {
+      "comment": "五条倡议条条在理，就看有没有人听",
+      "title": "中巴联合发布中东和平五点倡议：立即停火、开启和谈",
+      "date": "20260331",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/china/2026-03-31/doc-inhswxzu1970179.shtml",
+      "weekday": "周二",
+      "issue": "第7期"
+    },
+    {
+      "comment": "伊朗画了个朋友圈，中国进了第一批好友列表",
+      "title": "中方三艘船舶顺利通过霍尔木兹海峡，外交部证实",
+      "date": "20260331",
+      "section": "国际风云",
+      "url": "https://www.163.com/dy/article/KPCCI8FE055040N3.html",
+      "weekday": "周二",
+      "issue": "第7期"
+    },
+    {
+      "comment": "集束弹头上场，这场仗的烈度又升级了一档",
+      "title": "以色列称伊朗首次使用集束弹头导弹，造成6人受伤",
+      "date": "20260331",
+      "section": "国际风云",
+      "url": "https://www.163.com/dy/article/KPC1EUKO0534A4SC.html",
+      "weekday": "周二",
+      "issue": "第7期"
+    },
+    {
+      "comment": "一个精打细算一个四处撒网，烧钱姿势不同但都在等黎明",
+      "title": "智驾「双雄」年报PK：文远比小马多烧11亿",
+      "date": "20260331",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/stock/marketresearch/2026-03-30/doc-inhsuknu9630693.shtml",
+      "weekday": "周二",
+      "issue": "第5期"
+    },
+    {
+      "comment": "谷歌一个算法干翻整个存储板块，技术颠覆永远来得猝不及防",
+      "title": "内存条价格断崖式下跌！一天掉了一百多",
+      "date": "20260331",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/wm/2026-03-31/doc-inhswavw3382388.shtml",
+      "weekday": "周二",
+      "issue": "第5期"
+    },
+    {
+      "comment": "对标猎鹰9号的中国商业火箭来了，4月2日见分晓",
+      "title": "天龙三号4月2日首飞，对标猎鹰9号",
+      "date": "20260331",
+      "section": "科技前沿",
+      "url": "https://news.sina.com.cn/c/2026-03-31/doc-inhsvwqa9080060.shtml",
+      "weekday": "周二",
+      "issue": "第5期"
+    },
+    {
+      "comment": "去年囤货的老板们，现在含泪甩卖中",
+      "title": "内存条价格断崖式暴跌！批发商：一天掉了一百多",
+      "date": "20260331",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/wm/2026-03-31/doc-inhswavw3382388.shtml",
+      "weekday": "周二",
+      "issue": "第6期"
+    },
+    {
+      "comment": "3.5万亿的物联网蛋糕，够分好几年了",
+      "title": "九部门联合发布物联网3年行动方案：2028年终端连接冲刺百亿级",
+      "date": "20260331",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/wm/2026-03-31/doc-inhswicu3362797.shtml",
+      "weekday": "周二",
+      "issue": "第6期"
+    },
+    {
+      "comment": "产学研一体化，具身智能卷到大学去了",
+      "title": "智元与港中文达成战略合作，共建具身智能产学研联合平台",
+      "date": "20260331",
+      "section": "科技前沿",
+      "url": "https://www.36kr.com/newsflashes/3746832399892997",
+      "weekday": "周二",
+      "issue": "第6期"
+    },
+    {
+      "comment": "上一个以'字节'命名的公司已经万亿了，'词元'会是下一个？",
+      "title": "Token为王：AI时代「新大宗商品」争夺战打响",
+      "date": "20260331",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/jjxw/2026-03-31/doc-inhsvfsn6055945.shtml",
+      "weekday": "周二",
+      "issue": "第7期"
+    },
+    {
+      "comment": "七年，百万保底，最后败给了'免费才是最贵的'这句话",
+      "title": "国行Switch今日正式停运，腾讯7年代理画上句号",
+      "date": "20260331",
+      "section": "科技前沿",
+      "url": "https://www.163.com/dy/article/KPCANLER0526HOA4.html",
+      "weekday": "周二",
+      "issue": "第7期"
+    },
+    {
+      "comment": "车钥匙、耳机、遥控器——AI眼镜越来越像万能配件了",
+      "title": "理想汽车OTA 8.4版本推送：AI眼镜联动座舱",
+      "date": "20260331",
+      "section": "科技前沿",
+      "url": "https://www.36kr.com/newsflashes/3746844019261952",
+      "weekday": "周二",
+      "issue": "第7期"
+    },
+    {
+      "comment": "涨5倍！以后坐飞机要多掏一张煎饼果子的钱了",
+      "title": "国内航线燃油附加费4月5日起上涨5倍",
+      "date": "20260331",
+      "section": "国内财经",
+      "url": "https://www.36kr.com/newsflashes/3746643814925058",
+      "weekday": "周二",
+      "issue": "第5期"
+    },
+    {
+      "comment": "港股回暖不是说说而已，券商们的钱包已经替市场投票了",
+      "title": "香港证券业盈利创五年新高，净利717亿港元",
+      "date": "20260331",
+      "section": "国内财经",
+      "url": "https://www.36kr.com/newsflashes/3746382634959369",
+      "weekday": "周二",
+      "issue": "第5期"
+    },
+    {
+      "comment": "适度宽松的信号弹又亮了，市场等着看降准降息何时落地",
+      "title": "央行：继续实施适度宽松的货币政策",
+      "date": "20260331",
+      "section": "国内财经",
+      "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026033115531475919/index.html",
+      "weekday": "周二",
+      "issue": "第5期"
+    },
+    {
+      "comment": "日赚39亿还嫌不够，分红都4000亿了",
+      "title": "六大行2025年全部营收净利双增，全年分红合计超4000亿",
+      "date": "20260331",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/roll/2026-03-31/doc-inhsvfsh3636347.shtml",
+      "weekday": "周二",
+      "issue": "第6期"
+    },
+    {
+      "comment": "油价涨了，机票贵了，清明出行成本直线上升",
+      "title": "国内航线燃油附加费4月5日起暴涨5倍",
+      "date": "20260331",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/c/2026-03-31/doc-inhswpmu8946917.shtml",
+      "weekday": "周二",
+      "issue": "第6期"
+    },
+    {
+      "comment": "收入涨了0.2%利润却降了2%，增收不增利的老问题",
+      "title": "财政部：1-2月国有企业营业总收入12.57万亿，同比微增0.2%",
+      "date": "20260331",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/china/2026-03-31/doc-inhswpmy2059639.shtml",
+      "weekday": "周二",
+      "issue": "第6期"
+    },
+    {
+      "comment": "昨天刚涨今天就撤，民航局这波操作堪称'政策闪电侠'",
+      "title": "燃油附加费涨5倍通知被撤回！民航局收回成命",
+      "date": "20260331",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/c/2026-03-31/doc-inhswttu5621417.shtml",
+      "weekday": "周二",
+      "issue": "第7期"
+    },
+    {
+      "comment": "四月新规扎堆，最值得关注的是平台不能再随便'搜索降序'了",
+      "title": "4月起一批新规施行：短线交易监管、信用修复、动力电池回收",
+      "date": "20260331",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/jjxw/2026-03-31/doc-inhswpms3282868.shtml",
+      "weekday": "周二",
+      "issue": "第7期"
+    },
+    {
+      "comment": "捐股票不捐现金，既做慈善又不砸盘，这操作很'曾毓群'",
+      "title": "宁德时代控股股东拟无偿捐赠500万股，注入曾毓群教育基金",
+      "date": "20260331",
+      "section": "国内财经",
+      "url": "https://www.36kr.com/newsflashes/3746857494086150",
+      "weekday": "周二",
+      "issue": "第7期"
+    },
+    {
+      "comment": "十分钟倾泻120枚弹药，这下单量比外卖平台还狠",
+      "title": "德黑兰10多分钟遭两轮大规模空袭！超120枚弹药投向伊朗设施",
+      "date": "20260330",
+      "section": "头条",
+      "url": "https://finance.sina.com.cn/world/2026-03-30/doc-inhsthzk6665641.shtml",
+      "weekday": "星期一",
+      "issue": "第3期"
+    },
+    {
+      "comment": "打了五周还想登陆抢油，这仗越打越像拍卖会。",
+      "title": "美军被曝拟开展数周地面行动：夺取石油、转移核材料",
+      "date": "20260330",
+      "section": "头条",
+      "url": "https://www.thepaper.cn/newsDetail_forward_32860468",
+      "weekday": "周一",
+      "issue": "第4期"
+    },
+    {
+      "comment": "四月春风起，海峡两岸又要有故事了",
+      "title": "中共中央欢迎中国国民党主席郑丽文4月率团来访",
+      "date": "20260330",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/7x24/2026-03-30/doc-inhstpie9837207.shtml",
+      "weekday": "星期一",
+      "issue": "第3期"
+    },
+    {
+      "comment": "打归打，谈归谈，巴基斯坦当起了中东和事佬",
+      "title": "巴基斯坦：美伊会谈或于未来几天内在巴举行",
+      "date": "20260330",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/jjxw/2026-03-30/doc-inhstpik2913183.shtml",
+      "weekday": "星期一",
+      "issue": "第3期"
+    },
+    {
+      "comment": "消博会五年，海南从椰岛变国际购物车",
+      "title": "消博会五年：92个国家和地区3800多家企业参展",
+      "date": "20260330",
+      "section": "国际风云",
+      "url": "https://www.36kr.com/newsflashes/3744831934038274",
+      "weekday": "星期一",
+      "issue": "第3期"
+    },
+    {
+      "comment": "司令没了，海军还在，伊朗这仗怎么打？",
+      "title": "伊朗革命卫队证实海军司令坦格西里遇难",
+      "date": "20260330",
+      "section": "国际风云",
+      "url": "https://www.thepaper.cn/newsDetail_forward_32861932",
+      "weekday": "周一",
+      "issue": "第4期"
+    },
+    {
+      "comment": "四个穆斯林国家组团劝架，诚意拉满。",
+      "title": "巴基斯坦：美伊会谈或于未来几天内在巴举行",
+      "date": "20260330",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/jjxw/2026-03-30/doc-inhstpik2913183.shtml",
+      "weekday": "周一",
+      "issue": "第4期"
+    },
+    {
+      "comment": "又一个踩红线的，后果自负。",
+      "title": "外交部：将视情对古屋圭司采取其他一切必要惩治措施",
+      "date": "20260330",
+      "section": "国际风云",
+      "url": "https://www.thepaper.cn/newsDetail_forward_32861919",
+      "weekday": "周一",
+      "issue": "第4期"
+    },
+    {
+      "comment": "别人建厂是为了地球，马斯克建厂是为了太空，格局打开了",
+      "title": "马斯克启动TERAFAB超级芯片工厂，年产能目标1太瓦",
+      "date": "20260330",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/jjxw/2026-03-30/doc-inhsttqy4064671.shtml",
+      "weekday": "星期一",
+      "issue": "第3期"
+    },
+    {
+      "comment": "一万台机器人下线，工厂里的\"人\"味儿越来越淡了",
+      "title": "智元第10000台通用具身机器人下线",
+      "date": "20260330",
+      "section": "科技前沿",
+      "url": "https://www.36kr.com/newsflashes/3744842601365767",
+      "weekday": "星期一",
+      "issue": "第3期"
+    },
+    {
+      "comment": "AI太聪明了，学会的第一件事就是——摸鱼",
+      "title": "DeepSeek崩了一整晚，大量用户无法正常使用",
+      "date": "20260330",
+      "section": "科技前沿",
+      "url": "https://news.sina.com.cn/s/2026-03-30/doc-inhstpih6558659.shtml",
+      "weekday": "星期一",
+      "issue": "第3期"
+    },
+    {
+      "comment": "160亿砸AI，雷军这次是真的All in了。",
+      "title": "小米AI研发及资本开支高达160亿，雷军启动人才招聘专项",
+      "date": "20260330",
+      "section": "科技前沿",
+      "url": "https://www.36kr.com/newsflashes/3745161585197060",
+      "weekday": "周一",
+      "issue": "第4期"
+    },
+    {
+      "comment": "科技巨头集体过冬，AI的账单该付了。",
+      "title": "微软暂停部分核心部门招聘，控制成本应对AI投入压力",
+      "date": "20260330",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-03-30/doc-inhsthzn2991383.shtml",
+      "weekday": "周一",
+      "issue": "第4期"
+    },
+    {
+      "comment": "AI帮你干活，顺便帮你加班。",
+      "title": "研究：AI普及后职场工作量不减反增，周末加班涨超40%",
+      "date": "20260330",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-03-30/doc-inhsthzk6648803.shtml",
+      "weekday": "周一",
+      "issue": "第4期"
+    },
+    {
+      "comment": "烧了一千亿才发现，便宜的饭不好吃，好饭不便宜",
+      "title": "监管出手叫停\"外卖大战\"，平台累计补贴超800亿",
+      "date": "20260330",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/jjxw/2026-03-30/doc-inhsthze4202423.shtml",
+      "weekday": "星期一",
+      "issue": "第3期"
+    },
+    {
+      "comment": "中东一打仗，黄金股就乐了，北大荒也跟着沾光",
+      "title": "A股三大指数午间涨跌不一，农业股走强",
+      "date": "20260330",
+      "section": "国内财经",
+      "url": "https://www.36kr.com/newsflashes/3744882748178693",
+      "weekday": "星期一",
+      "issue": "第3期"
+    },
+    {
+      "comment": "全球数据治理，这回规则由北京来写",
+      "title": "世界数据组织在北京正式投入运行",
+      "date": "20260330",
+      "section": "国内财经",
+      "url": "https://www.36kr.com/newsflashes/3744844068306949",
+      "weekday": "星期一",
+      "issue": "第3期"
+    },
+    {
+      "comment": "全球跌成狗，A股独自美丽，分水岭来了。",
+      "title": "A股逆势飘红：沪指涨0.24%，铝板块爆发光伏重挫",
+      "date": "20260330",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/stock/marketresearch/2026-03-30/doc-inhsueeu3956845.shtml",
+      "weekday": "周一",
+      "issue": "第4期"
+    },
+    {
+      "comment": "烧了一千亿打价格战，最后商户和消费者都没赢。",
+      "title": "外卖大战被叫停：平台累计补贴超800亿，近七成商户营业额下降",
+      "date": "20260330",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/jjxw/2026-03-30/doc-inhsthze4202423.shtml",
+      "weekday": "周一",
+      "issue": "第4期"
+    },
+    {
+      "comment": "三个月改款，割韭菜比割麦子还快。",
+      "title": "问界M7三个月大改款遭维权：交付迟缓、销量快速回落",
+      "date": "20260330",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/stock/observe/2026-03-30/doc-inhsueey6442495.shtml",
+      "weekday": "周一",
+      "issue": "第4期"
+    },
+    {
+      "comment": "赛车手主动踩刹车，乘客反而更慌了",
+      "title": "泡泡玛特营收暴涨184%后自砍增速预期，两天蒸发890亿港元",
+      "date": "20260329",
+      "section": "头条",
+      "url": "https://news.sina.com.cn/s/2026-03-27/doc-inhsiusk0061632.shtml",
+      "weekday": "星期日",
+      "issue": "第1期"
+    },
+    {
+      "comment": "全球航运大动脉说掐就掐，石油才是真正的\"战略物资\"",
+      "title": "霍尔木兹海峡船流量暴跌95%，泰国巴基斯坦马来西亚获伊朗放行",
+      "date": "20260329",
+      "section": "头条",
+      "url": "https://www.thepaper.cn/newsDetail_forward_32857618",
+      "weekday": "星期日",
+      "issue": "第2期"
+    },
+    {
+      "comment": "AI算力还没烧完，油钱先烧不起了",
+      "title": "伊朗战争冲击全球AI产业，布伦特原油单月涨40%",
+      "date": "20260329",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/roll/2026-03-29/doc-inhsruxu0228430.shtml",
+      "weekday": "星期日",
+      "issue": "第1期"
+    },
+    {
+      "comment": "说好撤军的剧本，怎么翻到了地面行动那页",
+      "title": "美国防部为\"在伊朗地面行动\"做准备，巴基斯坦船只获准通过霍尔木兹",
+      "date": "20260329",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/stock/marketresearch/2026-03-29/doc-inhsrzfy7247951.shtml",
+      "weekday": "星期日",
+      "issue": "第1期"
+    },
+    {
+      "comment": "赚了25万还嫌少，这就是华尔街的凡尔赛",
+      "title": "华尔街平均奖金升至近25万美元历史新高",
+      "date": "20260329",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-03-29/doc-inhsrqry4947144.shtml",
+      "weekday": "星期日",
+      "issue": "第1期"
+    },
+    {
+      "comment": "家门口巡逻是日常，某些国家别大惊小怪",
+      "title": "南部战区位中国黄岩岛领海领空及周边区域组织战备警巡",
+      "date": "20260329",
+      "section": "国际风云",
+      "url": "https://www.thepaper.cn/newsDetail_forward_32857605",
+      "weekday": "星期日",
+      "issue": "第2期"
+    },
+    {
+      "comment": "别人忙着打仗，海南忙着修飞机，这波赢麻了",
+      "title": "海南境外飞机维修订单排至11月，20余家境外航司成\"回头客\"",
+      "date": "20260329",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/zx/gj/2026-03-29/doc-inhsrqrx6640357.shtml",
+      "weekday": "星期日",
+      "issue": "第2期"
+    },
+    {
+      "comment": "零比四，确实无话可说，这球踢得连嘴都张不开",
+      "title": "韩国热身赛0-4惨败科特迪瓦，金玟哉赛后拒采访称\"无话可说\"",
+      "date": "20260329",
+      "section": "国际风云",
+      "url": "https://k.sina.com.cn/article_1698513182_653d411e04001q54y.html",
+      "weekday": "星期日",
+      "issue": "第2期"
+    },
+    {
+      "comment": "两三年内让机器人听话，比让猫听话还难",
+      "title": "宇树科技CEO王兴兴：具身智能GPT时刻还需两到三年",
+      "date": "20260329",
+      "section": "科技前沿",
+      "url": "https://www.36kr.com/newsflashes/3743644863889416",
+      "weekday": "星期日",
+      "issue": "第1期"
+    },
+    {
+      "comment": "龙芯+讯飞，国产AI电脑也要卷起来了",
+      "title": "科大讯飞AIPC华东制造基地投产，年规划产能10万台",
+      "date": "20260329",
+      "section": "科技前沿",
+      "url": "https://www.36kr.com/newsflashes/3743798461022208",
+      "weekday": "星期日",
+      "issue": "第1期"
+    },
+    {
+      "comment": "丰田终于想通了：打不过就加入鸿蒙",
+      "title": "广汽丰田铂智7上市：首款鸿蒙座舱纯电轿车，14.78万起",
+      "date": "20260329",
+      "section": "科技前沿",
+      "url": "https://www.36kr.com/newsflashes/3743823660138760",
+      "weekday": "星期日",
+      "issue": "第1期"
+    },
+    {
+      "comment": "两三年后机器人替你搬砖，你负责刷手机就行",
+      "title": "宇树科技王兴兴：具身智能GPT时刻大概还需两到三年",
+      "date": "20260329",
+      "section": "科技前沿",
+      "url": "https://www.36kr.com/newsflashes/3743644863889416",
+      "weekday": "星期日",
+      "issue": "第2期"
+    },
+    {
+      "comment": "别人造芯片卡脖子，我们造加速器捅天花板",
+      "title": "我国首台商用12兆伏串列加速器成功下线",
+      "date": "20260329",
+      "section": "科技前沿",
+      "url": "https://www.36kr.com/newsflashes/3743519648251907",
+      "weekday": "星期日",
+      "issue": "第2期"
+    },
+    {
+      "comment": "千问大将出走谈心路，句句不提阿里句句都是阿里",
+      "title": "前千问技术负责人林俊旸离职后首发长文：从\"推理式思维\"到\"智能体思维\"",
+      "date": "20260329",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-03-27/doc-inhskrwe2229198.shtml",
+      "weekday": "星期日",
+      "issue": "第2期"
+    },
+    {
+      "comment": "上海人买房热情回来了，钱包准备好了吗",
+      "title": "上海二手房单日成交1585套创近5年新高",
+      "date": "20260329",
+      "section": "国内财经",
+      "url": "https://www.36kr.com/newsflashes/3743697172561924",
+      "weekday": "星期日",
+      "issue": "第1期"
+    },
+    {
+      "comment": "九人重伤三命逝，安全生产年年讲",
+      "title": "太原火灾遇难人数升至3人，另有23人受伤",
+      "date": "20260329",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/s/2026-03-29/doc-inhsreac6789093.shtml",
+      "weekday": "星期日",
+      "issue": "第1期"
+    },
+    {
+      "comment": "半夜楼塌了，九条命悬着",
+      "title": "黑龙江海林一楼房坍塌，9人被困正在全力救援",
+      "date": "20260329",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/s/2026-03-29/doc-inhsrqru3555442.shtml",
+      "weekday": "星期日",
+      "issue": "第1期"
+    },
+    {
+      "comment": "上海楼市：我不是回暖，我是根本没冷过好吧",
+      "title": "上海二手房单日成交1585套创近5年新高，业内人士：市场在明显回暖",
+      "date": "20260329",
+      "section": "国内财经",
+      "url": "https://www.36kr.com/newsflashes/3743697172561924",
+      "weekday": "星期日",
+      "issue": "第2期"
+    },
+    {
+      "comment": "去年囤内存的黄牛：从\"一夜暴富\"到\"一夜暴负\"",
+      "title": "内存条价格崩了！\"一天掉了一百多元！\"有人疯狂抛售",
+      "date": "20260329",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/stock/marketresearch/2026-03-29/doc-inhssfpv0357959.shtml",
+      "weekday": "星期日",
+      "issue": "第2期"
+    },
+    {
+      "comment": "别人炒房亏到哭，她炒\"老破小\"赚到笑",
+      "title": "买八套\"老破小\"引热议：月还贷1.4万，月收租2.1万",
+      "date": "20260329",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/stock/marketresearch/2026-03-29/doc-inhsrzfy7259312.shtml",
+      "weekday": "星期日",
+      "issue": "第2期"
+    }
+  ]
+}

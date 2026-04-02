@@ -10,6 +10,7 @@ createApp({
     const detailUrl = ref('');
     const mobileDetail = ref(false);
     const isMobile = ref(window.innerWidth <= 768);
+    const channels = ref([]); // 茉霓说频道列表
 
     // 已读状态（localStorage）
     let readEditions = {};
@@ -84,6 +85,13 @@ createApp({
       if (isMobile.value) mobileDetail.value = true;
     }
 
+    function openMoshuo(ch) {
+      activeId.value = ch.key;
+      detailTitle.value = ch.emoji + ' ' + ch.name;
+      detailUrl.value = 'moshuo.html?section=' + encodeURIComponent(ch.key) + '&t=' + Date.now();
+      if (isMobile.value) mobileDetail.value = true;
+    }
+
     function closeDetail() {
       mobileDetail.value = false;
       activeId.value = null;
@@ -146,33 +154,59 @@ createApp({
               '娱乐快讯': { emoji: '⚡', color: '#fff3e0', file: 'entertainment' }
             };
 
-            // 从板块索引文件取最近一条作为 preview
+            // 并行加载所有板块索引
+            const secEntries = Object.entries(secMap);
+            const results = await Promise.all(
+              secEntries.map(([name, info]) =>
+                fetch(`../data/meta/${info.file}.json?t=${Date.now()}`)
+                  .then(r => r.ok ? r.json() : null)
+                  .catch(() => null)
+              )
+            );
+
             const list = [];
-            for (const [name, info] of Object.entries(secMap)) {
-              let preview = '';
-              let time = '';
-              try {
-                const idxResp = await fetch(`../data/meta/${info.file}.json?t=${Date.now()}`);
-                if (idxResp.ok) {
-                  const idxData = await idxResp.json();
-                  const arts = idxData.articles || [];
-                  if (arts.length > 0) {
-                    preview = arts[0].title || '';
-                    time = formatDateShort(arts[0].date);
-                  }
+            for (let i = 0; i < secEntries.length; i++) {
+              const [name, info] = secEntries[i];
+              let preview = '', time = '';
+              if (results[i]) {
+                const arts = results[i].articles || [];
+                if (arts.length > 0) {
+                  preview = arts[0].title || '';
+                  time = formatDateShort(arts[0].date);
                 }
-              } catch (_) {}
+              }
               list.push({ name, emoji: info.emoji, color: info.color, time, preview });
             }
             sections.value = list;
           }
         }
+
+        // 加载吵吵频道列表
+        try {
+          const chResp = await fetch('../data/meta/comments.json?t=' + Date.now());
+          if (chResp.ok) {
+            const chData = await chResp.json();
+            const bySec = chData.by_section || {};
+            const secEmoji = { '头条': '📢', '国际风云': '🌍', '科技前沿': '🤖', '国内财经': '💰', '娱乐快讯': '⚡' };
+            const secColor = { '头条': '#fce4ec', '国际风云': '#e3f2fd', '科技前沿': '#f3e5f5', '国内财经': '#e8f5e9', '娱乐快讯': '#fff3e0' };
+
+            channels.value = [
+              { key: 'today', name: '吵啥呢今天', emoji: '📣', color: '#f4f0e4' },
+              { key: '头条', name: '号外号外~', emoji: '📢', color: '#f4ece6' },
+              { key: '国际风云', name: '地球要爆炸了！', emoji: '🌍', color: '#e8ecf2' },
+              { key: '科技前沿', name: '咋又遥遥领先了', emoji: '🤖', color: '#ece8f0' },
+              { key: '国内财经', name: '大A又搞事辣', emoji: '💰', color: '#e8efe6' },
+              { key: '娱乐快讯', name: '震惊！Ta竟然...', emoji: '⚡', color: '#f2f0e0' },
+              { key: 'comments', name: '茉霓有话说~', emoji: '🌸', color: '#f4e8ee' }
+            ];
+          }
+        } catch (_) {}
       } catch (e) { console.error('加载 editions 失败:', e); }
     });
 
     return {
-      tab, editions, sections, activeId, detailTitle, detailUrl, mobileDetail, isMobile, isRead,
-      switchTab, goPaper, openGroup, openPrivate, closeDetail, closePanel, formatDateShort,
+      tab, editions, sections, channels, activeId, detailTitle, detailUrl, mobileDetail, isMobile, isRead,
+      switchTab, goPaper, openGroup, openPrivate, openMoshuo, closeDetail, closePanel, formatDateShort,
       avatarStyle, avatarText
     };
   }

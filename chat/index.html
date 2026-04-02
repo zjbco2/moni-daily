@@ -24,8 +24,11 @@
       <button class="tab-btn" :class="{ active: tab === 'private' }" @click="switchTab('private')">
         <span class="tab-emoji">🍉</span>私聊
       </button>
+      <button class="tab-btn" :class="{ active: tab === 'moshuo' }" @click="switchTab('moshuo')">
+        <span class="tab-emoji">📣</span>吵吵
+      </button>
       <button class="tab-btn" @click="goPaper">
-        <span class="tab-emoji">📰</span>报纸
+        <span class="tab-emoji">📰</span>看报
       </button>
     </div>
 
@@ -38,15 +41,15 @@
              @click="openGroup(ed)">
           <div class="avatar-headline" :style="avatarStyle(ed)">
             {{ avatarText(ed) }}
+            <div class="list-unread" v-if="!isRead(ed.id)"></div>
           </div>
           <div class="list-info">
             <div class="list-name">
-              茉霓日报 · {{ ed.issue }}
+              日报{{ ed.issue.replace('第','').replace('期','') }}期
               <span class="list-time">{{ formatDateShort(ed.date) }}</span>
             </div>
             <div class="list-preview">{{ ed.headline || '' }}</div>
           </div>
-          <div class="list-unread" v-if="!isRead(ed.id)"></div>
         </div>
       </template>
 
@@ -62,6 +65,19 @@
               <span class="list-time">{{ sec.time }}</span>
             </div>
             <div class="list-preview">{{ sec.preview }}</div>
+          </div>
+        </div>
+      </template>
+
+      <!-- 吵吵频道列表 -->
+      <template v-if="tab === 'moshuo'">
+        <div class="chao-cards">
+          <div class="chao-card" v-for="ch in channels" :key="ch.key"
+               :class="{ active: activeId === ch.key }"
+               :style="{ background: ch.color }"
+               @click="openMoshuo(ch)">
+            <div class="chao-emoji">{{ ch.emoji }}</div>
+            <div class="chao-name">{{ ch.name }}</div>
           </div>
         </div>
       </template>

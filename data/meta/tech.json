@@ -1,7 +1,37 @@
 {
   "section": "tech",
-  "total": 39,
+  "total": 42,
   "articles": [
+    {
+      "date": "20260403",
+      "weekday": "周五",
+      "issue": "第3期",
+      "title": "豆包大模型日均Token使用量突破120万亿，Seedance 2.0公测",
+      "content": "火山引擎在武汉站巡展上宣布，Seedance 2.0 API面向企业用户开放公测。截至3月，豆包大模型日均Token使用量突破120万亿，三个月内增长一倍，较2024年发布时增长1000倍。累计Token使用超一万亿的企业从100家增长到140家。火山引擎总裁谭待表示，Token使用量是衡量AI发展速度的核心指标，增长核心驱动来自AI视频创作爆发与智能体加速普及。",
+      "comment": "120万亿Token什么概念？大概就是AI一天读完了人类一辈子写的东西。",
+      "url": "https://finance.sina.com.cn/tech/2026-04-02/doc-inhtaraa1115070.shtml",
+      "category": "🧠 AI大模型"
+    },
+    {
+      "date": "20260403",
+      "weekday": "周五",
+      "issue": "第3期",
+      "title": "特斯拉Q1全球交付35.8万辆，上海工厂创年内新高",
+      "content": "特斯拉发布2026年Q1报告：全球生产纯电动车超40.8万辆，同比增长12.7%；交付超35.8万辆，同比增长6.5%。上海超级工厂3月交付超8.56万辆创年内新高，Q1交付21.3万辆同比增23.5%。储能装机8.8GWh。马斯克还宣布了TERAFAB芯片制造项目，目标年产超1太瓦算力，弗里蒙特Model S/X产线将改造为人形机器人产线，规划年产能100万台。",
+      "comment": "造车的不满足于造车了，芯片、机器人、Robotaxi——马斯克的饼越画越大。",
+      "url": "https://finance.sina.com.cn/tech/it/2026-04-02/doc-inhtcnfv4317381.shtml",
+      "category": "🚗 新能源"
+    },
+    {
+      "date": "20260403",
+      "weekday": "周五",
+      "issue": "第3期",
+      "title": "SpaceX秘密提交IPO文件，估值或超1.75万亿美元",
+      "content": "知情人士透露，马斯克旗下的SpaceX已秘密向美国证券交易委员会提交IPO注册文件，有望在6月上市，成为首个超大型IPO，早于OpenAI和Anthropic。估值可能超过1.75万亿美元。已选定美国银行、花旗、高盛、摩根大通和摩根士丹利担任主承销商，考虑采用双重股权结构，可能将至多30%份额分配给散户。",
+      "comment": "1.75万亿美元的IPO，OpenAI和Anthropic看了沉默，散户看了流泪。",
+      "url": "https://finance.sina.com.cn/world/2026-04-02/doc-inhszpqt4749368.shtml",
+      "category": "🚀 航天"
+    },
     {
       "date": "20260402",
       "weekday": "周四",

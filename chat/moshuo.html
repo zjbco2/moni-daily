@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>🌸 吵吵</title>
+<link rel="stylesheet" href="../css/chat.css">
+<style>
+  [v-cloak] { display: none !important; }
+  body { background: #f0ebe2; margin: 0; overflow: hidden; }
+</style>
+</head>
+<body>
+
+<div id="app" v-cloak style="height:100vh;display:flex;flex-direction:column;position:relative;">
+
+  <!-- 可拖拽的气泡画布 -->
+  <div class="bubble-viewport" id="bubbleViewport" :style="{ background: sectionBg }">
+    <div class="bubble-canvas" id="bubbleCanvas" :style="canvasStyle">
+      <div v-for="(c, idx) in bubbles" :key="c._key"
+           class="speech-bubble"
+           :class="{ 'sb-playing': playingIdx === idx }"
+           :style="c.posStyle"
+           @click.stop="playBubble(idx)">
+        <div class="sb-text">
+          <template v-for="(ch, ci) in c.chars" :key="ci">
+            <span :class="{ 'char-active': playingIdx === idx && ci === activeChar }">{{ ch }}</span>
+          </template>
+        </div>
+        <div class="sb-meta" v-if="c.date">{{ c.date.slice(4,6) }}/{{ c.date.slice(6,8) }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div v-if="loading" class="chat-loading" style="position:absolute;inset:0;z-index:5;background:#f0ebe2;">
+    <div class="loading-emoji">📣</div>
+    <p>正在吵吵...</p>
+  </div>
+  <div v-if="!loading && error" style="position:absolute;inset:0;z-index:5;background:#f0ebe2;text-align:center;padding-top:40vh;color:var(--accent);">{{ error }}</div>
+
+  <!-- 底部按钮 -->
+  <div class="section-nav" style="justify-content:center;">
+    <button class="section-nav-btn" @click="playRandom">🙉随便听听</button>
+    <button class="section-nav-btn" @click="shuffle">🤡我要洗牌</button>
+  </div>
+
+  <div class="speak-toast" id="speakToast"></div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/moshuo.js"></script>
+
+</body>
+</html>
