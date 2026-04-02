@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../css/chat.css">
 <style>
   [v-cloak] { display: none !important; }
+  body { background: #f0ebe2; }
 </style>
 </head>
 <body>
@@ -15,9 +16,15 @@
 
   <div class="chat-detail" id="chatDetail">
 
+    <!-- 操作栏 -->
+    <div class="detail-actions">
+      <button class="action-btn" :class="{ 'scroll-hidden': !scrolled }" @click="scrollToTop">🔝</button>
+      <button class="action-btn" @click="toggleCalendar">📅</button>
+    </div>
+
     <!-- 按期数倒序渲染 -->
     <template v-for="edition in editions" :key="edition.date">
-      <div class="date-separator"><span>{{ formatDate(edition.date) }} · {{ edition.weekday }}</span></div>
+      <div class="date-separator" :data-date="edition.date"><span>{{ formatDate(edition.date) }} · {{ edition.weekday }}</span></div>
 
       <template v-for="(article, idx) in edition.articles" :key="idx">
         <!-- 板块发言 -->
@@ -64,7 +71,28 @@
 
   </div>
 
-  <button class="back-to-top" id="backToTop" @click="scrollToTop">🔝</button>
+  <!-- 日历面板（在 #app 内、.chat-detail 外，避免被滚动影响） -->
+  <div class="cal-overlay" v-if="showCal" @click="showCal = false"></div>
+  <div class="cal-panel" v-if="showCal">
+    <div class="cal-header">
+      <button class="cal-nav" @click="prevMonth">&#8249;</button>
+      <span class="cal-title">{{ calYear }}年{{ calMonth + 1 }}月</span>
+      <button class="cal-nav" @click="nextMonth">&#8250;</button>
+    </div>
+    <div class="cal-weekdays">
+      <span v-for="d in ['日','一','二','三','四','五','六']" :key="d">{{ d }}</span>
+    </div>
+    <div class="cal-grid">
+      <button v-for="(cell, i) in calCells" :key="i"
+              class="cal-day"
+              :class="{ empty: !cell.day, has: cell.hasArticle, today: cell.isToday }"
+              :disabled="!cell.hasArticle"
+              @click="cell.hasArticle && jumpToDate(cell.dateStr)">
+        {{ cell.day || '' }}
+        <span class="cal-dot" v-if="cell.hasArticle"></span>
+      </button>
+    </div>
+  </div>
 
   <div class="news-overlay" id="panelOverlay" @click="closePanel"></div>
   <div class="news-panel" id="sidePanel">

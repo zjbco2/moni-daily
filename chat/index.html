@@ -36,11 +36,8 @@
         <div class="chat-list-item" v-for="ed in editions" :key="ed.id"
              :class="{ active: activeId === ed.id }"
              @click="openGroup(ed)">
-          <div class="avatar-stack">
-            <div class="av">🌍</div>
-            <div class="av">🤖</div>
-            <div class="av">💰</div>
-            <div class="av">⚡</div>
+          <div class="avatar-headline" :style="avatarStyle(ed)">
+            {{ avatarText(ed) }}
           </div>
           <div class="list-info">
             <div class="list-name">
@@ -49,6 +46,7 @@
             </div>
             <div class="list-preview">{{ ed.headline || '' }}</div>
           </div>
+          <div class="list-unread" v-if="!isRead(ed.id)"></div>
         </div>
       </template>
 
@@ -82,6 +80,12 @@
       <iframe id="detailFrame" :src="detailUrl || 'about:blank'" :class="{ active: detailUrl }"></iframe>
     </div>
 
+  </div>
+
+  <!-- 新闻弹窗（PC端从主页面右侧弹出） -->
+  <div class="news-overlay" id="panelOverlay" @click="closePanel"></div>
+  <div class="news-panel" id="sidePanel">
+    <iframe id="panelIframe" src="about:blank"></iframe>
   </div>
 </div>
 

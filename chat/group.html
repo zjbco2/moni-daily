@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../css/chat.css">
 <style>
   [v-cloak] { display: none !important; }
+  body { background: #f0ebe2; }
 </style>
 </head>
 <body>
@@ -22,6 +23,7 @@
 
     <!-- 天气消息 -->
     <template v-if="data && data.weather">
+      <div data-section="weather"></div>
       <div class="msg msg-left">
         <div class="msg-avatar" style="background:#e3f2fd;">🌤️</div>
         <div class="msg-body">
@@ -49,6 +51,7 @@
 
     <!-- 头条 -->
     <template v-if="data && data.headline">
+      <div data-section="headline"></div>
       <div class="msg msg-left">
         <div class="msg-avatar" style="background:#fce4ec;">📢</div>
         <div class="msg-body">
@@ -73,6 +76,7 @@
 
     <!-- 各板块 -->
     <template v-for="section in (data ? data.sections : [])" :key="section.name">
+      <div :data-section="section.name"></div>
       <template v-for="(article, idx) in section.articles" :key="article.id || idx">
         <!-- 板块发言 -->
         <div class="msg msg-left">
@@ -138,6 +142,17 @@
 
   <!-- 回到顶部 -->
   <button class="back-to-top" id="backToTop" @click="scrollToTop">🔝</button>
+
+  <!-- 板块导航条 -->
+  <div class="section-nav" v-if="data">
+    <button class="section-nav-btn" @click="scrollToSection('weather')">🌤️ 天气</button>
+    <button class="section-nav-btn" @click="scrollToSection('headline')">📢 头条</button>
+    <template v-for="sec in (data.sections || [])" :key="sec.name">
+      <button class="section-nav-btn" @click="scrollToSection(sec.name)">
+        {{ normalizeEmoji(sec) }} {{ sec.name }}
+      </button>
+    </template>
+  </div>
 
   <!-- 新闻弹窗 -->
   <div class="news-overlay" id="panelOverlay" @click="closePanel"></div>
