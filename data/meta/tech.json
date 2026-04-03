@@ -1,6 +1,6 @@
 {
   "section": "tech",
-  "total": 45,
+  "total": 48,
   "articles": [
     {
       "date": "20260403",
@@ -61,6 +61,36 @@
       "comment": "充电宝终于有了「保质期」，以后过期的不只是牛奶了",
       "url": "https://www.36kr.com/newsflashes/3750521109660420",
       "category": "🔋 标准"
+    },
+    {
+      "date": "20260403",
+      "weekday": "周五",
+      "issue": "第16期",
+      "title": "雷军3个半小时直播拆解新SU7，锁单量超4万台",
+      "content": "雷军在最新一场直播中将新一代SU7从整车拆到零部件级，耗时3个半小时，从外观、内饰、EEA电子电气架构、底盘、车身安全到电池包逐一介绍。新SU7发布9天交付超7000台，目前锁单量已超过4万台。高强度钢和铝合金占比达90.3%，全系标配9个气囊，电池热安全远超国标。",
+      "comment": "3.5小时拆车直播，这才是真正的「开箱」视频",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-04-03/doc-inhtcspv9319196.shtml",
+      "category": "🚗 智能汽车"
+    },
+    {
+      "date": "20260403",
+      "weekday": "周五",
+      "issue": "第16期",
+      "title": "关停Sora后OpenAI转身收购TBPN播客，亲自下场做媒体",
+      "content": "OpenAI上月关闭Sora视频应用后，宣布收购科技商业播客TBPN。高管Fidji Simo解释收购逻辑：随着推进AGI使命，OpenAI有责任构建真实的对话空间，TBPN已建立这样的平台。Simo明确承诺TBPN将继续独立运营节目，编辑独立性是此次收购的核心条款。",
+      "comment": "不拍视频了改办播客，OpenAI这是在转型自媒体？",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-04-03/doc-inhtepte0404212.shtml",
+      "category": "🎧 AI布局"
+    },
+    {
+      "date": "20260403",
+      "weekday": "周五",
+      "issue": "第16期",
+      "title": "苹果传奇设计师艾维操刀，法拉利首款电动车用实体按键强调仪式感",
+      "content": "法拉利首款电动汽车Luce内饰设计由设计师乔尼·艾维操刀，走「复古与现代融合」路线。艾维认为大屏触控过于单一，选择将实体操作与数字界面结合。方向盘由19个精密加工部件构成，集成Manettino旋钮、驾驶模式等控制。核心控制依靠高质量实体开关和拨杆完成，每次操作有明确机械反馈。",
+      "comment": "全行业搞触控，法拉利偏搞实体按键，有钱就是任性",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-04-03/doc-inhtepti3823751.shtml",
+      "category": "🏎️ 汽车设计"
     },
     {
       "date": "20260402",

@@ -1,10 +1,10 @@
 {
-  "total": 150,
+  "total": 160,
   "by_section": {
-    "头条": 15,
-    "国际风云": 45,
-    "科技前沿": 45,
-    "国内财经": 45
+    "头条": 16,
+    "国际风云": 48,
+    "科技前沿": 48,
+    "国内财经": 48
   },
   "comments": [
     {
@@ -24,6 +24,15 @@
       "url": "https://news.sina.com.cn/w/2026-04-03/doc-inhtepte0425897.shtml",
       "weekday": "周五",
       "issue": "第15期"
+    },
+    {
+      "comment": "涨的镰刀终于挥到了消费者头上，卢总都说「扛不动了」😂",
+      "title": "小米手机宣布涨价：存储芯片价格飙升近4倍，4月11日起调价",
+      "date": "20260403",
+      "section": "头条",
+      "url": "https://news.sina.com.cn/c/2026-04-03/doc-inhtetzf3848534.shtml",
+      "weekday": "周五",
+      "issue": "第16期"
     },
     {
       "comment": "指挥官阵亡不是示弱的信号，而是升级的前奏。",
@@ -80,6 +89,33 @@
       "issue": "第15期"
     },
     {
+      "comment": "一天两架F-35，这防空系统是开了挂吧？",
+      "title": "伊朗称再次击落美军F-35，公布解体碎片照片",
+      "date": "20260403",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-04-03/doc-inhteyif8888368.shtml",
+      "weekday": "周五",
+      "issue": "第16期"
+    },
+    {
+      "comment": "基建质量堪忧，机场是航站楼还是豆腐渣工程",
+      "title": "马尼拉机场航站楼天花板垮塌，多人受伤",
+      "date": "20260403",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-04-03/doc-inhteyhy0355181.shtml",
+      "weekday": "周五",
+      "issue": "第16期"
+    },
+    {
+      "comment": "28次危机，平均每分钟一次，演讲变复读机了",
+      "title": "李在明施政演说28次提「危机」，称处于「战时民生经济」状态",
+      "date": "20260403",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-04-03/doc-inhteptf7266238.shtml",
+      "weekday": "周五",
+      "issue": "第16期"
+    },
+    {
       "comment": "120万亿Token什么概念？大概就是AI一天读完了人类一辈子写的东西。",
       "title": "豆包大模型日均Token使用量突破120万亿，Seedance 2.0公测",
       "date": "20260403",
@@ -134,6 +170,33 @@
       "issue": "第15期"
     },
     {
+      "comment": "3.5小时拆车直播，这才是真正的「开箱」视频",
+      "title": "雷军3个半小时直播拆解新SU7，锁单量超4万台",
+      "date": "20260403",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-04-03/doc-inhtcspv9319196.shtml",
+      "weekday": "周五",
+      "issue": "第16期"
+    },
+    {
+      "comment": "不拍视频了改办播客，OpenAI这是在转型自媒体？",
+      "title": "关停Sora后OpenAI转身收购TBPN播客，亲自下场做媒体",
+      "date": "20260403",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-04-03/doc-inhtepte0404212.shtml",
+      "weekday": "周五",
+      "issue": "第16期"
+    },
+    {
+      "comment": "全行业搞触控，法拉利偏搞实体按键，有钱就是任性",
+      "title": "苹果传奇设计师艾维操刀，法拉利首款电动车用实体按键强调仪式感",
+      "date": "20260403",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-04-03/doc-inhtepti3823751.shtml",
+      "weekday": "周五",
+      "issue": "第16期"
+    },
+    {
       "comment": "白牌变品牌的套路终于被拆穿了，平台审核形同虚设的老毛病又犯了。",
       "title": "三部门约谈抖音、淘天、小红书，优思益事件持续发酵",
       "date": "20260403",
@@ -186,6 +249,33 @@
       "url": "https://finance.sina.com.cn/money/future/fmnews/2026-04-03/doc-inhteimm3949725.shtml",
       "weekday": "周五",
       "issue": "第15期"
+    },
+    {
+      "comment": "64条举措，够写一本消费说明书了",
+      "title": "商务部等9部门联合印发服务消费提质方案，推出64条举措",
+      "date": "20260403",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/china/2026-04-03/doc-inhtfeqz3738902.shtml",
+      "weekday": "周五",
+      "issue": "第16期"
+    },
+    {
+      "comment": "以后充电宝也有身份证了，比我记得还清楚",
+      "title": "移动电源安全强制国标发布，充电宝将有「身份证号码」",
+      "date": "20260403",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/c/2026-04-03/doc-inhtetzf3806769.shtml",
+      "weekday": "周五",
+      "issue": "第16期"
+    },
+    {
+      "comment": "零售跌21%，新能源车也扛不住了",
+      "title": "乘联会：3月乘用车新能源零售78.4万辆，同比下降21%",
+      "date": "20260403",
+      "section": "国内财经",
+      "url": "https://www.163.com/dy/article/KPJO9J160553TDSE.html",
+      "weekday": "周五",
+      "issue": "第16期"
     },
     {
       "comment": "马斯克：我不造车了（停顿）——我要造火箭上市。沙特阿美的IPO记录保持了6年，可能要让位了。",
