@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌸 茉霓日报 · 专题合集</title>
+
+<link rel="stylesheet" href="../css/topic-index.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span class="topbar-title">茉<em class="neon">霓</em>专题</span>
+    <a class="topbar-back" href="../index.html">回到报刊 →</a>
+  </div>
+</div>
+
+<div id="app" v-cloak>
+  <div class="hero-emoji-deco" v-if="topics.length">{{ topics[0].emoji }}</div>
+  <div class="hero-geo" id="fixedShapes"></div>
+
+  <div class="hero" v-if="topics.length" :style="{ '--page-theme': topics[0].coverColor }">
+    <div class="hero-content">
+      <span class="hero-emoji">{{ topics[0].emoji }}</span>
+      <div class="hero-title">{{ topics[0].title }}</div>
+      <div class="hero-desc">{{ topics[0].description }}</div>
+      <div class="hero-meta">
+        <span v-if="topics[0].articleCount">📰 {{ topics[0].articleCount }} 篇</span>
+        <span v-if="topics[0].dayCount">📅 {{ topics[0].dayCount }} 天</span>
+        <span v-if="topics[0].dateRange">{{ topics[0].dateRange }}</span>
+      </div>
+      <a class="hero-enter" :href="'detail.html?id=' + topics[0].id">进入专题 →</a>
+    </div>
+  </div>
+
+  <div class="page-wrap">
+    <div class="other-section" v-if="topics.length > 1">
+      <div class="other-title">其他专题</div>
+      <div class="other-grid">
+        <a class="other-card" v-for="t in topics.slice(1)" :key="t.id" :href="'detail.html?id=' + t.id"
+           :style="{ '--cover': t.coverColor }">
+          <div class="card-cover">
+            <span class="card-cover-deco">{{ t.emoji }}</span>
+            <div class="card-cover-bottom">
+              <span class="card-emoji">{{ t.emoji }}</span>
+              <div class="card-title">{{ t.title }}</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-desc">{{ t.description }}</div>
+            <div class="card-stats">
+              <span v-if="t.dayCount">📅 {{ t.dayCount }}天</span>
+              <span v-if="t.articleCount">📰 {{ t.articleCount }}篇</span>
+              <span v-if="t.dateRange">{{ t.dateRange }}</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="editor-quote" v-if="topics.length">
+    <div class="editor-quote-inner">
+      {{ bridgeText }}
+      <div class="editor-quote-sub">—— 茉霓 · 编辑室 · {{ today }}</div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+<script src="../js/topic-index.js"></script>
+
+</body>
+</html>

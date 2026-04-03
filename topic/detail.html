@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌸 茉霓日报 · 专题</title>
+
+<link rel="stylesheet" href="../css/topic-detail.css">
+</head>
+<body>
+
+<div id="app" v-cloak>
+  <div class="hero-emoji-deco-fixed" v-if="topic">{{ topic.emoji }}</div>
+  <div class="hero-geo" id="fixedShapes"></div>
+
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="topbar-title" href="index.html">茉<em class="neon">霓</em>专题</a>
+      <a class="topbar-back" href="../index.html">回到报刊 →</a>
+    </div>
+  </div>
+
+  <div v-if="loading" class="empty-state">
+    <div class="icon">📚</div><p>正在加载专题...</p>
+  </div>
+
+  <div v-else-if="error" class="empty-state">
+    <div class="icon">😵</div><p>{{ error }}</p>
+    <p><a href="index.html">← 回到专题列表</a></p>
+  </div>
+
+  <template v-else-if="topic">
+    <div class="topic-hero">
+      <div class="hero-content">
+        <span class="hero-emoji">{{ topic.emoji }}</span>
+        <div class="hero-title">{{ topic.title }}</div>
+        <div class="hero-desc">{{ topic.description }}</div>
+        <div class="hero-meta">
+          <span>📰 {{ articles.length }} 篇报道</span>
+          <span v-if="articles.length > 0">📅 {{ dayCount }} 天</span>
+          <span v-if="dateRange">{{ dateRange }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-wrap" v-if="articles.length">
+      <div class="timeline-area">
+        <div class="timeline">
+          <div class="timeline-line"></div>
+          <div class="day-group" v-for="group in groupedArticles" :key="group.date" :id="'day-' + group.date">
+            <div class="day-node">
+              <div class="day-label">{{ group.label }} <span>{{ group.articles.length }}篇</span></div>
+            </div>
+            <div class="article-card" v-for="(a, i) in group.articles" :key="i">
+              <div class="article-title">
+                <a v-if="a.editionUrl" :href="a.editionUrl + '#' + a.id" target="_blank">{{ a.title }}</a>
+                <span v-else>{{ a.title }}</span>
+              </div>
+              <div class="article-content" v-if="a.preview">{{ a.preview }}...</div>
+              <div class="article-footer">
+                <span>{{ a.issue }} {{ a.section ? ('· ' + a.section) : '' }}</span>
+                <a v-if="a.editionUrl" :href="a.editionUrl + '#' + a.id" class="article-read" target="_blank">阅读当期日报 →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <div class="sidebar-card">
+            <div class="sidebar-title">日期导航</div>
+            <a class="day-nav-item" v-for="group in groupedArticles" :key="group.date"
+               @click.prevent="scrollToDay(group.date)">
+              {{ group.label }} <span class="count">{{ group.articles.length }}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+<script src="../js/topic-detail.js"></script>
+
+</body>
+</html>

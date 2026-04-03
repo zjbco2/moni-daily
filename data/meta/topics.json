@@ -1,0 +1,35 @@
+{
+  "topics": [
+    {
+      "id": "iran-war",
+      "title": "伊朗战事全程回顾",
+      "emoji": "🔥",
+      "keywords": [
+        "伊朗",
+        "霍尔木兹海峡",
+        "中东",
+        "真主党",
+        "胡塞",
+        "美以",
+        "F-35"
+      ],
+      "description": "从空袭到全面戒备，逐日记录这场改变全球格局的冲突",
+      "coverColor": "linear-gradient(135deg, #1a0a0a, #3d0c0c, #2a0808)",
+      "geoStyle": "circles"
+    },
+    {
+      "id": "robots",
+      "title": "机器人/具身智能",
+      "emoji": "🤖",
+      "keywords": [
+        "机器人",
+        "具身",
+        "人形",
+        "具身智能"
+      ],
+      "description": "从GPT时刻预言到万台下线，中国人形机器人商业化元年",
+      "coverColor": "linear-gradient(135deg, #0a1a15, #0c3d2a, #081a14)",
+      "geoStyle": "diamonds"
+    }
+  ]
+}

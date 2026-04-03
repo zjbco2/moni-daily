@@ -22,10 +22,13 @@
 <main class="shelf-area">
   <div class="section-title">
     <h2 id="sectionTitleText">📰 共 <span id="visibleCount">—</span> 期日报</h2>
-    <div class="search-wrapper">
-      <span class="search-icon">🔍</span>
-      <input type="text" id="searchInput" placeholder="搜索关键词..." maxlength="10">
-      <button id="searchClear">✕</button>
+    <div class="section-actions">
+      <a href="topic/" class="action-btn topic-btn">📚 <span class="btn-text">专题</span></a>
+      <div class="search-wrapper">
+        <span class="search-label">🔍 <span class="btn-text">搜索</span></span>
+        <input type="text" id="searchInput" placeholder="搜索关键词..." maxlength="10">
+        <button id="searchClear">✕</button>
+      </div>
     </div>
   </div>
   <div id="shelvesContainer"></div>

@@ -10,19 +10,19 @@
   // ============================
   async function init() {
     try {
-      const [edRes, siRes] = await Promise.all([
-        fetch('data/meta/editions.json?t=' + Date.now()),
-        fetch('data/meta/search-index.json?t=' + Date.now())
-      ]);
+      const edRes = await fetch('data/meta/editions.json?t=' + Date.now());
       const edData = await edRes.json();
-      const siData = await siRes.json();
-      
       allEditions = edData.editions || [];
-      searchIndex = siData.articles || [];
       
       document.getElementById('totalEditions').textContent = `累计 ${allEditions.length} 期`;
       updateCount(allEditions.length, false);
       renderShelves(allEditions);
+      
+      // 延迟加载搜索索引（不阻塞渲染）
+      fetch('data/meta/search-index.json?t=' + Date.now())
+        .then(r => r.json())
+        .then(d => { searchIndex = d.articles || []; })
+        .catch(e => { /* 搜索未就绪 */ });
     } catch (e) {
       container.innerHTML = '<div class="empty-shelf"><div class="icon">😵</div><p>数据加载失败，请刷新重试</p></div>';
       console.error('加载失败:', e);
@@ -47,11 +47,14 @@
   const searchInput = document.getElementById('searchInput');
   const searchClear = document.getElementById('searchClear');
   
+  var sectionActions = document.querySelector('.section-actions');
+  
   // 点击🔍图标展开
-  document.querySelector('.search-icon').addEventListener('click', function() {
+  document.querySelector('.search-label').addEventListener('click', function() {
     if (!searchInput.classList.contains('expanded')) {
       searchInput.classList.add('expanded');
       searchInput.placeholder = '搜索关键词...';
+      sectionActions.classList.add('mode-search');
     }
     searchInput.focus();
   });
@@ -74,6 +77,7 @@
         if (input.value.trim() === '') {
           input.classList.remove('expanded');
           input.placeholder = '';
+          sectionActions.classList.remove('mode-search');
         }
       }
     }, 250);
@@ -94,6 +98,7 @@
   searchInput.addEventListener('input', function() {
     const query = this.value.trim().toLowerCase();
     searchClear.classList.toggle('visible', query.length > 0);
+    if (query.length > 0) sectionActions.classList.add('mode-search');
     
     if (query === '') {
       // 恢复全部

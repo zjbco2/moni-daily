@@ -71,29 +71,9 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Step 6: Git push
-echo ""
-echo "📋 Step 6/6: Git push..."
-
-# 从文件名提取日期和期数
-BASENAME=$(basename "$DATA_FILE" .json)
-DATE_PART=$(echo "$BASENAME" | grep -oP '^\d{8}')
-FORMATTED_DATE="${DATE_PART:0:4}-${DATE_PART:4:2}-${DATE_PART:6:2}"
-
-# 从JSON读取issue
-ISSUE=$(python3 -c "import json; d=json.load(open('$DATA_FILE')); print(d.get('issue',''))")
-
-git add -A
-git commit -m "daily: ${FORMATTED_DATE} ${ISSUE}" 2>/dev/null || echo "⚠️ 没有变更需要提交"
-git push origin main
-
-if [ $? -ne 0 ]; then
-    echo "❌ Git push失败！"
-    exit 1
-fi
 
 echo ""
 echo "========================================="
-echo "✅ ${ISSUE} 已发布！"
-echo "🔗 https://zjbco2.github.io/moni-daily/"
+echo "✅ 数据已更新完成（共6步校验/索引更新）"
+echo "🔗 接下来由 cron 任务统一 git 提交推送"
 echo "========================================="

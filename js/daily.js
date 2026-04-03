@@ -190,7 +190,24 @@ createApp({
         link.href = canvas.toDataURL('image/png');
         link.click();
 
-        btn.textContent = '✅ 已保存';
+        // 复制链接到剪贴板（双保险：clipboard API + execCommand 降级）
+        let copied = false;
+        try {
+          await navigator.clipboard.writeText(pageUrl);
+          copied = true;
+        } catch (_) {
+          // 降级：execCommand
+          try {
+            const ta = document.createElement('textarea');
+            ta.value = pageUrl;
+            ta.style.cssText = 'position:fixed;left:-9999px';
+            document.body.appendChild(ta);
+            ta.select();
+            copied = document.execCommand('copy');
+            document.body.removeChild(ta);
+          } catch (_) {}
+        }
+        btn.textContent = copied ? '✅ 已保存图片+链接' : '✅ 已保存图片';
         setTimeout(() => { btn.textContent = '分享👉'; btn.disabled = false; }, 2000);
       } catch (e) {
         console.error('分享卡片生成失败:', e);
@@ -245,6 +262,15 @@ createApp({
         error.value = e.message;
       } finally {
         loading.value = false;
+      }
+
+      // 从专题跳转进来时自动滚动到指定文章
+      var hash = window.location.hash.replace('#', '');
+      if (hash) {
+        Vue.nextTick(() => {
+          var el = document.getElementById(hash);
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
       }
     });
 
