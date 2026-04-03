@@ -1,10 +1,10 @@
 {
-  "total": 140,
+  "total": 150,
   "by_section": {
-    "头条": 14,
-    "国际风云": 42,
-    "科技前沿": 42,
-    "国内财经": 42
+    "头条": 15,
+    "国际风云": 45,
+    "科技前沿": 45,
+    "国内财经": 45
   },
   "comments": [
     {
@@ -15,6 +15,15 @@
       "url": "https://finance.sina.com.cn/wm/2026-04-02/doc-inhtcfxx4375367.shtml",
       "weekday": "周五",
       "issue": "第3期"
+    },
+    {
+      "comment": "三方联手上演中东「复仇者联盟」，只是没有钢铁侠来救场",
+      "title": "伊朗、真主党、胡塞武装联合发动第四轮打击，弹道导弹攻击特拉维夫",
+      "date": "20260403",
+      "section": "头条",
+      "url": "https://news.sina.com.cn/w/2026-04-03/doc-inhtepte0425897.shtml",
+      "weekday": "周五",
+      "issue": "第15期"
     },
     {
       "comment": "指挥官阵亡不是示弱的信号，而是升级的前奏。",
@@ -44,6 +53,33 @@
       "issue": "第3期"
     },
     {
+      "comment": "调解员普京上线，但中东这盘棋连棋手自己都打起来了",
+      "title": "普京出手：准备推动解决美以伊冲突",
+      "date": "20260403",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-04-03/doc-inhteimp9029604.shtml",
+      "weekday": "周五",
+      "issue": "第15期"
+    },
+    {
+      "comment": "关税翻倍，以后吃药比吃金子还贵？",
+      "title": "美国宣布对进口专利药及制药成分加征100%关税",
+      "date": "20260403",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/wm/2026-04-03/doc-inhteimp9027745.shtml",
+      "weekday": "周五",
+      "issue": "第15期"
+    },
+    {
+      "comment": "美国被排除在外，这35国是打算自己组个群聊吗",
+      "title": "英国将召集35国开会讨论恢复霍尔木兹海峡通航",
+      "date": "20260403",
+      "section": "国际风云",
+      "url": "https://www.163.com/dy/article/KPGRQ0BF0514R9P4.html",
+      "weekday": "周五",
+      "issue": "第15期"
+    },
+    {
       "comment": "120万亿Token什么概念？大概就是AI一天读完了人类一辈子写的东西。",
       "title": "豆包大模型日均Token使用量突破120万亿，Seedance 2.0公测",
       "date": "20260403",
@@ -71,6 +107,33 @@
       "issue": "第3期"
     },
     {
+      "comment": "不做视频改做播客，OpenAI 的路线比北京地铁换乘还绕",
+      "title": "关停 Sora 后 OpenAI 转身收购 TBPN 播客，亲自下场做媒体",
+      "date": "20260403",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-04-03/doc-inhtepte0404212.shtml",
+      "weekday": "周五",
+      "issue": "第15期"
+    },
+    {
+      "comment": "当所有人都在做大屏时，艾维说：不，我们要拨钮",
+      "title": "苹果传奇设计师艾维操刀，法拉利首款电动汽车将用实体按键强调「仪式感」",
+      "date": "20260403",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-04-03/doc-inhtepti3823751.shtml",
+      "weekday": "周五",
+      "issue": "第15期"
+    },
+    {
+      "comment": "充电宝终于有了「保质期」，以后过期的不只是牛奶了",
+      "title": "移动电源新国标出台，引入针刺试验并要求标明建议使用年限",
+      "date": "20260403",
+      "section": "科技前沿",
+      "url": "https://www.36kr.com/newsflashes/3750521109660420",
+      "weekday": "周五",
+      "issue": "第15期"
+    },
+    {
       "comment": "白牌变品牌的套路终于被拆穿了，平台审核形同虚设的老毛病又犯了。",
       "title": "三部门约谈抖音、淘天、小红书，优思益事件持续发酵",
       "date": "20260403",
@@ -96,6 +159,33 @@
       "url": "https://news.sina.com.cn/c/2026-04-02/doc-inhtaeni8009766.shtml",
       "weekday": "周五",
       "issue": "第3期"
+    },
+    {
+      "comment": "140万亿 Token，地球人口的1.7万倍，AI是真的话痨",
+      "title": "中国靠什么成为「世界Token工厂」？日均调用量突破140万亿",
+      "date": "20260403",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/c/2026-04-03/doc-inhteimp9032076.shtml",
+      "weekday": "周五",
+      "issue": "第15期"
+    },
+    {
+      "comment": "公积金松绑大礼包，买房人的春天来了——如果房价别跟着涨的话",
+      "title": "4月起多地实施住房公积金新政：杭州提额至180万，成都取消贷款次数限制",
+      "date": "20260403",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/c/2026-04-03/doc-inhteptm8916204.shtml",
+      "weekday": "周五",
+      "issue": "第15期"
+    },
+    {
+      "comment": "200万美金过路费，还能用人民币付——美元霸权开始掉漆了",
+      "title": "人民币结算首现霍尔木兹海峡：每船通行费200万美元",
+      "date": "20260403",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/money/future/fmnews/2026-04-03/doc-inhteimm3949725.shtml",
+      "weekday": "周五",
+      "issue": "第15期"
     },
     {
       "comment": "马斯克：我不造车了（停顿）——我要造火箭上市。沙特阿美的IPO记录保持了6年，可能要让位了。",

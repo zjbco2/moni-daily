@@ -1,6 +1,6 @@
 {
   "section": "tech",
-  "total": 42,
+  "total": 45,
   "articles": [
     {
       "date": "20260403",
@@ -31,6 +31,36 @@
       "comment": "1.75万亿美元的IPO，OpenAI和Anthropic看了沉默，散户看了流泪。",
       "url": "https://finance.sina.com.cn/world/2026-04-02/doc-inhszpqt4749368.shtml",
       "category": "🚀 航天"
+    },
+    {
+      "date": "20260403",
+      "weekday": "周五",
+      "issue": "第15期",
+      "title": "关停 Sora 后 OpenAI 转身收购 TBPN 播客，亲自下场做媒体",
+      "content": "OpenAI 上月关闭 Sora 视频应用后，宣布收购科技商业播客 TBPN。OpenAI 高管 Fidji Simo 在内部备忘录中解释收购逻辑：随着推进 AGI 使命，有责任为技术变革构建真实的对话空间，收购比自建更有效率。TBPN 将继续独立运营节目并保持编辑独立性。",
+      "comment": "不做视频改做播客，OpenAI 的路线比北京地铁换乘还绕",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-04-03/doc-inhtepte0404212.shtml",
+      "category": "🎙️ AI媒体"
+    },
+    {
+      "date": "20260403",
+      "weekday": "周五",
+      "issue": "第15期",
+      "title": "苹果传奇设计师艾维操刀，法拉利首款电动汽车将用实体按键强调「仪式感」",
+      "content": "法拉利首款电动汽车 Luce 的内饰设计来自苹果前首席设计师乔尼·艾维。在特斯拉推动大屏设计成为行业主流的当下，艾维选择走不同路线——核心控制依靠高质量的实体开关和拨杆完成，每一次操作都有明确的机械反馈。方向盘由19个精密加工部件构成，集成 Manettino 旋钮。",
+      "comment": "当所有人都在做大屏时，艾维说：不，我们要拨钮",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-04-03/doc-inhtepti3823751.shtml",
+      "category": "🚗 设计"
+    },
+    {
+      "date": "20260403",
+      "weekday": "周五",
+      "issue": "第15期",
+      "title": "移动电源新国标出台，引入针刺试验并要求标明建议使用年限",
+      "content": "工信部组织制定的强制性国家标准 GB 47372-2026《移动电源安全技术规范》4月3日正式发布。新标准在原有基础上明确了多项关键要求：引入针刺试验、提升高温/过度充电/挤压场景安全防护能力、新增循环老化检测，并要求标明建议安全使用年限。",
+      "comment": "充电宝终于有了「保质期」，以后过期的不只是牛奶了",
+      "url": "https://www.36kr.com/newsflashes/3750521109660420",
+      "category": "🔋 标准"
     },
     {
       "date": "20260402",

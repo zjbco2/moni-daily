@@ -276,7 +276,9 @@ createApp({
       }
 
       const text = bubbles.value[idx].text;
-      const u = new SpeechSynthesisUtterance(text);
+      // 去掉 emoji 再播报
+      const cleanText = text.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE00}-\u{FE0F}\u{200D}\u{20E3}\u{E0020}-\u{E007F}]/gu, '').replace(/\s+/g, ' ').trim();
+      const u = new SpeechSynthesisUtterance(cleanText);
       u.lang = 'zh-CN';
       u.rate = 0.6 + Math.random() * 0.8;   // 0.6~1.4
       u.pitch = 0.5 + Math.random() * 1.1;  // 0.5~1.6
