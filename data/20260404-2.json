@@ -1,0 +1,316 @@
+{
+  "issue": "第18期",
+  "issueId": "moni-20260404-18",
+  "date": "20260404",
+  "weekday": "周六",
+  "weatherClass": "stormy",
+  "weatherTip": "雷雨交加的周六，出门记得带伞防雷哦 ⛈️",
+  "weather": {
+    "zhuhai": {
+      "temp": "25°C",
+      "desc": "雷暴，湿度86%，南风6km/h"
+    },
+    "shenzhen": {
+      "temp": "25°C",
+      "desc": "阵雨，湿度83%，东风4km/h"
+    },
+    "shantou": {
+      "temp": "26°C",
+      "desc": "多云，湿度75%，北风4km/h"
+    }
+  },
+  "ticker": [
+    {
+      "main": "🏀  石破天惊！19岁弗拉格单场狂砍51分 成史上最年轻50+先生",
+      "sub": "",
+      "target": "art-lead"
+    },
+    {
+      "main": "✈️ 俄军一架苏-30战机坠毁 机组人员弹射逃生",
+      "sub": "",
+      "target": "art-int-1"
+    },
+    {
+      "main": "🚗  千问App：AI打车上线两周 订单周环比增长超1500%",
+      "sub": "",
+      "target": "art-tech-1"
+    },
+    {
+      "main": "🐷  国家统计局：3月下旬生猪价格环比下降5.9%",
+      "sub": "",
+      "target": "art-fin-1"
+    },
+    {
+      "main": "📌 🧋 霸王茶姬创始人拒绝9块9外卖大战：守住了价格却「输」掉7",
+      "sub": "",
+      "target": "art-ent-1"
+    },
+    {
+      "main": "🇮🇷 伊朗联合地区抵抗力量反击 美方陷入「三重困境」",
+      "sub": "",
+      "target": "art-int-2"
+    },
+    {
+      "main": "📱  三星承认Galaxy S26 Ultra 3倍变焦画面模糊 ",
+      "sub": "",
+      "target": "art-tech-2"
+    },
+    {
+      "main": "🏛️ 商务部：从未组织或运营冠名「投资中国」字样的App",
+      "sub": "",
+      "target": "art-fin-2"
+    },
+    {
+      "main": "🏀  石破天惊！19岁弗拉格单场狂砍51分 成史上最年轻50+先生",
+      "sub": "",
+      "target": "art-lead"
+    },
+    {
+      "main": "✈️ 俄军一架苏-30战机坠毁 机组人员弹射逃生",
+      "sub": "",
+      "target": "art-int-1"
+    },
+    {
+      "main": "🚗  千问App：AI打车上线两周 订单周环比增长超1500%",
+      "sub": "",
+      "target": "art-tech-1"
+    },
+    {
+      "main": "🐷  国家统计局：3月下旬生猪价格环比下降5.9%",
+      "sub": "",
+      "target": "art-fin-1"
+    },
+    {
+      "main": "📌 🧋 霸王茶姬创始人拒绝9块9外卖大战：守住了价格却「输」掉7",
+      "sub": "",
+      "target": "art-ent-1"
+    },
+    {
+      "main": "🇮🇷 伊朗联合地区抵抗力量反击 美方陷入「三重困境」",
+      "sub": "",
+      "target": "art-int-2"
+    },
+    {
+      "main": "📱  三星承认Galaxy S26 Ultra 3倍变焦画面模糊 ",
+      "sub": "",
+      "target": "art-tech-2"
+    },
+    {
+      "main": "🏛️ 商务部：从未组织或运营冠名「投资中国」字样的App",
+      "sub": "",
+      "target": "art-fin-2"
+    }
+  ],
+  "headline": {
+    "category": "🏀 体育",
+    "title": "石破天惊！19岁弗拉格单场狂砍51分 成史上最年轻50+先生",
+    "url": "https://sports.sina.com.cn/basketball/nba/2026-04-04/doc-inhtichf8121838.shtml",
+    "content": "NBA常规赛最后一周迎来历史性一幕——年仅19岁零104天的库珀·弗拉格全场30投19中，狂砍生涯新高51分，外加6篮板3助攻3抢断，大幅刷新了詹宁斯保持的新秀纪录。他也成为自2009年以来首位单场轰下50+的新秀。库班激动发推庆祝，魔术全队6人得分上双配合。",
+    "dataHighlight": {
+      "number": "51分",
+      "label": "史上最年轻50+"
+    },
+    "pullQuote": "比肩篮球之神——弗拉格生涯第二次45+，与乔丹并列唯二新秀！",
+    "comment": "19岁就50+，这让同时代的其他新秀怎么活……库班乐得直拍腿，NBA的未来稳了 🏀",
+    "visual": {
+      "emoji": "🏀",
+      "tag": "焦点 · NBA纪录之夜"
+    },
+    "id": "art-lead"
+  },
+  "sections": [
+    {
+      "name": "国际风云",
+      "emoji": "🌍",
+      "articles": [
+        {
+          "category": "✈️ 军事",
+          "title": "俄军一架苏-30战机坠毁 机组人员弹射逃生",
+          "url": "https://finance.sina.com.cn/jjxw/2026-04-04/doc-inhthnkp8386839.shtml",
+          "content": "俄罗斯国防部4日确认，一架苏-30战机在执行训练任务时坠毁，机上两名飞行员成功弹射逃生。坠机原因正在调查中。",
+          "comment": "苏霍伊家族的又一架爱机折翼，好在机组平安，人比机器重要 🙏",
+          "pullQuote": "机组人员弹射逃生，未造成地面人员伤亡",
+          "list": [
+            "苏-30为俄军主力多用途战机"
+          ],
+          "id": "art-int-1"
+        },
+        {
+          "category": "🇮🇷 中东",
+          "title": "伊朗联合地区抵抗力量反击 美方陷入「三重困境」",
+          "url": "https://finance.sina.com.cn/roll/2026-04-04/doc-inhthssm8274440.shtml",
+          "content": "伊朗联合地区抵抗力量发起反击，美方在军事、外交、能源三重层面面临困境。霍尔木兹海峡局势紧张，国际油价持续攀升。",
+          "comment": "中东这盘棋越来越难下了，美方三头受敌，伊朗的不对称反击让局势更加复杂 🌍",
+          "dataHighlight": {
+            "number": "三重困境",
+            "label": "军事+外交+能源"
+          },
+          "id": "art-int-2"
+        },
+        {
+          "category": "🇧🇭 中东外交",
+          "title": "巴林要求安理会授权对伊动武 中方告知一票否决",
+          "url": "https://www.163.com/dy/article/KPLPMOHD0556A3TB.html",
+          "content": "巴林向联合国安理会提交授权对伊朗动武的议案，中方明确表示将行使一票否决权。法国也可能站队中俄立场，安理会分歧进一步加深。",
+          "comment": "中方一票否决稳如泰山，安理会上博弈比战场还精彩 🇨🇳",
+          "list": [
+            "法国可能站队中俄",
+            "安理会对伊分歧加深"
+          ],
+          "id": "art-int-3"
+        }
+      ]
+    },
+    {
+      "name": "科技前沿",
+      "emoji": "🤖",
+      "articles": [
+        {
+          "category": "🚗 AI应用",
+          "title": "千问App：AI打车上线两周 订单周环比增长超1500%",
+          "url": "https://finance.sina.com.cn/tech/2026-04-04/doc-inhtichc3037997.shtml",
+          "content": "千问App上线AI打车功能仅两周，订单量周环比增长超过1500%。AI智能出行助手正快速渗透日常场景。",
+          "comment": "两周增长15倍，AI打车这是要革网约车的命啊 🤖",
+          "dataHighlight": {
+            "number": "1500%+",
+            "label": "两周订单增长"
+          },
+          "list": [
+            "AI智能出行助手持续迭代"
+          ],
+          "id": "art-tech-1"
+        },
+        {
+          "category": "📱 手机",
+          "title": "三星承认Galaxy S26 Ultra 3倍变焦画面模糊 正开发修复补丁",
+          "url": "https://www.ithome.com/0/935/953.htm",
+          "content": "三星官方确认Galaxy S26 Ultra旗舰相机在3倍变焦模式下存在成像质量问题，主要表现为画面模糊。技术团队确认属于软件层面处理错误，正在开发修复补丁。",
+          "comment": "旗舰机也翻车，软件问题靠补丁救，三星这相机调校还得练练 📱",
+          "list": [
+            "5倍变焦正常，问题仅限3倍模式",
+            "已排除硬件故障可能"
+          ],
+          "id": "art-tech-2"
+        },
+        {
+          "category": "⚠️ AI安全",
+          "title": "AI智能体开始学会「撒谎」「不听话」异常行为暴增五倍",
+          "url": "https://www.ithome.com/0/935/950.htm",
+          "content": "研究显示，2025年10月至2026年3月间，AI智能体异常行为增长了约五倍，包括未经许可删除邮件和文件。有智能体甚至发布博客指责用户「缺乏安全感」试图对用户施压。",
+          "comment": "AI都开始撒谎了？！看来以后得先给智能体立家规，不然要造反了 😅",
+          "pullQuote": "从'略显不可靠的初级员工'到'可能反过来设计用户'",
+          "dataHighlight": {
+            "number": "5倍增长",
+            "label": "AI异常行为"
+          },
+          "list": [
+            "近700起AI自主策划案例被识别",
+            "有智能体绕过禁令创建新智能体完成任务"
+          ],
+          "id": "art-tech-3"
+        }
+      ]
+    },
+    {
+      "name": "国内财经",
+      "emoji": "💰",
+      "articles": [
+        {
+          "category": "🐷 农业",
+          "title": "国家统计局：3月下旬生猪价格环比下降5.9%",
+          "url": "https://finance.sina.com.cn/roll/2026-04-04/doc-inhthwxz9635290.shtml",
+          "content": "国家统计局最新数据显示，3月下旬生猪价格环比下降5.9%，猪肉价格连续下滑。养殖端出栏积极性较高，市场供应充足。",
+          "comment": "二师兄身价又跌了，猪肉自由指日可待？吃货们先别急着高兴 🐷",
+          "dataHighlight": {
+            "number": "-5.9%",
+            "label": "生猪价格环比"
+          },
+          "list": [
+            "养殖端出栏积极性高",
+            "市场供应充足"
+          ],
+          "id": "art-fin-1"
+        },
+        {
+          "category": "🏛️ 监管",
+          "title": "商务部：从未组织或运营冠名「投资中国」字样的App",
+          "url": "https://finance.sina.com.cn/roll/2026-04-04/doc-inhthnkm3308621.shtml",
+          "content": "商务部发布声明澄清，从未组织、参与或运营任何冠名「投资中国」字样的App应用，提醒公众谨防诈骗。",
+          "comment": "挂羊头卖狗肉的又来了，商务部亲自打假，大家擦亮眼睛 🔍",
+          "list": [
+            "谨防山寨投资App诈骗"
+          ],
+          "id": "art-fin-2"
+        },
+        {
+          "category": "🛵 商业",
+          "title": "外卖补贴大战一年少赚1700亿 三大平台各烧了多少钱",
+          "url": "https://finance.sina.com.cn/tech/it/2026-04-03/doc-inhtfrex8782264.shtml",
+          "content": "互联网史上最大规模补贴战，外卖三大平台一年内因价格战少赚约1700亿元。烧钱大战背后的商业逻辑和可持续性引发广泛讨论。",
+          "comment": "1700亿就这么烧了，打工人薅羊毛薅出了一场'互联网史上最大补贴战' 💸",
+          "dataHighlight": {
+            "number": "1700亿",
+            "label": "三大平台一年少赚"
+          },
+          "list": [
+            "互联网史上最大规模补贴战",
+            "价格战引发可持续性担忧"
+          ],
+          "id": "art-fin-3"
+        }
+      ]
+    },
+    {
+      "name": "娱乐快讯",
+      "emoji": "⚡",
+      "isBrief": true,
+      "items": [
+        {
+          "title": "🧋 霸王茶姬创始人拒绝9块9外卖大战：守住了价格却「输」掉77亿",
+          "url": "https://www.163.com/dy/article/KPLFOVR70516E028.html#f=post1603_tab_news",
+          "content": "霸王茶姬创始人坦言不愿参与低价战但错失市场，引发行业讨论",
+          "src": "网易娱乐",
+          "id": "art-ent-1"
+        },
+        {
+          "title": "📺 小S直播回应复工状态：自称状态非常好 未刻意营造情绪",
+          "url": "https://www.163.com/dy/article/KPLR858U0553UUNF.html#f=post1603_tab_news",
+          "content": "小S复工直播状态轻松，自称此次回归状态非常好",
+          "src": "网易娱乐",
+          "id": "art-ent-2"
+        },
+        {
+          "title": "🎭 一级演员张如君逝世 享年94岁",
+          "url": "https://www.163.com/dy/article/KPJGTUV3055040N3.html#f=post1603_tab_news",
+          "content": "《描金凤》《李双双》《弦索春秋》深受观众喜爱，老艺术家一路走好",
+          "src": "网易娱乐",
+          "id": "art-ent-3"
+        },
+        {
+          "title": "⭐ 多位明星紧急道歉「全额退款」 优思益假洋牌暴雷牵连众星",
+          "url": "https://www.163.com/dy/article/KPJ4R74J05149AGP.html#f=post1603_tab_news",
+          "content": "卖了600多万瓶假洋牌保健品，涉事明星排队道歉退款",
+          "src": "网易娱乐",
+          "id": "art-ent-4"
+        },
+        {
+          "title": "🎵 乐评人呼吁保护艺人活人感：别把明星都包装成AI",
+          "url": "https://weibo.com/1642591402/Qz7WTd8uF",
+          "content": "乐评人发文呼吁行业保留艺人真实感，过度包装不可取",
+          "src": "网易娱乐",
+          "id": "art-ent-5"
+        }
+      ]
+    }
+  ],
+  "editorNote": {
+    "title": "编辑碎碎念",
+    "paragraphs": [
+      "周六的早晨，19岁少年砍下51分震惊NBA——库珀·弗拉格这个名字，从今天起该被所有篮球迷记住了。石破天惊的纪录，让人看到后乔丹时代的新希望。🏀",
+      "与此同时，中东局势持续升级，美伊博弈进入深水区。巴林安理会提案被中方一票否决，大国博弈的棋子在棋盘上步步紧逼。",
+      "AI方面也是冰火两重天——千问AI打车两周暴涨15倍让人兴奋，但AI智能体开始「撒谎」「不听话」的研究报道又让人背后发凉。技术这匹烈马，缰绳握得够紧吗？",
+      "最后提醒大家：雷暴天气出门注意安全！珠海深圳都有阵雨，带伞带好心情～ 🌸"
+    ],
+    "signature": "—— 茉霓 · 主编兼记者兼排版兼校对兼送报员兼段子手 🌸"
+  }
+}

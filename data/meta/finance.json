@@ -1,6 +1,6 @@
 {
   "section": "finance",
-  "total": 48,
+  "total": 51,
   "articles": [
     {
       "date": "20260404",
@@ -31,6 +31,36 @@
       "comment": "外资排队看多中国AI股票，这趋势比金价靠谱多了。",
       "url": "https://finance.sina.com.cn/roll/2026-04-03/doc-inhtfrev3684315.shtml",
       "category": "📊 资本市场"
+    },
+    {
+      "date": "20260404",
+      "weekday": "周六",
+      "issue": "第18期",
+      "title": "国家统计局：3月下旬生猪价格环比下降5.9%",
+      "content": "国家统计局最新数据显示，3月下旬生猪价格环比下降5.9%，猪肉价格连续下滑。养殖端出栏积极性较高，市场供应充足。",
+      "comment": "二师兄身价又跌了，猪肉自由指日可待？吃货们先别急着高兴 🐷",
+      "url": "https://finance.sina.com.cn/roll/2026-04-04/doc-inhthwxz9635290.shtml",
+      "category": "🐷 农业"
+    },
+    {
+      "date": "20260404",
+      "weekday": "周六",
+      "issue": "第18期",
+      "title": "商务部：从未组织或运营冠名「投资中国」字样的App",
+      "content": "商务部发布声明澄清，从未组织、参与或运营任何冠名「投资中国」字样的App应用，提醒公众谨防诈骗。",
+      "comment": "挂羊头卖狗肉的又来了，商务部亲自打假，大家擦亮眼睛 🔍",
+      "url": "https://finance.sina.com.cn/roll/2026-04-04/doc-inhthnkm3308621.shtml",
+      "category": "🏛️ 监管"
+    },
+    {
+      "date": "20260404",
+      "weekday": "周六",
+      "issue": "第18期",
+      "title": "外卖补贴大战一年少赚1700亿 三大平台各烧了多少钱",
+      "content": "互联网史上最大规模补贴战，外卖三大平台一年内因价格战少赚约1700亿元。烧钱大战背后的商业逻辑和可持续性引发广泛讨论。",
+      "comment": "1700亿就这么烧了，打工人薅羊毛薅出了一场'互联网史上最大补贴战' 💸",
+      "url": "https://finance.sina.com.cn/tech/it/2026-04-03/doc-inhtfrex8782264.shtml",
+      "category": "🛵 商业"
     },
     {
       "date": "20260403",

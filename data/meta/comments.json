@@ -1,10 +1,10 @@
 {
-  "total": 160,
+  "total": 170,
   "by_section": {
-    "头条": 16,
-    "国际风云": 48,
-    "科技前沿": 48,
-    "国内财经": 48
+    "头条": 17,
+    "国际风云": 51,
+    "科技前沿": 51,
+    "国内财经": 51
   },
   "comments": [
     {
@@ -15,6 +15,15 @@
       "url": "https://news.sina.com.cn/w/2026-04-03/doc-inhtfres0174904.shtml",
       "weekday": "周六",
       "issue": "第17期"
+    },
+    {
+      "comment": "19岁就50+，这让同时代的其他新秀怎么活……库班乐得直拍腿，NBA的未来稳了 🏀",
+      "title": "石破天惊！19岁弗拉格单场狂砍51分 成史上最年轻50+先生",
+      "date": "20260404",
+      "section": "头条",
+      "url": "https://sports.sina.com.cn/basketball/nba/2026-04-04/doc-inhtichf8121838.shtml",
+      "weekday": "周六",
+      "issue": "第18期"
     },
     {
       "comment": "28人、步枪、手榴弹、星链——这情报线不是一般热闹。",
@@ -44,6 +53,33 @@
       "issue": "第17期"
     },
     {
+      "comment": "苏霍伊家族的又一架爱机折翼，好在机组平安，人比机器重要 🙏",
+      "title": "俄军一架苏-30战机坠毁 机组人员弹射逃生",
+      "date": "20260404",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/jjxw/2026-04-04/doc-inhthnkp8386839.shtml",
+      "weekday": "周六",
+      "issue": "第18期"
+    },
+    {
+      "comment": "中东这盘棋越来越难下了，美方三头受敌，伊朗的不对称反击让局势更加复杂 🌍",
+      "title": "伊朗联合地区抵抗力量反击 美方陷入「三重困境」",
+      "date": "20260404",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/roll/2026-04-04/doc-inhthssm8274440.shtml",
+      "weekday": "周六",
+      "issue": "第18期"
+    },
+    {
+      "comment": "中方一票否决稳如泰山，安理会上博弈比战场还精彩 🇨🇳",
+      "title": "巴林要求安理会授权对伊动武 中方告知一票否决",
+      "date": "20260404",
+      "section": "国际风云",
+      "url": "https://www.163.com/dy/article/KPLPMOHD0556A3TB.html",
+      "weekday": "周六",
+      "issue": "第18期"
+    },
+    {
       "comment": "归零程序启动，中国商业航天的又一次大考。",
       "title": "天龙三号运载火箭发射失利，将执行航天归零程序",
       "date": "20260404",
@@ -71,6 +107,33 @@
       "issue": "第17期"
     },
     {
+      "comment": "两周增长15倍，AI打车这是要革网约车的命啊 🤖",
+      "title": "千问App：AI打车上线两周 订单周环比增长超1500%",
+      "date": "20260404",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/2026-04-04/doc-inhtichc3037997.shtml",
+      "weekday": "周六",
+      "issue": "第18期"
+    },
+    {
+      "comment": "旗舰机也翻车，软件问题靠补丁救，三星这相机调校还得练练 📱",
+      "title": "三星承认Galaxy S26 Ultra 3倍变焦画面模糊 正开发修复补丁",
+      "date": "20260404",
+      "section": "科技前沿",
+      "url": "https://www.ithome.com/0/935/953.htm",
+      "weekday": "周六",
+      "issue": "第18期"
+    },
+    {
+      "comment": "AI都开始撒谎了？！看来以后得先给智能体立家规，不然要造反了 😅",
+      "title": "AI智能体开始学会「撒谎」「不听话」异常行为暴增五倍",
+      "date": "20260404",
+      "section": "科技前沿",
+      "url": "https://www.ithome.com/0/935/950.htm",
+      "weekday": "周六",
+      "issue": "第18期"
+    },
+    {
       "comment": "1730亿买三足鼎立，消费者薅羊毛薅到手软。",
       "title": "外卖大战一年烧掉1730亿，三大平台各烧了多少钱",
       "date": "20260404",
@@ -96,6 +159,33 @@
       "url": "https://finance.sina.com.cn/roll/2026-04-03/doc-inhtfrev3684315.shtml",
       "weekday": "周六",
       "issue": "第17期"
+    },
+    {
+      "comment": "二师兄身价又跌了，猪肉自由指日可待？吃货们先别急着高兴 🐷",
+      "title": "国家统计局：3月下旬生猪价格环比下降5.9%",
+      "date": "20260404",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/roll/2026-04-04/doc-inhthwxz9635290.shtml",
+      "weekday": "周六",
+      "issue": "第18期"
+    },
+    {
+      "comment": "挂羊头卖狗肉的又来了，商务部亲自打假，大家擦亮眼睛 🔍",
+      "title": "商务部：从未组织或运营冠名「投资中国」字样的App",
+      "date": "20260404",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/roll/2026-04-04/doc-inhthnkm3308621.shtml",
+      "weekday": "周六",
+      "issue": "第18期"
+    },
+    {
+      "comment": "1700亿就这么烧了，打工人薅羊毛薅出了一场'互联网史上最大补贴战' 💸",
+      "title": "外卖补贴大战一年少赚1700亿 三大平台各烧了多少钱",
+      "date": "20260404",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/tech/it/2026-04-03/doc-inhtfrex8782264.shtml",
+      "weekday": "周六",
+      "issue": "第18期"
     },
     {
       "comment": "三方联手上演中东「复仇者联盟」，只是没有钢铁侠来救场",

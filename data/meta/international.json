@@ -1,6 +1,6 @@
 {
   "section": "international",
-  "total": 48,
+  "total": 51,
   "articles": [
     {
       "date": "20260404",
@@ -31,6 +31,36 @@
       "comment": "全球20%LNG命脉的首航，市场盯着它能不能平安到港。",
       "url": "https://www.163.com/dy/article/KPJS893I05198CJN.html",
       "category": "🚢 能源航道"
+    },
+    {
+      "date": "20260404",
+      "weekday": "周六",
+      "issue": "第18期",
+      "title": "俄军一架苏-30战机坠毁 机组人员弹射逃生",
+      "content": "俄罗斯国防部4日确认，一架苏-30战机在执行训练任务时坠毁，机上两名飞行员成功弹射逃生。坠机原因正在调查中。",
+      "comment": "苏霍伊家族的又一架爱机折翼，好在机组平安，人比机器重要 🙏",
+      "url": "https://finance.sina.com.cn/jjxw/2026-04-04/doc-inhthnkp8386839.shtml",
+      "category": "✈️ 军事"
+    },
+    {
+      "date": "20260404",
+      "weekday": "周六",
+      "issue": "第18期",
+      "title": "伊朗联合地区抵抗力量反击 美方陷入「三重困境」",
+      "content": "伊朗联合地区抵抗力量发起反击，美方在军事、外交、能源三重层面面临困境。霍尔木兹海峡局势紧张，国际油价持续攀升。",
+      "comment": "中东这盘棋越来越难下了，美方三头受敌，伊朗的不对称反击让局势更加复杂 🌍",
+      "url": "https://finance.sina.com.cn/roll/2026-04-04/doc-inhthssm8274440.shtml",
+      "category": "🇮🇷 中东"
+    },
+    {
+      "date": "20260404",
+      "weekday": "周六",
+      "issue": "第18期",
+      "title": "巴林要求安理会授权对伊动武 中方告知一票否决",
+      "content": "巴林向联合国安理会提交授权对伊朗动武的议案，中方明确表示将行使一票否决权。法国也可能站队中俄立场，安理会分歧进一步加深。",
+      "comment": "中方一票否决稳如泰山，安理会上博弈比战场还精彩 🇨🇳",
+      "url": "https://www.163.com/dy/article/KPLPMOHD0556A3TB.html",
+      "category": "🇧🇭 中东外交"
     },
     {
       "date": "20260403",
