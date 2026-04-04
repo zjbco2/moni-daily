@@ -1,6 +1,6 @@
 {
   "section": "entertainment",
-  "total": 83,
+  "total": 93,
   "articles": [
     {
       "date": "20260404",
@@ -100,6 +100,106 @@
       "content": "乐评人发文呼吁行业保留艺人真实感，过度包装不可取",
       "comment": "",
       "url": "https://weibo.com/1642591402/Qz7WTd8uF",
+      "category": "快讯"
+    },
+    {
+      "date": "20260404",
+      "weekday": "周六",
+      "issue": "第19期",
+      "title": "🎬 曝宋宁峰张婉婷签订离婚协议",
+      "content": "演员宋宁峰与张婉婷正式签订离婚协议，多年关系画上句号",
+      "comment": "",
+      "url": "https://weibo.com/1642591402/Qzg0lA4iv",
+      "category": "快讯"
+    },
+    {
+      "date": "20260404",
+      "weekday": "周六",
+      "issue": "第19期",
+      "title": "🎤 范玮琪希望大家不要被舆论带偏",
+      "content": "范玮琪发文呼吁理性追星，希望大家不要被网络舆论带偏节奏",
+      "comment": "",
+      "url": "https://weibo.com/1642591402/QzeJz8mUC",
+      "category": "快讯"
+    },
+    {
+      "date": "20260404",
+      "weekday": "周六",
+      "issue": "第19期",
+      "title": "🎬 多位明星紧急道歉全额退款",
+      "content": "央视曝光澳洲优思益保健品虚假营销后，章小蕙、李若彤、明道等十余位代言明星发布致歉声明",
+      "comment": "",
+      "url": "https://news.sina.com.cn/s/2026-04-02/doc-inhtcnfs0862184.shtml",
+      "category": "快讯"
+    },
+    {
+      "date": "20260404",
+      "weekday": "周六",
+      "issue": "第19期",
+      "title": "🎭 李圣经唱A Whole New World",
+      "content": "韩国艺人李圣经惊艳演绎经典曲目A Whole New World，引发全网热议",
+      "comment": "",
+      "url": "https://weibo.com/1642591402/QzffKfQlW",
+      "category": "快讯"
+    },
+    {
+      "date": "20260404",
+      "weekday": "周六",
+      "issue": "第19期",
+      "title": "🎬 制片人说阿凡达4和5在全速推进中",
+      "content": "制片人确认阿凡达第四部和第五部正在全速推进制作中",
+      "comment": "",
+      "url": "https://weibo.com/1642591402/QzftUCVsn",
+      "category": "快讯"
+    },
+    {
+      "date": "20260404",
+      "weekday": "周六",
+      "issue": "第19期",
+      "title": "💰 金饰克价涨到1460元",
+      "content": "黄金饰品价格持续上涨，克价已涨到1460元，买金的快乐越来越奢侈",
+      "comment": "",
+      "url": "https://s.weibo.com/weibo?q=%23%E9%87%91%E9%A5%B0%E5%85%8B%E4%BB%B7%E6%B6%A8%E5%88%B01460%E5%85%83%23",
+      "category": "快讯"
+    },
+    {
+      "date": "20260403",
+      "weekday": "周五",
+      "issue": "第14期",
+      "title": "📢 多位明星紧急道歉，承诺「全额退款」",
+      "content": "优思益事件持续发酵，章小蕙、李若彤、明道等十余位明星或签约代言或直播带货，事件曝光后纷纷发布致歉声明承诺全额退款。与辉同行等头部直播间曾带货该品牌产品。",
+      "comment": "",
+      "url": "https://news.sina.com.cn/s/2026-04-02/doc-inhtcnfs0862184.shtml",
+      "category": "快讯"
+    },
+    {
+      "date": "20260403",
+      "weekday": "周五",
+      "issue": "第14期",
+      "title": "🎤 62岁韦唯现状曝光，脊柱断裂令人唏嘘",
+      "content": "曾以《亚洲雄风》红遍全国的「亚洲天后」韦唯，如今62岁，脊柱断裂、前夫已死，现状曝光让人唏嘘不已。",
+      "comment": "",
+      "url": "https://www.163.com/dy/article/KPH38QVI0556639U.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260403",
+      "weekday": "周五",
+      "issue": "第14期",
+      "title": "⚽ 姆巴佩替补登场主动索要队长袖标引争议",
+      "content": "姆巴佩替补登场后主动向队友索要队长袖标，被指在生日当天让35岁队友难堪，球迷意见两极分化。",
+      "comment": "",
+      "url": "https://www.163.com/dy/article/KPHSQFCO0529CA1F.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260403",
+      "weekday": "周五",
+      "issue": "第14期",
+      "title": "🎭 43岁林依晨参演《暗恋桃花源》话剧，颜值变化引热议",
+      "content": "林依晨时隔多年重返话剧舞台，参演经典作品《暗恋桃花源》，被网友评价「变得憔悴了好多」，但演技依旧在线。",
+      "comment": "",
+      "url": "https://www.163.com/dy/article/KPHHDN2C0552JOAV.html",
       "category": "快讯"
     },
     {
