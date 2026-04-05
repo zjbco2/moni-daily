@@ -1,9 +1,39 @@
-  const container = document.getElementById('shelvesContainer');
+const container = document.getElementById('shelvesContainer');
   const PER_SHELF = 4;
   
   let allEditions = [];
   let searchIndex = [];
   let currentEditions = [];
+  let groupedData = [];  // [{month, monthLabel, days: [{date, dayLabel, editions: []}]}]
+  
+  // ============================
+  // 数据分组
+  // ============================
+  function groupEditions(editions) {
+    const months = {};
+    const monthOrder = [];
+    for (const ed of editions) {
+      const ym = ed.date.substr(0, 7);
+      const md = ed.date.substr(5);
+      const dayNum = parseInt(ed.date.substr(8));
+      if (!months[ym]) {
+        months[ym] = {};
+        monthOrder.push(ym);
+      }
+      if (!months[ym][md]) {
+        months[ym][md] = { date: ed.date, dayLabel: `${dayNum}日`, editions: [] };
+      }
+      months[ym][md].editions.push(ed);
+    }
+    return monthOrder.map(ym => {
+      const days = Object.values(months[ym]);
+      return {
+        month: ym,
+        monthLabel: parseInt(ym.substr(5)) + '月',
+        days: days
+      };
+    });
+  }
   
   // ============================
   // 加载数据
@@ -13,16 +43,19 @@
       const edRes = await fetch('data/meta/editions.json?t=' + Date.now());
       const edData = await edRes.json();
       allEditions = edData.editions || [];
+      groupedData = groupEditions(allEditions);
       
       document.getElementById('totalEditions').textContent = `累计 ${allEditions.length} 期`;
       updateCount(allEditions.length, false);
       renderShelves(allEditions);
+      renderDateIndex();
       
-      // 延迟加载搜索索引（不阻塞渲染）
       fetch('data/meta/search-index.json?t=' + Date.now())
         .then(r => r.json())
         .then(d => { searchIndex = d.articles || []; })
         .catch(e => { /* 搜索未就绪 */ });
+      
+      initScrollSpy();
     } catch (e) {
       container.innerHTML = '<div class="empty-shelf"><div class="icon">😵</div><p>数据加载失败，请刷新重试</p></div>';
       console.error('加载失败:', e);
@@ -49,7 +82,6 @@
   
   var sectionActions = document.querySelector('.section-actions');
   
-  // 点击🔍图标展开
   document.querySelector('.search-label').addEventListener('click', function() {
     if (!searchInput.classList.contains('expanded')) {
       searchInput.classList.add('expanded');
@@ -59,7 +91,6 @@
     searchInput.focus();
   });
   
-  // 点击输入框（已展开时）
   searchInput.addEventListener('click', function() {
     if (!this.classList.contains('expanded')) {
       this.classList.add('expanded');
@@ -67,11 +98,9 @@
     }
   });
 
-  // 失焦收起（延迟避免与 clear 按钮冲突）
   searchInput.addEventListener('blur', function() {
     const input = this;
     setTimeout(() => {
-      // 检查当前焦点是否还在搜索区域内
       const active = document.activeElement;
       if (!active || (active !== input && !active.closest('.search-wrapper'))) {
         if (input.value.trim() === '') {
@@ -83,7 +112,6 @@
     }, 250);
   });
 
-  // Escape 收起
   searchInput.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
       this.value = '';
@@ -94,20 +122,17 @@
     }
   });
   
-  // 实时搜索
   searchInput.addEventListener('input', function() {
     const query = this.value.trim().toLowerCase();
     searchClear.classList.toggle('visible', query.length > 0);
     if (query.length > 0) sectionActions.classList.add('mode-search');
     
     if (query === '') {
-      // 恢复全部
       updateCount(allEditions.length, false);
       renderShelves(allEditions);
       return;
     }
     
-    // 在 search-index 中查找匹配的文章
     const matchedArticleEditionIds = new Set();
     searchIndex.forEach(article => {
       const text = [article.title, article.preview, article.comment, article.category, article.section].join(' ').toLowerCase();
@@ -116,20 +141,114 @@
       }
     });
     
-    // 只保留有匹配文章的期
     const filtered = allEditions.filter(ed => matchedArticleEditionIds.has(ed.id));
     
     updateCount(filtered.length, true);
     renderShelves(filtered);
   });
   
-  // 清空按钮（不清空时收起搜索框）
   searchClear.addEventListener('click', function(e) {
     e.stopPropagation();
     searchInput.value = '';
     searchInput.dispatchEvent(new Event('input'));
     searchInput.focus();
   });
+
+  // ============================
+  // 日期索引渲染
+  // ============================
+  function renderDateIndex() {
+    var el = document.getElementById('dateIndex');
+    if (!groupedData.length) { el.innerHTML = ''; return; }
+    
+    var today = new Date();
+    var todayStr = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0') + '-' + String(today.getDate()).padStart(2, '0');
+    
+    var html = '';
+    for (var m = 0; m < groupedData.length; m++) {
+      var mg = groupedData[m];
+      for (var d = 0; d < mg.days.length; d++) {
+        var day = mg.days[d];
+        var count = day.editions.length;
+        var lastDate = day.editions[count - 1].date;
+        
+        // 中文日期
+        var label;
+        if (day.date === todayStr) {
+          label = '今天';
+        } else {
+          var mm = parseInt(day.date.substr(5));
+          var dd = parseInt(day.date.substr(8));
+          label = mm + '月' + dd + '日';
+        }
+        
+        html += '<a class="idx-day" data-target="' + lastDate + '">'
+          + '<span class="day-num">' + label + '</span>'
+          + '<span class="day-count">' + count + '</span>'
+          + '</a>';
+      }
+    }
+    el.innerHTML = html;
+    
+    el.querySelectorAll('.idx-day').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        e.preventDefault();
+        scrollToDate(this.dataset.target);
+      });
+    });
+  }
+  
+  function scrollToDate(date) {
+    var row = container.querySelector('.shelf-row[data-date="' + date + '"]');
+    var monthDiv = document.getElementById('month-' + date.substr(0, 7).replace('-', ''));
+    var target = row || monthDiv;
+    if (target) {
+      var top = target.getBoundingClientRect().top + window.scrollY - 60;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    }
+  }
+  
+  // ============================
+  // 滚动监听（高亮当前日期索引）
+  // ============================
+  function initScrollSpy() {
+    var entries = [];
+    
+    document.querySelectorAll('.shelf-row[data-date]').forEach(function(row) {
+      var d = row.dataset.date;
+      if (!entries.find(function(e) { return e.date === d; })) {
+        entries.push({ date: d, el: row });
+      }
+    });
+    
+    if (!entries.length) return;
+    
+    function update() {
+      var scrollY = window.scrollY + window.innerHeight * 0.4;
+      var active = entries[0].date;
+      
+      for (var i = 0; i < entries.length; i++) {
+        var y = entries[i].el.getBoundingClientRect().top + window.scrollY;
+        if (y < scrollY) {
+          active = entries[i].date;
+        }
+      }
+      
+      document.querySelectorAll('.date-index .idx-day').forEach(function(a) {
+        a.classList.toggle('active', a.dataset.target === active);
+      });
+    }
+    
+    var ticking = false;
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        requestAnimationFrame(function() { update(); ticking = false; });
+        ticking = true;
+      }
+    }, { passive: true });
+    
+    setTimeout(update, 300);
+  }
   
   // ============================
   // 渲染报纸架
@@ -143,55 +262,81 @@
       return;
     }
     
-    for (let i = 0; i < list.length; i += PER_SHELF) {
-      const rowPapers = list.slice(i, i + PER_SHELF);
+    var monthGroups = buildMonthGroups(list);
+    
+    for (var mi = 0; mi < monthGroups.length; mi++) {
+      var mg = monthGroups[mi];
       
-      const shelfRow = document.createElement('div');
-      shelfRow.className = 'shelf-row';
+      var divider = document.createElement('div');
+      divider.className = 'month-divider';
+      divider.id = 'month-' + mg.month.replace('-', '');
+      divider.innerHTML = '<span class="month-label">' + mg.monthLabel + '</span>';
+      container.appendChild(divider);
       
-      let papersHtml = '<div class="papers-row">';
-      rowPapers.forEach(ed => {
-        const headlinesHtml = (ed.headlines || []).slice(0, 4).map(h => `<li>${h}</li>`).join('');
-        papersHtml += `
-          <div class="paper-card" data-file="${ed.file}">
-            <div class="paper-inner">
-              <div class="date-tab">
-                <div class="year">${ed.year}</div>
-                <div class="month">${ed.month}</div>
-                <div class="day">${ed.day}</div>
-                <div class="weekday">${ed.weekday}</div>
-              </div>
-              <div class="issue-badge">${ed.issue}</div>
-              <div class="paper-content">
-                <div class="mini-masthead">
-                  <h2>茉<em class="neon">霓</em>日报</h2>
-                  <div class="mini-subtitle">${ed.month}${ed.day}日 · ${ed.weekday} · ${ed.issue}</div>
-                </div>
-                <div class="paper-bottom">
-                  <ul class="mini-headlines">${headlinesHtml}</ul>
-                </div>
-                <div class="expand-hint">▸ 点击展开阅读</div>
-              </div>
-            </div>
-          </div>
-        `;
-      });
-      papersHtml += '</div>';
-      
-      shelfRow.innerHTML = `${papersHtml}<div class="wood-plank"></div>`;
-      container.appendChild(shelfRow);
+      for (var i = 0; i < mg.editions.length; i += PER_SHELF) {
+        var rowPapers = mg.editions.slice(i, i + PER_SHELF);
+        
+        var shelfRow = document.createElement('div');
+        shelfRow.className = 'shelf-row';
+        shelfRow.dataset.date = mg.editions[i].date;
+        
+        var papersHtml = '<div class="papers-row">';
+        rowPapers.forEach(function(ed) {
+          var headlinesHtml = (ed.headlines || []).slice(0, 4).map(function(h) { return '<li>' + h + '</li>'; }).join('');
+          papersHtml += '<div class="paper-card" data-file="' + ed.file + '">'
+            + '<div class="paper-inner">'
+              + '<div class="date-tab">'
+                + '<div class="year">' + ed.year + '</div>'
+                + '<div class="month">' + ed.month + '</div>'
+                + '<div class="day">' + ed.day + '</div>'
+                + '<div class="weekday">' + ed.weekday + '</div>'
+              + '</div>'
+              + '<div class="issue-badge">' + ed.issue + '</div>'
+              + '<div class="paper-content">'
+                + '<div class="mini-masthead">'
+                  + '<h2>茉<em class="neon">霓</em>日报</h2>'
+                  + '<div class="mini-subtitle">' + ed.month + ed.day + '日 · ' + ed.weekday + ' · ' + ed.issue + '</div>'
+                + '</div>'
+                + '<div class="paper-bottom">'
+                  + '<ul class="mini-headlines">' + headlinesHtml + '</ul>'
+                + '</div>'
+                + '<div class="expand-hint">▸ 点击展开阅读</div>'
+              + '</div>'
+            + '</div>'
+          + '</div>';
+        });
+        papersHtml += '</div>';
+        
+        shelfRow.innerHTML = papersHtml + '<div class="wood-plank"></div>';
+        container.appendChild(shelfRow);
+      }
     }
     
-    // 入场动画
     animateCards();
+  }
+  
+  function buildMonthGroups(editions) {
+    var groups = [];
+    for (var i = 0; i < editions.length; i++) {
+      var ed = editions[i];
+      var ym = ed.date.substr(0, 7);
+      var mg = groups.find(function(g) { return g.month === ym; });
+      if (!mg) {
+        var m = parseInt(ed.date.substr(5));
+        mg = { month: ym, monthLabel: m + '月', editions: [] };
+        groups.push(mg);
+      }
+      mg.editions.push(ed);
+    }
+    return groups;
   }
   
   // ============================
   // 入场动画
   // ============================
   function animateCards() {
-    const cards = document.querySelectorAll('.paper-card');
-    const observer = new IntersectionObserver((entries) => {
+    var cards = document.querySelectorAll('.paper-card');
+    var observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.style.opacity = '1';

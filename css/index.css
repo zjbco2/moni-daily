@@ -159,7 +159,131 @@
   .section-actions.mode-search .topic-btn,
   .section-actions.mode-search .search-label { display: none; }
 
-  /* === 报纸架 === */
+  /* === 月份分隔标题 === */
+.month-divider {
+  position: relative;
+  margin: 48px 0 20px;
+  padding: 0 12px;
+  text-align: center;
+}
+.month-divider .month-label {
+  display: inline-block;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--accent);
+  letter-spacing: 6px;
+  position: relative;
+  padding: 0 24px;
+  background: var(--bg);
+  z-index: 1;
+}
+.month-divider::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--accent) 15%, var(--accent) 85%, transparent 100%);
+  opacity: 0.2;
+}
+
+/* === 日期索引（响应式定位） === */
+/* 默认 >1600px: 容器1600 → 一半=800 + 16间距=816 */
+/* ~1200px: 容器~1200 → 一半=600 + 16=616 */
+/* ~800px: 容器~800 → 一半=400 + 16=416 */
+.date-index {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(50vw + 816px);
+  z-index: 150;
+  max-height: 80vh;
+  transition: left 0.3s, opacity 0.3s, transform 0.3s;
+  text-align: left;
+  overflow-y: auto;
+}
+.date-index::-webkit-scrollbar { width: 0; }
+
+@media (max-width: 1400px) {
+  .date-index { left: calc(50vw + 700px); }
+}
+@media (max-width: 1200px) {
+  .date-index { left: calc(50vw + 600px); }
+}
+@media (max-width: 900px) {
+  .date-index { left: calc(50vw + 416px); }
+}
+@media (max-width: 600px) {
+  .date-index { left: calc(50vw + 216px); }
+}
+
+.date-index .idx-day {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 8px;
+  justify-content: flex-start;
+  height: 32px;
+  cursor: pointer;
+  transition: all 0.15s;
+  user-select: none;
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--muted);
+}
+.date-index .idx-day.active {
+  color: var(--accent);
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.date-index .idx-day:hover {
+  color: var(--accent);
+}
+.date-index .idx-day.active {
+  color: var(--accent);
+}
+.date-index .idx-day.active .day-num {
+  font-size: 26px;
+}
+.date-index .idx-day .day-num {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  transition: font-size 0.15s;
+}
+.date-index .idx-day .day-count {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  background: #e8e4de;
+  color: var(--muted);
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  transition: all 0.15s;
+}
+.date-index .idx-day.active .day-count {
+  color: var(--accent);
+  font-weight: 900;
+  font-size: 13px;
+}
+
+/* 搜索模式隐藏 */
+.shelf-area.mode-search .date-index { opacity: 0; pointer-events: none; }
+
+/* 搜索模式隐藏 */
+.shelf-area.mode-search .date-index { opacity: 0; pointer-events: none; transform: translateY(-50%) translateX(10px); }
+
+/* 移动端隐藏 */
+@media (max-width: 600px) {
+  .date-index { display: none; }
+}
+
+/* === 报纸架 === */
   .shelf-row { margin-bottom: 30px; position: relative; }
   .shelf-row .papers-row {
     display: grid; grid-template-columns: repeat(4, 1fr);
@@ -291,7 +415,7 @@
     background: var(--paper); color: var(--ink); border-radius: 28px;
     font-family: 'Noto Sans SC', sans-serif; font-weight: 700;
     text-decoration: none; box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    z-index: 100; border: 1px solid var(--light-border);
+    z-index: 200; border: 1px solid var(--light-border);
     display: flex; flex-direction: column; align-items: center; overflow: hidden;
     transition: box-shadow 0.25s; cursor: pointer; padding: 12px 0;
   }

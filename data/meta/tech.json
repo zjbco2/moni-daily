@@ -1,6 +1,6 @@
 {
   "section": "tech",
-  "total": 60,
+  "total": 63,
   "articles": [
     {
       "date": "20260405",
@@ -31,6 +31,36 @@
       "comment": "名字改了就不堵车了？先看看路上跑的吧。",
       "url": "https://finance.sina.com.cn/tech/roll/2026-04-04/doc-inhthwyf3132947.shtml",
       "category": "🏭 产业动态"
+    },
+    {
+      "date": "20260405",
+      "weekday": "周日",
+      "issue": "第4期",
+      "title": "全球首次！我国兆瓦级氢燃料航空涡桨发动机首飞成功",
+      "content": "4月4日，中国航发集团自主研制的兆瓦级氢燃料航空涡桨发动机AEP100配装7.5吨级无人运输机在株洲芦淞机场成功首飞，飞行16分钟、距离36公里。这是全球首次兆瓦级氢燃料航空发动机试飞，标志着我国在氢能航空领域打通了从核心部件到整机集成的全技术链。",
+      "comment": "烧氢气飞上天，中国航空这次直接把科幻片搬进现实 🌿✈️",
+      "url": "https://news.sina.com.cn/c/2026-04-04/doc-inhtiymv7794148.shtml",
+      "category": "🚀 航空动力"
+    },
+    {
+      "date": "20260405",
+      "weekday": "周日",
+      "issue": "第4期",
+      "title": "关停Sora后OpenAI收购TBPN播客，亲自下场做媒体",
+      "content": "OpenAI上月关闭Sora视频应用后，宣布收购科技商业播客TBPN。高管Fidji Simo在内部备忘录中解释，OpenAI有责任为技术变革构建真实的对话空间。TBPN将继续独立运营，但主持人将加入OpenAI市场与传播团队。",
+      "comment": "关掉AI视频工具转头买播客，这波是从造内容变成管话筒 🎤",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-04-03/doc-inhtepte0404212.shtml",
+      "category": "🎙️ AI战略"
+    },
+    {
+      "date": "20260405",
+      "weekday": "周日",
+      "issue": "第4期",
+      "title": "苹果传奇设计师艾维操刀，法拉利首款电动车强调「仪式感」",
+      "content": "法拉利首款电动汽车Luce的内饰设计由前苹果首席设计师乔尼·艾维操刀，走实体按键与数字界面融合路线。方向盘由19个精密加工部件构成，集成Manettino旋钮等功能，强调每次操作的机械反馈和仪式感，反思当前行业过度依赖触控屏的趋势。",
+      "comment": "特斯拉看完沉默了 —— 原来实体按键才是豪华感的终极答案 🎛️",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-04-03/doc-inhtepti3823751.shtml",
+      "category": "🚗 电动汽车"
     },
     {
       "date": "20260404",

@@ -1,10 +1,10 @@
 {
-  "total": 200,
+  "total": 210,
   "by_section": {
-    "头条": 20,
-    "国际风云": 60,
-    "科技前沿": 60,
-    "国内财经": 60
+    "头条": 21,
+    "国际风云": 63,
+    "科技前沿": 63,
+    "国内财经": 63
   },
   "comments": [
     {
@@ -15,6 +15,15 @@
       "url": "https://news.sina.com.cn/c/2026-04-05/doc-inhtkvrm7371932.shtml",
       "weekday": "周日",
       "issue": "第3期"
+    },
+    {
+      "comment": "炸自己的飞机来阻止对方缴获，这操作属实是好莱坞级别的 —— 只是这次不是拍电影，是真的在中东玩命 🔥",
+      "title": "美以空袭伊朗，救援行动变「炸弹派对」——两架运输机故障被困直接被炸毁",
+      "date": "20260405",
+      "section": "头条",
+      "url": "https://news.sina.com.cn/w/2026-04-05/doc-inhtmnnz2038288.shtml",
+      "weekday": "周日",
+      "issue": "第4期"
     },
     {
       "comment": "石油国家的「防火演练」，这次不是演习。",
@@ -44,6 +53,33 @@
       "issue": "第3期"
     },
     {
+      "comment": "C-130可是空中大力士，被击落说明伊朗这次火力是真的猛 💥",
+      "title": "伊朗称击落美军C-130运输机，多架无人机被击落",
+      "date": "20260405",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-04-05/doc-inhtmnnx5280442.shtml",
+      "weekday": "周日",
+      "issue": "第4期"
+    },
+    {
+      "comment": "两条海峡要是都封了，全球油价得坐火箭上天 🚀 老百姓加油又要哭",
+      "title": "伊朗议长威胁切断曼德海峡航运，全球贸易面临双重封锁",
+      "date": "20260405",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/wm/2026-04-05/doc-inhtmsux1936112.shtml",
+      "weekday": "周日",
+      "issue": "第4期"
+    },
+    {
+      "comment": "核设施挨炸这事儿，可比普通的军事冲突吓人多了，全人类都得跟着紧张 ☢️",
+      "title": "俄罗斯从伊朗核电站紧急撤侨198人，核事故风险日益增加",
+      "date": "20260405",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/wm/2026-04-05/doc-inhtmsux1936112.shtml",
+      "weekday": "周日",
+      "issue": "第4期"
+    },
+    {
       "comment": "氢动力上天以后，航空煤油要慌了。",
       "title": "全球首次！我国兆瓦级氢燃料航空涡桨发动机首飞成功",
       "date": "20260405",
@@ -71,6 +107,33 @@
       "issue": "第3期"
     },
     {
+      "comment": "烧氢气飞上天，中国航空这次直接把科幻片搬进现实 🌿✈️",
+      "title": "全球首次！我国兆瓦级氢燃料航空涡桨发动机首飞成功",
+      "date": "20260405",
+      "section": "科技前沿",
+      "url": "https://news.sina.com.cn/c/2026-04-04/doc-inhtiymv7794148.shtml",
+      "weekday": "周日",
+      "issue": "第4期"
+    },
+    {
+      "comment": "关掉AI视频工具转头买播客，这波是从造内容变成管话筒 🎤",
+      "title": "关停Sora后OpenAI收购TBPN播客，亲自下场做媒体",
+      "date": "20260405",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-04-03/doc-inhtepte0404212.shtml",
+      "weekday": "周日",
+      "issue": "第4期"
+    },
+    {
+      "comment": "特斯拉看完沉默了 —— 原来实体按键才是豪华感的终极答案 🎛️",
+      "title": "苹果传奇设计师艾维操刀，法拉利首款电动车强调「仪式感」",
+      "date": "20260405",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/digi/2026-04-03/doc-inhtepti3823751.shtml",
+      "weekday": "周日",
+      "issue": "第4期"
+    },
+    {
       "comment": "装完就跑，跑完再装，互联网嘴替永不停歇。",
       "title": "张雪深夜回应「一个子儿都没有」言论：政府只需搭好舞台",
       "date": "20260405",
@@ -96,6 +159,33 @@
       "url": "https://www.163.com/dy/article/KPNMGTOM0553TDSE.html",
       "weekday": "周日",
       "issue": "第3期"
+    },
+    {
+      "comment": "2.6亿人次在路上，高速路的停车场又要续费了 🚗",
+      "title": "清明假期今天全社会跨区域人员流动量预计超2.6亿人次",
+      "date": "20260405",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/jjxw/2026-04-05/doc-inhtmsuz7029261.shtml",
+      "weekday": "周日",
+      "issue": "第4期"
+    },
+    {
+      "comment": "30年的城投游戏要散场了，买理财的朋友们可得瞪大眼睛了 👀",
+      "title": "68万亿城投债倒计时：2027年6月底前城投融资平台必须清零",
+      "date": "20260405",
+      "section": "国内财经",
+      "url": "https://www.163.com/dy/article/KPONEN4E0553K5ZV.html",
+      "weekday": "周日",
+      "issue": "第4期"
+    },
+    {
+      "comment": "四成的参展比例，中国企业出海这势头挡不住 🌏",
+      "title": "大量中国企业现身莫斯科，1300多家企业参展占四成",
+      "date": "20260405",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/wm/2026-04-05/doc-inhtkkzm5731951.shtml",
+      "weekday": "周日",
+      "issue": "第4期"
     },
     {
       "comment": "从击落到搜救，中东剧本已经演到了营救大片的节奏。",
