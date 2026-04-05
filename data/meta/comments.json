@@ -1,12 +1,102 @@
 {
-  "total": 190,
+  "total": 200,
   "by_section": {
-    "头条": 19,
-    "国际风云": 57,
-    "科技前沿": 57,
-    "国内财经": 57
+    "头条": 20,
+    "国际风云": 60,
+    "科技前沿": 60,
+    "国内财经": 60
   },
   "comments": [
+    {
+      "comment": "嘴上说着停火，手里忙着按按钮，这和平路线图怕是画在沙纸上的。",
+      "title": "特朗普宣称「打死多名伊朗军事领导人」，美伊冲突再度升级",
+      "date": "20260405",
+      "section": "头条",
+      "url": "https://news.sina.com.cn/c/2026-04-05/doc-inhtkvrm7371932.shtml",
+      "weekday": "周日",
+      "issue": "第3期"
+    },
+    {
+      "comment": "石油国家的「防火演练」，这次不是演习。",
+      "title": "科威特石油总部遭无人机袭击起火，多处关键设施被波及",
+      "date": "20260405",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-04-05/doc-inhtkzxc5430640.shtml",
+      "weekday": "周日",
+      "issue": "第3期"
+    },
+    {
+      "comment": "七年不买，一买就是现在，这择时绝了。",
+      "title": "印度七年来首次采购伊朗石油",
+      "date": "20260405",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-04-05/doc-inhtkzxi7296866.shtml",
+      "weekday": "周日",
+      "issue": "第3期"
+    },
+    {
+      "comment": "画饼容易，交付难，军工版「预售不发货」。",
+      "title": "日本400枚战斧导弹交付泡汤，美国交不出货",
+      "date": "20260405",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-04-05/doc-inhtkvri2299265.shtml",
+      "weekday": "周日",
+      "issue": "第3期"
+    },
+    {
+      "comment": "氢动力上天以后，航空煤油要慌了。",
+      "title": "全球首次！我国兆瓦级氢燃料航空涡桨发动机首飞成功",
+      "date": "20260405",
+      "section": "科技前沿",
+      "url": "https://news.sina.com.cn/c/2026-04-04/doc-inhtiymv7794148.shtml",
+      "weekday": "周日",
+      "issue": "第3期"
+    },
+    {
+      "comment": "太空自拍界的劳模，每次发片都是大片。",
+      "title": "NASA发布「猎户座」飞船新自拍，任务进入第四天准备阶段",
+      "date": "20260405",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/7x24/2026-04-05/doc-inhtkvrc8749443.shtml",
+      "weekday": "周日",
+      "issue": "第3期"
+    },
+    {
+      "comment": "名字改了就不堵车了？先看看路上跑的吧。",
+      "title": "小鹏更名撕掉「车企」标签，欲靠物理AI重塑估值",
+      "date": "20260405",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-04-04/doc-inhthwyf3132947.shtml",
+      "weekday": "周日",
+      "issue": "第3期"
+    },
+    {
+      "comment": "装完就跑，跑完再装，互联网嘴替永不停歇。",
+      "title": "张雪深夜回应「一个子儿都没有」言论：政府只需搭好舞台",
+      "date": "20260405",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/china/2026-04-05/doc-inhtmhfc2107080.shtml",
+      "weekday": "周日",
+      "issue": "第3期"
+    },
+    {
+      "comment": "公积金新政来了，你离买房又近了一步吗？",
+      "title": "4月起多地实施住房公积金新政，细则速览",
+      "date": "20260405",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/s/2026-04-03/doc-inhtecck0604505.shtml",
+      "weekday": "周日",
+      "issue": "第3期"
+    },
+    {
+      "comment": "油价涨得比工资快，加一箱油心疼三天。",
+      "title": "4月5日油价迎大幅暴涨，调价后全国油价一览",
+      "date": "20260405",
+      "section": "国内财经",
+      "url": "https://www.163.com/dy/article/KPNMGTOM0553TDSE.html",
+      "weekday": "周日",
+      "issue": "第3期"
+    },
     {
       "comment": "从击落到搜救，中东剧本已经演到了营救大片的节奏。",
       "title": "美先进战机被伊朗击落，飞行员疑似被俘，美方紧急搜救",

@@ -1,7 +1,57 @@
 {
   "section": "entertainment",
-  "total": 93,
+  "total": 98,
   "articles": [
+    {
+      "date": "20260405",
+      "weekday": "周日",
+      "issue": "第3期",
+      "title": "🎤 工作室回应易烊千玺被AI换脸",
+      "content": "易烊千玺工作室就近期网传AI换脸视频作出回应，呼吁粉丝理性看待。",
+      "comment": "",
+      "url": "https://www.163.com/dy/article/KPME2HCT0552D6K3.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260405",
+      "weekday": "周日",
+      "issue": "第3期",
+      "title": "🎬 制片人说《阿凡达4》和《5》全速推进中",
+      "content": "《阿凡达》系列制片人确认第4部和第5部正在全速推进制作。",
+      "comment": "",
+      "url": "https://www.163.com/dy/article/KPJ464KV05561FZF.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260405",
+      "weekday": "周日",
+      "issue": "第3期",
+      "title": "🎵 周杰伦演唱会口碑崩塌，3小时划水2小时",
+      "content": "周杰伦最新演唱会遭观众吐槽，称万元门票听了个寂寞。",
+      "comment": "",
+      "url": "https://www.163.com/dy/article/KPN1F87N05566T8U.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260405",
+      "weekday": "周日",
+      "issue": "第3期",
+      "title": "💃 热巴83分后再战奇才砍14+9+7",
+      "content": "热火三杀奇才造60败首队，热巴全场贡献14分9篮板7助攻。",
+      "comment": "",
+      "url": "https://www.163.com/dy/article/KPNU300T0529RKNN.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260405",
+      "weekday": "周日",
+      "issue": "第3期",
+      "title": "🏀 活塞时隔19年夺东部常规赛冠军",
+      "content": "活塞横扫76人锁定东部第一，队史第6次，前5次至少保底东决。",
+      "comment": "",
+      "url": "https://www.163.com/dy/article/KPO665VV0529RKNN.html",
+      "category": "快讯"
+    },
     {
       "date": "20260404",
       "weekday": "周六",

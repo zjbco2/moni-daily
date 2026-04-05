@@ -1,7 +1,37 @@
 {
   "section": "tech",
-  "total": 57,
+  "total": 60,
   "articles": [
+    {
+      "date": "20260405",
+      "weekday": "周日",
+      "issue": "第3期",
+      "title": "全球首次！我国兆瓦级氢燃料航空涡桨发动机首飞成功",
+      "content": "中国自主研发的兆瓦级氢燃料航空涡桨发动机成功完成首次飞行试验，这是全球范围内该类型发动机首次成功首飞，标志着清洁能源航空动力领域取得重大突破。",
+      "comment": "氢动力上天以后，航空煤油要慌了。",
+      "url": "https://news.sina.com.cn/c/2026-04-04/doc-inhtiymv7794148.shtml",
+      "category": "🚀 航空动力"
+    },
+    {
+      "date": "20260405",
+      "weekday": "周日",
+      "issue": "第3期",
+      "title": "NASA发布「猎户座」飞船新自拍，任务进入第四天准备阶段",
+      "content": "美国宇航局NASA发布了「猎户座」载人飞船的最新自拍照，目前任务已进入第四天准备阶段。飞船运行状态良好，各项系统指标正常。",
+      "comment": "太空自拍界的劳模，每次发片都是大片。",
+      "url": "https://finance.sina.com.cn/7x24/2026-04-05/doc-inhtkvrc8749443.shtml",
+      "category": "🔭 航天探索"
+    },
+    {
+      "date": "20260405",
+      "weekday": "周日",
+      "issue": "第3期",
+      "title": "小鹏更名撕掉「车企」标签，欲靠物理AI重塑估值",
+      "content": "小鹏汽车正式更名，试图摆脱单一「车企」标签，向人工智能和物理AI领域转型。公司希望通过技术升级和估值重塑，在激烈竞争中找到差异化定位。",
+      "comment": "名字改了就不堵车了？先看看路上跑的吧。",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-04-04/doc-inhthwyf3132947.shtml",
+      "category": "🏭 产业动态"
+    },
     {
       "date": "20260404",
       "weekday": "周六",

@@ -1,7 +1,37 @@
 {
   "section": "international",
-  "total": 57,
+  "total": 60,
   "articles": [
+    {
+      "date": "20260405",
+      "weekday": "周日",
+      "issue": "第3期",
+      "title": "科威特石油总部遭无人机袭击起火，多处关键设施被波及",
+      "content": "科威特舒韦赫石油综合大楼遭无人机袭击发生火灾，另有多处关键设施包括石油大楼与淡化厂遭到袭击。暂无人员伤亡报告。这是中东冲突首次直接波及科威特核心能源设施。",
+      "comment": "石油国家的「防火演练」，这次不是演习。",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-04-05/doc-inhtkzxc5430640.shtml",
+      "category": "🇰🇼 海湾局势"
+    },
+    {
+      "date": "20260405",
+      "weekday": "周日",
+      "issue": "第3期",
+      "title": "印度七年来首次采购伊朗石油",
+      "content": "印度在全球能源紧张局势下，七年以来首次重新采购伊朗石油。此举引发国际社会对能源制裁效力的讨论。与此同时，科威特石油设施遭袭进一步推高全球油价预期。",
+      "comment": "七年不买，一买就是现在，这择时绝了。",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-04-05/doc-inhtkzxi7296866.shtml",
+      "category": "🛢️ 能源博弈"
+    },
+    {
+      "date": "20260405",
+      "weekday": "周日",
+      "issue": "第3期",
+      "title": "日本400枚战斧导弹交付泡汤，美国交不出货",
+      "content": "美国因中东战事导致军工产能紧张，无法按约向日本交付400枚战斧巡航导弹。日本防务部门表示将重新评估军事采购计划，考虑多元化采购渠道。",
+      "comment": "画饼容易，交付难，军工版「预售不发货」。",
+      "url": "https://news.sina.com.cn/w/2026-04-05/doc-inhtkvri2299265.shtml",
+      "category": "🇯🇵 日美关系"
+    },
     {
       "date": "20260404",
       "weekday": "周六",
