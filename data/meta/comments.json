@@ -1,10 +1,10 @@
 {
-  "total": 220,
+  "total": 230,
   "by_section": {
-    "头条": 22,
-    "国际风云": 66,
-    "科技前沿": 66,
-    "国内财经": 66
+    "头条": 23,
+    "国际风云": 69,
+    "科技前沿": 69,
+    "国内财经": 69
   },
   "comments": [
     {
@@ -15,6 +15,15 @@
       "url": "https://finance.sina.com.cn/wm/2026-04-06/doc-inhtprne4618339.shtml",
       "weekday": "周一",
       "issue": "第22期"
+    },
+    {
+      "comment": "一边谈停火一边打导弹，薛定谔的和平。",
+      "title": "伊朗就停火方案准备好回应，加密货币全线大涨、油价跳水",
+      "date": "20260406",
+      "section": "头条",
+      "url": "https://finance.sina.com.cn/stock/zqgd/2026-04-06/doc-inhtqnrx7818148.shtml",
+      "weekday": "周一",
+      "issue": "第23期"
     },
     {
       "comment": "伊朗的条件翻译一下：先赔钱再谈，懂？",
@@ -44,6 +53,33 @@
       "issue": "第22期"
     },
     {
+      "comment": "铁穹也扛不住导弹雨，14发穿防实锤。",
+      "title": "伊朗导弹突破以色列防空系统，击中海法、特拉维夫等地",
+      "date": "20260406",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-04-06/doc-inhtpzzy4445146.shtml",
+      "weekday": "周一",
+      "issue": "第23期"
+    },
+    {
+      "comment": "全球最强军火推销员，实战背书比PPT管用。",
+      "title": "泽连斯基访叙利亚，「推销」武器和粮食",
+      "date": "20260406",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-04-06/doc-inhtqhiy1104319.shtml",
+      "weekday": "周一",
+      "issue": "第23期"
+    },
+    {
+      "comment": "无期+10年套餐，韩国总统标配结局。",
+      "title": "尹锡悦涉嫌妨碍逮捕案二审被求刑10年",
+      "date": "20260406",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-04-06/doc-inhtqaac8009500.shtml",
+      "weekday": "周一",
+      "issue": "第23期"
+    },
+    {
       "comment": "三星折了五年了，苹果终于姗姗来迟——果粉：等的就是你。",
       "title": "苹果首款折叠屏手机已在富士康试产，预计下半年推出",
       "date": "20260406",
@@ -71,6 +107,33 @@
       "issue": "第22期"
     },
     {
+      "comment": "针刺不炸300℃不怕，电池安全卷出新高度。",
+      "title": "全球首次！我国钠离子电池取得重大突破，彻底阻断热失控",
+      "date": "20260406",
+      "section": "科技前沿",
+      "url": "https://www.ithome.com/0/936/306.htm",
+      "weekday": "周一",
+      "issue": "第23期"
+    },
+    {
+      "comment": "LinkedIn：我不只看你简历，还看你装了啥。",
+      "title": "微软旗下领英被曝偷扫用户浏览器，可检测超6200款插件",
+      "date": "20260406",
+      "section": "科技前沿",
+      "url": "https://www.ithome.com/0/936/276.htm",
+      "weekday": "周一",
+      "issue": "第23期"
+    },
+    {
+      "comment": "红米：性能全家桶，钱包全清空。",
+      "title": "小米Redmi预告新品将至，「红米性能全家桶」呼之欲出",
+      "date": "20260406",
+      "section": "科技前沿",
+      "url": "https://www.ithome.com/0/936/262.htm",
+      "weekday": "周一",
+      "issue": "第23期"
+    },
+    {
       "comment": "8.4亿人在路上，高速堵成停车场——但GDP笑了。",
       "title": "清明假期跨区域流动8.4亿人次，高速单日车流破6267万辆",
       "date": "20260406",
@@ -96,6 +159,33 @@
       "url": "https://finance.sina.com.cn/roll/2026-04-06/doc-inhtprne4619716.shtml",
       "weekday": "周一",
       "issue": "第22期"
+    },
+    {
+      "comment": "64条措施+8000亿流动性，假期结束直接发红包。",
+      "title": "9部门联合印发《服务消费提质惠民行动2026年工作方案》",
+      "date": "20260406",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/roll/2026-04-06/doc-inhtqaaa1225747.shtml",
+      "weekday": "周一",
+      "issue": "第23期"
+    },
+    {
+      "comment": "散户跑步入场，希望不是接最后一棒。",
+      "title": "增量资金进场！一季度新基金发行超3240亿份，权益类占比超六成",
+      "date": "20260406",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/stock/marketresearch/2026-04-06/doc-inhtqaaa1210062.shtml",
+      "weekday": "周一",
+      "issue": "第23期"
+    },
+    {
+      "comment": "十家券商十个看法，唯一共识：别慌。",
+      "title": "十大机构看后市：外部冲突未动摇A股慢牛根基，左侧布局机会已现曙光",
+      "date": "20260406",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/stock/marketresearch/2026-04-06/doc-inhtpzzy4443547.shtml",
+      "weekday": "周一",
+      "issue": "第23期"
     },
     {
       "comment": "嘴上说着停火，手里忙着按按钮，这和平路线图怕是画在沙纸上的。",
