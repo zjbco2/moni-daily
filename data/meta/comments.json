@@ -1,12 +1,102 @@
 {
-  "total": 230,
+  "total": 240,
   "by_section": {
-    "头条": 23,
-    "国际风云": 69,
-    "科技前沿": 69,
-    "国内财经": 69
+    "头条": 24,
+    "国际风云": 72,
+    "科技前沿": 72,
+    "国内财经": 72
   },
   "comments": [
+    {
+      "comment": "特朗普嘴上说不要武力，手上比谁都诚实。问题是，石油拿不走，谁来买单？",
+      "title": "最后通牒今晚到期！特朗普威胁「炸回石器时代」，伊朗反击清单已备好",
+      "date": "20260407",
+      "section": "头条",
+      "url": "https://finance.sina.com.cn/roll/2026-04-07/doc-inhtrqck0493423.shtml",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
+    {
+      "comment": "以色列总理急了：美国要是和伊朗握手，以色列的「战果」找谁报销？",
+      "title": "内塔尼亚胡警告特朗普：不要在现阶段与伊朗达成停火",
+      "date": "20260407",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/wm/2026-04-07/doc-inhtrqcf5284405.shtml",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
+    {
+      "comment": "嘴上说政权更迭，飞机被击落还说运气不错，这逻辑只服特朗普。",
+      "title": "特朗普坚称已实现伊朗「政权更迭」，威胁不服软就一无所有",
+      "date": "20260407",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/roll/2026-04-07/doc-inhtrivn0604978.shtml",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
+    {
+      "comment": "日本积极斡旋的同时，G7已经在悄悄「分摊」中东断油的风险了。",
+      "title": "日本称G7将就中东局势密切沟通，高市早苗寻求与美伊两国总统通话",
+      "date": "20260407",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/world/2026-04-07/doc-inhtrqcm7319388.shtml",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
+    {
+      "comment": "马斯克当年亲手创立OpenAI，如今恨不得亲手关掉它——爱过、恨过、起诉过。",
+      "title": "OpenAI致信调查马斯克：行为阻碍AGI研发，涉嫌不正当竞争",
+      "date": "20260407",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-04-07/doc-inhtrivk3810924.shtml",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
+    {
+      "comment": "中东打得火热，内存条价格却创历史新高——战争从来不是一个人的事。",
+      "title": "三星季度利润飙升近八倍，AI芯片销售火爆、DRAM价格单季大涨64%",
+      "date": "20260407",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-04-07/doc-inhtrqcf5274451.shtml",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
+    {
+      "comment": "芯片代工不好做，封装服务来救场——英特尔这次押对了吗？",
+      "title": "英特尔与亚马逊和谷歌洽谈AI芯片封装，代工业务寻求新突破",
+      "date": "20260407",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/jjxw/2026-04-07/doc-inhtrivi5398137.shtml",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
+    {
+      "comment": "贫穷是一所最好的大学——陈丽华用一生证明了这句话，也刷新了这句话的门槛。",
+      "title": "知名企业家陈丽华去世享年85岁 — 从满族贫家女到470亿白手起家女首富",
+      "date": "20260407",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/stock/zldx/2026-04-07/doc-inhtryte0417463.shtml",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
+    {
+      "comment": "又是化工园区——安全排查年年做，但血的教训总在重复。",
+      "title": "甘肃玉门一化工厂发生火灾致3死2伤，省内化工企业紧急摸排隐患",
+      "date": "20260407",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/s/2026-04-07/doc-inhtrytk2354956.shtml",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
+    {
+      "comment": "奖励金虽然不多，但能让司机们感受到一点城市的温度。",
+      "title": "昆明出租车司机可领2024年度城市交通发展奖励金，截止日期6月30日",
+      "date": "20260407",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/zx/gj/2026-04-07/doc-inhtqsxv7735328.shtml",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
     {
       "comment": "期限延了又延，狠话说了又说，这剧本比短剧还能拖。",
       "title": "特朗普飙脏话威胁伊朗：打开霍尔木兹海峡，否则「活在地狱中」",
