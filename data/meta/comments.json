@@ -1,12 +1,102 @@
 {
-  "total": 230,
+  "total": 240,
   "by_section": {
-    "头条": 23,
-    "国际风云": 69,
-    "科技前沿": 69,
-    "国内财经": 69
+    "头条": 24,
+    "国际风云": 72,
+    "科技前沿": 72,
+    "国内财经": 72
   },
   "comments": [
+    {
+      "comment": "油价过山车玩得比特朗普的威胁还刺激。",
+      "title": "停火传来！霍尔木兹有望重开，油价盘中暴跌3%后反弹",
+      "date": "20260407",
+      "section": "头条",
+      "url": "https://www.163.com/dy/article/KPT5VNJE0530JPVV.html",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
+    {
+      "comment": "伊朗条件翻译：先赔钱，再谈。",
+      "title": "巴基斯坦居中调解，美伊就停火框架接近达成一致",
+      "date": "20260407",
+      "section": "国际风云",
+      "url": "https://www.163.com/dy/article/KPT5VNJE0530JPVV.html",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
+    {
+      "comment": "20小时换4小时，伊朗人比特朗普还会算账。",
+      "title": "特朗普威胁4小时炸平伊朗发电厂，伊朗警告：对等反击沙特能源设施",
+      "date": "20260407",
+      "section": "国际风云",
+      "url": "https://www.163.com/dy/article/KPUC3B2R0556E2E4.html",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
+    {
+      "comment": "上帝牌发多了，连好莱坞编剧都觉得离谱。",
+      "title": "特朗普大打宗教牌被国内猛批，称摧毁伊朗是「神圣使命」",
+      "date": "20260407",
+      "section": "国际风云",
+      "url": "https://www.163.com/dy/article/KPUC3B2R0556E2E4.html",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
+    {
+      "comment": "三星手机份额都掉到other里了，还当最后坚持呢。",
+      "title": "三星中国战略大收缩：只保留手机和存储，其余全线砍掉",
+      "date": "20260407",
+      "section": "科技前沿",
+      "url": "https://www.163.com/dy/article/KPU2S59J0511CPVM.html",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
+    {
+      "comment": "功勋老臣一个接一个走，雷军的孤独有谁懂。",
+      "title": "小米联合创始人黎万强、洪锋退出，注册资本从18.5亿减至14.8亿",
+      "date": "20260407",
+      "section": "科技前沿",
+      "url": "https://www.163.com/dy/article/KPU17DQQ0530VSUL.html",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
+    {
+      "comment": "卡脖子卡出了国产替代的加速度，这剧本美国没想到吧。",
+      "title": "美禁令倒逼国产替代提速，多款国产AI芯片实现量产突破",
+      "date": "20260407",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-04-06/doc-inhtpvtz6090436.shtml",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
+    {
+      "comment": "80万股民一夜无眠，A股的雷比霍尔木兹还难躲。",
+      "title": "三天13家公司被查，近80万股民踩雷，8日开盘跌停",
+      "date": "20260407",
+      "section": "国内财经",
+      "url": "https://www.163.com/dy/article/KPU3AIE505199NPP.html",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
+    {
+      "comment": "风口上的猪，摔下来砸的都是供应商。",
+      "title": "工业电商独角兽万物集暴雷：上千供应商被欠4亿货款，创始人去向成谜",
+      "date": "20260407",
+      "section": "国内财经",
+      "url": "https://www.163.com/dy/article/KPRN26RQ05390TQD.html",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
+    {
+      "comment": "高调慈善碰上规定限制，退款比演戏还精彩。",
+      "title": "陈光标捐嫣然1000万被退回：医院是租的，花不了",
+      "date": "20260407",
+      "section": "国内财经",
+      "url": "https://www.163.com/dy/article/KPUA75H405560O35.html",
+      "weekday": "周二",
+      "issue": "第24期"
+    },
     {
       "comment": "期限延了又延，狠话说了又说，这剧本比短剧还能拖。",
       "title": "特朗普飙脏话威胁伊朗：打开霍尔木兹海峡，否则「活在地狱中」",
