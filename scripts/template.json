@@ -1,0 +1,87 @@
+{
+  "issue": "第26期",
+  "date": "20260408",
+  "weekday": "周三",
+  "weatherClass": "sunny",
+  "weatherTip": "珠三角晴热，外出注意防晒 ☀️",
+  "ticker": [
+    {
+      "main": "🌏  [头条标题]",
+      "sub": "",
+      "target": "art-lead"
+    },
+    {
+      "main": "🌏  [国际新闻标题]",
+      "sub": "",
+      "target": "art-int-1"
+    },
+    {
+      "main": "🤖  [科技新闻标题]",
+      "sub": "",
+      "target": "art-tech-1"
+    },
+    {
+      "main": "💰  [财经新闻标题]",
+      "sub": "",
+      "target": "art-fin-1"
+    },
+    {
+      "main": "🎭  [娱乐新闻标题]",
+      "sub": "",
+      "target": "art-ent-1"
+    }
+  ],
+  "headline": {
+    "category": "🌏 分类",
+    "title": "头条标题",
+    "url": "https://...",
+    "content": "头条正文内容，2-3句话概括核心信息...",
+    "dataHighlight": {
+      "number": "数字",
+      "label": "说明"
+    },
+    "comment": "茉霓辣评，1句话，要有观点",
+    "visual": {
+      "emoji": "🌏",
+      "tag": "焦点 · 分类"
+    },
+    "id": "art-lead"
+  },
+  "weather": {
+    "zhuhai": {"temp": "28°C", "desc": "晴，湿度70%，南风8km/h"},
+    "shenzhen": {"temp": "27°C", "desc": "晴，湿度72%，南风6km/h"},
+    "shantou": {"temp": "26°C", "desc": "多云，湿度65%，东南风5km/h"}
+  },
+  "sections": [
+    {
+      "name": "国际风云",
+      "emoji": "🌍",
+      "articles": [
+        {
+          "category": "🌏 分类",
+          "title": "文章标题",
+          "url": "https://...",
+          "content": "文章正文内容，2-3句...",
+          "comment": "辣评1句",
+          "dataHighlight": {"number": "数字", "label": "说明"},
+          "id": "art-int-1"
+        }
+      ]
+    },
+    {
+      "name": "科技前沿",
+      "emoji": "🤖",
+      "articles": []
+    },
+    {
+      "name": "国内财经",
+      "emoji": "💰",
+      "articles": []
+    },
+    {
+      "name": "娱乐快讯",
+      "emoji": "🎭",
+      "articles": []
+    }
+  ]
+}

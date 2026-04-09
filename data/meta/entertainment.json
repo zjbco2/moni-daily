@@ -1,7 +1,57 @@
 {
   "section": "entertainment",
-  "total": 117,
+  "total": 122,
   "articles": [
+    {
+      "date": "20260409",
+      "weekday": "周四",
+      "issue": "第25期",
+      "title": "🎭 男演员周柯宇宣布退出美国国籍，正式成为中国公民",
+      "content": "青年演员周柯宇在年满18周岁后主动启动退出美国国籍流程，历时三年完成全部手续，正式成为中国公民。",
+      "comment": "",
+      "url": "https://www.163.com/dy/article/KQ0T3C6Q0518JMUA.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260409",
+      "weekday": "周四",
+      "issue": "第25期",
+      "title": "💔 陈丽华丈夫迟重瑞罕见青春照曝光，26岁出演唐僧",
+      "content": "迟重瑞1952年生于北京京剧世家，1984年被杨洁导演选中饰演唐僧，与陈丽华于1990年结婚。",
+      "comment": "",
+      "url": "https://www.163.com/dy/article/KQ0SL9JM0556820P.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260409",
+      "weekday": "周四",
+      "issue": "第25期",
+      "title": "🎬 知名香港艺人杨玉敏去世，曾培养刘德华梁朝伟等巨星",
+      "content": "杨玉敏曾出演《上海滩》、执导《鹿鼎记》等经典作品，其学生包括刘德华、梁朝伟、周星驰等。",
+      "comment": "",
+      "url": "https://www.163.com/dy/article/KQ301HUL053469LG.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260409",
+      "weekday": "周四",
+      "issue": "第25期",
+      "title": "💼 刘强东和章泽天成立新公司",
+      "content": "刘强东与章泽天共同成立新公司，商业版图再添新成员。",
+      "comment": "",
+      "url": "https://www.163.com/dy/article/KQ34F6200539ARRF.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260409",
+      "weekday": "周四",
+      "issue": "第25期",
+      "title": "🏓 樊振东放弃世乒赛资格引发热议",
+      "content": "名嘴称不是樊振东拒绝参加世乒赛，而是国家队根本没有征召东哥。",
+      "comment": "",
+      "url": "https://k.sina.cn/article_1720962692_m6693ce840530319og.html?from=sports",
+      "category": "快讯"
+    },
     {
       "date": "20260407",
       "weekday": "周二",
