@@ -1,10 +1,10 @@
 {
-  "total": 250,
+  "total": 260,
   "by_section": {
-    "头条": 25,
-    "国际风云": 75,
-    "科技前沿": 75,
-    "国内财经": 75
+    "头条": 26,
+    "国际风云": 78,
+    "科技前沿": 78,
+    "国内财经": 78
   },
   "comments": [
     {
@@ -15,6 +15,15 @@
       "url": "https://finance.sina.com.cn/stock/marketresearch/2026-04-09/doc-inhtwtew2072981.shtml",
       "weekday": "周四",
       "issue": "第25期"
+    },
+    {
+      "comment": "这一「拼多多式停火」还能砍几刀？",
+      "title": "霍尔木兹海峡再生变数：停火协议后再次关闭",
+      "date": "20260409",
+      "section": "头条",
+      "url": "https://news.sina.com.cn/w/2026-04-09/doc-inhtwxnx5833062.shtml",
+      "weekday": "周四",
+      "issue": "第15期"
     },
     {
       "comment": "「交出来」还是「自己去取」，这剧本怎么听着像绑匪的台词？",
@@ -44,6 +53,33 @@
       "issue": "第25期"
     },
     {
+      "comment": "40天祭日，复仇号角再响，中东火药桶还能烧多久？",
+      "title": "伊朗伊斯兰革命卫队：复仇不会停止",
+      "date": "20260409",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-04-09/doc-inhtxcut8684097.shtml",
+      "weekday": "周四",
+      "issue": "第15期"
+    },
+    {
+      "comment": "中朝友谊65年，邻居好走亲戚，战略互信再加深。",
+      "title": "王毅同朝鲜外相崔善姬举行会谈",
+      "date": "20260409",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/china/2026-04-09/doc-inhtxkat5707477.shtml",
+      "weekday": "周四",
+      "issue": "第15期"
+    },
+    {
+      "comment": "和平宪法已成摆设，军国主义阴魂不散，警惕！",
+      "title": "国防部：日本军事扩张野心暴露无遗",
+      "date": "20260409",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/c/2026-04-09/doc-inhtwtez5880924.shtml",
+      "weekday": "周四",
+      "issue": "第15期"
+    },
+    {
       "comment": "天上又多了几颗中国星，星链什么的见鬼去吧。",
       "title": "我国成功发射卫星互联网低轨21组卫星",
       "date": "20260409",
@@ -71,6 +107,33 @@
       "issue": "第25期"
     },
     {
+      "comment": "扎克伯格豪掷千亿，AI军备竞赛再添猛将。",
+      "title": "Meta发布首款AI模型Muse Spark，股价涨超6%",
+      "date": "20260409",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/world/2026-04-09/doc-inhtvrtp6153084.shtml",
+      "weekday": "周四",
+      "issue": "第15期"
+    },
+    {
+      "comment": "从胶水粘合到螺丝固定，苹果终于向维修权低头。",
+      "title": "苹果妥协了！2026款产品允许用户自主更换电池和屏幕",
+      "date": "20260409",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-04-09/doc-inhtxkat5741359.shtml",
+      "weekday": "周四",
+      "issue": "第15期"
+    },
+    {
+      "comment": "阔折叠来了，麒麟芯片再升级，华为折叠屏新物种。",
+      "title": "首款麒麟9030 Pro阔折叠降临！华为Pura X Max四月下旬发布",
+      "date": "20260409",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-04-09/doc-inhtwtez5885589.shtml",
+      "weekday": "周四",
+      "issue": "第15期"
+    },
+    {
       "comment": "中东局势缓和，A股直接起飞，这波「战争红利」终于吃上了。",
       "title": "中国权益类资产大涨，沪指创近18个月最大涨幅",
       "date": "20260409",
@@ -96,6 +159,33 @@
       "url": "https://news.sina.com.cn/c/2026-04-09/doc-inhtwain1113860.shtml",
       "weekday": "周四",
       "issue": "第25期"
+    },
+    {
+      "comment": "中东停火利好刺激，A股上演普涨行情，牛市要回来了？",
+      "title": "沪指创近18个月最大涨幅，逼近4000点",
+      "date": "20260409",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/c/2026-04-09/doc-inhtvrts1218909.shtml",
+      "weekday": "周四",
+      "issue": "第15期"
+    },
+    {
+      "comment": "内蒙古自贸区来了，向北开放桥头堡再添新引擎。",
+      "title": "国务院印发《中国（内蒙古）自由贸易试验区总体方案》",
+      "date": "20260409",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/stock/marketresearch/2026-04-09/doc-inhtwxnx5847218.shtml",
+      "weekday": "周四",
+      "issue": "第15期"
+    },
+    {
+      "comment": "城商行入局，数字人民币朋友圈再扩容。",
+      "title": "新增12家数字人民币运营机构，城商行首次入局",
+      "date": "20260409",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/c/2026-04-09/doc-inhtvmmr6257691.shtml",
+      "weekday": "周四",
+      "issue": "第15期"
     },
     {
       "comment": "油价过山车玩得比特朗普的威胁还刺激。",
