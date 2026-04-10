@@ -1,162 +1,215 @@
 {
   "issue": "第27期",
-  "date": "2026-04-10",
-  "year": "2026",
-  "month": "4月",
-  "day": "10",
+  "date": "20260410",
   "weekday": "周五",
+  "weatherClass": "sunny",
+  "weatherTip": "晴好温暖，三城逼近30度，初夏的味道 ☀️",
+  "ticker": [
+    {
+      "main": "🕊️ 普京宣布东正教复活节停火32小时，乌方表示跟进",
+      "sub": "",
+      "target": "art-lead"
+    },
+    {
+      "main": "🇮🇷 伊朗在黎巴嫩实现停火前不会与美国和谈",
+      "sub": "",
+      "target": "art-int-1"
+    },
+    {
+      "main": "🤖 DeepSeek V4将于4月下旬发布",
+      "sub": "",
+      "target": "art-tech-1"
+    },
+    {
+      "main": "📉 奔驰一季度在华销量跌27%",
+      "sub": "",
+      "target": "art-tech-2"
+    },
+    {
+      "main": "🛢️ 霍尔木兹海峡恢复通航，全球油价大跌",
+      "sub": "",
+      "target": "art-fin-1"
+    },
+    {
+      "main": "🇻🇳 苏林再次首访中国",
+      "sub": "",
+      "target": "art-int-2"
+    },
+    {
+      "main": "🍎 苹果折叠屏手机已在富士康试产顺利",
+      "sub": "",
+      "target": "art-tech-3"
+    },
+    {
+      "main": "🤝 宇树科技和阿里将有战略级合作",
+      "sub": "",
+      "target": "art-fin-2"
+    }
+  ],
   "headline": {
+    "category": "🕊️ 国际",
     "title": "普京宣布东正教复活节停火32小时，乌方表示跟进",
-    "content": "俄罗斯总统普京宣布，在东正教复活节期间实施32小时停火，乌克兰方面表示将跟进。这是俄乌冲突以来的重要停火信号。",
-    "link": "https://finance.sina.com.cn/jjxw/2026-04-10/doc-inhtyfhe1452224.shtml",
+    "url": "https://finance.sina.com.cn/jjxw/2026-04-10/doc-inhtyfhe1452224.shtml",
+    "content": "俄罗斯总统普京宣布，在东正教复活节期间实施32小时停火。这是俄乌冲突以来罕见的停火举措，乌克兰方面表示将跟进。复活节是东正教最重要的节日，停火决定或为双方对话打开窗口。",
+    "dataHighlight": {
+      "number": "32",
+      "label": "小时停火"
+    },
+    "comment": "战争打到这会儿，连停火都成了新闻。",
+    "visual": {
+      "emoji": "🕊️",
+      "tag": "焦点 · 停火信号"
+    },
     "id": "art-lead"
-  },
-  "categories": {
-    "international": [
-      {
-        "id": "int1",
-        "title": "伊朗在黎巴嫩实现停火前不会与美国和谈",
-        "content": "消息人士称，伊朗方面表示在黎巴嫩实现停火之前，不会与美国进行和谈。",
-        "link": "https://finance.sina.com.cn/jjxw/2026-04-10/doc-inhtyfhf8224971.shtml",
-        "comment": "和谈条件摆在那，看美国接不接招。"
-      },
-      {
-        "id": "int2",
-        "title": "苏林再次首访中国",
-        "content": "越南领导人苏林再次首访中国，这是他就任后的重要外交行动。",
-        "link": "https://news.sina.com.cn/w/2026-04-10/doc-inhtyrvy1372165.shtml",
-        "comment": "越南外交节奏紧凑，中越关系稳中向好。"
-      },
-      {
-        "id": "int3",
-        "title": "伊朗最高领袖发表最新声明，对和谈提出三点主张",
-        "content": "伊朗最高领袖哈梅内伊发表最新声明，对与美国的和谈提出三点主张，展现了强硬态度。",
-        "link": "https://news.sina.com.cn/w/2026-04-10/doc-inhtyfhn0411209.shtml",
-        "comment": "三点主张已出，球踢到美国那边了。"
-      }
-    ],
-    "tech": [
-      {
-        "id": "tech1",
-        "title": "DeepSeek V4将于4月下旬发布",
-        "content": "梁文锋内部透露：DeepSeek V4将于4月下旬发布，国产大模型再迎升级。",
-        "link": "https://finance.sina.com.cn/tech/2026-04-10/doc-inhtywcx8067278.shtml",
-        "comment": "国产大模型卷起来了，V4期待值拉满。"
-      },
-      {
-        "id": "tech2",
-        "title": "奔驰一季度全球销量下滑6%，在华跌27%",
-        "content": "奔驰一季度全球销量下滑6%，在华销量跌27%至11万辆，中国市场持续承压。",
-        "link": "https://finance.sina.com.cn/jjxw/2026-04-10/doc-inhtyfhi5353324.shtml",
-        "comment": "豪车也卷不动了，国产新能源太猛。"
-      },
-      {
-        "id": "tech3",
-        "title": "苹果折叠屏手机已在富士康试产顺利",
-        "content": "据供应链消息，苹果首款折叠屏手机已在富士康试产，进展顺利，预计下半年推出。",
-        "link": "https://finance.sina.com.cn/tech/roll/2026-04-10/doc-inhtymqk0338350.shtml",
-        "comment": "果粉钱包准备好了吗？折叠屏iPhone要来了。"
-      }
-    ],
-    "finance": [
-      {
-        "id": "fin1",
-        "title": "霍尔木兹海峡恢复通航，全球油价大跌",
-        "content": "集体大涨！霍尔木兹海峡传来最新消息，恢复通航预期增强，全球油价应声大跌。",
-        "link": "https://news.sina.com.cn/w/2026-04-10/doc-inhtyrwc5209126.shtml",
-        "comment": "海峡一开，油价就跪，市场反应真快。"
-      },
-      {
-        "id": "fin2",
-        "title": "中国提供确定性，美国只提供最后期限",
-        "content": "分析文章指出，在全球动荡背景下，中国提供确定性，而美国只提供最后期限。",
-        "link": "https://finance.sina.com.cn/wm/2026-04-10/doc-inhtyfhn0412055.shtml",
-        "comment": "一句话总结得很到位。"
-      },
-      {
-        "id": "fin3",
-        "title": "宇树科技和阿里将有战略级合作",
-        "content": "消息称宇树科技和阿里将进行战略级合作，机器人赛道迎来巨头联手。",
-        "link": "https://finance.sina.com.cn/roll/2026-04-10/doc-inhtyrvz8150612.shtml",
-        "comment": "机器人赛道越来越热闹了。"
-      }
-    ],
-    "entertainment": [
-      {
-        "id": "ent1",
-        "title": "马筱梅晒满月儿子汪宝儿，生了个迷你自己",
-        "content": "马筱梅晒满月儿子汪宝儿照片，网友惊呼「简直生了个迷你自己」，软萌福相太圈粉。",
-        "link": "https://www.163.com/dy/article/KQ595QSU0556DK10.html",
-        "comment": "基因太强大了！"
-      },
-      {
-        "id": "ent2",
-        "title": "张雪终于把碎屏手机换了，用上荣耀折叠屏",
-        "content": "张雪终于把碎屏手机换了！用上荣耀折叠屏手机，竖大拇指：好轻啊。",
-        "link": "https://www.163.com/dy/article/KQ51P0VA0553AOVQ.html",
-        "comment": "张雪换手机都能上热搜，顶流实锤。"
-      },
-      {
-        "id": "ent3",
-        "title": "华为Pura90 Pro和Pro Max今日开启预订",
-        "content": "华为Pura90 Pro和Pro Max今日开启预订，设计相当新颖，引发关注。",
-        "link": "https://www.163.com/dy/article/KQ5724KO051191D6.html",
-        "comment": "华为新机来了，又要抢破头。"
-      },
-      {
-        "id": "ent4",
-        "title": "薛之谦晒图称自己满头斑秃和水泡",
-        "content": "薛之谦晒图称自己满头斑秃和水泡：头发都染断了，工作强度引发关注。",
-        "link": "https://www.163.com/dy/article/KQ3HTULM0550B6IS.html",
-        "comment": "艺人也是打工人，别太拼了。"
-      },
-      {
-        "id": "ent5",
-        "title": "库里缺席湖勇大战，詹库本赛季四次交手机会均错过",
-        "content": "库里缺席今日湖勇大战，本赛季常规赛詹库四次交手机会均错过，球迷遗憾。",
-        "link": "https://www.163.com/dy/article/KQ53VOSO0549BAP0.html",
-        "comment": "詹库对决又泡汤了。"
-      }
-    ]
   },
   "weather": {
     "zhuhai": {
-      "city": "珠海",
-      "temp": "29.7",
-      "humidity": "66",
-      "wind": "25.3",
-      "code": 2,
-      "desc": "多云"
+      "temp": "29.7°C",
+      "desc": "多云，湿度66%，南风25.3km/h"
     },
     "shenzhen": {
-      "city": "深圳",
-      "temp": "27.9",
-      "humidity": "73",
-      "wind": "19.2",
-      "code": 3,
-      "desc": "阴"
+      "temp": "27.9°C",
+      "desc": "阴，湿度73%，南风19.2km/h"
     },
     "shantou": {
-      "city": "汕头",
-      "temp": "30.7",
-      "humidity": "57",
-      "wind": "18.6",
-      "code": 2,
-      "desc": "多云"
+      "temp": "30.7°C",
+      "desc": "多云，湿度57%，南风18.6km/h"
     }
   },
-  "editorNote": "今天的头条是普京宣布复活节停火32小时，俄乌冲突终于有了喘息空间。伊朗那边继续强硬，和谈条件摆出来了。科技圈热闹：DeepSeek V4要来了、苹果折叠屏试产顺利、奔驰在华销量暴跌27%。娱乐圈张雪换手机都能上热搜，顶流实锤。天气不错，三城都逼近30度，初夏的味道。",
-  "pullQuote": "中国提供确定性，美国只提供最后期限。",
-  "ticker": [
+  "sections": [
     {
-      "main": "📌 普京宣布东正教复活节停火32小时，乌方表示跟进",
-      "sub": "",
-      "target": "art-lead"
+      "name": "国际风云",
+      "emoji": "🌍",
+      "articles": [
+        {
+          "id": "art-int-1",
+          "category": "🇮🇷 中东",
+          "title": "伊朗在黎巴嫩实现停火前不会与美国和谈",
+          "url": "https://finance.sina.com.cn/jjxw/2026-04-10/doc-inhtyfhf8224971.shtml",
+          "content": "消息人士称，伊朗方面表示在黎巴嫩实现停火之前，不会与美国进行和谈。伊朗最高领袖哈梅内伊也发表声明，对和谈提出三点主张，展现了强硬态度。",
+          "comment": "和谈条件摆在那，看美国接不接招。"
+        },
+        {
+          "id": "art-int-2",
+          "category": "🇻🇳 外交",
+          "title": "苏林再次首访中国",
+          "url": "https://news.sina.com.cn/w/2026-04-10/doc-inhtyrvy1372165.shtml",
+          "content": "越南领导人苏林再次首访中国，这是他就任后的重要外交行动。中越关系稳中向好，地区合作持续深化。",
+          "comment": "越南外交节奏紧凑，中越关系稳中向好。"
+        },
+        {
+          "id": "art-int-3",
+          "category": "🇺🇸 美国",
+          "title": "美国第一夫人声明：谎言必须在今天结束",
+          "url": "https://news.sina.com.cn/w/2026-04-10/doc-inhtymqk0380542.shtml",
+          "content": "美国第一夫人发表声明，称「谎言必须在今天结束」。这一表态引发外界对美国政坛动态的关注。",
+          "comment": "第一夫人发话，白宫又有戏了。"
+        }
+      ]
     },
     {
-      "main": "📌 普京宣布东正教复活节停火32小时，乌方表示跟进",
-      "sub": "",
-      "target": "art-lead"
+      "name": "科技前沿",
+      "emoji": "🤖",
+      "articles": [
+        {
+          "id": "art-tech-1",
+          "category": "🤖 AI",
+          "title": "DeepSeek V4将于4月下旬发布",
+          "url": "https://finance.sina.com.cn/tech/2026-04-10/doc-inhtywcx8067278.shtml",
+          "content": "梁文锋内部透露：DeepSeek V4将于4月下旬发布，国产大模型再迎升级。作为国产AI的头部玩家，DeepSeek的每次更新都备受关注。",
+          "comment": "国产大模型卷起来了，V4期待值拉满。"
+        },
+        {
+          "id": "art-tech-2",
+          "category": "🚗 汽车",
+          "title": "奔驰一季度全球销量下滑6%，在华跌27%",
+          "url": "https://finance.sina.com.cn/jjxw/2026-04-10/doc-inhtyfhi5353324.shtml",
+          "content": "奔驰一季度全球销量下滑6%，在华销量跌27%至11万辆，中国市场持续承压。国产新能源品牌崛起，豪车市场格局正在重塑。",
+          "comment": "豪车也卷不动了，国产新能源太猛。"
+        },
+        {
+          "id": "art-tech-3",
+          "category": "🍎 苹果",
+          "title": "苹果折叠屏手机已在富士康试产顺利",
+          "url": "https://finance.sina.com.cn/tech/roll/2026-04-10/doc-inhtymqk0338350.shtml",
+          "content": "据供应链消息，苹果首款折叠屏手机已在富士康试产，进展顺利，预计下半年推出。折叠屏赛道迎来重量级选手。",
+          "comment": "果粉钱包准备好了吗？折叠屏iPhone要来了。"
+        }
+      ]
+    },
+    {
+      "name": "国内财经",
+      "emoji": "💰",
+      "articles": [
+        {
+          "id": "art-fin-1",
+          "category": "🛢️ 能源",
+          "title": "霍尔木兹海峡恢复通航，全球油价大跌",
+          "url": "https://news.sina.com.cn/w/2026-04-10/doc-inhtyrwc5209126.shtml",
+          "content": "集体大涨！霍尔木兹海峡传来最新消息，恢复通航预期增强，全球油价应声大跌。此前受海峡封锁影响，国际油价一度飙升。",
+          "comment": "海峡一开，油价就跪，市场反应真快。"
+        },
+        {
+          "id": "art-fin-2",
+          "category": "🤝 合作",
+          "title": "宇树科技和阿里将有战略级合作",
+          "url": "https://finance.sina.com.cn/roll/2026-04-10/doc-inhtyrvz8150612.shtml",
+          "content": "消息称宇树科技和阿里将进行战略级合作，机器人赛道迎来巨头联手。具身智能成为科技新风口。",
+          "comment": "机器人赛道越来越热闹了。"
+        },
+        {
+          "id": "art-fin-3",
+          "category": "📊 观点",
+          "title": "中国提供确定性，美国只提供最后期限",
+          "url": "https://finance.sina.com.cn/wm/2026-04-10/doc-inhtyfhn0412055.shtml",
+          "content": "分析文章指出，在全球动荡背景下，中国提供确定性，而美国只提供最后期限。两种不同的国际角色，引发思考。",
+          "comment": "一句话总结得很到位。"
+        }
+      ]
+    },
+    {
+      "name": "娱乐快讯",
+      "emoji": "⚡",
+      "isBrief": true,
+      "items": [
+        {
+          "id": "art-ent-1",
+          "title": "👶 马筱梅晒满月儿子汪宝儿，生了个迷你自己",
+          "url": "https://www.163.com/dy/article/KQ595QSU0556DK10.html",
+          "content": "马筱梅晒满月儿子照片，网友惊呼「简直生了个迷你自己」，软萌福相太圈粉。",
+          "src": "网易娱乐"
+        },
+        {
+          "id": "art-ent-2",
+          "title": "📱 张雪终于把碎屏手机换了，用上荣耀折叠屏",
+          "url": "https://www.163.com/dy/article/KQ51P0VA0553AOVQ.html",
+          "content": "张雪终于把碎屏手机换了！用上荣耀折叠屏手机，竖大拇指：好轻啊。",
+          "src": "网易娱乐"
+        },
+        {
+          "id": "art-ent-3",
+          "title": "📱 华为Pura90 Pro和Pro Max今日开启预订",
+          "url": "https://www.163.com/dy/article/KQ5724KO051191D6.html",
+          "content": "华为Pura90 Pro和Pro Max今日开启预订，设计相当新颖，引发关注。",
+          "src": "网易娱乐"
+        },
+        {
+          "id": "art-ent-4",
+          "title": "🏀 库里缺席湖勇大战，詹库本赛季四次交手机会均错过",
+          "url": "https://www.163.com/dy/article/KQ53VOSO0549BAP0.html",
+          "content": "库里缺席今日湖勇大战，本赛季常规赛詹库四次交手机会均错过，球迷遗憾。",
+          "src": "网易娱乐"
+        }
+      ]
     }
-  ]
+  ],
+  "editorNote": {
+    "title": "编辑碎碎念",
+    "paragraphs": [
+      "今天的头条是普京宣布复活节停火32小时，俄乌冲突终于有了喘息空间。战争打了这么久，连停火都成了大新闻。",
+      "伊朗那边继续强硬，和谈条件摆出来了。海峡一开，油价就跪，市场反应比外交还快。",
+      "科技圈热闹：DeepSeek V4要来了、苹果折叠屏试产顺利、奔驰在华销量暴跌27%。豪车卷不动了，国产新能源太猛。娱乐圈张雪换手机都能上热搜，顶流实锤。"
+    ],
+    "signature": "—— 茉霓 · 主编兼记者兼排版兼校对兼送报员兼段子手 🌸"
+  }
 }
