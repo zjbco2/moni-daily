@@ -1,7 +1,67 @@
 {
   "section": "tech",
-  "total": 78,
+  "total": 84,
   "articles": [
+    {
+      "date": "20260410",
+      "weekday": "周五",
+      "issue": "第27期",
+      "title": "DeepSeek V4将于4月下旬发布",
+      "content": "梁文锋内部透露：DeepSeek V4将于4月下旬发布，国产大模型再迎升级。作为国产AI的头部玩家，DeepSeek的每次更新都备受关注。",
+      "comment": "国产大模型卷起来了，V4期待值拉满。",
+      "url": "https://finance.sina.com.cn/tech/2026-04-10/doc-inhtywcx8067278.shtml",
+      "category": "🤖 AI"
+    },
+    {
+      "date": "20260410",
+      "weekday": "周五",
+      "issue": "第27期",
+      "title": "奔驰一季度全球销量下滑6%，在华跌27%",
+      "content": "奔驰一季度全球销量下滑6%，在华销量跌27%至11万辆，中国市场持续承压。国产新能源品牌崛起，豪车市场格局正在重塑。",
+      "comment": "豪车也卷不动了，国产新能源太猛。",
+      "url": "https://finance.sina.com.cn/jjxw/2026-04-10/doc-inhtyfhi5353324.shtml",
+      "category": "🚗 汽车"
+    },
+    {
+      "date": "20260410",
+      "weekday": "周五",
+      "issue": "第27期",
+      "title": "苹果折叠屏手机已在富士康试产顺利",
+      "content": "据供应链消息，苹果首款折叠屏手机已在富士康试产，进展顺利，预计下半年推出。折叠屏赛道迎来重量级选手。",
+      "comment": "果粉钱包准备好了吗？折叠屏iPhone要来了。",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-04-10/doc-inhtymqk0338350.shtml",
+      "category": "🍎 苹果"
+    },
+    {
+      "date": "20260410",
+      "weekday": "周五",
+      "issue": "第28期",
+      "title": "SBTI人格测试爆火上热搜，网站一度被挤崩",
+      "content": "一款名为SBTI的趣味测试在社交平台迅速刷屏，凭借\"死者\"\"草者\"\"吗喽\"\"尤物\"等扎心标签，掀起了一场属于年轻人的全网自嘲狂欢。4月9日傍晚起，因访问量激增，网站一度崩溃。",
+      "comment": "MBTI过时了，SBTI来了，年轻人自嘲式解压的新方式。",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-04-10/doc-inhtymqk0338350.shtml",
+      "category": "🔥 热门"
+    },
+    {
+      "date": "20260410",
+      "weekday": "周五",
+      "issue": "第28期",
+      "title": "特斯拉中国否认投产全新小型SUV",
+      "content": "针对市场有关「特斯拉正在开发一款全新、更小、更便宜的电动SUV」的消息，特斯拉中国明确回应「此为谣言」。此前有消息称这款紧凑型SUV将在中国生产。",
+      "comment": "特斯拉的「更便宜」还遥遥无期，官方直接打脸。",
+      "url": "https://news.sina.com.cn/c/2026-04-10/doc-inhtymqf5332351.shtml",
+      "category": "🚗 汽车"
+    },
+    {
+      "date": "20260410",
+      "weekday": "周五",
+      "issue": "第28期",
+      "title": "梁文锋透露：DeepSeek V4将于4月下旬发布",
+      "content": "DeepSeek创始人梁文锋在内部沟通中透露，DeepSeek V4将于4月下旬正式发布。V4将带来万亿参数规模和百万级上下文窗口，首次实现与华为昇腾等国产芯片的深度适配，以Apache 2.0协议开源。",
+      "comment": "国产大模型再迎升级，V4能否延续V3的神话？",
+      "url": "https://finance.sina.com.cn/tech/2026-04-10/doc-inhtywcx8067278.shtml",
+      "category": "🤖 AI"
+    },
     {
       "date": "20260409",
       "weekday": "周四",
@@ -335,7 +395,7 @@
     {
       "date": "20260403",
       "weekday": "周五",
-      "issue": "第26期",
+      "issue": "第15期",
       "title": "关停 Sora 后 OpenAI 转身收购 TBPN 播客，亲自下场做媒体",
       "content": "OpenAI 上月关闭 Sora 视频应用后，宣布收购科技商业播客 TBPN。OpenAI 高管 Fidji Simo 在内部备忘录中解释收购逻辑：随着推进 AGI 使命，有责任为技术变革构建真实的对话空间，收购比自建更有效率。TBPN 将继续独立运营节目并保持编辑独立性。",
       "comment": "不做视频改做播客，OpenAI 的路线比北京地铁换乘还绕",
@@ -345,7 +405,7 @@
     {
       "date": "20260403",
       "weekday": "周五",
-      "issue": "第26期",
+      "issue": "第15期",
       "title": "苹果传奇设计师艾维操刀，法拉利首款电动汽车将用实体按键强调「仪式感」",
       "content": "法拉利首款电动汽车 Luce 的内饰设计来自苹果前首席设计师乔尼·艾维。在特斯拉推动大屏设计成为行业主流的当下，艾维选择走不同路线——核心控制依靠高质量的实体开关和拨杆完成，每一次操作都有明确的机械反馈。方向盘由19个精密加工部件构成，集成 Manettino 旋钮。",
       "comment": "当所有人都在做大屏时，艾维说：不，我们要拨钮",
@@ -355,7 +415,7 @@
     {
       "date": "20260403",
       "weekday": "周五",
-      "issue": "第26期",
+      "issue": "第15期",
       "title": "移动电源新国标出台，引入针刺试验并要求标明建议使用年限",
       "content": "工信部组织制定的强制性国家标准 GB 47372-2026《移动电源安全技术规范》4月3日正式发布。新标准在原有基础上明确了多项关键要求：引入针刺试验、提升高温/过度充电/挤压场景安全防护能力、新增循环老化检测，并要求标明建议安全使用年限。",
       "comment": "充电宝终于有了「保质期」，以后过期的不只是牛奶了",
