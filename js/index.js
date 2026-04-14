@@ -2,7 +2,7 @@ const container = document.getElementById('shelvesContainer');
 const PER_SHELF = 4;
 
 let allEditions = [];
-let fsIndex = null;        // FlexSearch Document 索引
+let fsIndex = null;        // FlexSearch 索引（已废弃，保留兼容性
 let articleMap = new Map(); // id → article
 let currentEditions = [];
 let groupedData = [];
@@ -10,34 +10,6 @@ let groupedData = [];
 // ============================
 // 混合分词引擎（中文单字 + 二元组 + 英文单词）
 // ============================
-
-function extractChinese(text) {
-  const result = [];
-  const SEG = /[\u4e00-\u9fff]+/g;
-  let m;
-  while ((m = SEG.exec(text)) !== null) result.push(m[0]);
-  return result;
-}
-
-function tokenizeChinese(text) {
-  const chars = [], bigrams = [];
-  for (const seg of extractChinese(text)) {
-    for (let i = 0; i < seg.length; i++) chars.push(seg[i]);
-    if (seg.length > 1) for (let i = 0; i < seg.length - 1; i++) bigrams.push(seg[i] + seg[i + 1]);
-  }
-  return { chars, bigrams };
-}
-
-function tokenizeEnglish(text) {
-  return (text.match(/[a-zA-Z0-9]{2,}/g) || []).map(w => w.toLowerCase());
-}
-
-function tokenize(text) {
-  if (!text) return { chars: [], bigrams: [], english: [] };
-  text = text.toLowerCase();
-  const { chars, bigrams } = tokenizeChinese(text);
-  return { chars, bigrams, english: tokenizeEnglish(text) };
-}
 
 // ============================
 // 数据分组
@@ -65,41 +37,11 @@ function groupEditions(editions) {
 // ============================
 
 function buildIndex(articles) {
-  const t0 = Date.now();
-
-  // 用 3 个独立的 Index（不是 Document），避免 per-field encode 配置的兼容问题
-  // encode:false → FlexSearch 不二次编码，直接存储我们预处理好的 bigram 字符串
-  // tokenize:'forward' → 允许前缀匹配，bigram 查询如"伊朗"能命中"伊朗"token
-  const makeIndex = () => new FlexSearch.Index({ tokenize: 'forward', encode: false });
-
-  const titleIdx   = makeIndex();
-  const previewIdx = makeIndex();
-  const commentIdx = makeIndex();
-
+  // article id 并非全局唯一（不同期复用 art-lead/art-int-1 等）
+  // 用复合 key 确保每篇文章独立存储
   for (const a of articles) {
-    articleMap.set(a.id, a);
-    const titleT   = tokenize(a.title || '');
-    const previewT = tokenize(a.preview || '');
-    const commentT = tokenize(a.comment || '');
-
-    // 把 bigram + char + english 合并成一个字符串，encode:false 保证 FlexSearch 不再二次分词
-    const titleStr   = [titleT.bigrams.join(' '),   titleT.chars.join(' '),   titleT.english.join(' ')].filter(Boolean).join(' ');
-    const previewStr = [previewT.bigrams.join(' '), previewT.chars.join(' '), previewT.english.join(' ')].filter(Boolean).join(' ');
-    const commentStr = [commentT.bigrams.join(' '), commentT.chars.join(' '), commentT.english.join(' ')].filter(Boolean).join(' ');
-
-    titleIdx.add(a.id,   titleStr);
-    previewIdx.add(a.id, previewStr);
-    commentIdx.add(a.id,  commentStr);
+    articleMap.set(a.id + '|' + a.editionId, a);
   }
-
-  // 保存为数组，供 flexSearch() 函数使用
-  fsIndex = [
-    { idx: titleIdx,   weight: 3 },
-    { idx: previewIdx, weight: 1 },
-    { idx: commentIdx, weight: 2 },
-  ];
-
-  console.log(`[FlexSearch] 索引构建完成：${articles.length} 篇，${Date.now() - t0}ms`);
 }
 
 // ============================
@@ -107,28 +49,23 @@ function buildIndex(articles) {
 // ============================
 
 function flexSearch(query) {
-  const tok = tokenize(query);
-  const searchTokens = [...tok.bigrams, ...tok.chars, ...tok.english].filter(Boolean);
-  if (!searchTokens.length) return [];
+  const q = query.toLowerCase();
 
   const scores = new Map(); // id → {score, article}
 
-  for (const { idx, weight } of fsIndex) {
-    // 搜索 query 的每个 token
-    const tokenScores = {};
-    for (const t of searchTokens) {
-      // 每个 Index.search 返回匹配的 id 数组
-      const ids = idx.search(t, { limit: 200 });
-      for (const id of ids) {
-        tokenScores[id] = (tokenScores[id] || 0) + weight;
-      }
-    }
-    for (const [id, s] of Object.entries(tokenScores)) {
-      if (!scores.has(id)) {
-        scores.set(id, { score: s, article: articleMap.get(parseInt(id)) || articleMap.get(id) });
-      } else {
-        scores.get(id).score += s;
-      }
+  for (const [id, a] of articleMap) {
+    const titleText   = (a.title || '').toLowerCase();
+    const previewText = (a.preview || '').toLowerCase();
+    const commentText = (a.comment || '').toLowerCase();
+
+    let score = 0;
+    // 标题命中最强，评论次之，摘要第三
+    if (titleText.includes(q))   score += 3;
+    if (commentText.includes(q)) score += 2;
+    if (previewText.includes(q)) score += 1;
+
+    if (score > 0) {
+      scores.set(id, { score, article: a });
     }
   }
 
@@ -137,13 +74,15 @@ function flexSearch(query) {
     .filter(s => s.article)
     .sort((a, b) => b.score - a.score);
 
-  const seen = new Set(), results = [];
+  const editionSeen = new Set();
+  const results = [];
   for (const { article } of sorted) {
-    if (!seen.has(article.editionId)) {
-      seen.add(article.editionId);
+    if (!editionSeen.has(article.editionId)) {
+      editionSeen.add(article.editionId);
       results.push(article);
     }
   }
+
   return results;
 }
 
@@ -163,7 +102,7 @@ async function init() {
     renderShelves(allEditions);
     renderDateIndex();
 
-    // 加载搜索索引并建 FlexSearch 索引
+    // 加载搜索索引到内存
     try {
       const idxRes = await fetch('data/meta/search-index.json?t=' + Date.now());
       const idxData = await idxRes.json();
@@ -241,7 +180,7 @@ searchInput.addEventListener('keydown', function(e) {
 });
 
 // ============================
-// 搜索入口（FlexSearch or 原生兜底）
+// 搜索
 // ============================
 
 searchInput.addEventListener('input', function() {
@@ -255,22 +194,10 @@ searchInput.addEventListener('input', function() {
     return;
   }
 
-  let matchedEditions = [];
-
-  if (fsIndex) {
-    // FlexSearch 搜索
-    const results = flexSearch(query);
-    matchedEditions = allEditions.filter(ed => results.some(r => r.editionId === ed.id));
-  } else {
-    // 兜底：原生 includes（索引未加载时）
-    const q = query.toLowerCase();
-    const matchedIds = new Set();
-    articleMap.forEach(a => {
-      const text = [a.title, a.preview, a.comment, a.category, a.section].join(' ').toLowerCase();
-      if (text.includes(q)) matchedIds.add(a.editionId);
-    });
-    matchedEditions = allEditions.filter(ed => matchedIds.has(ed.id));
-  }
+  // 使用朴素 substring 搜索（516 篇文章总数据量 <1MB，线性扫描 <5ms）
+  const results = flexSearch(query);
+  const matchedEditionIds = new Set(results.map(r => r.editionId));
+  const matchedEditions = allEditions.filter(ed => matchedEditionIds.has(ed.id));
 
   updateCount(matchedEditions.length, true);
   renderShelves(matchedEditions);
