@@ -1,12 +1,102 @@
 {
-  "total": 290,
+  "total": 300,
   "by_section": {
-    "头条": 29,
-    "国际风云": 87,
-    "科技前沿": 87,
-    "国内财经": 87
+    "头条": 30,
+    "国际风云": 90,
+    "科技前沿": 90,
+    "国内财经": 90
   },
   "comments": [
+    {
+      "comment": "谈判还在谈，封锁先执行——特朗普式「先打后谈」，伊朗：你拳头硬你说了算 😏",
+      "title": "特朗普下令封锁伊朗港口：霍尔木兹海峡「战争状态」再度升级",
+      "date": "20260414",
+      "section": "头条",
+      "url": "https://finance.sina.com.cn/jjxw/2026-04-14/doc-inhummyn4249061.shtml",
+      "weekday": "周二",
+      "issue": "第32期"
+    },
+    {
+      "comment": "28国抱团围堵，结果发现挖出来的矿全得送回中国加工——没有中国技术，稀土就是土 💎",
+      "title": "美欧28国联手稀土博弈：120亿美元「金库计划」欲踢中国出局",
+      "date": "20260414",
+      "section": "国际风云",
+      "url": "https://www.163.com/dy/article/KQER2PV00553TEW9.html",
+      "weekday": "周二",
+      "issue": "第32期"
+    },
+    {
+      "comment": "北约学做人的艺术居然要找日本拜师——盟友面前讨特朗普欢心，这剧情够讽刺 😂",
+      "title": "北约30国将结队访日：高市早苗传授\"如何讨特朗普欢心\"",
+      "date": "20260414",
+      "section": "国际风云",
+      "url": "https://www.163.com/dy/article/KQ5SKRQU0556BC87.html",
+      "weekday": "周二",
+      "issue": "第32期"
+    },
+    {
+      "comment": "在X平台发帖数年，转头去TikTok圈粉——IPO压力面前，什么忠诚都是浮云 💰",
+      "title": "马斯克入驻TikTok发首条视频：SpaceX IPO前的2.38亿粉丝大迁移",
+      "date": "20260414",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-04-14/doc-inhumfsq4337350.shtml",
+      "weekday": "周二",
+      "issue": "第32期"
+    },
+    {
+      "comment": "2亿年薪招科学家，69万猎头费拖死不付——理想很丰满，付款很骨感 😏",
+      "title": "追觅被曝拖欠近70万猎头费 俞浩曾放言砸2亿招首席科学家",
+      "date": "20260414",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/2026-04-14/doc-inhummye5058076.shtml",
+      "weekday": "周二",
+      "issue": "第32期"
+    },
+    {
+      "comment": "炒到六七千的豆包手机，荣耀：不是我，别瞎说 🤳",
+      "title": "荣耀官宣否认与字节跳动就「豆包手机」合作：消息不实",
+      "date": "20260414",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-04-14/doc-inhummyi9165245.shtml",
+      "weekday": "周二",
+      "issue": "第32期"
+    },
+    {
+      "comment": "AI教父遭遇燃烧弹——技术变革的代价，有时候比想象中更血腥 🔥",
+      "title": "OpenAI CEO阿尔特曼家中遭自制燃烧弹袭击 FBI以「国内恐怖主义」调查",
+      "date": "20260414",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-04-14/doc-inhumfsk1867523.shtml",
+      "weekday": "周二",
+      "issue": "第32期"
+    },
+    {
+      "comment": "全球忙着打仗，我们忙着发货——15%的增速，是硬实力也是运气 📦",
+      "title": "首季增速15%！我国外贸起势有力、开局良好 历史同期首超11万亿",
+      "date": "20260414",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/roll/2026-04-14/doc-inhumshe1711915.shtml",
+      "weekday": "周二",
+      "issue": "第32期"
+    },
+    {
+      "comment": "3万跌到3000，赛道还没热透就卷成红海——机器人租赁的本质，是卖增值服务 🚀",
+      "title": "机器人租赁冰火两重天：日租金从3万跌至3000 华强北九成档口已撤场",
+      "date": "20260414",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/stock/t/2026-04-14/doc-inhumfsm9231921.shtml",
+      "weekday": "周二",
+      "issue": "第32期"
+    },
+    {
+      "comment": "油价VIX从121跌到68——市场学乖了，不再为同一张牌恐慌两次 📉",
+      "title": "情绪退潮！原油恐慌性交易大幅减少 VIX指数近乎腰斩",
+      "date": "20260414",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/roll/2026-04-14/doc-inhumfsk1870764.shtml",
+      "weekday": "周二",
+      "issue": "第32期"
+    },
     {
       "comment": "战场上拿不到的，谈判桌上也别想拿到。伊朗人深谙此道。",
       "title": "伊美谈判破裂！万斯确认双方分歧明显：将返回美国",
