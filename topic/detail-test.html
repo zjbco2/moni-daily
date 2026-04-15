@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>专题详情</title>
+<link rel="stylesheet" href="../css/topic-detail-test.css">
+</head>
+<body>
+
+<div id="app" v-cloak>
+
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="topbar-title" href="index.html">茉<em>霓</em>专题</a>
+      <a class="topbar-back" href="../index.html">← 报刊</a>
+    </div>
+  </div>
+
+  <!-- 加载中 -->
+  <div v-if="loading" class="loading-state">
+    <span class="loading-dot">●</span>
+    <span class="loading-dot">●</span>
+    <span class="loading-dot">●</span>
+  </div>
+
+  <!-- 错误 -->
+  <div v-else-if="error" class="error-state">
+    <p>{{ error }}</p>
+    <a href="index.html">← 回到专题列表</a>
+  </div>
+
+  <template v-else-if="topic">
+
+    <!-- HERO -->
+    <div class="topic-hero">
+      <div class="hero-inner">
+        <div class="hero-emoji">🌋</div>
+        <div class="hero-title">{{ topic.title }}</div>
+        <div class="hero-desc">{{ topic.summary }}</div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="stat-num">{{ articles.length }}</span>
+            <span class="stat-label">篇追踪</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-num">{{ dayCount }}</span>
+            <span class="stat-label">天连续</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 事件脉络 -->
+    <div class="section" v-if="timeline.length">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 class="section-title">事件脉络</h2>
+          <p class="section-sub">按时间顺序，关键节点一览</p>
+        </div>
+        <div class="timeline">
+          <div class="phase-col" v-if="phaseOutbreak.length">
+            <div class="phase-label phase-outbreak">爆发期</div>
+            <div class="tl-item phase-outbreak" v-for="ev in phaseOutbreak" :key="ev.date">
+              <div class="tl-date">{{ formatDate(ev.date) }}</div>
+              <div class="tl-title">{{ ev.title }}</div>
+              <div class="tl-desc">{{ ev.desc }}</div>
+              <div class="tl-articles" v-if="articlesByDate[ev.date]?.length">
+                <div class="tl-articles-label">相关报道</div>
+                <div class="tl-article" v-for="a in articlesByDate[ev.date]" :key="a.id">
+                  <a v-if="a.editionUrl" :href="a.editionUrl + '#' + a.id" target="_blank">{{ a.title }}</a>
+                  <span v-else>{{ a.title }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="phase-col" v-if="phaseEscalation.length">
+            <div class="phase-label phase-escalation">冲突升级</div>
+            <div class="tl-item phase-escalation" v-for="ev in phaseEscalation" :key="ev.date">
+              <div class="tl-date">{{ formatDate(ev.date) }}</div>
+              <div class="tl-title">{{ ev.title }}</div>
+              <div class="tl-desc">{{ ev.desc }}</div>
+              <div class="tl-articles" v-if="articlesByDate[ev.date]?.length">
+                <div class="tl-articles-label">相关报道</div>
+                <div class="tl-article" v-for="a in articlesByDate[ev.date]" :key="a.id">
+                  <a v-if="a.editionUrl" :href="a.editionUrl + '#' + a.id" target="_blank">{{ a.title }}</a>
+                  <span v-else>{{ a.title }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="phase-col" v-if="phaseNegotiation.length">
+            <div class="phase-label phase-negotiation">谈判期</div>
+            <div class="tl-item phase-negotiation" v-for="ev in phaseNegotiation" :key="ev.date">
+              <div class="tl-date">{{ formatDate(ev.date) }}</div>
+              <div class="tl-title">{{ ev.title }}</div>
+              <div class="tl-desc">{{ ev.desc }}</div>
+              <div class="tl-articles" v-if="articlesByDate[ev.date]?.length">
+                <div class="tl-articles-label">相关报道</div>
+                <div class="tl-article" v-for="a in articlesByDate[ev.date]" :key="a.id">
+                  <a v-if="a.editionUrl" :href="a.editionUrl + '#' + a.id" target="_blank">{{ a.title }}</a>
+                  <span v-else>{{ a.title }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="phase-col" v-if="phaseReturn.length">
+            <div class="phase-label phase-return">再升级</div>
+            <div class="tl-item phase-return" v-for="ev in phaseReturn" :key="ev.date">
+              <div class="tl-date">{{ formatDate(ev.date) }}</div>
+              <div class="tl-title">{{ ev.title }}</div>
+              <div class="tl-desc">{{ ev.desc }}</div>
+              <div class="tl-articles" v-if="articlesByDate[ev.date]?.length">
+                <div class="tl-articles-label">相关报道</div>
+                <div class="tl-article" v-for="a in articlesByDate[ev.date]" :key="a.id">
+                  <a v-if="a.editionUrl" :href="a.editionUrl + '#' + a.id" target="_blank">{{ a.title }}</a>
+                  <span v-else>{{ a.title }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 各方立场 -->
+    <div class="section" v-if="stances.length">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 class="section-title">各方立场</h2>
+          <p class="section-sub">主要相关方的态度与动作</p>
+        </div>
+        <div class="stance-grid">
+          <div class="stance-col" v-for="group in stancesByStance" :key="group.label">
+            <div class="phase-label" :class="'phase-' + group.phaseClass">{{ group.label }}</div>
+            <div class="stance-card" :class="s.cssClass" v-for="s in group.countries" :key="s.name">
+              <div class="stance-main">
+                <span class="stance-flag">{{ s.flag }}</span>
+                <div class="stance-info">
+                  <span class="stance-name">{{ s.name }}</span>
+                  <div class="stance-summary">{{ s.summary }}</div>
+                </div>
+              </div>
+              <ul class="stance-actions">
+                <li v-for="(a, i) in s.recentActions" :key="i">{{ a }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </template>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+<script>
+const ARTICLES_DATA = [{"date": "20260329-2", "title": "霍尔木兹海峡船流量暴跌95%，泰国巴基斯坦马来西亚获伊朗放行", "issue": "第2期", "id": "art-lead", "editionUrl": "https://www.thepaper.cn/newsDetail_forward_32857618"}, {"date": "20260330-1", "title": "德黑兰10多分钟遭两轮大规模空袭！超120枚弹药投向伊朗设施", "issue": "第3期", "id": "art-lead", "editionUrl": "https://finance.sina.com.cn/world/2026-03-30/doc-inhsthzk6665641.shtml"}, {"date": "20260330-1", "title": "🤖 微软暂停部分核心部门招聘，控制AI投入成本", "issue": "第3期", "id": "art-ent-5", "editionUrl": "https://finance.sina.com.cn/tech/digi/2026-03-30/doc-inhsthzn2991383.shtml"}, {"date": "20260330-2", "title": "美军被曝拟开展数周地面行动：夺取石油、转移核材料", "issue": "第4期", "id": "art-lead", "editionUrl": "https://www.thepaper.cn/newsDetail_forward_32860468"}, {"date": "20260331-1", "title": "两艘中国巨轮顺利通过霍尔木兹海峡", "issue": "第5期", "id": "art-lead", "editionUrl": "https://news.sina.com.cn/c/2026-03-31/doc-inhswawa5790321.shtml"}, {"date": "20260401-2", "title": "特朗普正「认真考虑」让美国退出北约", "issue": "第9期", "id": "art-lead", "editionUrl": "https://finance.sina.com.cn/roll/2026-04-01/doc-inhsywsz4943782.shtml"}, {"date": "20260401-3", "title": "伊朗、真主党、胡塞武装今晨联合袭击以色列", "issue": "第10期", "id": "art-lead", "editionUrl": "https://news.sina.com.cn/w/2026-04-01/doc-inhsywsx8485042.shtml"}, {"date": "20260402-2", "title": "伊朗动用超100枚重型导弹，打击范围覆盖以色列全境", "issue": "第12期", "id": "art-lead", "editionUrl": "https://finance.sina.com.cn/wm/2026-04-02/doc-inhsztwe2298586.shtml"}, {"date": "20260402-3", "title": "特朗普话音刚落，伊朗向以色列发射导弹", "issue": "第13期", "id": "art-lead", "editionUrl": "https://news.sina.com.cn/w/2026-04-02/doc-inhtakui4430227.shtml"}, {"date": "20260403-1", "title": "伊朗军方下令全面戒备，全球市场暴跌18万人爆仓", "issue": "第14期", "id": "art-lead", "editionUrl": "https://finance.sina.com.cn/wm/2026-04-02/doc-inhtcfxx4375367.shtml"}, {"date": "20260403-2", "title": "伊朗、真主党、胡塞武装联合发动第四轮打击，弹道导弹攻击特拉维夫", "issue": "第15期", "id": "art-lead", "editionUrl": "https://news.sina.com.cn/w/2026-04-03/doc-inhtepte0425897.shtml"}, {"date": "20260404-1", "title": "美先进战机被伊朗击落，飞行员疑似被俘，美方紧急搜救", "issue": "第17期", "id": "art-lead", "editionUrl": "https://news.sina.com.cn/w/2026-04-03/doc-inhtfres0174904.shtml"}, {"date": "20260404-3", "title": "美以对伊朗西南地区石化枢纽发动空袭 中东局势急剧升级", "issue": "第19期", "id": "art-lead", "editionUrl": "https://finance.sina.com.cn/wm/2026-04-04/doc-inhtipvx2877520.shtml"}, {"date": "20260405-1", "title": "特朗普宣称「打死多名伊朗军事领导人」，美伊冲突再度升级", "issue": "第3期", "id": "art-lead", "editionUrl": "https://news.sina.com.cn/c/2026-04-05/doc-inhtkvrm7371932.shtml"}, {"date": "20260405-2", "title": "美以空袭伊朗，救援行动变「炸弹派对」——两架运输机故障被困直接被炸毁", "issue": "第4期", "id": "art-lead", "editionUrl": "https://news.sina.com.cn/w/2026-04-05/doc-inhtmnnz2038288.shtml"}, {"date": "20260406-1", "title": "特朗普飙脏话威胁伊朗：打开霍尔木兹海峡，否则「活在地狱中」", "issue": "第22期", "id": "art-lead", "editionUrl": "https://finance.sina.com.cn/wm/2026-04-06/doc-inhtprne4618339.shtml"}, {"date": "20260406-2", "title": "伊朗就停火方案准备好回应，加密货币全线大涨、油价跳水", "issue": "第23期", "id": "art-lead", "editionUrl": "https://finance.sina.com.cn/stock/zqgd/2026-04-06/doc-inhtqnrx7818148.shtml"}, {"date": "20260407-1", "title": "停火传来！霍尔木兹有望重开，油价盘中暴跌3%后反弹", "issue": "第24期", "id": "art-lead", "editionUrl": "https://www.163.com/dy/article/KPT5VNJE0530JPVV.html"}, {"date": "20260409-1", "title": "伊朗军方：已做好长期战争准备", "issue": "第25期", "id": "art-lead", "editionUrl": "https://finance.sina.com.cn/stock/marketresearch/2026-04-09/doc-inhtwtew2072981.shtml"}, {"date": "20260409-2", "title": "霍尔木兹海峡再生变数：停火协议后再次关闭", "issue": "第26期", "id": "art-lead", "editionUrl": "https://news.sina.com.cn/w/2026-04-09/doc-inhtwxnx5833062.shtml"}, {"date": "20260410-2", "title": "世卫组织：美以军事打击致伊朗近2400人死亡", "issue": "第28期", "id": "art-lead", "editionUrl": "https://news.sina.com.cn/w/2026-04-10/doc-inhtywcx8073289.shtml"}, {"date": "20260414-1", "title": "特朗普下令封锁伊朗港口：霍尔木兹海峡「战争状态」再度升级", "issue": "第33期", "id": "art-lead", "editionUrl": "https://finance.sina.com.cn/jjxw/2026-04-14/doc-inhummyn4249061.shtml"}];
+const EVENTS = [
+  {"date": "20260329-2", "phase": "outbreak", "title": "霍尔木兹船流暴跌，泰巴马三国获伊朗放行", "desc": "全球航运大动脉说掐就掐"},
+  {"date": "20260330-1", "phase": "outbreak", "title": "德黑兰十分钟两轮空袭，120枚弹药砸向伊朗", "desc": "十分钟倾泻120枚弹药，这下单量比外卖平台还狠"},
+  {"date": "20260330-2", "phase": "outbreak", "title": "美军被曝计划地面行动，目标石油和核材料", "desc": "打了五周还想登陆抢油，这仗越打越像拍卖会"},
+  {"date": "20260331-1", "phase": "outbreak", "title": "两艘中国巨轮穿过霍尔木兹海峡", "desc": "中国巨轮一过，全世界都松了口气"},
+  {"date": "20260401-2", "phase": "escalation", "title": "特朗普认真考虑退出北约", "desc": "77年盟约说散就散？大哥带头跑路"},
+  {"date": "20260401-3", "phase": "escalation", "title": "伊朗、真主党、胡塞联合袭击以色列", "desc": "三方联手搞了一次「联合促销」"},
+  {"date": "20260402-2", "phase": "escalation", "title": "伊朗百枚重型导弹打击以色列全境", "desc": "导弹雨下得比南方梅雨还猛"},
+  {"date": "20260402-3", "phase": "escalation", "title": "特朗普话音刚落，伊朗再次发射导弹", "desc": "打脸速度比导弹飞得还快"},
+  {"date": "20260403-1", "phase": "escalation", "title": "伊朗全面戒备，全球市场暴跌", "desc": "说快打完了，又派了一艘航母"},
+  {"date": "20260403-2", "phase": "escalation", "title": "三方发动第四轮打击，弹道导弹攻特拉维夫", "desc": "中东「复仇者联盟」上演"},
+  {"date": "20260404-1", "phase": "escalation", "title": "美先进战机被击落，飞行员疑似被俘", "desc": "从击落到搜救，剧本演到营救大片"},
+  {"date": "20260404-3", "phase": "escalation", "title": "美以空袭伊朗石化枢纽，局势急剧升级", "desc": "霍尔木兹这根针一抖，全球能源血管跟着抖"},
+  {"date": "20260405-1", "phase": "negotiation", "title": "特朗普宣称打死多名伊朗军事领导人", "desc": "嘴上停火，手里按按钮"},
+  {"date": "20260405-2", "phase": "negotiation", "title": "美以空袭伊朗，两架被困运输机被炸毁", "desc": "炸自己的飞机来阻止对方缴获"},
+  {"date": "20260406-1", "phase": "negotiation", "title": "特朗普威胁伊朗：开闸，否则活在地狱", "desc": "狠话说了又说，剧本比短剧还能拖"},
+  {"date": "20260406-2", "phase": "negotiation", "title": "伊朗回应停火方案，油价跳水", "desc": "一边谈停火一边打导弹，薛定谔的和平"},
+  {"date": "20260407-1", "phase": "return", "title": "停火传来，霍尔木兹有望重开", "desc": "油价过山车玩得比威胁还刺激"},
+  {"date": "20260409-1", "phase": "return", "title": "伊朗称已做好长期战争准备", "desc": "桌下是子弹，各怀鬼胎的「和平」能撑几天"},
+  {"date": "20260409-2", "phase": "return", "title": "停火协议后，霍尔木兹再次关闭", "desc": "这「拼多多式停火」还能砍几刀"},
+  {"date": "20260410-2", "phase": "return", "title": "世卫：美以打击致伊朗近2400人死亡", "desc": "伤亡数字触目惊心，战争从来不只是标题"},
+  {"date": "20260414-1", "phase": "return", "title": "特朗普下令封锁伊朗港口", "desc": "谈判桌五年，换来一纸封锁令"}
+];;
+
+const { createApp, ref, computed } = Vue;
+
+createApp({
+  setup() {
+    const topic = ref({ id: 'iran-war', title: '伊朗战事', summary: '霍尔木兹海峡风暴' });
+    const articles = ref(ARTICLES_DATA);
+    const loading = ref(false);
+    const error = ref(null);
+
+    const timeline = ref(EVENTS);
+
+    const phaseMap = {
+      '20260329-2': 'outbreak', '20260330-1': 'outbreak', '20260330-2': 'outbreak', '20260331-1': 'outbreak',
+      '20260401-2': 'escalation', '20260401-3': 'escalation', '20260402-2': 'escalation', '20260402-3': 'escalation',
+      '20260403-1': 'escalation', '20260403-2': 'escalation', '20260404-1': 'escalation', '20260404-3': 'escalation',
+      '20260405-1': 'negotiation', '20260405-2': 'negotiation', '20260406-1': 'negotiation', '20260406-2': 'negotiation',
+      '20260407-1': 'return', '20260409-1': 'return', '20260409-2': 'return', '20260410-2': 'return', '20260414-1': 'return',
+    };
+
+    const phaseOutbreak = computed(() => timeline.value.filter(e => phaseMap[e.date] === 'outbreak'));
+    const phaseEscalation = computed(() => timeline.value.filter(e => phaseMap[e.date] === 'escalation'));
+    const phaseNegotiation = computed(() => timeline.value.filter(e => phaseMap[e.date] === 'negotiation'));
+    const phaseReturn = computed(() => timeline.value.filter(e => phaseMap[e.date] === 'return'));
+
+    const formatDate = (d) => {
+      const m = parseInt(d.substr(4,2));
+      const day = parseInt(d.substr(6,2));
+      const map = { 3:'3月',4:'4月' };
+      return (map[m] || (m+'月')) + day + '日';
+    };
+
+    const articlesByDate = computed(() => {
+      const map = {};
+      articles.value.forEach(a => {
+        const d = a.date || '';
+        if (!map[d]) map[d] = [];
+        map[d].push(a);
+      });
+      return map;
+    });
+
+    const stances = ref([
+      { flag: '🇺🇸', name: '美国', cssClass: 'us', stance: '强硬', stanceClass: 'stance-stance-strong', summary: '封锁霍尔木兹、极限施压，要求伊朗全面让步', recentActions: ['4月14日 下令封锁伊朗港口', '4月12日 谈判破裂，万斯返美', '4月7日 设最后通牒'] },
+      { flag: '🇮🇷', name: '伊朗', cssClass: 'ir', stance: '强硬', stanceClass: 'stance-stance-strong', summary: '强硬反击，核谈判坚持四项底线，誓言报复', recentActions: ['4月14日 愿谈判但不开条件', '4月12日 开出"四项不可谈判条件"', '4月7日 青年人链护核设施'] },
+      { flag: '🇵🇰', name: '巴基斯坦', cssClass: 'pk', stance: '调解', stanceClass: 'stance-stance-mediate', summary: '居中调解，提供谈判场所，奔走于美伊之间', recentActions: ['4月12日 美伊谈判场所', '4月7日 拟定停火框架方案'] },
+      { flag: '🇨🇳', name: '中国', cssClass: 'cn', stance: '斡旋', stanceClass: 'stance-stance-neutral', summary: '呼吁停火，私下劝伊朗保持克制', recentActions: ['4月14日 大使20分钟电话劝阻', '3月31日 中巴联合发布五点倡议'] },
+      { flag: '🇬🇧', name: '英国', cssClass: 'uk', stance: '斡旋', stanceClass: 'stance-stance-neutral', summary: '召集35国开会，推动霍尔木兹通航安全', recentActions: ['4月3日 召集35国开会', '4月1日 发起海上安全倡议'] },
+      { flag: '🇷🇺', name: '俄罗斯', cssClass: 'ru', stance: '斡旋', stanceClass: 'stance-stance-neutral', summary: '推动停火，紧急撤走核电站人员', recentActions: ['4月3日 普京表示愿推动解决冲突', '4月4日 从布什尔核电站撤侨198人'] },
+    ]);
+
+    const stancePhaseMap = {
+      '强硬': 'outbreak',
+      '调解': 'negotiation',
+      '斡旋': 'mediate',
+    };
+
+    const dayCount = computed(() => new Set(articles.value.map(a => a.date)).size);
+
+    const dateRange = computed(() => {
+      const dates = [...new Set(articles.value.map(a => a.date))].sort();
+      if (!dates.length) return '';
+      const fmt = d => { const m = parseInt(d.substr(4,2)); const day = parseInt(d.substr(6,2)); return (m===3?'3月':(m===4?'4月':m+'月')) + day + '日'; };
+      return dates.length === 1 ? fmt(dates[0]) : (fmt(dates[0]) + '—' + fmt(dates[dates.length-1]));
+    });
+
+    const stancesByStance = computed(() => {
+      const map = {};
+      stances.value.forEach(s => {
+        if (!map[s.stance]) map[s.stance] = { label: s.stance, phaseClass: stancePhaseMap[s.stance] || 'mediate', countries: [] };
+        map[s.stance].countries.push(s);
+      });
+      return Object.values(map);
+    });
+
+    return { topic, articles, loading, error, timeline, stances, articlesByDate, dayCount, dateRange, formatDate, phaseOutbreak, phaseEscalation, phaseNegotiation, phaseReturn, stancesByStance };
+  }
+}).mount('#app');
+</script>
+</body>
+</html>
