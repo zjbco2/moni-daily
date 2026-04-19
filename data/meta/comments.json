@@ -1,10 +1,10 @@
 {
-  "total": 320,
+  "total": 330,
   "by_section": {
-    "头条": 32,
-    "国际风云": 96,
-    "科技前沿": 96,
-    "国内财经": 96
+    "头条": 33,
+    "国际风云": 99,
+    "科技前沿": 99,
+    "国内财经": 99
   },
   "comments": [
     {
@@ -15,6 +15,15 @@
       "url": "https://finance.sina.com.cn/world/2026-04-19/doc-inhuyvrm9510703.shtml",
       "weekday": "周日",
       "issue": "第35期"
+    },
+    {
+      "comment": "人类57分20秒的纪录被机器人踩在脚下，荣耀闪电们冲线那一刻，57分成了永远的过去式 🏃",
+      "title": "荣耀机器人半马夺冠破人类纪录：50分26秒，A股IPO启动",
+      "date": "20260419",
+      "section": "头条",
+      "url": "https://finance.sina.com.cn/stock/marketresearch/2026-04-19/doc-inhuznnw0497124.shtml",
+      "weekday": "周日",
+      "issue": "第36期"
     },
     {
       "comment": "莫迪的大国梦，被霍尔木兹一枪打回原形。",
@@ -44,6 +53,33 @@
       "issue": "第35期"
     },
     {
+      "comment": "欧盟喊开放，伊朗说已作古——这出戏，台词都懒得换了 😂",
+      "title": "伊朗外交部：霍尔木兹海峡无条件过境通行已成历史",
+      "date": "20260419",
+      "section": "国际风云",
+      "url": "https://www.163.com/dy/article/KQSDP8QD05129QAF.html",
+      "weekday": "周日",
+      "issue": "第36期"
+    },
+    {
+      "comment": "外交和打仗两手准备，翻译过来就是：没谈拢就继续打 🤌",
+      "title": "伊朗议长卡利巴夫：已做好外交与军事对抗两手准备",
+      "date": "20260419",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/stock/marketresearch/2026-04-19/doc-inhuznpc9337081.shtml",
+      "weekday": "周日",
+      "issue": "第36期"
+    },
+    {
+      "comment": "一边封海峡，一边开领空——精神分裂式外交，打几分自己都不知道 🌀",
+      "title": "伊朗部分空域及多个机场重新开放",
+      "date": "20260419",
+      "section": "国际风云",
+      "url": "https://www.163.com/dy/article/KQQAEB180514R9P4.html",
+      "weekday": "周日",
+      "issue": "第36期"
+    },
+    {
       "comment": "145万台→320万台，这速度，妥妥的下一个手机级市场。",
       "title": "2026年智能眼镜销量将破320万台：翻倍增长的国补新宠",
       "date": "20260419",
@@ -71,6 +107,33 @@
       "issue": "第35期"
     },
     {
+      "comment": "31.6%到2.7%，两年追了29个百分点，这速度，比追女朋友还猛 🏃",
+      "title": "中美AI模型差距缩至2.7%！斯坦福报告：两年前还是31.6%",
+      "date": "20260419",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/stock/marketresearch/2026-04-19/doc-inhuzsuy1291723.shtml",
+      "weekday": "周日",
+      "issue": "第36期"
+    },
+    {
+      "comment": "从翻译耳机到eVTOL，广交会成了中国AI的超级路演现场 🛫",
+      "title": "广交会AI黑科技出海：同传耳机、eVTOL、植保无人机集体亮相",
+      "date": "20260419",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/roll/2026-04-17/doc-inhutsps6835579.shtml",
+      "weekday": "周日",
+      "issue": "第36期"
+    },
+    {
+      "comment": "国补一进场，智能眼镜从玩具变刚需，黄牛已经在路上了 👓",
+      "title": "2026年智能眼镜销量将破320万台：翻倍增长的国补新宠",
+      "date": "20260419",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-04-17/doc-inhutnfu6925366.shtml",
+      "weekday": "周日",
+      "issue": "第36期"
+    },
+    {
       "comment": "原油市场成提款机，CFTC查得过来吗？",
       "title": "神秘空头卡点押注：1小时原油做空，狂赚7000万美元",
       "date": "20260419",
@@ -96,6 +159,33 @@
       "url": "https://finance.sina.com.cn/stock/zqgd/2026-04-19/doc-inhuyrik4967930.shtml",
       "weekday": "周日",
       "issue": "第35期"
+    },
+    {
+      "comment": "停火协议、油价、LPR三件套凑一起，下周市场想平静都难 📊",
+      "title": "4月LPR下周公布，成品油调价窗口，美伊停火协议22日到期",
+      "date": "20260419",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/stock/marketresearch/2026-04-19/doc-inhuznny4637110.shtml",
+      "weekday": "周日",
+      "issue": "第36期"
+    },
+    {
+      "comment": "2.5亿散户遇上AI算命，是镰刀升级还是韭菜翻身？🤖",
+      "title": "巨头纷纷布局AI炒股：阿里、腾讯、Kimi全下场，2.5亿股民的算法狂欢？",
+      "date": "20260419",
+      "section": "国内财经",
+      "url": "https://news.sina.com.cn/s/2026-04-19/doc-inhuyzxa0650090.shtml",
+      "weekday": "周日",
+      "issue": "第36期"
+    },
+    {
+      "comment": "2万箱假老酒，喝的不是酒，是套路和化学 🧪",
+      "title": "山西特大假酒网络摧毁：2.6亿元假剑南春五粮液，2万箱假酒",
+      "date": "20260419",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/wm/2026-04-19/doc-inhuzhfe1463944.shtml",
+      "weekday": "周日",
+      "issue": "第36期"
     },
     {
       "comment": "北约盟友全跑了，就这还「让美国再次伟大」？连自家兄弟都不跟，封锁令第一天就成了大型社死现场。",
