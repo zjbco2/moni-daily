@@ -1,12 +1,102 @@
 {
-  "total": 310,
+  "total": 320,
   "by_section": {
-    "头条": 31,
-    "国际风云": 93,
-    "科技前沿": 93,
-    "国内财经": 93
+    "头条": 32,
+    "国际风云": 96,
+    "科技前沿": 96,
+    "国内财经": 96
   },
   "comments": [
+    {
+      "comment": "特朗普的赢学大戏，观众比演员还入戏，伊朗一巴掌呼醒全球。",
+      "title": "伊朗被激怒！霍尔木兹海峡「完全开放」24小时即反转封锁",
+      "date": "20260419",
+      "section": "头条",
+      "url": "https://finance.sina.com.cn/world/2026-04-19/doc-inhuyvrm9510703.shtml",
+      "weekday": "周日",
+      "issue": "第35期"
+    },
+    {
+      "comment": "莫迪的大国梦，被霍尔木兹一枪打回原形。",
+      "title": "牛弹琴：伊朗被激怒，印度遭了殃",
+      "date": "20260419",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/world/2026-04-19/doc-inhuyvrm9510703.shtml",
+      "weekday": "周日",
+      "issue": "第35期"
+    },
+    {
+      "comment": "美国封锁，中国援助；以色列威胁，中国救人。高下立判。",
+      "title": "笔刚落下，内塔发出战争警告：58吨！中国紧急援助伊朗",
+      "date": "20260419",
+      "section": "国际风云",
+      "url": "https://www.163.com/dy/article/KQSB9AEH0556832H.html",
+      "weekday": "周日",
+      "issue": "第35期"
+    },
+    {
+      "comment": "挑《马关条约》纪念日？日本右翼的小心思，中方一眼看穿。",
+      "title": "日本老舰挑《马关条约》纪念日过航台海，中方：悬崖勒马",
+      "date": "20260419",
+      "section": "国际风云",
+      "url": "https://www.163.com/dy/article/KQRDCJ6405568PEA.html",
+      "weekday": "周日",
+      "issue": "第35期"
+    },
+    {
+      "comment": "145万台→320万台，这速度，妥妥的下一个手机级市场。",
+      "title": "2026年智能眼镜销量将破320万台：翻倍增长的国补新宠",
+      "date": "20260419",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-04-17/doc-inhutnfu6925366.shtml",
+      "weekday": "周日",
+      "issue": "第35期"
+    },
+    {
+      "comment": "广交会变「智交会」，中国智造出海正在换挡升级。",
+      "title": "广交会AI黑科技出海：同传耳机、eVTOL、植保无人机集体亮相",
+      "date": "20260419",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/roll/2026-04-17/doc-inhutsps6835579.shtml",
+      "weekday": "周日",
+      "issue": "第35期"
+    },
+    {
+      "comment": "一个员工抗法，15亿买单。拼多多这笔合规费，交得太贵了。",
+      "title": "拼多多被罚15.22亿元：员工关门致执法人员手指骨折，暴力抗法代价惨痛",
+      "date": "20260419",
+      "section": "科技前沿",
+      "url": "https://www.163.com/dy/article/KQS541FK0553VRO2.html",
+      "weekday": "周日",
+      "issue": "第35期"
+    },
+    {
+      "comment": "原油市场成提款机，CFTC查得过来吗？",
+      "title": "神秘空头卡点押注：1小时原油做空，狂赚7000万美元",
+      "date": "20260419",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/jjxw/2026-04-19/doc-inhuyett9820653.shtml",
+      "weekday": "周日",
+      "issue": "第35期"
+    },
+    {
+      "comment": "黄金和股市齐涨？别高兴太早，这恰恰是最危险的时候。",
+      "title": "洪灏：金价翻倍没有悬念！美债越烂，黄金越香",
+      "date": "20260419",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/wm/2026-04-19/doc-inhuyzxa0658436.shtml",
+      "weekday": "周日",
+      "issue": "第35期"
+    },
+    {
+      "comment": "头部券商强者恒强，中小券商的出路在哪？国际化+AI，别无他法。",
+      "title": "券商前十座次重排！中信、国泰海通「两超」格局确立，自营收入同比增33%",
+      "date": "20260419",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/stock/zqgd/2026-04-19/doc-inhuyrik4967930.shtml",
+      "weekday": "周日",
+      "issue": "第35期"
+    },
     {
       "comment": "北约盟友全跑了，就这还「让美国再次伟大」？连自家兄弟都不跟，封锁令第一天就成了大型社死现场。",
       "title": "封锁令刚生效就崩了？4国联手叫板特朗普，16日伊美再谈",
