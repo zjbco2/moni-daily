@@ -1,7 +1,57 @@
 {
   "section": "entertainment",
-  "total": 160,
+  "total": 165,
   "articles": [
+    {
+      "date": "20260502",
+      "weekday": "周六",
+      "issue": "第37期",
+      "title": "🏀 活塞24分惊天逆转！连续23投0中破NBA历史纪录",
+      "content": "NBA季后赛东部首轮G6，活塞93-79逆转魔术，第四节31-8攻击波，坎宁安32分10板，魔术连续23次运动战投篮打铁破历史纪录，系列赛3-3抢七。",
+      "comment": "",
+      "url": "https://www.163.com/dy/article/KRTQVQDM0529B02E.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260502",
+      "weekday": "周六",
+      "issue": "第37期",
+      "title": "📉 小米跌破30港元！较去年高点蒸发超50%",
+      "content": "小米集团股价再创年内新低，雷军年内已斥资超70亿港元回购仍无力回天，市场估值从科技成长股向硬件制造股靠拢。",
+      "comment": "",
+      "url": "https://www.163.com/dy/article/KRTI6BV30519B5UO.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260502",
+      "weekday": "周六",
+      "issue": "第37期",
+      "title": "🎭 刘晓庆现身开封武侠城，「王婆」舞台上互动冷淡引争议",
+      "content": "刘晓庆受邀参加万岁山武侠城活动，头戴鲜花乘花车向游客挥手，但在「王婆说媒」舞台上侧身回避互动，引发争议。景区回应：系受邀参加，暂无投诉。",
+      "comment": "",
+      "url": "https://www.163.com/dy/article/KRRP83NS053469LG.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260502",
+      "weekday": "周六",
+      "issue": "第37期",
+      "title": "🎭 李亚鹏13年后再办慈善晚宴，几乎无大咖现身支持",
+      "content": "李亚鹏在香港举办嫣然重光慈善晚宴，最终募得数百万元帮助400多名唇腭裂孩子手术，但现场几乎无大咖现身，对比13年前王菲在场的盛况，场面落差明显。",
+      "comment": "",
+      "url": "https://www.163.com/dy/article/KRSCLKNM0553KY45.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260502",
+      "weekday": "周六",
+      "issue": "第37期",
+      "title": "🎮 孙杨玩游戏扇52岁范明耳光旧事被翻出，引发争议",
+      "content": "奥运冠军孙杨在2016年综艺节目中玩「捂脸石头剪刀布」时赢后扇52岁范明耳光引发争议，相关视频近日被翻出登上热搜第一。",
+      "comment": "",
+      "url": "https://www.163.com/dy/article/KRTOSOCA0553AOVQ.html",
+      "category": "快讯"
+    },
     {
       "date": "20260419",
       "weekday": "周日",

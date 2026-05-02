@@ -1,12 +1,102 @@
 {
-  "total": 330,
+  "total": 340,
   "by_section": {
-    "头条": 33,
-    "国际风云": 99,
-    "科技前沿": 99,
-    "国内财经": 99
+    "头条": 34,
+    "国际风云": 102,
+    "科技前沿": 102,
+    "国内财经": 102
   },
   "comments": [
+    {
+      "comment": "停火归停火，经济战照打不误，伊朗这「经济抗争」听着就憋屈。",
+      "title": "特朗普宣告伊朗战事「结束」，停火协议无限期延长",
+      "date": "20260502",
+      "section": "头条",
+      "url": "https://www.163.com/dy/article/KRT40E0705198CJN.html",
+      "weekday": "周六",
+      "issue": "第37期"
+    },
+    {
+      "comment": "战事「结束」写进信里，谈判还在电话里——这才是特朗普式的胜利宣言。",
+      "title": "美媒：特朗普告知国会，对伊朗战事已\"结束\"",
+      "date": "20260502",
+      "section": "国际风云",
+      "url": "https://www.163.com/dy/article/KRT40E0705198CJN.html",
+      "weekday": "周六",
+      "issue": "第37期"
+    },
+    {
+      "comment": "军事顶住了，经济成主战场——哈梅内伊这句话道出了伊朗的苦日子还在后头。",
+      "title": "哈梅内伊：当前阶段必须推动\"经济抗争\"",
+      "date": "20260502",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/jjxw/2026-05-02/doc-inhwmres5131050.shtml",
+      "weekday": "周六",
+      "issue": "第37期"
+    },
+    {
+      "comment": "全球贸易的裁判机构揭不开锅，美国欠费成最大窟窿。",
+      "title": "美国拖欠世贸组织会费，WTO计划削减10%预算",
+      "date": "20260502",
+      "section": "国际风云",
+      "url": "https://finance.sina.com.cn/world/2026-05-02/doc-inhwnhar2701113.shtml",
+      "weekday": "周六",
+      "issue": "第37期"
+    },
+    {
+      "comment": "库克最后的日子里「不香了」——囤现金、减回购，告别「回购托市」的旧时代。",
+      "title": "苹果宣布放弃净现金中性策略，库克时代最后的大转向",
+      "date": "20260502",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-05-01/doc-inhwktzi3370995.shtml",
+      "weekday": "周六",
+      "issue": "第37期"
+    },
+    {
+      "comment": "Meta不只做社交和元宇宙了，人形机器人战场又多一个狠角色。",
+      "title": "Meta收购机器人AI公司，加速布局人形机器人",
+      "date": "20260502",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-05-02/doc-inhwmvnq5013743.shtml",
+      "weekday": "周六",
+      "issue": "第37期"
+    },
+    {
+      "comment": "Anthropic的道德洁癖成了「供应链风险」，AI军事化浪潮不可逆转。",
+      "title": "五角大楼与七家AI巨头签约，Anthropic遭排除",
+      "date": "20260502",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-05-02/doc-inhwmres5134280.shtml",
+      "weekday": "周六",
+      "issue": "第37期"
+    },
+    {
+      "comment": "\"不满意\"是特朗普对伊谈判的态度，国产AI芯片的业绩可没让他失望。",
+      "title": "国产AI芯片龙头集体迎来业绩兑现，销售规模全线高增",
+      "date": "20260502",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/wm/2026-05-02/doc-inhwmzur0020352.shtml",
+      "weekday": "周六",
+      "issue": "第37期"
+    },
+    {
+      "comment": "业绩基准大换血，基金经理以后想「漂移」都漂不动了。",
+      "title": "12家公募调整存量产品业绩比较基准，涵盖多类产品",
+      "date": "20260502",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/roll/2026-05-02/doc-inhwnhar2701113.shtml",
+      "weekday": "周六",
+      "issue": "第37期"
+    },
+    {
+      "comment": "回购130次也拉不回30港元，市场给雷军的努力打了六折。",
+      "title": "小米跌破30港元，较去年高点已蒸发逾50%",
+      "date": "20260502",
+      "section": "国内财经",
+      "url": "https://www.163.com/dy/article/KRTI6BV30519B5UO.html",
+      "weekday": "周六",
+      "issue": "第37期"
+    },
     {
       "comment": "特朗普的赢学大戏，观众比演员还入戏，伊朗一巴掌呼醒全球。",
       "title": "伊朗被激怒！霍尔木兹海峡「完全开放」24小时即反转封锁",

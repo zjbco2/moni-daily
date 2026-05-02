@@ -1,7 +1,37 @@
 {
   "section": "tech",
-  "total": 99,
+  "total": 102,
   "articles": [
+    {
+      "date": "20260502",
+      "weekday": "周六",
+      "issue": "第37期",
+      "title": "苹果宣布放弃净现金中性策略，库克时代最后的大转向",
+      "content": "苹果首席财务官凯文·帕雷在分析师电话会上宣布，公司正式放弃长期奉行的净现金中性现金管理策略。该策略由前CFO马埃斯特里与库克于2018年确立，截至今年3月31日，苹果净现金已缩水至620亿美元，远低于2018年的1630亿美元。库克表示本季度研发支出大增34%，以抓住产品与服务两大业务赛道的发展机遇。苹果还批准了至多1000亿美元的股票回购计划并提高股息，但本季度回购规模同比直接腰斩。库克将于9月1日正式卸任，由硬件业务负责人约翰·特努斯接任。",
+      "comment": "库克最后的日子里「不香了」——囤现金、减回购，告别「回购托市」的旧时代。",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-05-01/doc-inhwktzi3370995.shtml",
+      "category": "🍎 苹果"
+    },
+    {
+      "date": "20260502",
+      "weekday": "周六",
+      "issue": "第37期",
+      "title": "Meta收购机器人AI公司，加速布局人形机器人",
+      "content": "Meta Platforms已完成对机器人AI初创公司Assured Robot Intelligence的收购，以加速人形机器人技术研发。该收购于5月1日完成，具体财务条款未予披露。Assured Robot Intelligence专注于为机器人开发AI模型，使机器人能在复杂动态环境中理解、预测并适应人类行为。其联合创始人Lerrel Pinto和Xiaolong Wang将加入Meta，后者此前曾在英伟达担任研究员。Meta机器人团队正在研发内部人形机器人硬件及底层AI系统，特斯拉、谷歌、亚马逊等也在该领域展开激烈竞争。",
+      "comment": "Meta不只做社交和元宇宙了，人形机器人战场又多一个狠角色。",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-05-02/doc-inhwmvnq5013743.shtml",
+      "category": "🤖 AI"
+    },
+    {
+      "date": "20260502",
+      "weekday": "周六",
+      "issue": "第37期",
+      "title": "五角大楼与七家AI巨头签约，Anthropic遭排除",
+      "content": "五角大楼5月1日宣布已与七家人工智能公司达成协议，将先进技术部署到国防部机密网络中。SpaceX、OpenAI、谷歌、英伟达、Reflection、微软和亚马逊云服务入选；Anthropic因安全限制争议被排除——该企业拒绝允许Claude模型用于完全自主武器和大规模监控，坚持设置安全护栏，引发特朗普政府不满，五角大楼已于今年3月将其列为「供应链风险」。Anthropic已提起诉讼，案件仍在审理。签约企业将接入保密和绝密网络，产品用于任务规划、目标引导等作战用途。五角大楼核心平台GenAI.mil上线五个月，已吸引超过130万名国防部人员使用。",
+      "comment": "Anthropic的道德洁癖成了「供应链风险」，AI军事化浪潮不可逆转。",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-05-02/doc-inhwmres5134280.shtml",
+      "category": "🛡️ 国防AI"
+    },
     {
       "date": "20260419",
       "weekday": "周日",
