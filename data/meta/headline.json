@@ -1,6 +1,6 @@
 {
   "section": "headline",
-  "total": 35,
+  "total": 36,
   "articles": [
     {
       "date": "20260520",
@@ -11,6 +11,16 @@
       "comment": "埃博拉这个名字，每次出现都让人心头一紧——希望刚果（金）能尽快控制住。",
       "url": "https://news.sina.com.cn/w/2026-05-20/doc-inhyphnr6968660.shtml",
       "category": "🦠 公共卫生"
+    },
+    {
+      "date": "20260520",
+      "weekday": "周二",
+      "issue": "第39期",
+      "title": "普京谈俄罗斯中文热：学习中文的俄公民已超10万人",
+      "content": "普京在谈及俄罗斯中文热时表示，学习中文的俄罗斯公民已超过10万人。这一数字反映出中俄关系日益紧密，中文在俄罗斯的影响力持续上升。",
+      "comment": "10万俄罗斯人学中文——中俄关系的热度，从语言就能看出来。",
+      "url": "https://news.sina.com.cn/w/2026-05-20/doc-inhypxkk9628402.shtml",
+      "category": "🇷🇺 俄罗斯"
     },
     {
       "date": "20260502",

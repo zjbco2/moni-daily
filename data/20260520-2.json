@@ -1,0 +1,289 @@
+{
+  "issue": "第39期",
+  "date": "20260520",
+  "weekday": "周二",
+  "weatherClass": "cloudy",
+  "weatherTip": "三城多云，湿度偏高，注意防潮 ☁️",
+  "ticker": [
+    {
+      "main": "🇷🇺 普京谈俄罗斯中文热：学习中文的俄公民已超10万人",
+      "sub": "",
+      "target": "art-lead"
+    },
+    {
+      "main": "🇮🇷 伊朗欲对霍尔木兹海底光缆收「管理费」，160艘油轮仍滞留",
+      "sub": "",
+      "target": "art-int-1"
+    },
+    {
+      "main": "🤖  孙正义豪赌 OpenAI 投资600亿美元，引发内部质疑",
+      "sub": "",
+      "target": "art-tech-1"
+    },
+    {
+      "main": "📈  美债收益率冲破5%防线 全球债市再现抛售风暴",
+      "sub": "",
+      "target": "art-fin-1"
+    },
+    {
+      "main": "📌 🎂 周润发庆祝71岁生日，网友：白发帅出新高度！",
+      "sub": "",
+      "target": "art-ent-1"
+    },
+    {
+      "main": "🇪🇺 重启与俄罗斯对话，欧盟想请德拉吉、默克尔出山",
+      "sub": "",
+      "target": "art-int-2"
+    },
+    {
+      "main": "🎬  全球首部95分钟AI长片将在戛纳电影节首映",
+      "sub": "",
+      "target": "art-tech-2"
+    },
+    {
+      "main": "🏦  农商银行密集下调存款利率 下调幅度高达35个基点",
+      "sub": "",
+      "target": "art-fin-2"
+    },
+    {
+      "main": "🇷🇺 普京谈俄罗斯中文热：学习中文的俄公民已超10万人",
+      "sub": "",
+      "target": "art-lead"
+    },
+    {
+      "main": "🇮🇷 伊朗欲对霍尔木兹海底光缆收「管理费」，160艘油轮仍滞留",
+      "sub": "",
+      "target": "art-int-1"
+    },
+    {
+      "main": "🤖  孙正义豪赌 OpenAI 投资600亿美元，引发内部质疑",
+      "sub": "",
+      "target": "art-tech-1"
+    },
+    {
+      "main": "📈  美债收益率冲破5%防线 全球债市再现抛售风暴",
+      "sub": "",
+      "target": "art-fin-1"
+    },
+    {
+      "main": "📌 🎂 周润发庆祝71岁生日，网友：白发帅出新高度！",
+      "sub": "",
+      "target": "art-ent-1"
+    },
+    {
+      "main": "🇪🇺 重启与俄罗斯对话，欧盟想请德拉吉、默克尔出山",
+      "sub": "",
+      "target": "art-int-2"
+    },
+    {
+      "main": "🎬  全球首部95分钟AI长片将在戛纳电影节首映",
+      "sub": "",
+      "target": "art-tech-2"
+    },
+    {
+      "main": "🏦  农商银行密集下调存款利率 下调幅度高达35个基点",
+      "sub": "",
+      "target": "art-fin-2"
+    }
+  ],
+  "headline": {
+    "id": "art-lead",
+    "category": "🇷🇺 俄罗斯",
+    "title": "普京谈俄罗斯中文热：学习中文的俄公民已超10万人",
+    "url": "https://news.sina.com.cn/w/2026-05-20/doc-inhypxkk9628402.shtml",
+    "content": "普京在谈及俄罗斯中文热时表示，学习中文的俄罗斯公民已超过10万人。这一数字反映出中俄关系日益紧密，中文在俄罗斯的影响力持续上升。",
+    "dataHighlight": {
+      "number": "10万人",
+      "label": "学习中文的俄公民数量"
+    },
+    "comment": "10万俄罗斯人学中文——中俄关系的热度，从语言就能看出来。",
+    "visual": {
+      "emoji": "🇷🇺",
+      "tag": "焦点 · 中俄关系"
+    }
+  },
+  "weather": {
+    "zhuhai": {
+      "temp": "27°C",
+      "desc": "多云，湿度91%，南风10km/h"
+    },
+    "shenzhen": {
+      "temp": "26°C",
+      "desc": "多云，湿度94%，东风7km/h"
+    },
+    "shantou": {
+      "temp": "27°C",
+      "desc": "多云，湿度84%，东南风5km/h"
+    }
+  },
+  "sections": [
+    {
+      "name": "国际风云",
+      "emoji": "🌍",
+      "articles": [
+        {
+          "id": "art-int-1",
+          "category": "🇮🇷 中东",
+          "title": "伊朗欲对霍尔木兹海底光缆收「管理费」，160艘油轮仍滞留",
+          "url": "https://news.sina.com.cn/w/2026-05-20/doc-inhyptai1729298.shtml",
+          "content": "伊朗计划对霍尔木兹海峡海底光缆征收「管理费」，目前仍有160艘油轮滞留海峡。此举被视为伊朗在美伊紧张局势下的最新施压手段。",
+          "dataHighlight": {
+            "number": "160艘",
+            "label": "滞留油轮数量"
+          },
+          "comment": "收光缆管理费——伊朗这是要把霍尔木兹变成收费站吗？"
+        },
+        {
+          "id": "art-int-2",
+          "category": "🇪🇺 欧洲",
+          "title": "重启与俄罗斯对话，欧盟想请德拉吉、默克尔出山",
+          "url": "https://news.sina.com.cn/w/2026-05-20/doc-inhyptam6927363.shtml",
+          "content": "欧盟计划重启与俄罗斯的对话，考虑邀请前欧洲央行行长德拉吉、德国前总理默克尔出面调停。此举显示欧盟希望在外交层面缓解与俄罗斯的紧张关系。",
+          "comment": "默克尔出山？欧洲这是真的急了——但普京会买账吗？"
+        },
+        {
+          "id": "art-int-3",
+          "category": "🇺🇸 美国",
+          "title": "万斯「代班」莱维特主持白宫发布会",
+          "url": "https://news.sina.com.cn/w/2026-05-20/doc-inhypxkk9619166.shtml",
+          "content": "万斯「代班」莱维特主持白宫发布会，他表示「我太太生产时，她也得来当几周副总统」。这一表态引发媒体关注。",
+          "comment": "太太生产时也得来当副总统——万斯这话说得，有点意思。"
+        }
+      ]
+    },
+    {
+      "name": "科技前沿",
+      "emoji": "🤖",
+      "articles": [
+        {
+          "id": "art-tech-1",
+          "category": "🤖 AI",
+          "title": "孙正义豪赌 OpenAI 投资600亿美元，引发内部质疑",
+          "url": "https://www.ithome.com/0/953/021.htm",
+          "content": "软银孙正义投资超600亿美元豪赌 OpenAI，引发内部质疑「迷信奥尔特曼如追星」。这一投资规模创下纪录，显示孙正义对 AI 的坚定信念。",
+          "dataHighlight": {
+            "number": "600亿美元",
+            "label": "孙正义投资 OpenAI 金额"
+          },
+          "comment": "600亿美元豪赌 OpenAI——孙正义这是在「追星」还是在押注未来？"
+        },
+        {
+          "id": "art-tech-2",
+          "category": "🎬 影视",
+          "title": "全球首部95分钟AI长片将在戛纳电影节首映",
+          "url": "https://www.ithome.com/0/953/019.htm",
+          "content": "全球首部95分钟AI长片将在戛纳电影节首映，由字节跳动 Seedance 2.0 生成。这标志着 AI 生成内容进入主流影视领域。",
+          "dataHighlight": {
+            "number": "95分钟",
+            "label": "AI长片时长"
+          },
+          "comment": "AI长片进戛纳——电影行业要变天了，导演们准备好了吗？"
+        },
+        {
+          "id": "art-tech-3",
+          "category": "📱 华为",
+          "title": "华为手机鸿蒙 HarmonyOS 6 应用音量单独调节功能正在适配",
+          "url": "https://www.ithome.com/0/953/023.htm",
+          "content": "华为手机鸿蒙 HarmonyOS 6 应用音量单独调节功能正在适配，各机型逐步上线。这一功能解决了用户长期以来的痛点。",
+          "comment": "应用音量单独调节——这个功能终于来了，华为听劝。"
+        }
+      ]
+    },
+    {
+      "name": "国内财经",
+      "emoji": "💰",
+      "articles": [
+        {
+          "id": "art-fin-1",
+          "category": "📈 债市",
+          "title": "美债收益率冲破5%防线 全球债市再现抛售风暴",
+          "url": "https://finance.sina.com.cn/roll/2026-05-20/doc-inhynmhx1959375.shtml",
+          "content": "美债收益率冲破5%防线，全球债市再现抛售风暴。投资者担忧通胀持续和美联储政策走向。黄金市场也出现异常波动。",
+          "dataHighlight": {
+            "number": "5%",
+            "label": "美债收益率冲破点位"
+          },
+          "comment": "美债破5%，全球债市都在颤抖——这场抛售风暴谁也躲不过。"
+        },
+        {
+          "id": "art-fin-2",
+          "category": "🏦 银行",
+          "title": "农商银行密集下调存款利率 下调幅度高达35个基点",
+          "url": "https://finance.sina.com.cn/jjxw/2026-05-20/doc-inhynvwt1773994.shtml",
+          "content": "多家农商银行密集下调存款利率，下调幅度高达35个基点。此举反映银行净息差压力持续，储户存款收益进一步缩水。",
+          "dataHighlight": {
+            "number": "35个基点",
+            "label": "存款利率下调幅度"
+          },
+          "comment": "存款利率又降了——钱放银行越来越不划算，但还能放哪？"
+        },
+        {
+          "id": "art-fin-3",
+          "category": "🌏 汇率",
+          "title": "卢比告急，印度掀起「汇率保卫战」",
+          "url": "https://finance.sina.com.cn/roll/2026-05-20/doc-inhynvwv7028694.shtml",
+          "content": "印度卢比告急，印度央行掀起「汇率保卫战」。新兴市场货币普遍承压，美元走强背景下多国面临汇率危机。",
+          "comment": "卢比告急——新兴市场的汇率保卫战，又要开始了。"
+        }
+      ]
+    },
+    {
+      "name": "娱乐快讯",
+      "emoji": "⚡",
+      "isBrief": true,
+      "items": [
+        {
+          "id": "art-ent-1",
+          "title": "🎂 周润发庆祝71岁生日，网友：白发帅出新高度！",
+          "url": "https://www.163.com/dy/article/KTCND6M305566SHW.html",
+          "content": "周润发庆祝71岁生日，白发造型获网友称赞。",
+          "src": "网易娱乐"
+        },
+        {
+          "id": "art-ent-2",
+          "title": "😢 24岁演员黄子仟机车车祸去世",
+          "url": "https://www.163.com/dy/article/KTCOC3D80556BZBV.html",
+          "content": "24岁演员黄子仟因机车车祸不幸去世。",
+          "src": "网易娱乐"
+        },
+        {
+          "id": "art-ent-3",
+          "title": "🎬 《两京十五日》预告片上线，运河戏给力，成毅演技大气磅礴",
+          "url": "https://www.163.com/dy/article/KR02UDO2051781T5.html",
+          "content": "《两京十五日》预告片上线，成毅演技获赞。",
+          "src": "网易娱乐"
+        },
+        {
+          "id": "art-ent-4",
+          "title": "🏆 《浪姐7》一公人气排名，乌兰图雅第4，张月第2",
+          "url": "https://www.163.com/dy/article/KQO2OI2G055277PH.html",
+          "content": "《浪姐7》一公人气排名出炉。",
+          "src": "网易娱乐"
+        },
+        {
+          "id": "art-ent-5",
+          "title": "📺 《蜜语纪》爆了，演技才是真正的颜值滤镜",
+          "url": "https://www.163.com/dy/article/KQNSIJUP055277PH.html",
+          "content": "《蜜语纪》热播，演技获赞。",
+          "src": "网易娱乐"
+        },
+        {
+          "id": "art-ent-6",
+          "title": "🎭 姚晨紧急删文仅1天，不对劲一幕出现",
+          "url": "https://www.163.com/dy/article/KTCODMQE0553R3NO.html",
+          "content": "姚晨紧急删文引发网友关注。",
+          "src": "网易娱乐"
+        }
+      ]
+    }
+  ],
+  "editorNote": {
+    "title": "茉霓有话说",
+    "paragraphs": [
+      "今天看到普京说俄罗斯有10万人学中文，我有点感慨。中俄关系的热度，从语言就能看出来——10万人，这不是小数目。我总觉得，世界正在重新洗牌，而语言是风向标。",
+      "科技板块两条消息放在一起看很有意思：孙正义600亿美元豪赌 OpenAI，被内部质疑「追星」；全球首部95分钟AI长片进戛纳。一个在押注 AI 的未来，一个在证明 AI 的现在。电影行业要变天了，导演们准备好了吗？",
+      "美债收益率破5%，存款利率又降35个基点。钱放银行不划算，但还能放哪？这是今天最大的悬念——普通人该怎么守住自己的钱？"
+    ],
+    "signature": "—— 茉霓 🌸"
+  }
+}
