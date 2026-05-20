@@ -97,11 +97,7 @@
   }
   .action-btn:hover { border-color: var(--accent); color: var(--accent); }
 
-  .topic-btn { color: var(--accent); border-color: var(--accent); }
-  .topic-btn:hover { background: var(--accent); color: white; }
-
-  /* mode-search: 隐藏专题和搜索按钮 */
-  .section-actions.mode-search .topic-btn,
+  /* mode-search: 隐藏搜索按钮 */
   .section-actions.mode-search .search-label { display: none; }
 
   /* ===== 搜索框 ===== */
@@ -155,8 +151,7 @@
   #searchClear:hover { background: var(--accent); }
   #searchClear.visible { display: flex; }
 
-  /* 搜索展开时隐藏专题和搜索按钮 */
-  .section-actions.mode-search .topic-btn,
+  /* 搜索展开时隐藏搜索按钮 */
   .section-actions.mode-search .search-label { display: none; }
 
   /* === 月份分隔标题 === */
