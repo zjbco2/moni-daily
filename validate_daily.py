@@ -4,8 +4,53 @@
 生成 JSON 后自动运行，修复常见格式问题。
 用法: python3 validate_daily.py data/20260331.json [--fix-ticker]
   --fix-ticker  用文章实际标题重新生成 ticker（更准确）
+  --get-issue   获取下一个期号（从 editions.json 计算）
 """
 import json, sys, os, re
+
+def get_next_issue(editions_path='data/meta/editions.json'):
+    """从 editions.json 计算下一个期号"""
+    try:
+        with open(editions_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        editions = data.get('editions', [])
+        if not editions:
+            return "第1期"
+        issues = []
+        for ed in editions:
+            match = re.search(r'第(\d+)期', ed.get('issue', ''))
+            if match:
+                issues.append(int(match.group(1)))
+        max_issue = max(issues) if issues else 0
+        return f"第{max_issue + 1}期"
+    except FileNotFoundError:
+        return "第1期"
+
+def check_index_consistency(editions_path='data/meta/editions.json', index_path='data/meta/search-index.json'):
+    """检查 editions.json 和 search-index.json 的 id/editionId 一致性"""
+    issues = []
+    try:
+        with open(editions_path, 'r', encoding='utf-8') as f:
+            editions = json.load(f)
+        with open(index_path, 'r', encoding='utf-8') as f:
+            index = json.load(f)
+
+        valid_ids = {ed['id'] for ed in editions.get('editions', []) if 'id' in ed}
+
+        orphan_count = 0
+        for article in index.get('articles', []):
+            edition_id = article.get('editionId')
+            if edition_id and edition_id not in valid_ids:
+                orphan_count += 1
+
+        if orphan_count > 0:
+            issues.append(f"search-index.json 有 {orphan_count} 篇文章的 editionId 在 editions.json 中找不到对应 id")
+
+        return issues
+    except FileNotFoundError as e:
+        return [f"文件不存在: {e.filename}"]
+    except json.JSONDecodeError as e:
+        return [f"JSON 解析错误: {e}"]
 
 def collect_articles(data):
     """收集所有文章 {id: {title, category}}"""
@@ -209,49 +254,67 @@ def validate(data):
     return issues
 
 def main():
+    # 新增：获取期号
+    if '--get-issue' in sys.argv:
+        next_issue = get_next_issue()
+        print(next_issue)
+        return
+
+    # 新增：检查索引一致性
+    if '--check-consistency' in sys.argv:
+        issues = check_index_consistency()
+        if issues:
+            for issue in issues:
+                print(f"[WARN] {issue}")
+        else:
+            print("[OK] 索引一致性检查通过")
+        return len(issues) == 0
+
     if len(sys.argv) < 2:
         print('用法: python3 validate_daily.py <json_file> [--fix-ticker]')
+        print('      python3 validate_daily.py --get-issue')
+        print('      python3 validate_daily.py --check-consistency')
         sys.exit(1)
-    
+
     filepath = sys.argv[1]
     regenerate = '--fix-ticker' in sys.argv
-    
+
     with open(filepath, 'r', encoding='utf-8') as f:
         data = json.load(f)
-    
-    print(f'📄 校验: {filepath}')
-    
+
+    print(f'[CHECK] {filepath}')
+
     # 1. 补 id
     add_ids(data)
-    
+
     # 2. 修复板块名
     if fix_section_name(data):
-        print('  🔧 板块名 → 娱乐快讯')
-    
+        print('  [FIX] 板块名 -> 娱乐快讯')
+
     # 3. 修复 ticker
     if regenerate:
         regenerate_ticker(data)
-        print('  🔧 重新生成 ticker')
+        print('  [FIX] 重新生成 ticker')
     elif fix_ticker_smart(data):
-        print('  🔧 修复 ticker 格式')
-    
+        print('  [FIX] 修复 ticker 格式')
+
     # 4. 修复引号
     data = fix_quotes(data)
-    
+
     # 保存
     with open(filepath, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    print('  💾 已保存')
-    
+    print('  [SAVE] 已保存')
+
     # 校验
     issues = validate(data)
     if issues:
-        print('  ⚠️ 剩余问题:')
+        print('  [WARN] 剩余问题:')
         for issue in issues:
             print(f'    - {issue}')
     else:
-        print('  ✅ 全部通过！')
-    
+        print('  [OK] 全部通过!')
+
     return len(issues) == 0
 
 if __name__ == '__main__':
