@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 茉霓日报 JSON 校验修复脚本
-cron 生成 JSON 后自动运行，修复常见格式问题。
+生成 JSON 后自动运行，修复常见格式问题。
 用法: python3 validate_daily.py data/20260331.json [--fix-ticker]
   --fix-ticker  用文章实际标题重新生成 ticker（更准确）
 """

@@ -20,7 +20,7 @@ def update_comments():
         path = os.path.join(META_DIR, f'{file_key}.json')
         if not os.path.exists(path):
             continue
-        with open(path) as f:
+        with open(path, encoding='utf-8') as f:
             data = json.load(f)
         for art in data.get('articles', []):
             comment = art.get('comment', '').strip()

@@ -7,6 +7,9 @@
 
 set -e  # 任何步骤失败立即退出
 
+# Windows 中文编码支持
+export PYTHONIOENCODING=utf-8
+
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$SCRIPT_DIR"
 
