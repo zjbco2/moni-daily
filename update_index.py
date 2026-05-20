@@ -111,7 +111,7 @@ def update_index(daily_json_path, index_path='data/meta/search-index.json'):
     with open(index_path, 'w', encoding='utf-8') as f:
         json.dump(index, f, ensure_ascii=False, indent=2)
 
-    msg = f"✅ search-index.json 已更新: +{len(deduped)} 篇"
+    msg = f"[OK] search-index.json 已更新: +{len(deduped)} 篇"
     if skipped:
         msg += f" (跳过 {skipped} 篇重复)"
     msg += f", 总计 {index['totalArticles']} 篇"

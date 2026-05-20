@@ -61,7 +61,7 @@ def update_comments():
     with open(out_path, 'w', encoding='utf-8') as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    print(f'✅ 已生成 {out_path}：{len(comments)} 条辣评')
+    print(f'[OK] 已生成 {out_path}：{len(comments)} 条辣评')
     for sec, count in sorted(by_section.items()):
         print(f'   {sec}: {count} 条')
 

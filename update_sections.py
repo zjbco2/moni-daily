@@ -26,7 +26,7 @@ def update_sections():
         try:
             data = json.load(open(f, encoding='utf-8'))
         except Exception as e:
-            print(f'⚠️ 跳过 {f}: {e}')
+            print(f'[WARN] 跳过 {f}: {e}')
             continue
 
         date = data.get('date', '')
@@ -81,9 +81,9 @@ def update_sections():
         path = os.path.join(SECTIONS_DIR, f'{key}.json')
         with open(path, 'w', encoding='utf-8') as f:
             json.dump(output, f, ensure_ascii=False, indent=2)
-        print(f'✅ {key}.json: {len(sections[key])} 篇文章')
+        print(f'[OK] {key}.json: {len(sections[key])} 篇文章')
 
-    print('\n✅ 板块索引更新完毕')
+    print('\n[OK] 板块索引更新完毕')
 
 if __name__ == '__main__':
     update_sections()

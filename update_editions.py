@@ -55,7 +55,7 @@ def update_editions(daily_json_path, editions_path='data/meta/editions.json'):
     existing = [e for e in editions['editions']
                 if e.get('date') == date_formatted and e.get('issue') == issue_text]
     if existing:
-        print(f"⚠️ {issue_text} 已存在 (id={existing[0]['id']}), 跳过")
+        print(f"[WARN] {issue_text} 已存在 (id={existing[0]['id']}), 跳过")
         return existing[0]['id']
 
     # 确定新id
@@ -97,7 +97,7 @@ def update_editions(daily_json_path, editions_path='data/meta/editions.json'):
     with open(editions_path, 'w', encoding='utf-8') as f:
         json.dump(editions, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ editions.json 已更新: {issue_text} (id={new_id}), 共 {len(headlines)} 条标题")
+    print(f"[OK] editions.json 已更新: {issue_text} (id={new_id}), 共 {len(headlines)} 条标题")
     return new_id
 
 if __name__ == '__main__':
