@@ -130,9 +130,11 @@ const container = document.getElementById('shelvesContainer');
     if (query === '') {
       updateCount(allEditions.length, false);
       renderShelves(allEditions);
+      renderDateIndex();
+      initScrollSpy();
       return;
     }
-    
+
     const matchedArticleEditionIds = new Set();
     searchIndex.forEach(article => {
       const text = [article.title, article.preview, article.comment, article.category, article.section].join(' ').toLowerCase();
@@ -140,11 +142,13 @@ const container = document.getElementById('shelvesContainer');
         matchedArticleEditionIds.add(article.editionId);
       }
     });
-    
+
     const filtered = allEditions.filter(ed => matchedArticleEditionIds.has(ed.id));
-    
+
     updateCount(filtered.length, true);
     renderShelves(filtered);
+    renderDateIndexFromEditions(filtered);
+    initScrollSpy();
   });
   
   searchClear.addEventListener('click', function(e) {
@@ -158,38 +162,50 @@ const container = document.getElementById('shelvesContainer');
   // 日期索引渲染
   // ============================
   function renderDateIndex() {
+    renderDateIndexFromEditions(allEditions);
+  }
+
+  function renderDateIndexFromEditions(editions) {
     var el = document.getElementById('dateIndex');
-    if (!groupedData.length) { el.innerHTML = ''; return; }
-    
+    if (!editions.length) { el.innerHTML = ''; return; }
+
+    // 按日期分组
+    var dateMap = {};
+    for (var i = 0; i < editions.length; i++) {
+      var ed = editions[i];
+      var date = ed.date;
+      if (!dateMap[date]) dateMap[date] = [];
+      dateMap[date].push(ed);
+    }
+
+    var dates = Object.keys(dateMap).sort().reverse();
+
     var today = new Date();
     var todayStr = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0') + '-' + String(today.getDate()).padStart(2, '0');
-    
+
     var html = '';
-    for (var m = 0; m < groupedData.length; m++) {
-      var mg = groupedData[m];
-      for (var d = 0; d < mg.days.length; d++) {
-        var day = mg.days[d];
-        var count = day.editions.length;
-        var lastDate = day.editions[count - 1].date;
-        
-        // 中文日期
-        var label;
-        if (day.date === todayStr) {
-          label = '今天';
-        } else {
-          var mm = parseInt(day.date.substr(5));
-          var dd = parseInt(day.date.substr(8));
-          label = mm + '月' + dd + '日';
-        }
-        
-        html += '<a class="idx-day" data-target="' + lastDate + '">'
-          + '<span class="day-num">' + label + '</span>'
-          + '<span class="day-count">' + count + '</span>'
-          + '</a>';
+    for (var j = 0; j < dates.length; j++) {
+      var d = dates[j];
+      var eds = dateMap[d];
+      var count = eds.length;
+      var lastDate = eds[count - 1].date;
+
+      var label;
+      if (d === todayStr) {
+        label = '今天';
+      } else {
+        var mm = parseInt(d.substr(5));
+        var dd = parseInt(d.substr(8));
+        label = mm + '月' + dd + '日';
       }
+
+      html += '<a class="idx-day" data-target="' + lastDate + '">'
+        + '<span class="day-num">' + label + '</span>'
+        + '<span class="day-count">' + count + '</span>'
+        + '</a>';
     }
     el.innerHTML = html;
-    
+
     el.querySelectorAll('.idx-day').forEach(function(a) {
       a.addEventListener('click', function(e) {
         e.preventDefault();
