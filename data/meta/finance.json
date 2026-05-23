@@ -1,7 +1,37 @@
 {
   "section": "finance",
-  "total": 108,
+  "total": 111,
   "articles": [
+    {
+      "date": "20260523",
+      "weekday": "周五",
+      "issue": "第40期",
+      "title": "花旗翻空黄金：三个月内降到4300美元",
+      "content": "花旗翻空黄金，预测三个月内金价将降到4300美元。此前黄金持续上涨，多家机构观点出现分歧。",
+      "comment": "花旗喊空黄金——是真看空，还是想低位建仓？",
+      "url": "https://finance.sina.com.cn/roll/2026-05-22/doc-inhytust7713364.shtml",
+      "category": "📈 黄金"
+    },
+    {
+      "date": "20260523",
+      "weekday": "周五",
+      "issue": "第40期",
+      "title": "日韩股再度大涨，汇率倒挂隐含风险",
+      "content": "日韩股市再度大涨，但汇率倒挂隐含风险。分析师提醒需关注汇率波动对投资的潜在影响。",
+      "comment": "日韩股市涨了，但汇率倒挂——表面繁荣下有暗流。",
+      "url": "https://finance.sina.com.cn/roll/2026-05-22/doc-inhytkax7803477.shtml",
+      "category": "🌏 亚太"
+    },
+    {
+      "date": "20260523",
+      "weekday": "周五",
+      "issue": "第40期",
+      "title": "美股收盘：标普连涨八周道指刷新高，芯片股持续走强",
+      "content": "美股收盘标普连涨八周，道指刷新高，芯片股和量子概念持续走强。市场情绪乐观，但分析师提醒注意估值风险。",
+      "comment": "标普连涨八周——这波行情还能走多远？",
+      "url": "https://news.sina.com.cn/w/2026-05-23/doc-inhyvnzw4751187.shtml",
+      "category": "🇺🇸 美股"
+    },
     {
       "date": "20260520",
       "weekday": "周二",

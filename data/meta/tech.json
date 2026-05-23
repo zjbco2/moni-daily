@@ -1,7 +1,37 @@
 {
   "section": "tech",
-  "total": 108,
+  "total": 111,
   "articles": [
+    {
+      "date": "20260523",
+      "weekday": "周五",
+      "issue": "第40期",
+      "title": "首部AI长片戛纳首映，15人砸40万算力",
+      "content": "全球首部95分钟AI长片在戛纳电影节首映，由15人团队投入40万算力完成。这标志着AI生成内容正式进入主流影视领域。",
+      "comment": "15人、40万算力——AI电影的门槛比想象中低，未来已来。",
+      "url": "https://www.163.com/dy/article/KTHOGQ1O055616Z7.html",
+      "category": "🎬 影视"
+    },
+    {
+      "date": "20260523",
+      "weekday": "周五",
+      "issue": "第40期",
+      "title": "沃什就任美联储主席，强调将以改革为导向",
+      "content": "「鹰派」沃什正式就任美联储主席，强调将以改革为导向。市场关注其货币政策走向，全球金融市场迎来新变数。",
+      "comment": "鹰派沃什上任——美联储要变天了吗？市场都在屏息以待。",
+      "url": "https://finance.sina.com.cn/roll/2026-05-23/doc-inhyvtiw5646166.shtml",
+      "category": "🤖 AI"
+    },
+    {
+      "date": "20260523",
+      "weekday": "周五",
+      "issue": "第40期",
+      "title": "只能卖、不能买？内地人炒港股面临史上最严监管",
+      "content": "境外「灰色通道」终结，设两年过渡期，投资者资产安全不受影响。富途回应称将积极配合监管要求。",
+      "comment": "港股灰色通道终结——两年过渡期，投资者要抓紧调整了。",
+      "url": "https://finance.sina.com.cn/roll/2026-05-23/doc-inhyvtiv7166948.shtml",
+      "category": "💰 金融"
+    },
     {
       "date": "20260520",
       "weekday": "周二",

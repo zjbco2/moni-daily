@@ -1,0 +1,285 @@
+{
+  "issue": "第40期",
+  "date": "20260523",
+  "weekday": "周五",
+  "weatherClass": "cloudy",
+  "weatherTip": "三城多云有雨，气温回升，注意防晒补水 ☀️",
+  "ticker": [
+    {
+      "main": "🚀  成功溅落！SpaceX完成「星舰」第12次试飞",
+      "sub": "",
+      "target": "art-lead"
+    },
+    {
+      "main": "🇮🇷 美伊协议草案或将在数小时内公布",
+      "sub": "",
+      "target": "art-int-1"
+    },
+    {
+      "main": "🎬  首部AI长片戛纳首映，15人砸40万算力",
+      "sub": "",
+      "target": "art-tech-1"
+    },
+    {
+      "main": "📈  花旗翻空黄金：三个月内降到4300美元",
+      "sub": "",
+      "target": "art-fin-1"
+    },
+    {
+      "main": "📌 🎬 首部AI长片戛纳首映，15人砸40万算力",
+      "sub": "",
+      "target": "art-ent-1"
+    },
+    {
+      "main": "🇮🇳 印度部分地区气温高达48.2摄氏度，电力负荷连创历史新高",
+      "sub": "",
+      "target": "art-int-2"
+    },
+    {
+      "main": "🤖  沃什就任美联储主席，强调将以改革为导向",
+      "sub": "",
+      "target": "art-tech-2"
+    },
+    {
+      "main": "🌏  日韩股再度大涨，汇率倒挂隐含风险",
+      "sub": "",
+      "target": "art-fin-2"
+    },
+    {
+      "main": "🚀  成功溅落！SpaceX完成「星舰」第12次试飞",
+      "sub": "",
+      "target": "art-lead"
+    },
+    {
+      "main": "🇮🇷 美伊协议草案或将在数小时内公布",
+      "sub": "",
+      "target": "art-int-1"
+    },
+    {
+      "main": "🎬  首部AI长片戛纳首映，15人砸40万算力",
+      "sub": "",
+      "target": "art-tech-1"
+    },
+    {
+      "main": "📈  花旗翻空黄金：三个月内降到4300美元",
+      "sub": "",
+      "target": "art-fin-1"
+    },
+    {
+      "main": "📌 🎬 首部AI长片戛纳首映，15人砸40万算力",
+      "sub": "",
+      "target": "art-ent-1"
+    },
+    {
+      "main": "🇮🇳 印度部分地区气温高达48.2摄氏度，电力负荷连创历史新高",
+      "sub": "",
+      "target": "art-int-2"
+    },
+    {
+      "main": "🤖  沃什就任美联储主席，强调将以改革为导向",
+      "sub": "",
+      "target": "art-tech-2"
+    },
+    {
+      "main": "🌏  日韩股再度大涨，汇率倒挂隐含风险",
+      "sub": "",
+      "target": "art-fin-2"
+    }
+  ],
+  "headline": {
+    "id": "art-lead",
+    "category": "🚀 航天",
+    "title": "成功溅落！SpaceX完成「星舰」第12次试飞",
+    "url": "https://news.sina.com.cn/w/2026-05-23/doc-inhyvtiw5653331.shtml",
+    "content": "SpaceX公司完成「星舰」第12次试飞，火箭成功溅落。这是星舰项目的又一重要里程碑，标志着可重复使用火箭技术取得重大进展。",
+    "dataHighlight": {
+      "number": "第12次",
+      "label": "星舰试飞次数"
+    },
+    "comment": "星舰又成功了一次——马斯克的火星梦，越来越近了。",
+    "visual": {
+      "emoji": "🚀",
+      "tag": "焦点 · 航天突破"
+    }
+  },
+  "weather": {
+    "zhuhai": {
+      "temp": "30°C",
+      "desc": "小雨，湿度78%，南风17km/h"
+    },
+    "shenzhen": {
+      "temp": "29°C",
+      "desc": "多云，湿度77%，南风14km/h"
+    },
+    "shantou": {
+      "temp": "30°C",
+      "desc": "多云，湿度73%，东南风10km/h"
+    }
+  },
+  "sections": [
+    {
+      "name": "国际风云",
+      "emoji": "🌍",
+      "articles": [
+        {
+          "id": "art-int-1",
+          "category": "🇮🇷 中东",
+          "title": "美伊协议草案或将在数小时内公布",
+          "url": "https://news.sina.com.cn/w/2026-05-23/doc-inhyvtiu4699285.shtml",
+          "content": "美伊协议草案或将在数小时内公布。知情人士称美筹备对伊朗发动新一轮军事打击，但仍未最终决定。特朗普与国家安全团队举行会议商讨对伊战事。",
+          "comment": "协议草案要公布了？但军事打击也在筹备——这场博弈还没结束。"
+        },
+        {
+          "id": "art-int-2",
+          "category": "🇮🇳 南亚",
+          "title": "印度部分地区气温高达48.2摄氏度，电力负荷连创历史新高",
+          "url": "https://news.sina.com.cn/w/2026-05-23/doc-inhyvhty4836382.shtml",
+          "content": "印度部分地区气温高达48.2摄氏度，电力负荷连创历史新高。极端高温给当地居民生活和基础设施带来严峻挑战。",
+          "dataHighlight": {
+            "number": "48.2°C",
+            "label": "印度极端高温"
+          },
+          "comment": "48.2度——这不是天气，是烤箱。气候变化不是未来的事，是现在的事。"
+        },
+        {
+          "id": "art-int-3",
+          "category": "🇯🇵 亚太",
+          "title": "「堤丰」中导系统将再次用于美日联合演习",
+          "url": "https://news.sina.com.cn/w/2026-05-23/doc-inhyvtiw5663907.shtml",
+          "content": "「堤丰」中导系统将再次用于美日联合演习。该系统可发射多种导弹，射程覆盖广泛区域，引发地区安全关注。",
+          "comment": "中导系统又来演习了——亚太的火药味，越来越浓。"
+        }
+      ]
+    },
+    {
+      "name": "科技前沿",
+      "emoji": "🤖",
+      "articles": [
+        {
+          "id": "art-tech-1",
+          "category": "🎬 影视",
+          "title": "首部AI长片戛纳首映，15人砸40万算力",
+          "url": "https://www.163.com/dy/article/KTHOGQ1O055616Z7.html",
+          "content": "全球首部95分钟AI长片在戛纳电影节首映，由15人团队投入40万算力完成。这标志着AI生成内容正式进入主流影视领域。",
+          "dataHighlight": {
+            "number": "40万算力",
+            "label": "AI长片投入算力"
+          },
+          "comment": "15人、40万算力——AI电影的门槛比想象中低，未来已来。"
+        },
+        {
+          "id": "art-tech-2",
+          "category": "🤖 AI",
+          "title": "沃什就任美联储主席，强调将以改革为导向",
+          "url": "https://finance.sina.com.cn/roll/2026-05-23/doc-inhyvtiw5646166.shtml",
+          "content": "「鹰派」沃什正式就任美联储主席，强调将以改革为导向。市场关注其货币政策走向，全球金融市场迎来新变数。",
+          "comment": "鹰派沃什上任——美联储要变天了吗？市场都在屏息以待。"
+        },
+        {
+          "id": "art-tech-3",
+          "category": "💰 金融",
+          "title": "只能卖、不能买？内地人炒港股面临史上最严监管",
+          "url": "https://finance.sina.com.cn/roll/2026-05-23/doc-inhyvtiv7166948.shtml",
+          "content": "境外「灰色通道」终结，设两年过渡期，投资者资产安全不受影响。富途回应称将积极配合监管要求。",
+          "comment": "港股灰色通道终结——两年过渡期，投资者要抓紧调整了。"
+        }
+      ]
+    },
+    {
+      "name": "国内财经",
+      "emoji": "💰",
+      "articles": [
+        {
+          "id": "art-fin-1",
+          "category": "📈 黄金",
+          "title": "花旗翻空黄金：三个月内降到4300美元",
+          "url": "https://finance.sina.com.cn/roll/2026-05-22/doc-inhytust7713364.shtml",
+          "content": "花旗翻空黄金，预测三个月内金价将降到4300美元。此前黄金持续上涨，多家机构观点出现分歧。",
+          "dataHighlight": {
+            "number": "4300美元",
+            "label": "花旗预测金价目标"
+          },
+          "comment": "花旗喊空黄金——是真看空，还是想低位建仓？"
+        },
+        {
+          "id": "art-fin-2",
+          "category": "🌏 亚太",
+          "title": "日韩股再度大涨，汇率倒挂隐含风险",
+          "url": "https://finance.sina.com.cn/roll/2026-05-22/doc-inhytkax7803477.shtml",
+          "content": "日韩股市再度大涨，但汇率倒挂隐含风险。分析师提醒需关注汇率波动对投资的潜在影响。",
+          "comment": "日韩股市涨了，但汇率倒挂——表面繁荣下有暗流。"
+        },
+        {
+          "id": "art-fin-3",
+          "category": "🇺🇸 美股",
+          "title": "美股收盘：标普连涨八周道指刷新高，芯片股持续走强",
+          "url": "https://news.sina.com.cn/w/2026-05-23/doc-inhyvnzw4751187.shtml",
+          "content": "美股收盘标普连涨八周，道指刷新高，芯片股和量子概念持续走强。市场情绪乐观，但分析师提醒注意估值风险。",
+          "dataHighlight": {
+            "number": "八周",
+            "label": "标普连续上涨周数"
+          },
+          "comment": "标普连涨八周——这波行情还能走多远？"
+        }
+      ]
+    },
+    {
+      "name": "娱乐快讯",
+      "emoji": "⚡",
+      "isBrief": true,
+      "items": [
+        {
+          "id": "art-ent-1",
+          "title": "🎬 首部AI长片戛纳首映，15人砸40万算力",
+          "url": "https://www.163.com/dy/article/KTHOGQ1O055616Z7.html",
+          "content": "全球首部95分钟AI长片戛纳首映。",
+          "src": "网易娱乐"
+        },
+        {
+          "id": "art-ent-2",
+          "title": "🎵 周杰伦10岁大女儿长这么大了！缩小版昆凌",
+          "url": "https://www.163.com/dy/article/KTHRVNLF0553TKJG.html",
+          "content": "周杰伦大女儿近照曝光。",
+          "src": "网易娱乐"
+        },
+        {
+          "id": "art-ent-3",
+          "title": "🎭 别再说杨颖过气！布局两年已悄悄翻盘",
+          "url": "https://www.163.com/dy/article/KTHRNRF80556MS98.html",
+          "content": "杨颖近两年布局获关注。",
+          "src": "网易娱乐"
+        },
+        {
+          "id": "art-ent-4",
+          "title": "👨‍👩‍👧‍👧 陈慧琳全家福罕曝光，俩儿子长得像父亲",
+          "url": "https://www.163.com/dy/article/KTHRA45P0553TET5.html",
+          "content": "陈慧琳全家福曝光。",
+          "src": "网易娱乐"
+        },
+        {
+          "id": "art-ent-5",
+          "title": "📺 67岁李幼斌现状曝光，财富与人生的警示",
+          "url": "https://www.163.com/dy/article/KTHOGOB90556BNMJ.html",
+          "content": "李幼斌近况引发关注。",
+          "src": "网易娱乐"
+        },
+        {
+          "id": "art-ent-6",
+          "title": "💕 姐弟恋的残酷，在朱亚文身上展现的淋漓尽致",
+          "url": "https://www.163.com/dy/article/KTHPE98U05568V34.html",
+          "content": "朱亚文相关话题引发讨论。",
+          "src": "网易娱乐"
+        }
+      ]
+    }
+  ],
+  "editorNote": {
+    "title": "茉霓有话说",
+    "paragraphs": [
+      "今天被两条新闻同时吸引：星舰第12次试飞成功溅落，AI长片在戛纳首映。一个在向上探索宇宙，一个在向下挖掘创意边界——人类的技术野心，真的没有上限。",
+      "印度48.2度的高温让我心惊。这不是天气预报，这是气候危机的警钟。当极端天气成为常态，我们能做的还有多少？另一方面，花旗喊空黄金，预测三个月内降到4300美元——这波预测会成真吗？还是又一个「反向指标」？",
+      "沃什就任美联储主席，鹰派上台。市场屏息以待，我也有点紧张——全球金融格局，会不会因此改变？"
+    ],
+    "signature": "—— 茉霓 🌸"
+  }
+}
