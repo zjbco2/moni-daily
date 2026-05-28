@@ -1,12 +1,102 @@
 {
-  "total": 380,
+  "total": 390,
   "by_section": {
-    "头条": 38,
-    "国际风云": 114,
-    "科技前沿": 114,
-    "国内财经": 114
+    "头条": 39,
+    "国际风云": 117,
+    "科技前沿": 117,
+    "国内财经": 117
   },
   "comments": [
+    {
+      "comment": "伊朗先曝光，白宫急着否认——这场舆论战，谁在撒谎？",
+      "title": "伊朗「先发制人」曝光美伊协议草案，白宫否认：完全是捏造",
+      "date": "20260528",
+      "section": "头条",
+      "url": "https://news.sina.com.cn/w/2026-05-28/doc-inhzkwsy8814177.shtml",
+      "weekday": "周四",
+      "issue": "第42期"
+    },
+    {
+      "comment": "核载9人实载16人——超载的代价，是13条生命。",
+      "title": "河南南阳客车追尾货车致13死3伤，公安部派工作组赴现场",
+      "date": "20260528",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/s/2026-05-28/doc-inhzmayu7947468.shtml",
+      "weekday": "周四",
+      "issue": "第42期"
+    },
+    {
+      "comment": "「铁杆友谊」再升温——塞尔维亚总统看上了中国的人形机器人。",
+      "title": "塞尔维亚总统武契奇访浙，考察中国人形机器人应用",
+      "date": "20260528",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/gov/2026-05-28/doc-inhzmtwm1134188.shtml",
+      "weekday": "周四",
+      "issue": "第42期"
+    },
+    {
+      "comment": "日本想复活「特高课」？历史的警钟，再次敲响。",
+      "title": "环球时报社评：日本想复活「特高课」，威胁的不止东亚",
+      "date": "20260528",
+      "section": "国际风云",
+      "url": "https://news.sina.com.cn/w/2026-05-28/doc-inhzkwsw8015068.shtml",
+      "weekday": "周四",
+      "issue": "第42期"
+    },
+    {
+      "comment": "前置摄像头也要上亿像素了——自拍的尽头，是清晰到毛孔可见？",
+      "title": "2nm迭代线新机测试亿级像素前置摄像头，三星传感器方案曝光",
+      "date": "20260528",
+      "section": "科技前沿",
+      "url": "https://juejin.cn/post/7644487242858938404",
+      "weekday": "周四",
+      "issue": "第42期"
+    },
+    {
+      "comment": "可重复使用火箭进入批次化——中国商业航天，正在加速追赶。",
+      "title": "蓝箭航天江苏无锡生产基地投产，可重复使用火箭进入批次化",
+      "date": "20260528",
+      "section": "科技前沿",
+      "url": "https://www.ithome.com/list/",
+      "weekday": "周四",
+      "issue": "第42期"
+    },
+    {
+      "comment": "智博会开幕——AI不是未来，而是正在发生的现实。",
+      "title": "2026世界智能产业博览会在津开幕，智行天下能动未来",
+      "date": "20260528",
+      "section": "科技前沿",
+      "url": "https://news.sina.com.cn/gov/2026-05-28/doc-inhzmtwm1134188.shtml",
+      "weekday": "周四",
+      "issue": "第42期"
+    },
+    {
+      "comment": "美光破万亿，英伟达四连跌——AI芯片股也在「换庄」？",
+      "title": "美股成交额前20：美光市值破万亿，英伟达四连跌",
+      "date": "20260528",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-05-28/doc-inhzksky8064848.shtml",
+      "weekday": "周四",
+      "issue": "第42期"
+    },
+    {
+      "comment": "半导体板块涨停潮——国产替代的叙事，还在继续。",
+      "title": "燕东微涨停，半导体技术突破+产能扩张+营收增长",
+      "date": "20260528",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/stock/aiassist/ydfx/2026-05-28/doc-inhzmihu8713396.shtml",
+      "weekday": "周四",
+      "issue": "第42期"
+    },
+    {
+      "comment": "蛋价上涨——端午节的粽子，要配更贵的蛋了。",
+      "title": "2026年5月28日鸡蛋价格行情参考：多地上涨",
+      "date": "20260528",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/wm/2026-05-28/doc-inhzksma8867362.shtml",
+      "weekday": "周四",
+      "issue": "第42期"
+    },
     {
       "comment": "美军「悄悄」护航运油——停火协议还能撑多久？",
       "title": "突发！美军「悄悄」协助船只通过霍尔木兹海峡，伊朗谴责违反停火",

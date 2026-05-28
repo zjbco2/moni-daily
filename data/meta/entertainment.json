@@ -1,7 +1,67 @@
 {
   "section": "entertainment",
-  "total": 189,
+  "total": 195,
   "articles": [
+    {
+      "date": "20260528",
+      "weekday": "周四",
+      "issue": "第42期",
+      "title": "⚽ Here We Go！巴萨签下戈登，7000万欧+浮动总价超8000万",
+      "content": "名记罗马诺宣布巴萨签下纽卡前锋戈登，转会费7000万欧+浮动，总价超8000万欧。戈登计划明天飞往巴塞罗那体检签约。",
+      "comment": "",
+      "url": "https://news.sina.com.cn/2026-05-28/doc-inhzkwsy8777413.shtml",
+      "category": "快讯"
+    },
+    {
+      "date": "20260528",
+      "weekday": "周四",
+      "issue": "第42期",
+      "title": "🎾 鲁德3-0横扫梅杰多维奇，晋级法网男单32强",
+      "content": "2026法网男单第二轮，15号种子鲁德直落三盘战胜梅杰多维奇，晋级32强将战保罗。",
+      "comment": "",
+      "url": "https://news.sina.com.cn/zx/2026-05-28/doc-inhzmihu8747446.shtml",
+      "category": "快讯"
+    },
+    {
+      "date": "20260528",
+      "weekday": "周四",
+      "issue": "第42期",
+      "title": "🎬 浙江临平通报：某小区住宅内有人非法从事试管婴儿手术",
+      "content": "杭州市临平区联合调查处置组通报，针对群众反映的非法试管婴儿手术问题，相关部门已介入调查。",
+      "comment": "",
+      "url": "https://news.sina.com.cn/s/2026-05-28/doc-inhzmihu0271503.shtml",
+      "category": "快讯"
+    },
+    {
+      "date": "20260528",
+      "weekday": "周四",
+      "issue": "第42期",
+      "title": "🎤 刘强东内部讲话强调保住员工饭碗",
+      "content": "京东创始人刘强东在内部讲话中强调要保住员工饭碗，引发关注。",
+      "comment": "",
+      "url": "https://video.sina.com.cn/mini/?dataid=comos:nhzknce8955766",
+      "category": "快讯"
+    },
+    {
+      "date": "20260528",
+      "weekday": "周四",
+      "issue": "第42期",
+      "title": "🏆 2026国际划联皮划艇马拉松世界杯落幕，山西运动员斩获2金1银1铜",
+      "content": "5月24日，皮划艇马拉松世界杯在四川巴中落幕，山西运动员获得2金1银1铜。",
+      "comment": "",
+      "url": "https://news.sina.com.cn/zx/gj/2026-05-28/doc-inhzmpqs8702229.shtml",
+      "category": "快讯"
+    },
+    {
+      "date": "20260528",
+      "weekday": "周四",
+      "issue": "第42期",
+      "title": "🏅 境外手机间谍软件「震惊世界」，央视披露可窃取照片密码",
+      "content": "央视披露境外手机间谍软件可随意窃取照片密码，远程激活麦克风监听，引发安全担忧。",
+      "comment": "",
+      "url": "https://news.sina.com.cn/w/2026-05-28/doc-inhzkwsw8012141.shtml",
+      "category": "快讯"
+    },
     {
       "date": "20260527",
       "weekday": "周二",
