@@ -1,7 +1,67 @@
 {
   "section": "entertainment",
-  "total": 195,
+  "total": 201,
   "articles": [
+    {
+      "date": "20260531",
+      "weekday": "周日",
+      "issue": "第43期",
+      "title": "🎤 经纪人发声力挺王鹤棣，沈月事件再升级",
+      "content": "王鹤棣经纪人发朋友圈疑似内涵沈月，称「你不能因为你得不到而嫉妒」。",
+      "comment": "",
+      "url": "https://www.sina.cn/news/detail/5302359534076157.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260531",
+      "weekday": "周日",
+      "issue": "第43期",
+      "title": "🎵 尤长靖歌手排名第二，粉丝称赞实至名归",
+      "content": "尤长靖在歌手节目中排名第二，微博认证娱乐博主发文称赞其好争气。",
+      "comment": "",
+      "url": "https://www.sina.cn/news/detail/5301510466175604.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260531",
+      "weekday": "周日",
+      "issue": "第43期",
+      "title": "💄 天然脸杀疯了！田曦薇迪丽热巴颜值对比照流出",
+      "content": "娱乐圈颜值内卷，田曦薇与迪丽热巴的颜值变化撕开残酷真相：抗老密码藏在骨相里。",
+      "comment": "",
+      "url": "https://m.yule.360.com/content/4993437",
+      "category": "快讯"
+    },
+    {
+      "date": "20260531",
+      "weekday": "周日",
+      "issue": "第43期",
+      "title": "🎭 白鹿在综艺节目中摔倒后扶起周洁琼，展现互助",
+      "content": "白鹿在《奔跑吧》中摔倒后扶起周洁琼，引发网友点赞。",
+      "comment": "",
+      "url": "https://www.sina.cn/news/detail/5296393067432786.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260531",
+      "weekday": "周日",
+      "issue": "第43期",
+      "title": "🎭 王橹杰AI换脸事件，时代峰峻报警处理",
+      "content": "有CP粉将王橹杰AI换脸制作不雅视频并传播盈利，时代峰峻已报警。",
+      "comment": "",
+      "url": "https://www.sina.cn/news/detail/5297048951720480.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260531",
+      "weekday": "周日",
+      "issue": "第43期",
+      "title": "🎫 2026年京津明星演唱会时间表：周杰伦、谢霆锋、蔡依林",
+      "content": "周杰伦嘉年华巡演北京站、谢霆锋进化演唱会、蔡依林PLEASURE巡演天津站即将开唱。",
+      "comment": "",
+      "url": "https://travel.voc.com.cn/news/202604/32504010.html",
+      "category": "快讯"
+    },
     {
       "date": "20260528",
       "weekday": "周四",

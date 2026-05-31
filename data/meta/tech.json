@@ -1,7 +1,37 @@
 {
   "section": "tech",
-  "total": 117,
+  "total": 120,
   "articles": [
+    {
+      "date": "20260531",
+      "weekday": "周日",
+      "issue": "第43期",
+      "title": "一个月烧掉5亿美元！科技巨头「AI Token消耗赛」踩下急刹",
+      "content": "美国阿克西奥斯新闻网报道，一家客户公司忘设Claude使用许可证上限，单月花掉5亿美元，分析称可能是科技巨头。随着AI成本飙升，美国企业开始感受财务压力。Anthropic五个月ARR从90亿飙升至450亿，超过90%来自企业API和Agent部署，AI商业化正从流量逻辑全面转向人力替代逻辑。企业客户平均ROI达3.7倍，最高超过10倍。",
+      "comment": "一个月烧掉5亿美元——AI的成本，正在吓跑谁？",
+      "url": "https://finance.sina.com.cn/roll/2026-05-31/doc-inhztucx6334631.shtml",
+      "category": "💰 AI商业"
+    },
+    {
+      "date": "20260531",
+      "weekday": "周日",
+      "issue": "第43期",
+      "title": "AI没有复制互联网，它正在复制工业革命",
+      "content": "澎湃新闻刊发深度分析指出，互联网时代赚的是用户注意力，AI时代赚的是企业工资。Anthropic的爆发证明了AI商业化正从流量逻辑转向人力替代逻辑。C端AI的困境不是泡沫破裂，而是产业结构性分水岭。全球年度工资总额超过50万亿美元，即使AI只替代10%，也是5万亿美元的年市场。AI不是下一个Facebook，它是下一个蒸汽机。",
+      "comment": "AI复制工业革命——它不是下一个Facebook，而是下一个蒸汽机。",
+      "url": "https://www.thepaper.cn/newsDetail_forward_33265192",
+      "category": "🧠 AI观点"
+    },
+    {
+      "date": "20260531",
+      "weekday": "周日",
+      "issue": "第43期",
+      "title": "96核撕裂者领衔！雷神AMD AI工作站集体登场",
+      "content": "雷神推出AMD AI工作站系列，涵盖塔式、迷你和移动三种形态，最高搭载96核撕裂者处理器和4张专业显卡。雷神产品版图已从电竞笔记本扩展到电竞主机、硬件生态和场景生态等全场景电竞生态。AI工作站的推出标志着雷神正式进军专业生产力市场。",
+      "comment": "96核工作站——电竞品牌杀入AI生产力市场。",
+      "url": "https://finance.sina.com.cn/tech/discovery/2026-05-31/doc-inhztucv9557647.shtml",
+      "category": "🖥️ 硬件"
+    },
     {
       "date": "20260528",
       "weekday": "周四",
