@@ -1,7 +1,67 @@
 {
   "section": "entertainment",
-  "total": 201,
+  "total": 207,
   "articles": [
+    {
+      "date": "20260611",
+      "weekday": "周四",
+      "issue": "第44期",
+      "title": "🎓 48岁黄晓明考上博士！落榜一年推掉戏约备考",
+      "content": "上海戏剧学院公布2026年博士拟录取名单，黄晓明以271.34分被艺术管理方向录取。去年首战失利后推掉戏约备考。",
+      "comment": "",
+      "url": "http://www.inewsweek.cn/society/2026-06-11/30578.shtml",
+      "category": "快讯"
+    },
+    {
+      "date": "20260611",
+      "weekday": "周四",
+      "issue": "第44期",
+      "title": "🎬 导演陆川自研AI写剧本：AI编剧任劳任怨不跑路",
+      "content": "陆川自研AI写剧本工具，100天活1天完成，成本极低，但经典作品仍需匠心创作。",
+      "comment": "",
+      "url": "http://news.17173.com/content/06112026/100056830.shtml",
+      "category": "快讯"
+    },
+    {
+      "date": "20260611",
+      "weekday": "周四",
+      "issue": "第44期",
+      "title": "🎤 杨迪曾得罪当红明星，节目录到一半被开除",
+      "content": "杨迪综艺之路并非一帆风顺，曾因得罪当红明星被中途开除，如今已是综艺圈高情商代名词。",
+      "comment": "",
+      "url": "https://www.aboluowang.com/amp/2026/0611/2394666.html",
+      "category": "快讯"
+    },
+    {
+      "date": "20260611",
+      "weekday": "周四",
+      "issue": "第44期",
+      "title": "🏆 2026重庆国际动画电影周启幕，智绘无界万象竞辉",
+      "content": "以「智绘无界·万象竞辉」为主题的2026重庆国际动画电影周在永川科技片场开幕。",
+      "comment": "",
+      "url": "https://app.xinhuanet.com/news/article.html?articleId=20260611b257e42d5de44141bd3ed4a81c2e2b60",
+      "category": "快讯"
+    },
+    {
+      "date": "20260611",
+      "weekday": "周四",
+      "issue": "第44期",
+      "title": "📚 第32届北京国际图书博览会将展出22万种中外图书",
+      "content": "第32届北京国际图书博览会6月17日开幕，聚焦「以书为媒交流对话合作共赢」主题。",
+      "comment": "",
+      "url": "https://app.xinhuanet.com/news/article.html?articleId=20260611008face548f44f8f923fa763c6b12ec2",
+      "category": "快讯"
+    },
+    {
+      "date": "20260611",
+      "weekday": "周四",
+      "issue": "第44期",
+      "title": "🎵 郑源为何拒绝再上综艺？汶川地震赈灾歌背后的低调歌手",
+      "content": "郑源拒绝《我是歌手》和天价综艺邀约，低调作风延续至今，被称为最神秘的流行歌手。",
+      "comment": "",
+      "url": "https://m.yule.360.com/content/5074200",
+      "category": "快讯"
+    },
     {
       "date": "20260531",
       "weekday": "周日",

@@ -1,12 +1,102 @@
 {
-  "total": 400,
+  "total": 410,
   "by_section": {
-    "头条": 40,
-    "国际风云": 120,
-    "科技前沿": 120,
-    "国内财经": 120
+    "头条": 41,
+    "国际风云": 123,
+    "科技前沿": 123,
+    "国内财经": 123
   },
   "comments": [
+    {
+      "comment": "韩国股市熔断后深V反弹——恐慌与贪婪，只隔一个熔断。",
+      "title": "韩国股市午后熔断！KOSDAQ暂停程序化买入，深V反弹",
+      "date": "20260611",
+      "section": "头条",
+      "url": "https://finance.sina.com.cn/wm/2026-06-11/doc-iniazihv0804323.shtml",
+      "weekday": "周四",
+      "issue": "第44期"
+    },
+    {
+      "comment": "中朝「四个坚持」——在变局中，老朋友的关系也在重新定义。",
+      "title": "中朝最高领导人会晤，「四个坚持」引领新时代关系",
+      "date": "20260611",
+      "section": "国际风云",
+      "url": "https://news.dongyingnews.cn/system/2026/06/11/010891389.shtml",
+      "weekday": "周四",
+      "issue": "第44期"
+    },
+    {
+      "comment": "世界杯场馆亮相——足球盛宴即将开席。",
+      "title": "2026年国际足联世界杯：纽约新泽西体育场亮相",
+      "date": "20260611",
+      "section": "国际风云",
+      "url": "http://news.fjsen.com/2026-06/11/content_32200794.htm",
+      "weekday": "周四",
+      "issue": "第44期"
+    },
+    {
+      "comment": "越日深化合作——东南亚的外交棋盘，每一步都有深意。",
+      "title": "越南政府总理会见日本国际协力机构理事长",
+      "date": "20260611",
+      "section": "国际风云",
+      "url": "https://cn.qdnd.vn/cid-6123/7183/-635124",
+      "weekday": "周四",
+      "issue": "第44期"
+    },
+    {
+      "comment": "开发岗管理岗沦为AI祭品——被AI替代的第一批人，已经出现了。",
+      "title": "Meta裁员8000人！开发岗管理岗沦为AI祭品",
+      "date": "20260611",
+      "section": "科技前沿",
+      "url": "https://www.eetop.cn/semi/6965682.html",
+      "weekday": "周四",
+      "issue": "第44期"
+    },
+    {
+      "comment": "「先AI后车」——造车逻辑被颠覆，AI成了灵魂，车只是躯体。",
+      "title": "赛豆科技发布AI汽车品牌AIVA，「先AI后车」造车逻辑重构",
+      "date": "20260611",
+      "section": "科技前沿",
+      "url": "https://finance.sina.com.cn/jjxw/2026-06-11/doc-iniazpqr4007174.shtml",
+      "weekday": "周四",
+      "issue": "第44期"
+    },
+    {
+      "comment": "6亿人用AI智能体——AI不再是极客玩具，而是全民工具。",
+      "title": "中国6亿人使用AI智能体，科技巨头竞逐AI超级应用",
+      "date": "20260611",
+      "section": "科技前沿",
+      "url": "https://www.51cto.com/article/845910.html",
+      "weekday": "周四",
+      "issue": "第44期"
+    },
+    {
+      "comment": "金价归零涨幅，油价飙升——避险和进攻的信号，同时亮起。",
+      "title": "金价抹去今年全部涨幅，国际油价大涨",
+      "date": "20260611",
+      "section": "国内财经",
+      "url": "https://mini.caixin.com/2026-06-11/102452964.html",
+      "weekday": "周四",
+      "issue": "第44期"
+    },
+    {
+      "comment": "五网并建——基建2.0，从修路架桥走向铺算力网。",
+      "title": "发改委主任主持召开经济形势专家座谈会",
+      "date": "20260611",
+      "section": "国内财经",
+      "url": "https://finance.sina.cn/2026-06-11/detail-iniaysky2380690.d.html",
+      "weekday": "周四",
+      "issue": "第44期"
+    },
+    {
+      "comment": "日韩深V反弹——跌了4%还能涨回来，这市场的心脏真够大。",
+      "title": "日韩股市深V反弹，高估值与加息风险高悬",
+      "date": "20260611",
+      "section": "国内财经",
+      "url": "https://finance.sina.com.cn/roll/2026-06-11/doc-iniazyep0702687.shtml",
+      "weekday": "周四",
+      "issue": "第44期"
+    },
     {
       "comment": "美军导弹拦截货船——封锁线上的每一次交火，都在测试伊朗的底线。",
       "title": "美军导弹拦截闯伊朗港口货船，中东局势持续紧张",
